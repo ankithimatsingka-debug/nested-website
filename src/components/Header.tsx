@@ -18,11 +18,11 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#why-nested" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Why Nested
+            <a href="/" className="font-body text-muted-foreground hover:text-primary transition-colors">
+              Home
             </a>
-            <a href="#benefits" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Benefits
+            <a href="/features" className="font-body text-muted-foreground hover:text-primary transition-colors">
+              Features
             </a>
             <a href="#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Stories
@@ -56,18 +56,18 @@ export function Header() {
           <div className="md:hidden border-t border-border/50 py-4">
             <nav className="flex flex-col space-y-4">
               <a 
-                href="#why-nested" 
+                href="/" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Why Nested
+                Home
               </a>
               <a 
-                href="#benefits" 
+                href="/features" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Benefits
+                Features
               </a>
               <a 
                 href="#testimonials" 

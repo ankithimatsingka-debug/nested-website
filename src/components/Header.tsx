@@ -24,6 +24,9 @@ export function Header() {
             <a href="/features" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Features
             </a>
+            <a href="/about" className="font-body text-muted-foreground hover:text-primary transition-colors">
+              About
+            </a>
             <a href="#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Stories
             </a>
@@ -68,6 +71,13 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
+              </a>
+              <a 
+                href="/about" 
+                className="font-body text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
               </a>
               <a 
                 href="#testimonials" 

@@ -28,18 +28,32 @@ const getRandomPosition = () => ({
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [position, setPosition] = useState(getRandomPosition());
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        const nextIndex = (prevIndex + 1) % testimonials.length;
+      // Start fade out
+      setIsVisible(false);
+      
+      // After fade out completes, change content and position, then fade in
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
         setPosition(getRandomPosition());
-        return nextIndex;
-      });
-    }, 3000);
+        setIsVisible(true);
+      }, 300); // Match the fade-out duration
+    }, 3500); // Increased interval to account for transition time
 
     return () => clearInterval(interval);
   }, []);
+
+  const handleDotClick = (index: number) => {
+    setIsVisible(false);
+    setTimeout(() => {
+      setCurrentIndex(index);
+      setPosition(getRandomPosition());
+      setIsVisible(true);
+    }, 300);
+  };
 
   const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
@@ -78,8 +92,10 @@ export function Testimonials() {
 
         <div className="relative h-96 w-full">
           <Card 
-            key={currentIndex}
-            className="absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm max-w-md animate-fade-in"
+            key={`${currentIndex}-${position.x}-${position.y}`}
+            className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm max-w-md transition-opacity duration-300 ease-in-out ${
+              isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'
+            }`}
             style={{
               left: `${position.x}%`,
               top: `${position.y}%`,
@@ -112,10 +128,7 @@ export function Testimonials() {
                 className={`w-2 h-2 rounded-full transition-colors ${
                   index === currentIndex ? 'bg-primary' : 'bg-primary/30'
                 }`}
-                onClick={() => {
-                  setCurrentIndex(index);
-                  setPosition(getRandomPosition());
-                }}
+                onClick={() => handleDotClick(index)}
               />
             ))}
           </div>

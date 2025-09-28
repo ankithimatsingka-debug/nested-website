@@ -9,6 +9,7 @@ import { Compliance } from "@/components/about/Compliance";
 import { TeamSection } from "@/components/about/TeamSection";
 import { Testimonials } from "@/components/Testimonials";
 import { EducationCalculator } from "@/components/EducationCalculator";
+import { FAQ } from "@/components/FAQ";
 import { DownloadBanner } from "@/components/DownloadBanner";
 import { Footer } from "@/components/Footer";
 
@@ -36,6 +37,9 @@ const Index = () => {
         </section>
         <section id="calculator">
           <EducationCalculator />
+        </section>
+        <section id="faq">
+          <FAQ />
         </section>
         <DownloadBanner />
       </main>

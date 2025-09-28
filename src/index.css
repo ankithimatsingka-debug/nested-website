@@ -130,6 +130,10 @@ All colors MUST be HSL for consistency and theming.
     @apply border-border;
   }
 
+  html {
+    font-size: 14px;
+  }
+
   body {
     @apply bg-background text-foreground;
   }

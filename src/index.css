@@ -24,10 +24,10 @@ All colors MUST be HSL for consistency and theming.
     --primary-light: 221 83% 63%;
     --primary-dark: 221 83% 43%;
 
-    --secondary: 158 64% 52%; /* Growth Green */
+    --secondary: 16 84% 65%; /* Coral */
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 158 64% 62%;
-    --secondary-dark: 158 64% 42%;
+    --secondary-light: 16 84% 75%;
+    --secondary-dark: 16 84% 55%;
 
     /* Neutral colors */
     --muted: 210 40% 96%;
@@ -85,10 +85,10 @@ All colors MUST be HSL for consistency and theming.
     --primary-light: 221 83% 73%;
     --primary-dark: 221 83% 53%;
 
-    --secondary: 158 64% 62%;
+    --secondary: 16 84% 70%;
     --secondary-foreground: 215 28% 7%;
-    --secondary-light: 158 64% 72%;
-    --secondary-dark: 158 64% 52%;
+    --secondary-light: 16 84% 80%;
+    --secondary-dark: 16 84% 60%;
 
     --muted: 215 28% 15%;
     --muted-foreground: 215 20% 65%;

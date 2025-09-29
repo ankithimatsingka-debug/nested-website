@@ -29,7 +29,7 @@ export function WhyNested() {
     <section className="py-20 bg-gradient-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-heading text-2xl font-bold mb-6">
             Why Choose <span className="text-primary">Nested</span>?
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">

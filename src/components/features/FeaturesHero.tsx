@@ -10,7 +10,7 @@ export function FeaturesHero() {
             <span className="font-medium">Everything You Need</span>
           </div>
           
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Smart Features for <span className="text-primary">Smart Parents</span>
           </h1>
           

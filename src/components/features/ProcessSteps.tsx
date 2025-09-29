@@ -29,7 +29,7 @@ export function ProcessSteps() {
     <section className="py-20 bg-gradient-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-heading text-2xl font-bold mb-6">
             Get Started in <span className="text-primary">3 Simple Steps</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">

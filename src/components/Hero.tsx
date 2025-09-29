@@ -10,7 +10,7 @@ export function Hero() {
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
                 Funding dreams,{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   one goal at a time

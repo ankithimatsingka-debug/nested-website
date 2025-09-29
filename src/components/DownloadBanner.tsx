@@ -19,7 +19,7 @@ export function DownloadBanner() {
               <span className="font-medium">Join 50,000+ Parents</span>
             </div>
             
-            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-heading text-2xl font-bold mb-6">
               Start Investing Today for Your Child's Future
             </h2>
             

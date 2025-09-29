@@ -91,7 +91,7 @@ export const FAQ = () => {
     <section className="py-24 bg-gradient-to-br from-background via-primary/5 to-secondary/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 bg-gradient-to-r from-primary via-primary-foreground to-primary bg-clip-text text-transparent">
+          <h2 className="text-2xl font-heading font-bold mb-4 bg-gradient-to-r from-primary via-primary-foreground to-primary bg-clip-text text-transparent">
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

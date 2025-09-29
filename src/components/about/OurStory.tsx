@@ -7,7 +7,7 @@ export function OurStory() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+              <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
                 Our Story
               </h2>
               <div className="space-y-6 text-muted-foreground">

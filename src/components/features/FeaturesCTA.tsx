@@ -19,7 +19,7 @@ export function FeaturesCTA() {
               <span className="font-medium">Ready to Start?</span>
             </div>
             
-            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-heading text-2xl font-bold mb-6">
               Download Nested Now
             </h2>
             

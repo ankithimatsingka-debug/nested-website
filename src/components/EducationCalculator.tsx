@@ -48,7 +48,7 @@ export function EducationCalculator() {
               <Calculator className="h-5 w-5" />
               <span className="font-medium">Interactive Tool</span>
             </div>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading text-2xl font-bold mb-6">
               Education Cost Calculator
             </h2>
             <p className="font-body text-lg text-muted-foreground">
@@ -134,7 +134,7 @@ export function EducationCalculator() {
 
                     <div className="space-y-6">
                       <div className="text-center">
-                        <div className="text-4xl font-bold mb-2">
+                        <div className="text-xl font-bold mb-2">
                           ₹{result.monthlyInvestment.toLocaleString('en-IN')}
                         </div>
                         <div className="text-lg opacity-90">Monthly SIP Required</div>

@@ -134,6 +134,10 @@ All colors MUST be HSL for consistency and theming.
     font-size: 14px;
   }
 
+  h2 {
+    font-size: 20px;
+  }
+
   body {
     @apply bg-background text-foreground;
   }

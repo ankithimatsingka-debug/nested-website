@@ -227,8 +227,22 @@ const FundSelection = () => {
               <AccordionItem value="step6" className="border border-border rounded-lg hover-scale">
                 <AccordionTrigger className="px-6 hover:no-underline">
                   <div className="flex items-center space-x-4">
+                    <Target className="w-6 h-6 text-primary" />
+                    <span className="text-left font-semibold">Step 6: Portfolio Construction</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <p className="text-muted-foreground">
+                    We build your portfolio to protect against losses in any single year. The closer your goal, the more conservative we get — if your goal is less than five years away, we aim to make sure no year ends in the red. But if your goal is 10 years or more, we allow a little more flexibility, targeting roughly an 80% chance of avoiding yearly losses, since that gives room to generate higher returns over time.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="step7" className="border border-border rounded-lg hover-scale">
+                <AccordionTrigger className="px-6 hover:no-underline">
+                  <div className="flex items-center space-x-4">
                     <Building2 className="w-6 h-6 text-primary" />
-                    <span className="text-left font-semibold">Step 6: Building and Managing the Portfolio</span>
+                    <span className="text-left font-semibold">Step 7: Monitoring & Rebalancing</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">

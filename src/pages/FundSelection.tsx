@@ -232,9 +232,17 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <p className="text-muted-foreground">
-                    We build your portfolio to protect against losses in any single year. The closer your goal, the more conservative we get — if your goal is less than five years away, we aim to make sure no year ends in the red. But if your goal is 10 years or more, we allow a little more flexibility, targeting roughly an 80% chance of avoiding yearly losses, since that gives room to generate higher returns over time.
-                  </p>
+                  <div className="space-y-4 text-muted-foreground">
+                    <p>
+                      We build your portfolio to protect against losses in any single year.
+                    </p>
+                    <p>
+                      The closer your goal, the more conservative we get - if your goal is less than five years away, we aim to make sure no year is in loss.
+                    </p>
+                    <p>
+                      But if your goal is 10 years or more, we allow a little more flexibility: targeting roughly an 80% chance of ensuring consistent yearly profit, since that gives room to generate higher returns over time.
+                    </p>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
 

@@ -21,10 +21,13 @@ const testimonials = [
 ];
 
 const getRandomPosition = () => {
-  // On mobile, center the card; on larger screens, use random positioning
+  // Tighter range on mobile to prevent cutoff, wider range on desktop
   const isMobile = window.innerWidth < 768;
   if (isMobile) {
-    return { x: 50, y: 50 }; // Center position
+    return {
+      x: Math.random() * 40 + 30, // 30% to 70% from left
+      y: Math.random() * 50 + 25  // 25% to 75% from top
+    };
   }
   return {
     x: Math.random() * 60 + 20, // 20% to 80% from left
@@ -89,17 +92,19 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="relative h-96 w-full px-4 md:px-0">
+        <div className="relative h-96 w-full">
           <Card 
             key={`${currentIndex}-${position.x}-${position.y}`}
-            className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm w-full md:max-w-md transition-opacity duration-300 ease-in-out ${
+            className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm transition-opacity duration-300 ease-in-out ${
               isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'
             }`}
             style={{
               left: `${position.x}%`,
               top: `${position.y}%`,
               transform: 'translate(-50%, -50%)',
-              maxWidth: window.innerWidth < 768 ? 'calc(100% - 2rem)' : '28rem'
+              maxWidth: 'min(90vw, 28rem)',
+              width: 'fit-content',
+              minWidth: 'min(280px, 90vw)'
             }}
           >
             <CardContent className="p-6">

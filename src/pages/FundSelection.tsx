@@ -201,9 +201,17 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <p className="text-muted-foreground">
-                    We don't pick funds where the returns belong to a manager who left years ago. Continuity matters. You don't want to ride on someone else's track record.
-                  </p>
+                  <div className="space-y-4 text-muted-foreground">
+                    <p>
+                      We don't pick funds where the returns belong to a manager who left years ago.
+                    </p>
+                    <p>
+                      Continuity matters. You don't want to ride on someone else's track record.
+                    </p>
+                    <p>
+                      We also flag portfolio funds and keep a close eye on them if a senior level fund manager exits.
+                    </p>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
 

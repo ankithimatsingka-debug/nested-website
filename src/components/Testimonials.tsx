@@ -1,7 +1,6 @@
 import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import { useState, useEffect } from "react";
 
 const testimonials = [
   { text: "Nested made saving for my daughter's college so simple and stress-free.", name: "Anita R.", rating: 4.5 },
@@ -21,7 +20,40 @@ const testimonials = [
   { text: "I can finally sleep peacefully knowing my child's education is secure.", name: "Pooja L.", rating: 4 }
 ];
 
+const getRandomPosition = () => ({
+  x: Math.random() * 60 + 20, // 20% to 80% from left
+  y: Math.random() * 60 + 20  // 20% to 80% from top
+});
+
 export function Testimonials() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [position, setPosition] = useState(getRandomPosition());
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Start fade out
+      setIsVisible(false);
+      
+      // After fade out completes, change content and position, then fade in
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+        setPosition(getRandomPosition());
+        setIsVisible(true);
+      }, 300); // Match the fade-out duration
+    }, 3500); // Increased interval to account for transition time
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleDotClick = (index: number) => {
+    setIsVisible(false);
+    setTimeout(() => {
+      setCurrentIndex(index);
+      setPosition(getRandomPosition());
+      setIsVisible(true);
+    }, 300);
+  };
 
   const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
@@ -58,42 +90,49 @@ export function Testimonials() {
           </p>
         </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 3000,
-            }),
-          ]}
-          className="w-full"
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
-                <Card className="border-0 shadow-lg bg-card/90 backdrop-blur-sm h-full">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-1 mb-4">
-                      {renderStars(testimonial.rating)}
-                    </div>
-                    
-                    <blockquote className="font-body text-foreground mb-4 leading-relaxed text-sm">
-                      "{testimonial.text}"
-                    </blockquote>
+        <div className="relative h-96 w-full">
+          <Card 
+            key={`${currentIndex}-${position.x}-${position.y}`}
+            className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm max-w-md transition-opacity duration-300 ease-in-out ${
+              isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'
+            }`}
+            style={{
+              left: `${position.x}%`,
+              top: `${position.y}%`,
+              transform: 'translate(-50%, -50%)'
+            }}
+          >
+            <CardContent className="p-6">
+              <div className="flex items-center gap-1 mb-4">
+                {renderStars(testimonials[currentIndex].rating)}
+              </div>
+              
+              <blockquote className="font-body text-foreground mb-4 leading-relaxed text-sm">
+                "{testimonials[currentIndex].text}"
+              </blockquote>
 
-                    <div className="border-t pt-4">
-                      <div className="font-heading font-semibold text-foreground text-sm">
-                        — {testimonial.name}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
+              <div className="border-t pt-4">
+                <div className="font-heading font-semibold text-foreground text-sm">
+                  — {testimonials[currentIndex].name}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="flex justify-center mt-8">
+          <div className="flex gap-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  index === currentIndex ? 'bg-primary' : 'bg-primary/30'
+                }`}
+                onClick={() => handleDotClick(index)}
+              />
             ))}
-          </CarouselContent>
-        </Carousel>
+          </div>
+        </div>
       </div>
     </section>
   );

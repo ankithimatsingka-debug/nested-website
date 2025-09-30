@@ -20,10 +20,17 @@ const testimonials = [
   { text: "I can finally sleep peacefully knowing my child's education is secure.", name: "Pooja L.", rating: 4 }
 ];
 
-const getRandomPosition = () => ({
-  x: Math.random() * 60 + 20, // 20% to 80% from left
-  y: Math.random() * 60 + 20  // 20% to 80% from top
-});
+const getRandomPosition = () => {
+  // On mobile, center the card; on larger screens, use random positioning
+  const isMobile = window.innerWidth < 768;
+  if (isMobile) {
+    return { x: 50, y: 50 }; // Center position
+  }
+  return {
+    x: Math.random() * 60 + 20, // 20% to 80% from left
+    y: Math.random() * 60 + 20  // 20% to 80% from top
+  };
+};
 
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,14 +53,6 @@ export function Testimonials() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleDotClick = (index: number) => {
-    setIsVisible(false);
-    setTimeout(() => {
-      setCurrentIndex(index);
-      setPosition(getRandomPosition());
-      setIsVisible(true);
-    }, 300);
-  };
 
   const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
@@ -90,16 +89,17 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="relative h-96 w-full">
+        <div className="relative h-96 w-full px-4 md:px-0">
           <Card 
             key={`${currentIndex}-${position.x}-${position.y}`}
-            className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm max-w-md transition-opacity duration-300 ease-in-out ${
+            className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm w-full md:max-w-md transition-opacity duration-300 ease-in-out ${
               isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'
             }`}
             style={{
               left: `${position.x}%`,
               top: `${position.y}%`,
-              transform: 'translate(-50%, -50%)'
+              transform: 'translate(-50%, -50%)',
+              maxWidth: window.innerWidth < 768 ? 'calc(100% - 2rem)' : '28rem'
             }}
           >
             <CardContent className="p-6">
@@ -118,20 +118,6 @@ export function Testimonials() {
               </div>
             </CardContent>
           </Card>
-        </div>
-
-        <div className="flex justify-center mt-8">
-          <div className="flex gap-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentIndex ? 'bg-primary' : 'bg-primary/30'
-                }`}
-                onClick={() => handleDotClick(index)}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>

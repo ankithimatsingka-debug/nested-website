@@ -81,15 +81,15 @@ export function Hero() {
               </div>
 
               {/* Mobile: Download Badges */}
-              <div className="flex md:hidden flex-col gap-4 w-full max-w-xs">
-                <a href="#" className="block">
+              <div className="flex md:hidden flex-row gap-3 justify-center lg:justify-start">
+                <a href="#" className="block w-24">
                   <img 
                     src={appStoreBadge} 
                     alt="Download on the App Store" 
                     className="w-full h-auto hover:opacity-80 transition-opacity"
                   />
                 </a>
-                <a href="#" className="block">
+                <a href="#" className="block w-24">
                   <img 
                     src={googlePlayBadge} 
                     alt="Get it on Google Play" 

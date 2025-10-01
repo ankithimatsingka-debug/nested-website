@@ -7,6 +7,12 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import Features from "./pages/Features";
 import FundSelection from "./pages/FundSelection";
+import TermsOfUse from "./pages/TermsOfUse";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CancellationRefundPolicy from "./pages/CancellationRefundPolicy";
+import InformationSecurityPolicy from "./pages/InformationSecurityPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy";
+import AccountDataDeletionPolicy from "./pages/AccountDataDeletionPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +28,12 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/features" element={<Features />} />
             <Route path="/fund-selection" element={<FundSelection />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/cancellation-refund-policy" element={<CancellationRefundPolicy />} />
+            <Route path="/information-security-policy" element={<InformationSecurityPolicy />} />
+            <Route path="/shipping-policy" element={<ShippingPolicy />} />
+            <Route path="/account-data-deletion-policy" element={<AccountDataDeletionPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

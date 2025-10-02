@@ -13,7 +13,7 @@ const CancellationRefundPolicy = () => {
           </h1>
           <p className="text-muted-foreground text-lg">
             This Cancellation & Refund Policy ("Policy") governs cancellation of SIPs, transactions (purchase, switch, redemption), 
-            and refunds for mutual fund services provided via [Your Company/App Name] (the "Platform," "we," "us," or "our"). 
+            and refunds for mutual fund services provided via Nested Enterprises Private Limited (the "Platform," "we," "us," or "our"). 
             By investing through the Platform, you ("Investor") agree to this Policy.
           </p>
         </div>

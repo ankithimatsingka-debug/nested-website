@@ -6,8 +6,8 @@ const CancellationRefundPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container mx-auto px-4 py-16 max-w-5xl">
-        <div className="mb-12">
+      <main className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto space-y-8">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             Cancellation & Refund Policy
           </h1>
@@ -16,9 +16,7 @@ const CancellationRefundPolicy = () => {
             and refunds for mutual fund services provided via Nested Enterprises Private Limited (the "Platform," "we," "us," or "our"). 
             By investing through the Platform, you ("Investor") agree to this Policy.
           </p>
-        </div>
 
-        <div className="space-y-6">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-start gap-3">

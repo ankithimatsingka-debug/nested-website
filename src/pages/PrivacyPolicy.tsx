@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       <Header />
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold text-center mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             Privacy Policy
           </h1>
           <p className="text-muted-foreground text-lg">

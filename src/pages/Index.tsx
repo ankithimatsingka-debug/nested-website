@@ -27,7 +27,9 @@ const Index = () => {
         <section id="benefits">
           <KeyBenefits />
         </section>
-        <FeatureCards />
+        <section id="features">
+          <FeatureCards />
+        </section>
         <ProcessSteps />
         <section id="about">
           <OurStory />

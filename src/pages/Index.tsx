@@ -2,6 +2,8 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { WhyNested } from "@/components/WhyNested";
 import { KeyBenefits } from "@/components/KeyBenefits";
+import { FeatureCards } from "@/components/features/FeatureCards";
+import { ProcessSteps } from "@/components/features/ProcessSteps";
 import { OurStory } from "@/components/about/OurStory";
 import { OurMission } from "@/components/about/OurMission";
 import { OurValues } from "@/components/about/OurValues";
@@ -25,6 +27,8 @@ const Index = () => {
         <section id="benefits">
           <KeyBenefits />
         </section>
+        <FeatureCards />
+        <ProcessSteps />
         <section id="about">
           <OurStory />
           <OurMission />

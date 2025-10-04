@@ -11,7 +11,6 @@ import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CancellationRefundPolicy from "./pages/CancellationRefundPolicy";
 import InformationSecurityPolicy from "./pages/InformationSecurityPolicy";
-import ShippingPolicy from "./pages/ShippingPolicy";
 import AccountDataDeletionPolicy from "./pages/AccountDataDeletionPolicy";
 import NotFound from "./pages/NotFound";
 
@@ -32,7 +31,6 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/cancellation-refund-policy" element={<CancellationRefundPolicy />} />
             <Route path="/information-security-policy" element={<InformationSecurityPolicy />} />
-            <Route path="/shipping-policy" element={<ShippingPolicy />} />
             <Route path="/account-data-deletion-policy" element={<AccountDataDeletionPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

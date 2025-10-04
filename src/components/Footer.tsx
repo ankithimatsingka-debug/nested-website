@@ -57,7 +57,6 @@ export function Footer() {
               <li><a href="/privacy-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="/cancellation-refund-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Cancellation & Refund Policy</a></li>
               <li><a href="/information-security-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Information Security Policy</a></li>
-              <li><a href="/shipping-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Shipping Policy</a></li>
               <li><a href="/account-data-deletion-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Account & Data Deletion Policy</a></li>
             </ul>
           </div>

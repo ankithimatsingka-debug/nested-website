@@ -3,7 +3,7 @@ export function OurMission() {
     <section className="py-20 bg-gradient-to-br from-primary/5 via-secondary/5 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-heading font-bold text-foreground mb-8">
+          <h2 className="font-heading text-2xl font-bold mb-6">
             Our Mission
           </h2>
           <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 md:p-12">

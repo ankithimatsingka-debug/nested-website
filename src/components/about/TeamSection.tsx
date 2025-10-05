@@ -91,9 +91,12 @@ export function TeamSection() {
                 We're always looking for passionate individuals who share our vision of making 
                 financial planning accessible to every family. Interested in joining our team?
               </p>
-              <button className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
+              <a 
+                href="mailto:info@nested.com"
+                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors inline-block"
+              >
                 View Open Positions
-              </button>
+              </a>
             </div>
           </div>
         </div>

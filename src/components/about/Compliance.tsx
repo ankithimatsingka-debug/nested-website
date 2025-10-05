@@ -4,8 +4,8 @@ export function Compliance() {
   const compliancePoints = [
     {
       icon: Shield,
-      title: "SEBI Registered",
-      description: "Fully registered and regulated by the Securities and Exchange Board of India"
+      title: "AMFI Registered",
+      description: "Fully compliant and regulated by AMFI"
     },
     {
       icon: Lock,
@@ -16,11 +16,6 @@ export function Compliance() {
       icon: FileCheck,
       title: "Transparent Reporting",
       description: "Regular portfolio reports and clear fee structures with no hidden charges"
-    },
-    {
-      icon: CheckCircle,
-      title: "Risk Management",
-      description: "Professional risk assessment and diversification strategies for every portfolio"
     }
   ];
 
@@ -38,7 +33,7 @@ export function Compliance() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8">
             {compliancePoints.map((point, index) => (
               <div key={index} className="flex items-start gap-4 p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
@@ -50,22 +45,6 @@ export function Compliance() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="bg-card border border-border rounded-xl p-8 text-center">
-            <h3 className="text-xl font-heading font-semibold text-foreground mb-4">
-              Regulated & Trusted
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Nested operates under strict SEBI guidelines, ensuring that every investment recommendation 
-              follows professional standards for risk management and transparency. Your peace of mind is our priority.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-              <span className="px-4 py-2 bg-muted/50 rounded-full">SEBI Registered</span>
-              <span className="px-4 py-2 bg-muted/50 rounded-full">ISO 27001 Certified</span>
-              <span className="px-4 py-2 bg-muted/50 rounded-full">256-bit Encryption</span>
-              <span className="px-4 py-2 bg-muted/50 rounded-full">Regular Audits</span>
-            </div>
           </div>
         </div>
       </div>

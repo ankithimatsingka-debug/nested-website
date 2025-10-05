@@ -29,9 +29,6 @@ const Index = () => {
           <FeatureCards />
         </section>
         <section id="about">
-          <OurStory />
-          <OurMission />
-          <OurValues />
           <Compliance />
           <TeamSection />
         </section>

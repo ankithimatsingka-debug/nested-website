@@ -16,7 +16,7 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Quick 10-Minute Setup",
+    title: "Quick 5-Minute Setup",
     description: "Complete your onboarding process in just 5 minutes. Rebalance portfolios with a single click.",
     highlight: "Fast digital KYC"
   },

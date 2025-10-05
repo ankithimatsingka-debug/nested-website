@@ -77,26 +77,6 @@ export function ProcessSteps() {
             ))}
           </div>
         </div>
-        
-        {/* Bottom summary */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-4 px-8 py-4 bg-background rounded-2xl shadow-md">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">7</div>
-              <div className="text-sm text-muted-foreground">minutes total</div>
-            </div>
-            <div className="w-px h-8 bg-border"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-secondary">₹500</div>
-              <div className="text-sm text-muted-foreground">minimum start</div>
-            </div>
-            <div className="w-px h-8 bg-border"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary">Lifetime</div>
-              <div className="text-sm text-muted-foreground">of support</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

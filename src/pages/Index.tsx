@@ -24,10 +24,10 @@ const Index = () => {
         <section id="benefits">
           <KeyBenefits />
         </section>
+        <ProcessSteps />
         <section id="features">
           <FeatureCards />
         </section>
-        <ProcessSteps />
         <section id="about">
           <OurStory />
           <OurMission />

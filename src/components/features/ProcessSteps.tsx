@@ -5,15 +5,15 @@ const steps = [
     icon: UserPlus,
     step: "Step 1",
     title: "Sign Up",
-    description: "Create your account in 2 minutes. Add basic details and complete quick KYC from your phone.",
-    time: "2 minutes"
+    description: "Create your account. Add basic details and complete quick KYC from your phone.",
+    time: "Quick"
   },
   {
     icon: Target,
     step: "Step 2", 
     title: "Plan Your Goal",
     description: "Tell us about your child's dream - college, marriage, or anything else. We'll create a perfect plan.",
-    time: "5 minutes"
+    time: "Easy"
   },
   {
     icon: TrendingUp,

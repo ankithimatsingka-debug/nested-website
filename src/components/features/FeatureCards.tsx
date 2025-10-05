@@ -22,14 +22,14 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Government Approved & Safe",
-    description: "We follow all SEBI rules (India's investment regulator). Your money is as safe as it would be in any major bank or financial company.",
+    title: "AMFI Compliant",
+    description: "Your investments are made directly with AMCs through payment gateway of BSE/NSE.",
     highlight: "SEBI compliant"
   },
   {
     icon: Zap,
     title: "Start with Just ₹500",
-    description: "Begin your child's future with as little as ₹500 per month. No huge amounts needed - small steps can build big dreams over time.",
+    description: "Begin your child's future with as little as ₹500 monthly SIP. No huge amounts needed - small steps can build big dreams over time.",
     highlight: "Low minimum investment"
   },
   {

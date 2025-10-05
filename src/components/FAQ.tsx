@@ -118,8 +118,8 @@ const faqData = {
       answer: "Your money remains with the AMC. You can always access it directly via CAMS or KFintech."
     },
     {
-      question: "Is the app SEBI-registered?",
-      answer: "Yes. We are fully compliant and work only with licensed distributors."
+      question: "Is the app AMFI registered?",
+      answer: "Yes. We are fully compliant and registered with AMFI."
     }
   ],
   "How Nested Helps": [

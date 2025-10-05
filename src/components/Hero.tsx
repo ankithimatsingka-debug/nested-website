@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
+import { Apple, Play } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import mobileMockup from "@/assets/mobile-mockup.png";
-import qrCode from "@/assets/qr-code.png";
-import appStoreBadge from "@/assets/app-store-badge.png";
-import googlePlayBadge from "@/assets/google-play-badge.png";
 
 const rotatingTexts = [
   "Expert-designed portfolios",
@@ -68,35 +67,16 @@ export function Hero() {
               </div>
             </div>
 
-            {/* QR Code for Desktop, Download Badges for Mobile */}
-            <div className="flex flex-col items-center lg:items-start gap-6">
-              {/* Desktop: QR Code */}
-              <div className="hidden md:flex flex-col items-center lg:items-start gap-3">
-                <p className="text-sm text-muted-foreground">Scan to download</p>
-                <img 
-                  src={qrCode} 
-                  alt="QR code to download Nested app" 
-                  className="w-40 h-40 border-4 border-background rounded-lg shadow-lg"
-                />
-              </div>
-
-              {/* Mobile: Download Badges */}
-              <div className="flex md:hidden flex-row gap-3 justify-center lg:justify-start">
-                <a href="#" className="block w-24">
-                  <img 
-                    src={appStoreBadge} 
-                    alt="Download on the App Store" 
-                    className="w-full h-auto hover:opacity-80 transition-opacity"
-                  />
-                </a>
-                <a href="#" className="block w-24">
-                  <img 
-                    src={googlePlayBadge} 
-                    alt="Get it on Google Play" 
-                    className="w-full h-auto hover:opacity-80 transition-opacity"
-                  />
-                </a>
-              </div>
+            {/* Download Buttons */}
+            <div className="flex gap-3 justify-center lg:justify-start mb-4">
+              <Button variant="outline" size="sm">
+                <Apple className="h-4 w-4 mr-2" />
+                App Store
+              </Button>
+              <Button variant="outline" size="sm">
+                <Play className="h-4 w-4 mr-2" />
+                Play Store
+              </Button>
             </div>
 
             {/* Trust indicators */}

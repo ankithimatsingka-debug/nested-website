@@ -11,7 +11,7 @@ const features = [
   {
     icon: BarChart3,
     title: "Smart Money Management",
-    description: "We automatically move your money between different funds to keep your investment healthy. You don't need to watch or worry about it.",
+    description: "We monitor your investment and prompt you to rebalance to keep your investment healthy.",
     highlight: "Automatic rebalancing"
   },
   {

@@ -17,7 +17,7 @@ const features = [
   {
     icon: Clock,
     title: "Quick 10-Minute Setup",
-    description: "Complete your KYC (know your customer) process in just 10 minutes from home. Upload documents with your phone - no office visits needed.",
+    description: "Complete your onboarding process in just 5 minutes. Rebalance portfolios with a single click.",
     highlight: "Fast digital KYC"
   },
   {

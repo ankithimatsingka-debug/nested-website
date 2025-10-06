@@ -56,7 +56,7 @@ export function ProcessSteps() {
                   <div className="bg-background rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center relative z-10">
                     <div className="mb-6">
                       <div className={`w-14 h-14 rounded-3xl ${pastelColors[index]} flex items-center justify-center mx-auto mb-4 group hover:scale-105 hover:-rotate-6 transition-all duration-300 border-2 border-white/50`}>
-                        <step.icon className={`h-6 w-6 ${iconColors[index]}`} strokeWidth={2.5} />
+                        <step.icon className={`h-6 w-6 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
                       </div>
                       <span className="inline-block px-3 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full">
                         {step.step}
@@ -80,7 +80,7 @@ export function ProcessSteps() {
                   {index < steps.length - 1 && (
                     <div className="hidden md:block absolute top-1/2 -right-6 transform -translate-y-1/2 z-20">
                       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                        <ArrowRight className="h-6 w-6 text-primary" />
+                        <ArrowRight className="h-6 w-6 text-primary opacity-50" />
                       </div>
                     </div>
                   )}

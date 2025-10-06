@@ -63,15 +63,15 @@ export function Testimonials() {
     const stars = [];
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<Star key={i} className="h-4 w-4 fill-secondary text-secondary" />);
+      stars.push(<Star key={i} className="h-4 w-4 fill-secondary text-secondary opacity-50" />);
     }
 
     if (hasHalfStar) {
       stars.push(
         <div key="half" className="relative">
-          <Star className="h-4 w-4 text-secondary/30" />
+          <Star className="h-4 w-4 text-secondary/30 opacity-50" />
           <div className="absolute inset-0 overflow-hidden w-1/2">
-            <Star className="h-4 w-4 fill-secondary text-secondary" />
+            <Star className="h-4 w-4 fill-secondary text-secondary opacity-50" />
           </div>
         </div>
       );

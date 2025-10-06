@@ -57,7 +57,7 @@ export function WhyNested() {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6 flex justify-center">
                     <div className={`w-12 h-12 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300 border-2 border-white/50`}>
-                      <feature.icon className={`h-5 w-5 ${iconColors[index]}`} strokeWidth={2.5} />
+                      <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
                     </div>
                   </div>
                   <h3 className="font-heading text-xl font-semibold mb-4">

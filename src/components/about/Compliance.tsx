@@ -37,7 +37,7 @@ export function Compliance() {
             {compliancePoints.map((point, index) => (
               <div key={index} className="flex items-start gap-4 p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <point.icon className="w-6 h-6 text-primary" />
+                  <point.icon className="w-6 h-6 text-primary opacity-50" />
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-foreground mb-2">{point.title}</h3>

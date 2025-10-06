@@ -42,7 +42,7 @@ export function OurValues() {
               <Card key={index} className="border-border/50 hover:border-border transition-colors group">
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-background to-muted rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <value.icon className={`w-8 h-8 ${value.color}`} />
+                    <value.icon className={`w-8 h-8 ${value.color} opacity-50`} />
                   </div>
                   <h3 className="text-xl font-heading font-semibold text-foreground mb-4">
                     {value.title}

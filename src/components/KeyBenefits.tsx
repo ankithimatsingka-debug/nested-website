@@ -51,7 +51,7 @@ export function KeyBenefits() {
               <div key={index} className="group">
                 <div className="mb-8 flex justify-center lg:justify-start">
                   <div className={`w-14 h-14 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 shadow-sm border-2 border-white/50`}>
-                    <benefit.icon className={`h-6 w-6 ${iconColors[index]}`} strokeWidth={2.5} />
+                    <benefit.icon className={`h-6 w-6 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
                   </div>
                 </div>
                 

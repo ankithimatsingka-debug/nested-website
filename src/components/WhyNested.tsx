@@ -39,23 +39,37 @@ export function WhyNested() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <Card key={index} className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
-              <CardContent className="p-8 text-center">
-                <div className="mb-6 flex justify-center">
-                  <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <feature.icon className="h-8 w-8 text-white" />
+          {features.map((feature, index) => {
+            const pastelColors = [
+              'bg-[hsl(var(--pastel-sky))]',
+              'bg-[hsl(var(--pastel-rose))]',
+              'bg-[hsl(var(--pastel-lemon))]',
+              'bg-[hsl(var(--pastel-mint))]'
+            ];
+            const iconColors = [
+              'text-blue-600',
+              'text-rose-600',
+              'text-amber-600',
+              'text-emerald-600'
+            ];
+            return (
+              <Card key={index} className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6 flex justify-center">
+                    <div className={`w-12 h-12 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300 border-2 border-white/50`}>
+                      <feature.icon className={`h-5 w-5 ${iconColors[index]}`} strokeWidth={2.5} />
+                    </div>
                   </div>
-                </div>
-                <h3 className="font-heading text-xl font-semibold mb-4">
-                  {feature.title}
-                </h3>
-                <p className="font-body text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+                  <h3 className="font-heading text-xl font-semibold mb-4">
+                    {feature.title}
+                  </h3>
+                  <p className="font-body text-muted-foreground leading-relaxed">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -36,29 +36,41 @@ export function KeyBenefits() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="group">
-              <div className="mb-8 flex justify-center lg:justify-start">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-primary flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg">
-                  <benefit.icon className="h-10 w-10 text-white" />
+          {benefits.map((benefit, index) => {
+            const pastelColors = [
+              'bg-[hsl(var(--pastel-lavender))]',
+              'bg-[hsl(var(--pastel-mint))]', 
+              'bg-[hsl(var(--pastel-peach))]'
+            ];
+            const iconColors = [
+              'text-purple-600',
+              'text-emerald-600',
+              'text-orange-600'
+            ];
+            return (
+              <div key={index} className="group">
+                <div className="mb-8 flex justify-center lg:justify-start">
+                  <div className={`w-14 h-14 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 shadow-sm border-2 border-white/50`}>
+                    <benefit.icon className={`h-6 w-6 ${iconColors[index]}`} strokeWidth={2.5} />
+                  </div>
+                </div>
+                
+                <div className="text-center lg:text-left">
+                  <div className="mb-4">
+                    <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 rounded-full mb-3">
+                      {benefit.highlight}
+                    </span>
+                    <h3 className="font-heading text-2xl font-semibold">
+                      {benefit.title}
+                    </h3>
+                  </div>
+                  <p className="font-body text-muted-foreground text-lg leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </div>
               </div>
-              
-              <div className="text-center lg:text-left">
-                <div className="mb-4">
-                  <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 rounded-full mb-3">
-                    {benefit.highlight}
-                  </span>
-                  <h3 className="font-heading text-2xl font-semibold">
-                    {benefit.title}
-                  </h3>
-                </div>
-                <p className="font-body text-muted-foreground text-lg leading-relaxed">
-                  {benefit.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

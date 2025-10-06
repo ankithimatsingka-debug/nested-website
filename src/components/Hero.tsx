@@ -79,21 +79,6 @@ export function Hero() {
               </Button>
             </div>
 
-            {/* Trust indicators */}
-            <div className="flex flex-wrap items-center gap-6 justify-center lg:justify-start text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                <span>SEBI Registered</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                <span>Bank Grade Security</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                <span>50,000+ Parents Trust Us</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

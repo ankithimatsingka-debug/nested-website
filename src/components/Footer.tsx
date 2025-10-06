@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3 opacity-50"></div>
+              <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3"></div>
               <span className="font-heading text-2xl font-bold">Nested</span>
             </div>
             <p className="font-body text-muted-foreground mb-6 leading-relaxed">

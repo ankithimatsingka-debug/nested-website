@@ -12,7 +12,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3 opacity-50"></div>
+            <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3"></div>
             <span className="font-heading text-2xl font-bold text-foreground">Nested</span>
           </div>
 

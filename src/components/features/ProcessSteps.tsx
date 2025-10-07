@@ -38,8 +38,10 @@ export function ProcessSteps() {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-4">
+          <div className="grid md:flex gap-8 md:gap-4">
             {steps.map((step, index) => {
+              const flexBasis = ['md:flex-[0.9]', 'md:flex-[1.1]', 'md:flex-[1.2]'];
+              
               const pastelColors = [
                 'bg-[hsl(var(--pastel-mint))]',
                 'bg-[hsl(var(--pastel-peach))]',
@@ -51,7 +53,7 @@ export function ProcessSteps() {
                 'text-purple-600'
               ];
               return (
-                <div key={index} className="relative">
+                <div key={index} className={`relative ${flexBasis[index]}`}>
                   {/* Step Card */}
                   <div className="bg-background rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center relative z-10">
                     <div className="mb-6">

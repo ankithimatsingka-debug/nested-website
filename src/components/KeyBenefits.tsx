@@ -9,8 +9,8 @@ const benefits = [
   },
   {
     icon: RefreshCw,
-    title: "Automatic Rebalancing",
-    description: "We continuously monitor and adjust your portfolio to maintain optimal performance without you lifting a finger.",
+    title: "Timely Rebalancing",
+    description: "We continuously monitor your portfolio and notify rebalancing to maintain optimal performance without you sweating about it.",
     highlight: "Set it and forget it investing"
   },
   {

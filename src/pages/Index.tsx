@@ -28,15 +28,15 @@ const Index = () => {
         <section id="features">
           <FeatureCards />
         </section>
+        <section id="calculator">
+          <EducationCalculator />
+        </section>
         <section id="about">
           <Compliance />
           <TeamSection />
         </section>
         <section id="testimonials">
           <Testimonials />
-        </section>
-        <section id="calculator">
-          <EducationCalculator />
         </section>
         <section id="faq">
           <FAQ />

@@ -44,6 +44,10 @@ export function EducationCalculator() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full mb-6">
+              <Calculator className="h-5 w-5" />
+              <span className="font-medium">Interactive Tool</span>
+            </div>
             <h2 className="font-heading text-2xl font-bold mb-6">
               Education Cost Calculator
             </h2>

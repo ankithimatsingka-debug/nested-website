@@ -58,7 +58,7 @@ export function Hero() {
               {/* Rotating Text */}
               <div className="h-16 flex items-center justify-center lg:justify-start">
                 <p 
-                  className={`font-body text-lg md:text-xl text-primary font-medium transition-all duration-300 ${
+                  className={`font-body text-lg md:text-xl lg:[font-size:22px] text-primary font-medium transition-all duration-300 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
                   }`}
                 >

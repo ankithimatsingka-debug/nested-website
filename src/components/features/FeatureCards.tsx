@@ -5,7 +5,7 @@ const features = [
   {
     icon: Target,
     title: "Plans Made Just for You",
-    description: "Tell us your goal - your child's college, wedding, or any dream. We create a special investment plan that fits your exact needs and timeline.",
+    description: "Tell us your goal - your child's college & timelines. We create a special investment plan that fits your exact needs and timeline.",
     highlight: "Personal recommendations"
   },
   {

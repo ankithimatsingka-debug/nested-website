@@ -57,7 +57,7 @@ export function KeyBenefits() {
                 
                 <div className="text-center lg:text-left">
                   <div className="mb-4">
-                    <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 rounded-full mb-3">
+                    <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 dark:text-primary dark:bg-primary/10 rounded-full mb-3">
                       {benefit.highlight}
                     </span>
                     <h3 className="font-heading text-2xl font-semibold">

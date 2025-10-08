@@ -78,7 +78,7 @@ export function FeatureCards() {
                     <div className={`w-12 h-12 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-4 border-2 border-white/50`}>
                       <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
                     </div>
-                    <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 rounded-full">
+                    <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 dark:text-primary dark:bg-primary/10 rounded-full">
                       {feature.highlight}
                     </span>
                   </div>

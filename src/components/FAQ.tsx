@@ -162,7 +162,7 @@ export const FAQ = () => {
                 <TabsTrigger 
                   key={category} 
                   value={category} 
-                  className="text-xs sm:text-sm px-3 py-4 border-2 border-border/60 bg-card/70 backdrop-blur-sm data-[state=active]:bg-primary/50 data-[state=active]:text-primary-foreground data-[state=active]:border-primary shadow-sm hover:bg-accent/50 hover:border-border transition-all whitespace-normal leading-tight min-h-[60px] flex items-center justify-center"
+                  className="text-xs sm:text-sm px-3 py-4 border-2 border-border/60 bg-card/70 backdrop-blur-sm data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:border-primary shadow-sm hover:bg-accent/50 hover:border-border transition-all whitespace-normal leading-tight min-h-[60px] flex items-center justify-center"
                 >
                   {category}
                 </TabsTrigger>

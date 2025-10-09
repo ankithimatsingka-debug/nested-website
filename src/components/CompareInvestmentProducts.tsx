@@ -145,11 +145,11 @@ const MobileComparisonCard = ({ product, data }: { product: string; data: any })
     >
       {productData.verdict && (
         <div className="mb-2">
-          <span className={`font-semibold ${productData.verdict === 'good' ? 'text-mf dark:text-mf' : productData.verdict === 'warn' ? 'text-ulip dark:text-ulip' : 'text-destructive dark:text-destructive'}`}>
+          <span className={`font-semibold text-gray-900`}>
             {productData.text}
           </span>
           {productData.bullets && (
-            <ul className="mt-1 space-y-0.5 text-xs text-foreground/70 dark:text-foreground/90">
+            <ul className="mt-1 space-y-0.5 text-xs text-gray-800">
               {productData.bullets.map((bullet: string, idx: number) => (
                 <li key={idx}>• {bullet}</li>
               ))}
@@ -158,7 +158,7 @@ const MobileComparisonCard = ({ product, data }: { product: string; data: any })
         </div>
       )}
       {!productData.verdict && (
-        <p className="text-xs text-foreground dark:text-foreground">{productData.text}</p>
+        <p className="text-xs text-gray-900">{productData.text}</p>
       )}
     </div>
   );
@@ -186,23 +186,23 @@ const MobileAtAGlanceCards = () => {
                          'hsl(142 71% 45%)'
           }}
         >
-          <div className={`text-sm font-semibold text-${item.product} mb-2`}>{item.name}</div>
+          <div className={`text-sm font-semibold text-gray-900 mb-2`}>{item.name}</div>
           <div className="space-y-1 text-xs">
             <div className="flex justify-between">
-              <span className="text-foreground/60 dark:text-foreground/70">Safety:</span>
-              <span className="font-medium text-foreground dark:text-foreground">{item.safety}</span>
+              <span className="text-gray-700">Safety:</span>
+              <span className="font-medium text-gray-900">{item.safety}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-foreground/60 dark:text-foreground/70">Flexibility:</span>
-              <span className="font-medium text-foreground dark:text-foreground">{item.flexibility}</span>
+              <span className="text-gray-700">Flexibility:</span>
+              <span className="font-medium text-gray-900">{item.flexibility}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-foreground/60 dark:text-foreground/70">Growth:</span>
-              <span className="font-medium text-foreground dark:text-foreground">{item.growth}</span>
+              <span className="text-gray-700">Growth:</span>
+              <span className="font-medium text-gray-900">{item.growth}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-foreground/60 dark:text-foreground/70">Tax:</span>
-              <span className="font-medium text-foreground dark:text-foreground">{item.taxEfficiency}</span>
+              <span className="text-gray-700">Tax:</span>
+              <span className="font-medium text-gray-900">{item.taxEfficiency}</span>
             </div>
           </div>
         </Card>
@@ -237,7 +237,7 @@ export const CompareInvestmentProducts = () => {
                   <div className="grid grid-cols-2 gap-3">
                     {investmentProducts.map((product) => (
                       <div key={product.key}>
-                        <div className="text-xs font-semibold text-foreground/70 dark:text-foreground/80 border-b pb-1 mb-2">
+                        <div className="text-xs font-semibold text-gray-700 border-b pb-1 mb-2">
                           {product.shortName}
                         </div>
                         <MobileComparisonCard product={product.key} data={row} />

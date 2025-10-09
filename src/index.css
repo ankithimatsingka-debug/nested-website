@@ -135,18 +135,18 @@ All colors MUST be HSL for consistency and theming.
     --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4);
     --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.3), 0 4px 16px hsl(var(--primary) / 0.2);
 
-    /* Investment Product Colors - Dark Mode */
-    --ssy: 45 93% 57%;
-    --ssy-foreground: 215 28% 7%;
+    /* Investment Product Colors - Dark Mode - Enhanced Visibility */
+    --ssy: 45 95% 65%;
+    --ssy-foreground: 45 30% 15%;
     
-    --ulip: 271 76% 63%;
-    --ulip-foreground: 215 28% 7%;
+    --ulip: 271 80% 70%;
+    --ulip-foreground: 271 25% 15%;
     
-    --fd: 217 91% 70%;
-    --fd-foreground: 215 28% 7%;
+    --fd: 217 95% 75%;
+    --fd-foreground: 217 30% 15%;
     
-    --mf: 142 71% 55%;
-    --mf-foreground: 215 28% 7%;
+    --mf: 142 75% 65%;
+    --mf-foreground: 142 25% 15%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

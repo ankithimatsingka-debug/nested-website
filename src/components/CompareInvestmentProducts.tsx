@@ -125,8 +125,24 @@ const MobileComparisonCard = ({ product, data }: { product: string; data: any })
   const productKey = product as "ssy" | "ulip" | "fd" | "mf";
   const productData = data[productKey];
   
+  const bgColors = {
+    ssy: '#fcfbf4',
+    ulip: '#fef7f9',
+    fd: '#f5fafe',
+    mf: '#f4faf6'
+  };
+  
   return (
-    <div className={`bg-${product}/5 border border-${product}/20 rounded-lg p-3`}>
+    <div 
+      className="border rounded-lg p-3 dark:bg-opacity-10 dark:border-opacity-30" 
+      style={{ 
+        backgroundColor: bgColors[productKey],
+        borderColor: productKey === 'ssy' ? 'hsl(45 93% 47%)' : 
+                     productKey === 'ulip' ? 'hsl(271 76% 53%)' : 
+                     productKey === 'fd' ? 'hsl(217 91% 60%)' : 
+                     'hsl(142 71% 45%)'
+      }}
+    >
       {productData.verdict && (
         <div className="mb-2">
           <span className={`font-semibold ${productData.verdict === 'good' ? 'text-mf' : productData.verdict === 'warn' ? 'text-ulip' : 'text-destructive'}`}>
@@ -149,10 +165,27 @@ const MobileComparisonCard = ({ product, data }: { product: string; data: any })
 };
 
 const MobileAtAGlanceCards = () => {
+  const bgColors = {
+    ssy: '#fcfbf4',
+    ulip: '#fef7f9',
+    fd: '#f5fafe',
+    mf: '#f4faf6'
+  };
+  
   return (
     <div className="grid grid-cols-2 gap-3 mt-4">
       {atAGlanceData.map((item) => (
-        <Card key={item.product} className={`bg-${item.product}/5 border-${item.product}/20 p-3`}>
+        <Card 
+          key={item.product} 
+          className="p-3 dark:bg-opacity-10"
+          style={{ 
+            backgroundColor: bgColors[item.product as keyof typeof bgColors],
+            borderColor: item.product === 'ssy' ? 'hsl(45 93% 47%)' : 
+                         item.product === 'ulip' ? 'hsl(271 76% 53%)' : 
+                         item.product === 'fd' ? 'hsl(217 91% 60%)' : 
+                         'hsl(142 71% 45%)'
+          }}
+        >
           <div className={`text-sm font-semibold text-${item.product} mb-2`}>{item.name}</div>
           <div className="space-y-1 text-xs">
             <div className="flex justify-between">
@@ -190,7 +223,7 @@ export const CompareInvestmentProducts = () => {
             See how different investment options stack up for your child's education goals
           </p>
 
-          <Accordion type="single" collapsible className="space-y-3">
+          <Accordion type="single" collapsible defaultValue="item-0" className="space-y-3">
             {comparisonData.map((row, idx) => (
               <AccordionItem
                 key={idx}

@@ -65,6 +65,22 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        ssy: {
+          DEFAULT: "hsl(var(--ssy))",
+          foreground: "hsl(var(--ssy-foreground))",
+        },
+        ulip: {
+          DEFAULT: "hsl(var(--ulip))",
+          foreground: "hsl(var(--ulip-foreground))",
+        },
+        fd: {
+          DEFAULT: "hsl(var(--fd))",
+          foreground: "hsl(var(--fd-foreground))",
+        },
+        mf: {
+          DEFAULT: "hsl(var(--mf))",
+          foreground: "hsl(var(--mf-foreground))",
+        },
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',

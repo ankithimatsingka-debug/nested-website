@@ -14,6 +14,7 @@ import { EducationCalculator } from "@/components/EducationCalculator";
 import { FAQ } from "@/components/FAQ";
 import { DownloadBanner } from "@/components/DownloadBanner";
 import { Footer } from "@/components/Footer";
+import { CompareInvestmentProducts } from "@/components/CompareInvestmentProducts";
 
 const Index = () => {
   return (
@@ -30,6 +31,9 @@ const Index = () => {
         <ProcessSteps />
         <section id="features">
           <FeatureCards />
+        </section>
+        <section id="compare">
+          <CompareInvestmentProducts />
         </section>
         <section id="about">
           <Compliance />

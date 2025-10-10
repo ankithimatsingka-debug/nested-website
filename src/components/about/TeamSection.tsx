@@ -5,32 +5,18 @@ import { Linkedin, Mail } from "lucide-react";
 export function TeamSection() {
   const teamMembers = [
     {
-      name: "Priya Sharma",
-      role: "Founder & CEO",
-      bio: "Former investment banker with 12+ years in financial planning. Mother of two, passionate about making investing accessible to every parent.",
+      name: "Ankit R Himatsingka",
+      role: "Co-Founder & CEO",
+      bio: "Finance professional with 15 years experience. Father of nine year old girl, passionate about making investing accessible to every parent.",
       image: "/placeholder.svg",
-      initials: "PS"
+      initials: "AH"
     },
     {
-      name: "Raj Patel", 
+      name: "Dheeraj Reddy", 
       role: "CTO & Co-founder",
-      bio: "Tech leader with expertise in fintech security and user experience. Father who believes technology should simplify, not complicate.",
+      bio: "Tech leader with expertise finance and technology.",
       image: "/placeholder.svg",
-      initials: "RP"
-    },
-    {
-      name: "Dr. Meera Singh",
-      role: "Head of Investment Strategy",
-      bio: "PhD in Finance with 15+ years in mutual fund research. Parent and educator focused on goal-based investment strategies.",
-      image: "/placeholder.svg", 
-      initials: "MS"
-    },
-    {
-      name: "Arjun Kumar",
-      role: "Head of Product",
-      bio: "Product designer with a background in behavioral finance. Dedicated to creating intuitive experiences for busy parents.",
-      image: "/placeholder.svg",
-      initials: "AK"
+      initials: "DR"
     }
   ];
 
@@ -48,7 +34,7 @@ export function TeamSection() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <Card key={index} className="border-border/50 hover:border-border transition-all group hover:shadow-lg">
                 <CardContent className="p-6 text-center">

@@ -53,7 +53,7 @@ export function Hero() {
                 </span>
               </h1>
               <p className="font-body text-xl md:text-2xl text-muted-foreground">
-                Save for your children's dreams
+                Save for your child's education dreams
               </p>
 
               {/* Rotating Text */}

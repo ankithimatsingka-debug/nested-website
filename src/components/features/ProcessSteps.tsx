@@ -40,7 +40,7 @@ export function ProcessSteps() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:flex gap-8 md:gap-4">
             {steps.map((step, index) => {
-              const flexBasis = ['md:flex-[0.9]', 'md:flex-[1.1]', 'md:flex-[1.2]'];
+              const flexBasis = ['md:flex-1', 'md:flex-1', 'md:flex-1'];
               
               const pastelColors = [
                 'bg-[hsl(var(--pastel-mint))]',

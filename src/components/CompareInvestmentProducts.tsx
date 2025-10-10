@@ -218,7 +218,7 @@ export const CompareInvestmentProducts = () => {
     return (
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-center mb-3">Compare Investment Products</h2>
+          <h2 className="font-heading text-2xl font-bold text-center mb-3">Compare Investment Products</h2>
           <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
             See how different investment options stack up for your child's education goals
           </p>
@@ -271,7 +271,7 @@ export const CompareInvestmentProducts = () => {
   return (
     <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl font-bold text-center mb-3">Compare Investment Products</h2>
+        <h2 className="font-heading text-2xl font-bold text-center mb-3">Compare Investment Products</h2>
         <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
           See how different investment options stack up for your child's education goals
         </p>

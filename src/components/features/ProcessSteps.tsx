@@ -5,7 +5,7 @@ const steps = [
     icon: UserPlus,
     step: "Step 1",
     title: "Sign Up",
-    description: "Create your account. Add basic details and complete quick KYC from your phone.",
+    description: "Add basic details and complete onboarding in less than five minutes from your phone.",
     time: "Quick"
   },
   {
@@ -33,7 +33,7 @@ export function ProcessSteps() {
             Get Started in <span className="text-primary">3 Simple Steps</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            No paperwork, no office visits, no complex forms. Just three easy steps to secure your child's future.
+            Just three easy steps to secure your child's future.
           </p>
         </div>
 

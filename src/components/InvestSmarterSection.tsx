@@ -210,7 +210,7 @@ export const InvestSmarterSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="font-heading text-2xl font-bold mb-6">
-            How Nested Helps You Invest Smarter
+            How Nested Helps You <span className="text-primary">Invest Smarter</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Smart investing powered by technology and expertise

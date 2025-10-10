@@ -25,7 +25,7 @@ export function Compliance() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-heading text-2xl font-bold mb-6">
-              Compliance & Security
+              <span className="text-primary">Compliance</span> & Security
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               When it comes to your family's financial future, trust isn't just important - it's everything. 

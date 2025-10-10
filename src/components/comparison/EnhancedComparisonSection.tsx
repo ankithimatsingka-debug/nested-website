@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { ProductSummaryCards } from './desktop/ProductSummaryCards';
-import { ComparisonTable } from './desktop/ComparisonTable';
-import { AtAGlanceMetrics } from './desktop/AtAGlanceMetrics';
 import { ProductFilterBar } from './mobile/ProductFilterBar';
 import { SwipeableProductCards } from './mobile/SwipeableProductCards';
 import { MobileAccordion } from './mobile/MobileAccordion';
@@ -40,14 +37,8 @@ export const EnhancedComparisonSection = () => {
           </p>
         </div>
 
-        {/* Desktop View */}
-        {!isMobile ? (
-          <div className="space-y-12">
-            <ProductSummaryCards />
-            <ComparisonTable />
-            <AtAGlanceMetrics />
-          </div>
-        ) : (
+        {/* Mobile View */}
+        {isMobile && (
           /* Mobile View */
           <div className="space-y-6">
             <ProductFilterBar 

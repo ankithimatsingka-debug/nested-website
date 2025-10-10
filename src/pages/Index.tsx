@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { WhyNested } from "@/components/WhyNested";
 import { KeyBenefits } from "@/components/KeyBenefits";
 import { FeatureCards } from "@/components/features/FeatureCards";
 import { ProcessSteps } from "@/components/features/ProcessSteps";
@@ -24,9 +23,6 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <section id="why-nested">
-          <WhyNested />
-        </section>
         <section id="benefits">
           <KeyBenefits />
         </section>

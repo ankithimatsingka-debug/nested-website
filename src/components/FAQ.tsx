@@ -103,10 +103,6 @@ const faqData = {
       answer: "Education is a specific goal. A separate account ensures accurate cost projections and fund allocation for your child's future."
     },
     {
-      question: "How much should I save?",
-      answer: "Our app projects future education costs, suggests a monthly SIP, and automatically reduces risk as the goal nears."
-    },
-    {
       question: "Can the app plan monthly investments for me?",
       answer: "Yes. Just enter your child's age, education type — we'll provide future estimated cost and calculate the SIP."
     },
@@ -125,10 +121,6 @@ const faqData = {
     {
       question: "Can I pause or increase my SIP?",
       answer: "Yes. SIPs are fully flexible — pause, stop, or raise them anytime."
-    },
-    {
-      question: "Can I withdraw anytime?",
-      answer: "Yes, unless you've chosen a lock-in product like ELSS (we don't recommend these for education goals)."
     },
     {
       question: "What if I need money earlier?",

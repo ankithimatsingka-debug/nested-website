@@ -28,8 +28,8 @@ export const investmentProducts: InvestmentProduct[] = [
     color: 'hsl(142 71% 45%)',
     icon: Award,
     score: { safety: 5, flexibility: 2, growth: 3, taxEfficiency: 5, overall: 3.75 },
-    highlights: ['Government backed', 'Highest tax benefits', 'Safe investment'],
-    drawbacks: ['Only for girl child', 'Long lock-in', 'Limited flexibility'],
+    highlights: ['Government backed', 'Tax benefits (in old tax regime)', 'Safe investment'],
+    drawbacks: ['Only for girl child under age 10', 'Long lock-in of 21 years', 'Can invest only upto Rs 1.5 lakh per annum'],
     bestFor: 'Parents of girl children seeking safe, tax-free returns'
   },
   {
@@ -40,8 +40,8 @@ export const investmentProducts: InvestmentProduct[] = [
     color: 'hsl(291 64% 42%)',
     icon: BarChart3,
     score: { safety: 3, flexibility: 2, growth: 3, taxEfficiency: 4, overall: 3 },
-    highlights: ['Insurance + investment', 'Tax benefits', 'Market-linked returns'],
-    drawbacks: ['High charges', '5-year lock-in', 'Complex structure'],
+    highlights: ['Insurance + investment', 'Market-linked returns'],
+    drawbacks: ['Usually 5+ years lock-in', 'Cannot modify investment amount', 'High exit load on withdrawal before maturity', 'No transparency on current value of investment'],
     bestFor: 'Those seeking insurance with investment component'
   },
   {
@@ -53,7 +53,7 @@ export const investmentProducts: InvestmentProduct[] = [
     icon: Lock,
     score: { safety: 5, flexibility: 3, growth: 2, taxEfficiency: 2, overall: 3 },
     highlights: ['Guaranteed returns', 'Safe & secure', 'Easy to understand'],
-    drawbacks: ['Low returns', 'Taxable interest', 'Inflation risk'],
+    drawbacks: ['Interest taxed at slab rate (upto 30%)', 'TDS of 10% every year further reduces actual returns'],
     bestFor: 'Conservative investors prioritizing capital safety'
   },
   {
@@ -65,7 +65,7 @@ export const investmentProducts: InvestmentProduct[] = [
     icon: TrendingUp,
     score: { safety: 4, flexibility: 5, growth: 5, taxEfficiency: 4, overall: 4.5 },
     highlights: ['Highest flexibility', 'Best growth potential', 'Low/no lock-in'],
-    drawbacks: ['Market linked', 'Requires monitoring', 'Some risk involved'],
+    drawbacks: ['Market risks that can be mitigated through expertise', 'Requires monitoring'],
     bestFor: 'Long-term education planning with flexibility and growth'
   }
 ];

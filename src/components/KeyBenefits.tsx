@@ -1,4 +1,5 @@
 import { BarChart3, RefreshCw, Heart, Calculator } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const benefits = [
   {
@@ -66,6 +67,14 @@ export function KeyBenefits() {
                   </div>
                   <p className="font-body text-muted-foreground text-lg leading-relaxed">
                     {benefit.description}
+                    {index === 0 && (
+                      <>
+                        {" "}
+                        <Link to="/fund-selection" className="text-primary hover:text-primary/80 underline font-medium transition-colors">
+                          Read More
+                        </Link>
+                      </>
+                    )}
                   </p>
                 </div>
               </div>

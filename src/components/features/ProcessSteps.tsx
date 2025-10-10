@@ -12,7 +12,7 @@ const steps = [
     icon: Target,
     step: "Step 2", 
     title: "Plan Your Goal",
-    description: "Tell us about your child's dream - college, marriage, or anything else. We'll create a perfect plan.",
+    description: "Tell us about your child's dream college or education. We'll create a perfect plan.",
     time: "Easy"
   },
   {

@@ -10,6 +10,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
 
 const faqData = {
   "Understanding Mutual Funds": [
@@ -124,6 +125,10 @@ const faqData = {
   ],
   "How Nested Helps": [
     {
+      question: "How does Nested select funds?",
+      answer: "fund-selection-link"
+    },
+    {
       question: "How does Nested add value?",
       answer: "We start by estimating future education costs and adjust if fees change. Then, we design a portfolio tailored to your timeline and risk profile, while tracking if you're on course."
     },
@@ -138,6 +143,10 @@ const faqData = {
     {
       question: "Aren't regular funds more expensive?",
       answer: "Yes, regular funds cost ~0.60% more on average than direct funds. But curated portfolios and smart allocation typically deliver returns that outweigh the extra cost."
+    },
+    {
+      question: "What type of support is provided?",
+      answer: "You will be assigned an expert AMFI-qualified RM who will help you with all your mutual fund investment related queries."
     }
   ]
 };
@@ -182,7 +191,17 @@ export const FAQ = () => {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground leading-relaxed">
-                        {faq.answer}
+                        {faq.answer === "fund-selection-link" ? (
+                          <span>
+                            We have a detailed methodology for fund selection. You can read about it{" "}
+                            <Link to="/fund-selection" className="text-primary hover:text-primary/80 underline font-medium transition-colors">
+                              here
+                            </Link>
+                            .
+                          </span>
+                        ) : (
+                          faq.answer
+                        )}
                       </AccordionContent>
                     </AccordionItem>
                   ))}

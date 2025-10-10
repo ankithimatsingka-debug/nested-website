@@ -34,9 +34,9 @@ const features = [
   },
   {
     icon: Users,
-    title: "Made for Indian Parents",
-    description: "We understand Indian families, Indian goals, and Indian dreams. Everything is designed keeping your needs and values in mind.",
-    highlight: "Parent-focused design"
+    title: "Dedicated Relationship Manager",
+    description: "We assign an expert AMFI-qualified RM who will help you with all your mutual fund investment related queries.",
+    highlight: "Hands-on support"
   }
 ];
 

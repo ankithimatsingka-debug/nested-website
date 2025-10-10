@@ -133,10 +133,46 @@ export default {
             height: "0",
           },
         },
+        slideIn: {
+          "0%": {
+            transform: "scaleX(0)",
+          },
+          "50%": {
+            transform: "scaleX(1)",
+          },
+          "100%": {
+            transform: "scaleX(0)",
+          },
+        },
+        draw: {
+          "0%": {
+            strokeDasharray: "300",
+            strokeDashoffset: "300",
+          },
+          "50%": {
+            strokeDasharray: "300",
+            strokeDashoffset: "0",
+          },
+          "100%": {
+            strokeDasharray: "300",
+            strokeDashoffset: "-300",
+          },
+        },
+        swing: {
+          "0%, 100%": {
+            transform: "rotate(-5deg)",
+          },
+          "50%": {
+            transform: "rotate(5deg)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        slideIn: "slideIn 1.5s ease-out infinite",
+        draw: "draw 3s ease-in-out infinite",
+        swing: "swing 2s ease-in-out infinite",
       },
     },
   },

@@ -35,7 +35,7 @@ const features = [
   {
     icon: Users,
     title: "Dedicated Expert",
-    description: "We assign an expert AMFI-qualified RM who will help you with all your mutual fund investment related queries.",
+    description: "We assign an expert AMFI-qualified expert RM who will help you with all your mutual fund investment related queries.",
     highlight: "Hands-on support"
   }
 ];

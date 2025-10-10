@@ -29,13 +29,13 @@ const features = [
   {
     icon: Zap,
     title: "Start with Just ₹500",
-    description: "Start your child's future with just ₹500 a month - small steps today can create big opportunities tomorrow.",
+    description: "Start your child's future with just ₹500 p.m. - small steps today equals big opportunities tomorrow.",
     highlight: "Low minimum investment"
   },
   {
     icon: Users,
     title: "Dedicated Expert",
-    description: "An AMFI-certified Relationship Manager will personally guide you through all your MF investments.",
+    description: "A certified expert will personally guide you through all your MF investments.",
     highlight: "Hands-on support"
   }
 ];

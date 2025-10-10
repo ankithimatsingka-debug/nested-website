@@ -156,12 +156,12 @@ export const FAQ = () => {
         
         <div className="max-w-4xl mx-auto">
           <Tabs defaultValue="Understanding Mutual Funds" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 h-auto gap-2 bg-transparent p-0">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8 h-auto gap-3 bg-transparent p-0">
               {Object.keys(faqData).map((category) => (
                 <TabsTrigger 
                   key={category} 
                   value={category} 
-                  className="text-xs sm:text-sm px-3 py-4 border-2 border-border/60 bg-card/70 backdrop-blur-sm data-[state=active]:bg-[image:var(--gradient-primary)] data-[state=active]:text-primary-foreground data-[state=active]:border-border/60 shadow-sm hover:bg-accent/50 hover:border-border transition-all whitespace-normal leading-tight min-h-[60px] flex items-center justify-center"
+                  className="text-sm px-4 py-4 border-2 border-border/60 bg-card/70 backdrop-blur-sm data-[state=active]:bg-[image:var(--gradient-primary)] data-[state=active]:text-primary-foreground data-[state=active]:border-border/60 shadow-sm hover:bg-accent/50 hover:border-border transition-all whitespace-normal leading-tight min-h-[60px] flex items-center justify-center"
                 >
                   {category}
                 </TabsTrigger>

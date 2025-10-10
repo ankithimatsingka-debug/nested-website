@@ -61,37 +61,76 @@ const GraphAnimation = () => (
   </div>
 );
 
-const PieChartAnimation = () => (
+const RefreshAnimation = () => (
   <div className="relative w-32 h-32 mx-auto">
-    <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
-      <circle
-        cx="50"
-        cy="50"
-        r="40"
+    <svg viewBox="0 0 100 100" className="w-full h-full">
+      {/* First arrow - clockwise */}
+      <path
+        d="M 50 15 A 35 35 0 0 1 78 50"
         fill="none"
-        stroke="hsl(var(--primary))"
-        strokeWidth="20"
-        strokeDasharray="150 251"
+        stroke="url(#gradient1)"
+        strokeWidth="3"
+        strokeLinecap="round"
         className="animate-spin origin-center"
+        style={{ animationDuration: '3s' }}
       />
-      <circle
-        cx="50"
-        cy="50"
-        r="40"
+      <polygon
+        points="78,50 75,55 82,52"
+        fill="hsl(var(--primary))"
+        className="animate-spin origin-center"
+        style={{ animationDuration: '3s' }}
+      />
+      
+      {/* Second arrow - counter position */}
+      <path
+        d="M 50 85 A 35 35 0 0 1 22 50"
         fill="none"
-        stroke="hsl(var(--secondary))"
-        strokeWidth="20"
-        strokeDasharray="100 251"
-        strokeDashoffset="-150"
+        stroke="url(#gradient2)"
+        strokeWidth="3"
+        strokeLinecap="round"
         className="animate-spin origin-center"
+        style={{ animationDuration: '3s' }}
       />
+      <polygon
+        points="22,50 25,45 18,48"
+        fill="hsl(var(--secondary))"
+        className="animate-spin origin-center"
+        style={{ animationDuration: '3s' }}
+      />
+      
+      {/* Gradients */}
+      <defs>
+        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="hsl(var(--primary))" />
+          <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.5" />
+        </linearGradient>
+        <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="hsl(var(--secondary))" />
+          <stop offset="100%" stopColor="hsl(var(--secondary))" stopOpacity="0.5" />
+        </linearGradient>
+      </defs>
     </svg>
   </div>
 );
 
-const ScalesAnimation = () => (
-  <div className="flex justify-center items-center">
-    <Scale className="w-24 h-24 text-primary animate-swing" />
+const BalancingAnimation = () => (
+  <div className="relative w-32 h-32 mx-auto flex items-center justify-center">
+    {/* Left side dots */}
+    <div className="absolute left-4 space-y-2">
+      <div className="w-4 h-4 rounded-full bg-primary animate-bounce" style={{ animationDelay: '0s', animationDuration: '2s' }} />
+      <div className="w-4 h-4 rounded-full bg-primary/70 animate-bounce" style={{ animationDelay: '0.2s', animationDuration: '2s' }} />
+      <div className="w-4 h-4 rounded-full bg-primary/40 animate-bounce" style={{ animationDelay: '0.4s', animationDuration: '2s' }} />
+    </div>
+    
+    {/* Center line */}
+    <div className="w-0.5 h-20 bg-muted-foreground/30" />
+    
+    {/* Right side dots */}
+    <div className="absolute right-4 space-y-2">
+      <div className="w-4 h-4 rounded-full bg-secondary animate-bounce" style={{ animationDelay: '0.6s', animationDuration: '2s' }} />
+      <div className="w-4 h-4 rounded-full bg-secondary/70 animate-bounce" style={{ animationDelay: '0.8s', animationDuration: '2s' }} />
+      <div className="w-4 h-4 rounded-full bg-secondary/40 animate-bounce" style={{ animationDelay: '1s', animationDuration: '2s' }} />
+    </div>
   </div>
 );
 
@@ -115,14 +154,14 @@ const cards: SmartCard[] = [
     subtext: "We review your SIP allocation each year and suggest adjustments aligned with your child's goals.",
     icon: PieChart,
     gradient: "from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20",
-    AnimationComponent: PieChartAnimation,
+    AnimationComponent: RefreshAnimation,
   },
   {
     title: "Timely portfolio rebalancing",
     subtext: "We prompt you to rebalance as your goal approaches or when market conditions change.",
     icon: Scale,
     gradient: "from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20",
-    AnimationComponent: ScalesAnimation,
+    AnimationComponent: BalancingAnimation,
   },
 ];
 

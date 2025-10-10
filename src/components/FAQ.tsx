@@ -147,7 +147,7 @@ export const FAQ = () => {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          <Tabs defaultValue="Understanding Mutual Funds" className="w-full">
+          <Tabs defaultValue="How Nested Helps" className="w-full">
             <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8 h-auto gap-3 bg-transparent p-0">
               {Object.keys(faqData).map((category) => (
                 <TabsTrigger 

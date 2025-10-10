@@ -74,7 +74,7 @@ export function FeatureCards() {
             return (
               <Card key={index} className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
                 <CardContent className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
+                  <div className="flex items-start gap-3 mb-3">
                     <div className={`w-12 h-12 flex-shrink-0 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-2 border-white/50`}>
                       <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
                     </div>

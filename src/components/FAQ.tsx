@@ -58,7 +58,7 @@ const faqData = {
     },
     {
       question: "Can the app plan monthly investments for me?",
-      answer: "Yes. Just enter your child's age, education type, and today's costs — we'll calculate the SIP."
+      answer: "Yes. Just enter your child's age, education type — we'll provide future estimated cost and calculate the SIP."
     },
     {
       question: "Can I track progress?",

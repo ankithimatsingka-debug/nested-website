@@ -29,7 +29,7 @@ const features = [
   {
     icon: Zap,
     title: "Start with Just ₹500",
-    description: "Start your child's future with just ₹500 p.m. - small steps today equals big opportunities tomorrow.",
+    description: "Start your child's future with just ₹500 p.m. for tomorrow's big opportunities.",
     highlight: "Low minimum investment"
   },
   {

@@ -5,7 +5,7 @@ const features = [
   {
     icon: Target,
     title: "Plans Made Just for You",
-    description: "Tell us your goal - your child's college & timelines. We create a special investment plan that fits your exact needs and timeline.",
+    description: "Tell us your child's college goal and timeline - we'll craft a custom investment plan just for it.",
     highlight: "Personal recommendations"
   },
   {
@@ -29,13 +29,13 @@ const features = [
   {
     icon: Zap,
     title: "Start with Just ₹500",
-    description: "Begin your child's future with as little as ₹500 monthly SIP. No huge amounts needed - small steps can build big dreams over time.",
+    description: "Start your child's future with just ₹500 a month - small steps today can create big opportunities tomorrow.",
     highlight: "Low minimum investment"
   },
   {
     icon: Users,
     title: "Dedicated Expert",
-    description: "We assign an expert AMFI-qualified expert RM who will help you with all your mutual fund investment related queries.",
+    description: "An AMFI-certified Relationship Manager will personally guide you through all your MF investments.",
     highlight: "Hands-on support"
   }
 ];

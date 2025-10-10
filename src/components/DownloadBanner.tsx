@@ -34,7 +34,7 @@ export function DownloadBanner() {
             <Button 
               size="lg" 
               variant="secondary"
-              className="h-16 px-8 text-lg font-semibold bg-white text-primary hover:bg-white/10 hover:border-white shadow-xl hover:shadow-2xl transition-all group"
+              className="h-16 px-8 text-lg font-semibold bg-white/20 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white/30 hover:border-white/60 shadow-xl hover:shadow-2xl transition-all group"
             >
               <Apple className="mr-3 h-7 w-7" />
               <div className="text-left">
@@ -47,7 +47,7 @@ export function DownloadBanner() {
             <Button 
               size="lg" 
               variant="outline"
-              className="h-16 px-8 text-lg font-semibold border-white/30 text-primary hover:bg-white/10 hover:border-white shadow-xl hover:shadow-2xl transition-all group"
+              className="h-16 px-8 text-lg font-semibold bg-white/20 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white/30 hover:border-white/60 shadow-xl hover:shadow-2xl transition-all group"
             >
               <Play className="mr-3 h-7 w-7" />
               <div className="text-left">

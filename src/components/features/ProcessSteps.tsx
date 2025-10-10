@@ -74,7 +74,7 @@ export function ProcessSteps() {
                       {step.description}
                     </p>
                     
-                    <div className="inline-flex items-center gap-2 text-sm font-medium text-secondary">
+                    <div className="flex justify-center items-center gap-2 text-sm font-medium text-secondary">
                       <span>{step.time}</span>
                     </div>
                   </div>

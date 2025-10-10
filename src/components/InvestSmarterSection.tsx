@@ -254,7 +254,7 @@ export const InvestSmarterSection = () => {
                         <div className="p-3 rounded-full bg-background/50">
                           <Icon className="w-6 h-6 text-primary" />
                         </div>
-                        <h3 className="text-2xl md:text-3xl font-semibold">
+                        <h3 className="text-[21px] font-semibold">
                           {card.title}
                         </h3>
                       </div>

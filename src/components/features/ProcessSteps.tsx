@@ -41,7 +41,7 @@ export function ProcessSteps() {
           <div className="grid md:flex gap-8 md:gap-6 md:justify-center md:items-start">
             {steps.map((step, index) => {
               const boxWidths = ['md:w-[270px]', 'md:w-[300px]', 'md:w-[330px]'];
-              const boxHeights = ['md:h-[400px]', 'md:h-[420px]', 'md:h-[450px]'];
+              const boxHeights = ['md:h-[300px]', 'md:h-[320px]', 'md:h-[350px]'];
               
               const pastelColors = [
                 'bg-[hsl(var(--pastel-mint))]',
@@ -56,7 +56,7 @@ export function ProcessSteps() {
               return (
                 <div key={index} className={`relative ${boxWidths[index]}`}>
                   {/* Step Card */}
-                  <div className={`bg-background rounded-2xl p-6 md:p-7 ${boxHeights[index]} shadow-md hover:shadow-lg transition-all duration-300 text-center relative z-10 flex flex-col justify-between`}>
+                  <div className={`bg-background rounded-2xl p-6 md:p-5 ${boxHeights[index]} shadow-md hover:shadow-lg transition-all duration-300 text-center relative z-10 flex flex-col justify-between`}>
                     <div className="mb-6">
                       <div className={`w-14 h-14 rounded-3xl ${pastelColors[index]} flex items-center justify-center mx-auto mb-4 group hover:scale-105 hover:-rotate-6 transition-all duration-300 border-2 border-white/50`}>
                         <step.icon className={`h-6 w-6 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
@@ -81,7 +81,7 @@ export function ProcessSteps() {
 
                   {/* Arrow for desktop */}
                   {index < steps.length - 1 && (
-                    <div className="hidden md:block absolute top-[210px] -right-9 z-20">
+                    <div className="hidden md:block absolute top-[160px] -right-9 z-20">
                       <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
                         <ArrowRight className="h-5 w-5 text-primary opacity-50" />
                       </div>

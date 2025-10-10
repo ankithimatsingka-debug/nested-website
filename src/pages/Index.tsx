@@ -15,6 +15,7 @@ import { FAQ } from "@/components/FAQ";
 import { DownloadBanner } from "@/components/DownloadBanner";
 import { Footer } from "@/components/Footer";
 import { CompareInvestmentProducts } from "@/components/CompareInvestmentProducts";
+import { EnhancedComparisonSection } from "@/components/comparison/EnhancedComparisonSection";
 
 const Index = () => {
   return (
@@ -35,6 +36,7 @@ const Index = () => {
         <section id="compare">
           <CompareInvestmentProducts />
         </section>
+        <EnhancedComparisonSection />
         <section id="about">
           <Compliance />
           <TeamSection />

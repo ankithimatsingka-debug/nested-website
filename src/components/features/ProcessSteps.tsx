@@ -41,7 +41,7 @@ export function ProcessSteps() {
           <div className="grid md:flex gap-8 md:gap-6 md:justify-center md:items-start">
             {steps.map((step, index) => {
               const boxWidths = ['md:w-[270px]', 'md:w-[300px]', 'md:w-[330px]'];
-              const boxHeights = ['md:h-[500px]', 'md:h-[520px]', 'md:h-[550px]'];
+              const boxHeights = ['md:h-[400px]', 'md:h-[420px]', 'md:h-[450px]'];
               
               const pastelColors = [
                 'bg-[hsl(var(--pastel-mint))]',
@@ -81,7 +81,7 @@ export function ProcessSteps() {
 
                   {/* Arrow for desktop */}
                   {index < steps.length - 1 && (
-                    <div className="hidden md:block absolute top-[250px] -right-9 z-20">
+                    <div className="hidden md:block absolute top-[210px] -right-9 z-20">
                       <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
                         <ArrowRight className="h-5 w-5 text-primary opacity-50" />
                       </div>

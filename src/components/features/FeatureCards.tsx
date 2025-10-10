@@ -53,7 +53,7 @@ export function FeatureCards() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {features.map((feature, index) => {
             const pastelColors = [
               'bg-[hsl(var(--pastel-lavender))]',
@@ -73,9 +73,9 @@ export function FeatureCards() {
             ];
             return (
               <Card key={index} className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <div className={`w-12 h-12 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-4 border-2 border-white/50`}>
+                <CardContent className="p-6">
+                  <div className="mb-4">
+                    <div className={`w-12 h-12 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-3 border-2 border-white/50`}>
                       <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
                     </div>
                     <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 dark:text-primary dark:bg-primary/10 rounded-full">
@@ -83,11 +83,11 @@ export function FeatureCards() {
                     </span>
                   </div>
                   
-                  <h3 className="font-heading text-xl font-semibold mb-4">
+                  <h3 className="font-heading text-lg font-semibold mb-3">
                     {feature.title}
                   </h3>
                   
-                  <p className="font-body text-muted-foreground leading-relaxed">
+                  <p className="font-body text-muted-foreground leading-snug">
                     {feature.description}
                   </p>
                 </CardContent>

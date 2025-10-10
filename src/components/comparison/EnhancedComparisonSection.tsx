@@ -38,7 +38,7 @@ export const EnhancedComparisonSection = () => {
             </span>
             
             <span className="block mt-3">
-              <strong>Mutual Funds</strong> recommended by Nested are designed for long-term wealth creation with goal-based investing, automatic rebalancing, and tax-efficient growth. 
+              <strong>Mutual Funds recommended by Nested</strong> are designed for long-term wealth creation with goal-based investing, automatic rebalancing, and tax-efficient growth. 
               They offer better returns, flexibility, and transparency making them one of the best investment options for your child's education.
             </span>
           </p>

@@ -173,7 +173,7 @@ const FundSelection = () => {
                           <CardTitle className="text-lg">Fund A</CardTitle>
                         </CardHeader>
                         <CardContent className="pt-4">
-                          <p className="text-sm">20% returns, but falls only ~19% in bad times.</p>
+                          <p className="text-lg">20% returns, but falls only ~19% in bad times.</p>
                         </CardContent>
                       </Card>
                       
@@ -182,7 +182,7 @@ const FundSelection = () => {
                           <CardTitle className="text-lg">Fund B</CardTitle>
                         </CardHeader>
                         <CardContent className="pt-4">
-                          <p className="text-sm">20% returns, but falls ~30% when markets turn.</p>
+                          <p className="text-lg">20% returns, but falls ~30% when markets turn.</p>
                         </CardContent>
                       </Card>
                     </div>

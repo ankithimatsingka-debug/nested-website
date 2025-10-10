@@ -72,7 +72,12 @@ export function FeatureCards() {
               'text-rose-600'
             ];
             return (
-              <Card key={index} className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
+              <div key={index} className="relative">
+                {/* Vertical divider line for mobile */}
+                {index > 0 && (
+                  <div className="md:hidden absolute -top-3 left-1/2 -translate-x-1/2 w-px h-6 bg-gradient-to-b from-transparent via-border to-transparent opacity-50" />
+                )}
+                <Card className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
                 <CardContent className="p-5">
                   <div className="flex items-center gap-3 mb-4">
                     <div className={`w-12 h-12 flex-shrink-0 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-2 border-white/50`}>
@@ -93,6 +98,7 @@ export function FeatureCards() {
                   </p>
                 </CardContent>
               </Card>
+              </div>
             );
           })}
         </div>

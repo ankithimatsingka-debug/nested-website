@@ -183,7 +183,7 @@ export const InvestSmarterSection = () => {
             const Icon = card.icon;
             const progress = scrollProgress[index];
             const scale = 1 - (1 - progress) * 0.05;
-            const opacity = 0.8 + progress * 0.2;
+            const opacity = 0.95;
             const topOffset = 80 + index * 20;
             
             // Dynamic z-index: cards that are more "in focus" (higher progress) get higher z-index

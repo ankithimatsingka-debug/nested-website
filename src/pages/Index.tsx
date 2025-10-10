@@ -24,6 +24,9 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <section id="why-nested">
+          <WhyNested />
+        </section>
         <section id="benefits">
           <KeyBenefits />
         </section>

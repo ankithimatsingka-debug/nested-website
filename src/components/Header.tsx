@@ -21,14 +21,14 @@ export function Header() {
             <a href="/" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Home
             </a>
-            <a href="#features" className="font-body text-muted-foreground hover:text-primary transition-colors">
+            <a href="#why-nested" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Features
             </a>
             <a href="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Fund Selection
             </a>
-            <a href="#about" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              About
+            <a href="#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">
+              FAQs
             </a>
             <a href="#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Stories
@@ -69,7 +69,7 @@ export function Header() {
                 Home
               </a>
               <a 
-                href="#features" 
+                href="#why-nested" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -83,11 +83,11 @@ export function Header() {
                 Fund Selection
               </a>
               <a 
-                href="#about" 
+                href="#faq" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                FAQs
               </a>
               <a 
                 href="#testimonials" 

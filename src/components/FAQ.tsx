@@ -47,52 +47,6 @@ const faqData = {
       answer: "No. But historically, equity funds have outperformed FDs, gold, and real estate over the long term."
     }
   ],
-  "Child's Education": [
-    {
-      question: "Why start early?",
-      answer: "Education costs rise sharply each year. Early investing allows your money to compound, reducing the burden later."
-    },
-    {
-      question: "How much should I save?",
-      answer: "Our app projects future education costs, suggests a monthly SIP, and automatically reduces risk as the goal nears."
-    },
-    {
-      question: "Can the app plan monthly investments for me?",
-      answer: "Yes. Just enter your child's age, education type — we'll provide future estimated cost and calculate the SIP."
-    },
-    {
-      question: "Can I track progress?",
-      answer: "Yes, our goal tracker shows how close you are to your target."
-    },
-    {
-      question: "Can I set up separate goals for multiple children?",
-      answer: "Yes, each child can have a dedicated portfolio and tracker."
-    },
-    {
-      question: "What if my child's plans change?",
-      answer: "Update the goal anytime — the app recalculates and shows how much to adjust."
-    },
-    {
-      question: "Can I pause or increase my SIP?",
-      answer: "Yes. SIPs are fully flexible — pause, stop, or raise them anytime."
-    },
-    {
-      question: "Why not just invest through my existing account?",
-      answer: "Education is a specific goal. A separate account ensures accurate cost projections and fund allocation for your child's future."
-    },
-    {
-      question: "How is tax handled?",
-      answer: "Depends on fund type and holding period. Equity funds held for over a year are taxed at 12.5% on gains above ₹1 lakh."
-    },
-    {
-      question: "Can I withdraw anytime?",
-      answer: "Yes, unless you've chosen a lock-in product like ELSS (we don't recommend these for education goals)."
-    },
-    {
-      question: "What if I need money earlier?",
-      answer: "You can redeem partially or fully at any time."
-    }
-  ],
   "Trust & Safety": [
     {
       question: "Are these funds SEBI/AMFI-registered?",
@@ -147,6 +101,50 @@ const faqData = {
     {
       question: "What type of support is provided?",
       answer: "You will be assigned an expert AMFI-qualified RM who will help you with all your mutual fund investment related queries."
+    },
+    {
+      question: "Why start early?",
+      answer: "Education costs rise sharply each year. Early investing allows your money to compound, reducing the burden later."
+    },
+    {
+      question: "How much should I save?",
+      answer: "Our app projects future education costs, suggests a monthly SIP, and automatically reduces risk as the goal nears."
+    },
+    {
+      question: "Can the app plan monthly investments for me?",
+      answer: "Yes. Just enter your child's age, education type — we'll provide future estimated cost and calculate the SIP."
+    },
+    {
+      question: "Can I track progress?",
+      answer: "Yes, our goal tracker shows how close you are to your target."
+    },
+    {
+      question: "Can I set up separate goals for multiple children?",
+      answer: "Yes, each child can have a dedicated portfolio and tracker."
+    },
+    {
+      question: "What if my child's plans change?",
+      answer: "Update the goal anytime — the app recalculates and shows how much to adjust."
+    },
+    {
+      question: "Can I pause or increase my SIP?",
+      answer: "Yes. SIPs are fully flexible — pause, stop, or raise them anytime."
+    },
+    {
+      question: "Why not just invest through my existing account?",
+      answer: "Education is a specific goal. A separate account ensures accurate cost projections and fund allocation for your child's future."
+    },
+    {
+      question: "How is tax handled?",
+      answer: "Depends on fund type and holding period. Equity funds held for over a year are taxed at 12.5% on gains above ₹1 lakh."
+    },
+    {
+      question: "Can I withdraw anytime?",
+      answer: "Yes, unless you've chosen a lock-in product like ELSS (we don't recommend these for education goals)."
+    },
+    {
+      question: "What if I need money earlier?",
+      answer: "You can redeem partially or fully at any time."
     }
   ]
 };

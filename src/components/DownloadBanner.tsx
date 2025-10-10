@@ -61,7 +61,7 @@ export function DownloadBanner() {
           {/* Social proof */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">₹500+</div>
+              <div className="text-3xl font-bold mb-2">₹500</div>
               <div className="text-lg opacity-80">Minimum Monthly Investment</div>
             </div>
             <div className="text-center">

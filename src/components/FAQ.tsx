@@ -157,7 +157,7 @@ export const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-2xl font-bold mb-6">
-            Frequently <span className="text-primary">Asked Questions</span>
+            Frequently <span className="text-secondary">Asked Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Everything you need to know about planning your child's education with Nested

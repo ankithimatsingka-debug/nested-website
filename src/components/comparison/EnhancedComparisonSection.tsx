@@ -7,7 +7,7 @@ export const EnhancedComparisonSection = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="font-heading text-2xl font-bold mb-6">
-            Compare <span className="text-primary">Investment Products</span>
+            Compare <span className="text-secondary">Investment Products</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             A comprehensive, user-friendly comparison to help you make the best decision for your child's education

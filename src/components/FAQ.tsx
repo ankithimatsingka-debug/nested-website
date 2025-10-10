@@ -79,16 +79,16 @@ const faqData = {
   ],
   "How Nested Helps": [
     {
-      question: "How does Nested select funds?",
-      answer: "fund-selection-link"
-    },
-    {
       question: "How does Nested add value?",
       answer: "We start by estimating future education costs and adjust if fees change. Then, we design a portfolio tailored to your timeline and risk profile, while tracking if you're on course."
     },
     {
       question: "How is Nested different?",
       answer: "We don't push \"top\" or \"trending\" funds. Every recommendation is goal-based. We also guide timely reallocation — for example, if you've reached 95% of your goal with just two years left, we'll prompt you to shift from equities to safer debt funds."
+    },
+    {
+      question: "How does Nested select funds?",
+      answer: "fund-selection-link"
     },
     {
       question: "What are the fees?",
@@ -99,12 +99,8 @@ const faqData = {
       answer: "Yes, regular funds cost ~0.60% more on average than direct funds. But curated portfolios and smart allocation typically deliver returns that outweigh the extra cost."
     },
     {
-      question: "What type of support is provided?",
-      answer: "You will be assigned an expert AMFI-qualified RM who will help you with all your mutual fund investment related queries."
-    },
-    {
-      question: "Why start early?",
-      answer: "Education costs rise sharply each year. Early investing allows your money to compound, reducing the burden later."
+      question: "Why not just invest through my existing account?",
+      answer: "Education is a specific goal. A separate account ensures accurate cost projections and fund allocation for your child's future."
     },
     {
       question: "How much should I save?",
@@ -131,20 +127,16 @@ const faqData = {
       answer: "Yes. SIPs are fully flexible — pause, stop, or raise them anytime."
     },
     {
-      question: "Why not just invest through my existing account?",
-      answer: "Education is a specific goal. A separate account ensures accurate cost projections and fund allocation for your child's future."
-    },
-    {
-      question: "How is tax handled?",
-      answer: "Depends on fund type and holding period. Equity funds held for over a year are taxed at 12.5% on gains above ₹1 lakh."
-    },
-    {
       question: "Can I withdraw anytime?",
       answer: "Yes, unless you've chosen a lock-in product like ELSS (we don't recommend these for education goals)."
     },
     {
       question: "What if I need money earlier?",
       answer: "You can redeem partially or fully at any time."
+    },
+    {
+      question: "What type of support is provided?",
+      answer: "You will be assigned an expert AMFI-qualified RM who will help you with all your mutual fund investment related queries."
     }
   ]
 };

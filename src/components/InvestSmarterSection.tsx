@@ -178,26 +178,30 @@ export const InvestSmarterSection = () => {
           </p>
         </div>
 
-        <div className="space-y-12 md:space-y-24">
+        <div className="pb-96">
           {cards.map((card, index) => {
             const Icon = card.icon;
             const progress = scrollProgress[index];
-            const scale = 0.9 + progress * 0.1;
-            const opacity = 0.3 + progress * 0.7;
+            const scale = 1 - (1 - progress) * 0.05;
+            const opacity = 0.8 + progress * 0.2;
+            const topOffset = 80 + index * 20;
+            const zIndex = 40 - index * 10;
 
             return (
               <div
                 key={index}
                 ref={(el) => (cardRefs.current[index] = el)}
-                className="relative"
+                className="sticky mb-8"
                 style={{
+                  top: `${topOffset}px`,
+                  zIndex,
                   transform: `scale(${scale})`,
                   opacity,
-                  transition: 'transform 0.3s ease-out, opacity 0.3s ease-out',
+                  transition: 'transform 0.1s ease-out, opacity 0.1s ease-out',
                 }}
               >
                 <Card
-                  className={`p-8 md:p-12 bg-gradient-to-br ${card.gradient} border-none shadow-lg overflow-hidden`}
+                  className={`p-8 md:p-12 bg-gradient-to-br ${card.gradient} border-none shadow-2xl overflow-hidden`}
                 >
                   <div className="flex flex-col md:flex-row md:items-center gap-8">
                     {/* Content */}

@@ -70,7 +70,7 @@ export function KeyBenefits() {
                     {index === 0 && (
                       <>
                         {" "}
-                        <Link to="/fund-selection" className="text-primary hover:text-primary/80 underline font-medium transition-colors">
+                        <Link to="/fund-selection" className="text-primary hover:text-primary/80 underline font-medium transition-colors text-xs">
                           Read More
                         </Link>
                       </>

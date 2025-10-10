@@ -1,7 +1,6 @@
 import { ProductSummaryCards } from './desktop/ProductSummaryCards';
 import { Card } from '@/components/ui/card';
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from '@/components/ui/collapsible';
-import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
 export const EnhancedComparisonSection = () => {
@@ -33,18 +32,16 @@ export const EnhancedComparisonSection = () => {
 
         {/* Key Takeaway */}
         <Card className="mt-12 p-6 bg-primary/5 border-primary/20">
-          <h3 className="font-semibold text-lg mb-3">💡 Key Takeaway</h3>
-          <p className="text-sm text-muted-foreground/80 mb-4">Click each option to learn more</p>
+          <h3 className="font-semibold text-lg mb-4">💡 Key Takeaway</h3>
           
           <div className="space-y-3">
             {/* SSY Section */}
             <Collapsible open={openSections.ssy} onOpenChange={() => toggleSection('ssy')}>
-              <CollapsibleTrigger className="flex items-start justify-between w-full text-left group hover:text-foreground transition-colors">
+              <CollapsibleTrigger className="w-full text-left group hover:text-foreground transition-colors cursor-pointer">
                 <span className="text-sm leading-relaxed">
                   <strong>SSY</strong> is safe, 8.2% tax-free return...
                   {!openSections.ssy && <span className="text-muted-foreground/60"> (click to read more)</span>}
                 </span>
-                <ChevronDown className={`h-4 w-4 shrink-0 transition-transform duration-200 mt-0.5 ${openSections.ssy ? 'rotate-180' : ''}`} />
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <span className="block text-sm text-muted-foreground leading-relaxed mt-2">
@@ -56,12 +53,11 @@ export const EnhancedComparisonSection = () => {
 
             {/* ULIP Section */}
             <Collapsible open={openSections.ulip} onOpenChange={() => toggleSection('ulip')}>
-              <CollapsibleTrigger className="flex items-start justify-between w-full text-left group hover:text-foreground transition-colors">
+              <CollapsibleTrigger className="w-full text-left group hover:text-foreground transition-colors cursor-pointer">
                 <span className="text-sm leading-relaxed">
                   <strong>ULIPs</strong> combine insurance and investment...
                   {!openSections.ulip && <span className="text-muted-foreground/60"> (click to read more)</span>}
                 </span>
-                <ChevronDown className={`h-4 w-4 shrink-0 transition-transform duration-200 mt-0.5 ${openSections.ulip ? 'rotate-180' : ''}`} />
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <span className="block text-sm text-muted-foreground leading-relaxed mt-2">
@@ -72,12 +68,11 @@ export const EnhancedComparisonSection = () => {
 
             {/* FD Section */}
             <Collapsible open={openSections.fd} onOpenChange={() => toggleSection('fd')}>
-              <CollapsibleTrigger className="flex items-start justify-between w-full text-left group hover:text-foreground transition-colors">
+              <CollapsibleTrigger className="w-full text-left group hover:text-foreground transition-colors cursor-pointer">
                 <span className="text-sm leading-relaxed">
                   <strong>FDs</strong> offer safety but are taxed at your income slab...
                   {!openSections.fd && <span className="text-muted-foreground/60"> (click to read more)</span>}
                 </span>
-                <ChevronDown className={`h-4 w-4 shrink-0 transition-transform duration-200 mt-0.5 ${openSections.fd ? 'rotate-180' : ''}`} />
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <span className="block text-sm text-muted-foreground leading-relaxed mt-2">
@@ -89,12 +84,11 @@ export const EnhancedComparisonSection = () => {
 
             {/* Mutual Funds Section */}
             <Collapsible open={openSections.mf} onOpenChange={() => toggleSection('mf')}>
-              <CollapsibleTrigger className="flex items-start justify-between w-full text-left group hover:text-foreground transition-colors">
+              <CollapsibleTrigger className="w-full text-left group hover:text-foreground transition-colors cursor-pointer">
                 <span className="text-sm leading-relaxed">
                   <strong>Mutual Funds recommended by Nested</strong> are designed for long-term wealth creation...
                   {!openSections.mf && <span className="text-muted-foreground/60"> (click to read more)</span>}
                 </span>
-                <ChevronDown className={`h-4 w-4 shrink-0 transition-transform duration-200 mt-0.5 ${openSections.mf ? 'rotate-180' : ''}`} />
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <span className="block text-sm text-muted-foreground leading-relaxed mt-2">

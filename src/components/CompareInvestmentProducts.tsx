@@ -1,4 +1,5 @@
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useRef, useState, useEffect } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -165,6 +166,9 @@ const MobileComparisonCard = ({ product, data }: { product: string; data: any })
 };
 
 const MobileAtAGlanceCards = () => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  
   const bgColors = {
     ssy: '#fcfbf4',
     ulip: '#fef7f9',
@@ -172,41 +176,86 @@ const MobileAtAGlanceCards = () => {
     mf: '#f4faf6'
   };
   
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+    
+    const handleScroll = () => {
+      const scrollPosition = container.scrollLeft;
+      const cardWidth = container.offsetWidth;
+      const index = Math.round(scrollPosition / cardWidth);
+      setActiveIndex(index);
+    };
+    
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, []);
+  
   return (
-    <div className="grid grid-cols-2 gap-3 mt-4">
-      {atAGlanceData.map((item) => (
-        <Card 
-          key={item.product} 
-          className="p-3 dark:bg-opacity-10"
-          style={{ 
-            backgroundColor: bgColors[item.product as keyof typeof bgColors],
-            borderColor: item.product === 'ssy' ? 'hsl(45 93% 47%)' : 
-                         item.product === 'ulip' ? 'hsl(271 76% 53%)' : 
-                         item.product === 'fd' ? 'hsl(217 91% 60%)' : 
-                         'hsl(142 71% 45%)'
-          }}
-        >
-          <div className={`text-sm font-semibold text-gray-900 mb-2`}>{item.name}</div>
-          <div className="space-y-1 text-xs">
-            <div className="flex justify-between">
-              <span className="text-gray-700">Safety:</span>
-              <span className="font-medium text-gray-900">{item.safety}</span>
+    <div className="mt-4">
+      <div 
+        ref={scrollContainerRef}
+        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-3 pb-2"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      >
+        {atAGlanceData.map((item) => (
+          <Card 
+            key={item.product} 
+            className="flex-shrink-0 w-[calc(100%-1rem)] snap-center p-4 dark:bg-opacity-10"
+            style={{ 
+              backgroundColor: bgColors[item.product as keyof typeof bgColors],
+              borderColor: item.product === 'ssy' ? 'hsl(45 93% 47%)' : 
+                           item.product === 'ulip' ? 'hsl(271 76% 53%)' : 
+                           item.product === 'fd' ? 'hsl(217 91% 60%)' : 
+                           'hsl(142 71% 45%)'
+            }}
+          >
+            <div className={`text-lg font-semibold text-gray-900 mb-3`}>{item.name}</div>
+            <div className="space-y-2 text-sm">
+              <div className="flex justify-between">
+                <span className="text-gray-700">Safety:</span>
+                <span className="font-medium text-gray-900">{item.safety}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-700">Flexibility:</span>
+                <span className="font-medium text-gray-900">{item.flexibility}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-700">Growth:</span>
+                <span className="font-medium text-gray-900">{item.growth}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-700">Tax:</span>
+                <span className="font-medium text-gray-900">{item.taxEfficiency}</span>
+              </div>
             </div>
-            <div className="flex justify-between">
-              <span className="text-gray-700">Flexibility:</span>
-              <span className="font-medium text-gray-900">{item.flexibility}</span>
-            </div>
-            <div className="flex justify-between">
-              <span className="text-gray-700">Growth:</span>
-              <span className="font-medium text-gray-900">{item.growth}</span>
-            </div>
-            <div className="flex justify-between">
-              <span className="text-gray-700">Tax:</span>
-              <span className="font-medium text-gray-900">{item.taxEfficiency}</span>
-            </div>
-          </div>
-        </Card>
-      ))}
+          </Card>
+        ))}
+      </div>
+      
+      {/* Navigation Indicators */}
+      <div className="flex justify-center gap-2 mt-4">
+        {atAGlanceData.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => {
+              const container = scrollContainerRef.current;
+              if (container) {
+                container.scrollTo({
+                  left: index * container.offsetWidth,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              activeIndex === index 
+                ? 'bg-primary w-6' 
+                : 'bg-muted-foreground/30'
+            }`}
+            aria-label={`Go to card ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };

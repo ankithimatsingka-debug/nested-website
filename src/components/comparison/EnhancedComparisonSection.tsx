@@ -1,5 +1,4 @@
 import { ProductSummaryCards } from './desktop/ProductSummaryCards';
-import { QuickCompareDrawer } from './mobile/QuickCompareDrawer';
 import { Card } from '@/components/ui/card';
 
 export const EnhancedComparisonSection = () => {
@@ -18,9 +17,6 @@ export const EnhancedComparisonSection = () => {
         <div className="space-y-12">
           <ProductSummaryCards />
         </div>
-
-        {/* Quick Compare Drawer - Available on all devices */}
-        <QuickCompareDrawer />
 
         {/* Key Takeaway */}
         <Card className="mt-12 p-6 bg-primary/5 border-primary/20">

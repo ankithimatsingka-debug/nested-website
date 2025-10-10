@@ -33,9 +33,9 @@ const Index = () => {
         <section id="features">
           <FeatureCards />
         </section>
-        <section id="compare">
+        {/* <section id="compare">
           <CompareInvestmentProducts />
-        </section>
+        </section> */}
         <EnhancedComparisonSection />
         <section id="about">
           <Compliance />

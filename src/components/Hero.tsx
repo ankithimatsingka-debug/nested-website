@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Apple, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import mobileMockup from "@/assets/mobile-mockup.png";
+import qrCode from "@/assets/qr-code.png";
 
 const rotatingTexts = [
   "Expert-designed portfolios",
@@ -67,16 +68,23 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Download Buttons */}
-            <div className="flex gap-3 justify-center lg:justify-start mb-4">
-              <Button variant="outline" size="sm">
-                <Apple className="h-4 w-4 mr-2" />
-                App Store
-              </Button>
-              <Button variant="outline" size="sm">
-                <Play className="h-4 w-4 mr-2" />
-                Play Store
-              </Button>
+            {/* Download Buttons with QR Code */}
+            <div className="flex gap-4 items-center justify-center lg:justify-start mb-4">
+              <div className="flex gap-3">
+                <Button variant="outline" size="sm">
+                  <Apple className="h-4 w-4 mr-2" />
+                  App Store
+                </Button>
+                <Button variant="outline" size="sm">
+                  <Play className="h-4 w-4 mr-2" />
+                  Play Store
+                </Button>
+              </div>
+              <img 
+                src={qrCode} 
+                alt="Scan QR code to download Nested app" 
+                className="hidden lg:block w-20 h-20 border-2 border-border rounded-lg"
+              />
             </div>
 
           </div>

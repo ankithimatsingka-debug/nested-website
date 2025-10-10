@@ -136,9 +136,9 @@ export const InvestSmarterSection = () => {
       if (!sectionRef.current) return;
 
       const sectionTop = sectionRef.current.offsetTop;
-      const sectionHeight = sectionRef.current.offsetHeight;
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
+      const viewportCenter = scrollY + windowHeight / 2;
 
       cardRefs.current.forEach((cardRef, index) => {
         if (!cardRef) return;
@@ -146,8 +146,8 @@ export const InvestSmarterSection = () => {
         const cardTop = cardRef.offsetTop + sectionTop;
         const cardHeight = cardRef.offsetHeight;
         const cardCenter = cardTop + cardHeight / 2;
-        const viewportCenter = scrollY + windowHeight / 2;
 
+        // Distance from viewport center
         const distance = Math.abs(cardCenter - viewportCenter);
         const maxDistance = windowHeight;
         const progress = Math.max(0, Math.min(1, 1 - distance / maxDistance));
@@ -185,7 +185,12 @@ export const InvestSmarterSection = () => {
             const scale = 1 - (1 - progress) * 0.05;
             const opacity = 0.8 + progress * 0.2;
             const topOffset = 80 + index * 20;
-            const zIndex = 40 - index * 10;
+            
+            // Dynamic z-index: cards that are more "in focus" (higher progress) get higher z-index
+            // This allows lower cards to slide over upper cards when scrolling up
+            const baseZIndex = 10 + index * 5;
+            const progressBoost = Math.round(progress * 20);
+            const zIndex = baseZIndex + progressBoost;
 
             return (
               <div
@@ -197,7 +202,7 @@ export const InvestSmarterSection = () => {
                   zIndex,
                   transform: `scale(${scale})`,
                   opacity,
-                  transition: 'transform 0.1s ease-out, opacity 0.1s ease-out',
+                  transition: 'transform 0.15s ease-out, opacity 0.15s ease-out, z-index 0s',
                 }}
               >
                 <Card

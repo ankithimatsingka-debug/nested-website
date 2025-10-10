@@ -13,7 +13,6 @@ import { EducationCalculator } from "@/components/EducationCalculator";
 import { FAQ } from "@/components/FAQ";
 import { DownloadBanner } from "@/components/DownloadBanner";
 import { Footer } from "@/components/Footer";
-import { CompareInvestmentProducts } from "@/components/CompareInvestmentProducts";
 import { EnhancedComparisonSection } from "@/components/comparison/EnhancedComparisonSection";
 import { InvestSmarterSection } from "@/components/InvestSmarterSection";
 
@@ -33,9 +32,6 @@ const Index = () => {
         <section id="features">
           <FeatureCards />
         </section>
-        {/* <section id="compare">
-          <CompareInvestmentProducts />
-        </section> */}
         <EnhancedComparisonSection />
         <InvestSmarterSection />
         <section id="about">

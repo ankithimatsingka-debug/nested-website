@@ -74,18 +74,19 @@ export function FeatureCards() {
             return (
               <Card key={index} className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
                 <CardContent className="p-5">
-                  <div className="flex items-start gap-3 mb-3">
+                  <div className="flex items-start gap-3 mb-4">
                     <div className={`w-12 h-12 flex-shrink-0 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-2 border-white/50`}>
                       <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
                     </div>
-                    <h3 className="font-heading text-lg font-semibold leading-tight">
-                      {feature.title}
-                    </h3>
+                    <div className="flex-1">
+                      <h3 className="font-heading text-lg font-semibold leading-tight mb-2">
+                        {feature.title}
+                      </h3>
+                      <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 dark:text-primary dark:bg-primary/10 rounded-full">
+                        {feature.highlight}
+                      </span>
+                    </div>
                   </div>
-                  
-                  <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 dark:text-primary dark:bg-primary/10 rounded-full mb-3">
-                    {feature.highlight}
-                  </span>
                   
                   <p className="font-body text-muted-foreground leading-snug">
                     {feature.description}

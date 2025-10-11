@@ -46,7 +46,7 @@ export function FeatureCards() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-2xl font-bold mb-6">
-            Why Parents Choose <span className="text-secondary">Nested</span>
+            Why Parents <span className="text-secondary">Choose</span> <span className="text-secondary">Nested</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
             Each feature is carefully designed to make investing simple, safe, and stress-free for busy parents like you.

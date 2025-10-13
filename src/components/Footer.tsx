@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-muted/30 border-t border-border/50">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center mb-6">
@@ -37,21 +37,9 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">How It Works</a></li>
-              <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">Investment Plans</a></li>
-              <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">Success Stories</a></li>
+              <li><a href="/#invest-smarter" className="font-body text-muted-foreground hover:text-primary transition-colors">How It Works</a></li>
+              <li><a href="/#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">Success Stories</a></li>
               <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">Blog</a></li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h3 className="font-heading text-lg font-semibold mb-6">Support</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">Help Center</a></li>
-              <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">Contact Support</a></li>
-              <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">SEBI Disclosures</a></li>
             </ul>
           </div>
 

@@ -21,19 +21,19 @@ export function Header() {
             <a href="/" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Home
             </a>
-            <a href="#features" className="font-body text-muted-foreground hover:text-primary transition-colors">
+            <a href="/#invest-smarter" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Features
             </a>
             <a href="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Fund Selection
             </a>
-            <a href="#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">
+            <a href="/#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">
               FAQs
             </a>
-            <a href="#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">
+            <a href="/#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Stories
             </a>
-            <a href="#calculator" className="font-body text-muted-foreground hover:text-primary transition-colors">
+            <a href="/#calculator" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Calculator
             </a>
           </nav>
@@ -69,7 +69,7 @@ export function Header() {
                 Home
               </a>
               <a 
-                href="#features" 
+                href="/#invest-smarter" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -83,21 +83,21 @@ export function Header() {
                 Fund Selection
               </a>
               <a 
-                href="#faq" 
+                href="/#faq" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQs
               </a>
               <a 
-                href="#testimonials" 
+                href="/#testimonials" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Stories
               </a>
               <a 
-                href="#calculator" 
+                href="/#calculator" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >

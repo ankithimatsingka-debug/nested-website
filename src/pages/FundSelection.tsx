@@ -25,13 +25,13 @@ const FundSelection = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-foreground">Why This Matters?</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
-              <p>
+              <p className="text-sm">
                 At Nested, we don't chase the highest short-term returns or jump on every market trend. Our goal is to help families achieve their financial dreams with a strategy that is steady, disciplined, and built to last.
               </p>
-              <p>
+              <p className="text-sm">
                 Most people choose mutual funds by looking at the "star ratings" or which fund gave the highest return last year. But investing for long-term goals such as your child's higher education requires much more discipline and careful planning.
               </p>
-              <p>
+              <p className="text-sm">
                 Markets don't move in a straight line. They fall sharply, sometimes at the exact moment when you need your money the most. That's why the way we pick funds goes beyond just looking at "CAGR" (compounded annual growth rate). We filter for consistency, risk, and even whether the current fund manager is the one who actually delivered those returns in the past.
               </p>
             </div>
@@ -46,7 +46,7 @@ const FundSelection = () => {
                 <CardTitle className="text-3xl font-bold">Lessons from Recent Market Volatility</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-8">
+                <p className="text-muted-foreground text-sm mb-8">
                   The past few years have shown us how unpredictable markets can be:
                 </p>
                 
@@ -56,7 +56,7 @@ const FundSelection = () => {
                       2020
                     </div>
                     <div>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground text-sm">
                         COVID-19 triggered a sudden collapse. Nifty 50 fell nearly 38% in a month, mid- and small-cap indices crashed over 40%.
                       </p>
                     </div>
@@ -67,7 +67,7 @@ const FundSelection = () => {
                       2022
                     </div>
                     <div>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground text-sm">
                         Inflation and U.S. interest rate hikes shook both equity and debt markets. Nifty dropped ~18% from peak.
                       </p>
                     </div>
@@ -78,7 +78,7 @@ const FundSelection = () => {
                       2024
                     </div>
                     <div>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground text-sm">
                         Indian elections and geopolitical tensions led to sharp swings. While large caps delivered modest ~9% returns, mid- and small-caps swung violently, with double-digit corrections during the year.
                       </p>
                     </div>
@@ -109,7 +109,7 @@ const FundSelection = () => {
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Nested's Framework for Fund Selection</h2>
-            <p className="text-muted-foreground mb-8 text-center">
+            <p className="text-muted-foreground text-sm mb-8 text-center">
               Our fund selection follows a disciplined, multi-step framework:
             </p>
             
@@ -122,7 +122,7 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4 text-muted-foreground text-sm">
                     <p>
                       We start by evaluating all funds that existed until the last completed calendar year. In 2025, for example, we look at funds up to 31st December 2024.
                     </p>
@@ -144,7 +144,7 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4 text-muted-foreground text-sm">
                     <p>We check:</p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>Long-term CAGR (7–10 years).</li>
@@ -164,7 +164,7 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4 text-muted-foreground text-sm">
                     <p>Here's a simple way to think about it:</p>
                     
                     <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -173,7 +173,7 @@ const FundSelection = () => {
                           <CardTitle className="text-lg">Fund A</CardTitle>
                         </CardHeader>
                         <CardContent className="pt-4">
-                          <p className="text-lg">20% returns, but falls only ~19% in bad times.</p>
+                          <p className="text-sm">20% returns, but falls only ~19% in bad times.</p>
                         </CardContent>
                       </Card>
                       
@@ -182,7 +182,7 @@ const FundSelection = () => {
                           <CardTitle className="text-lg">Fund B</CardTitle>
                         </CardHeader>
                         <CardContent className="pt-4">
-                          <p className="text-lg">20% returns, but falls ~30% when markets turn.</p>
+                          <p className="text-sm">20% returns, but falls ~30% when markets turn.</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -201,7 +201,7 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4 text-muted-foreground text-sm">
                     <p>
                       We don't pick funds where the returns belong to a manager who left years ago.
                     </p>
@@ -223,7 +223,7 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4 text-muted-foreground text-sm">
                     <p>Whenever we choose debt funds for our portfolio, we are over-cautious.</p>
                     <p>Debt funds are often used as an alternative to fixed deposits. That means: we do not tolerate negative returns at all.</p>
                     <p>In 2020, many credit risk funds gave negative returns due to bond defaults.</p>
@@ -240,7 +240,7 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4 text-muted-foreground text-sm">
                     <p>
                       We build your portfolio to protect against losses in any single year.
                     </p>
@@ -262,7 +262,7 @@ const FundSelection = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="space-y-4 text-muted-foreground">
+                  <div className="space-y-4 text-muted-foreground text-sm">
                     <p>We keep it simple: 3–5 funds, no two funds from the same category, and no two funds from the same AMC.</p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>Short time horizon? More debt and hybrid funds.</li>

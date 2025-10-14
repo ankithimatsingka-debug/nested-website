@@ -29,7 +29,7 @@ const FundSelection = () => {
                 At Nested, we don't chase the highest short-term returns or jump on every market trend. Our goal is to help families achieve their financial dreams with a strategy that is steady, disciplined, and built to last.
               </p>
               <p>
-                Most people choose mutual funds by looking at the "star ratings" or which fund gave the highest return last year. But investing for long-term goals—like your child's higher education in 2035—requires much more discipline.
+                Most people choose mutual funds by looking at the "star ratings" or which fund gave the highest return last year. But investing for long-term goals such as your child's higher education requires much more discipline and careful planning.
               </p>
               <p>
                 Markets don't move in a straight line. They fall sharply, sometimes at the exact moment when you need your money the most. That's why the way we pick funds goes beyond just looking at "CAGR" (compounded annual growth rate). We filter for consistency, risk, and even whether the current fund manager is the one who actually delivered those returns in the past.
@@ -98,7 +98,7 @@ const FundSelection = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-lg">
-                  Families saving for children's education or other life goals don't just need high returns in one or two years — they need consistent performance over 5, 10, or 15 years. That requires funds that can handle ups and downs, not just shine in bull markets.
+                  Families saving for children's education or other life goals don't just need high returns in one or two years. Instead they need consistent performance over 5, 10, or 15 years. That requires funds that can handle ups and downs, not just shine in bull markets.
                 </p>
               </CardContent>
             </Card>
@@ -288,7 +288,7 @@ const FundSelection = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">The Bottom Line</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Our methodology isn't about chasing yesterday's winners. It's about building a resilient portfolio that balances returns, risk, and consistency — giving families the confidence that their goals are on track, no matter how the markets move.
+              Our methodology isn't about chasing yesterday's winners. It's about building a resilient portfolio that balances returns, risk, and consistency: giving families the confidence that their goals are on track, no matter how the markets move.
             </p>
             
             {/* CTA Buttons */}

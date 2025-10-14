@@ -52,7 +52,7 @@ const FundSelection = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4 animate-fade-in">
-                    <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center font-bold">
+                    <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex-shrink-0 flex items-center justify-center font-bold text-sm">
                       2020
                     </div>
                     <div>
@@ -63,7 +63,7 @@ const FundSelection = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4 animate-fade-in">
-                    <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center font-bold">
+                    <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex-shrink-0 flex items-center justify-center font-bold text-sm">
                       2022
                     </div>
                     <div>
@@ -74,7 +74,7 @@ const FundSelection = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4 animate-fade-in">
-                    <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center font-bold">
+                    <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex-shrink-0 flex items-center justify-center font-bold text-sm">
                       2024
                     </div>
                     <div>

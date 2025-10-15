@@ -38,12 +38,12 @@ const Index = () => {
         <section id="invest-smarter">
           <InvestSmarterSection />
         </section>
+        <section id="testimonials">
+          <Testimonials />
+        </section>
         <section id="about">
           <Compliance />
           <TeamSection />
-        </section>
-        <section id="testimonials">
-          <Testimonials />
         </section>
         <section id="faq">
           <FAQ />

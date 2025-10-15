@@ -41,7 +41,7 @@ export function ProcessSteps() {
           <div className="grid md:flex gap-8 md:gap-6 md:justify-center md:items-start">
             {steps.map((step, index) => {
               const boxWidths = ['md:w-[270px]', 'md:w-[300px]', 'md:w-[330px]'];
-              const boxHeights = ['md:h-[300px]', 'md:h-[320px]', 'md:h-[350px]'];
+              const boxHeights = ['md:h-[300px]', 'md:h-[300px]', 'md:h-[300px]'];
               
               const pastelColors = [
                 'bg-[hsl(var(--pastel-mint))]',

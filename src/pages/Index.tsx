@@ -28,7 +28,9 @@ const Index = () => {
         <section id="calculator">
           <EducationCalculator />
         </section>
-        <ProcessSteps />
+        <section id="steps">
+          <ProcessSteps />
+        </section>
         <section id="features">
           <FeatureCards />
         </section>

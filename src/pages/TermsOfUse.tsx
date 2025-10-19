@@ -59,6 +59,38 @@ const TermsOfUse = () => {
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
                   3
                 </span>
+                <span>No Investment Advice or Personal Recommendations</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p>GoPlug Enterprises Private Limited is not a Registered Investment Adviser (RIA). The platform does not provide investment advice, financial planning, risk profiling, or personalized recommendations of any kind.</p>
+              <p>All mutual fund schemes or investment options displayed on the Nested platform are offered on an execution-only basis. The selection, initiation, and continuation of any investment is solely at the discretion of the user.</p>
+              <p>Users are encouraged to consult a qualified investment adviser before making any investment decisions.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
+                  4
+                </span>
+                <span>No Guarantee of Returns or Goal Achievement</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p>Investments in mutual funds and other market-linked securities are subject to market risks, including the possible loss of principal. Past performance does not guarantee future returns.</p>
+              <p>While the platform may assist users in planning or tracking goals, there is no assurance or guarantee that the targeted corpus, goal, or outcome will be achieved. Projections, charts, or goal forecasts displayed on the platform are illustrative in nature and should not be construed as commitments or guarantees by Nested.</p>
+              <p>Users should read all scheme-related documents carefully before investing.</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
+                  5
+                </span>
                 <span>Payment, Transactions and Funds Flow</span>
               </CardTitle>
             </CardHeader>
@@ -73,7 +105,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  4
+                  6
                 </span>
                 <span>Account Registration & Security</span>
               </CardTitle>
@@ -89,7 +121,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  5
+                  7
                 </span>
                 <span>Intellectual Property, Use of Platform Content</span>
               </CardTitle>
@@ -104,7 +136,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  6
+                  8
                 </span>
                 <span>Risks, Disclaimers & No Warranty</span>
               </CardTitle>
@@ -120,7 +152,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  7
+                  9
                 </span>
                 <span>Transactions, Cancellations & Refunds</span>
               </CardTitle>
@@ -136,7 +168,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  8
+                  10
                 </span>
                 <span>Termination / Suspension</span>
               </CardTitle>
@@ -151,7 +183,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  9
+                  11
                 </span>
                 <span>Liability Limitation</span>
               </CardTitle>
@@ -166,7 +198,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  10
+                  12
                 </span>
                 <span>Regulatory Compliance</span>
               </CardTitle>
@@ -181,7 +213,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  11
+                  13
                 </span>
                 <span>Changes to Terms</span>
               </CardTitle>
@@ -196,7 +228,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  12
+                  14
                 </span>
                 <span>Governing Law & Dispute Resolution</span>
               </CardTitle>
@@ -211,7 +243,7 @@ const TermsOfUse = () => {
             <CardHeader>
               <CardTitle className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold">
-                  13
+                  15
                 </span>
                 <span>Miscellaneous</span>
               </CardTitle>

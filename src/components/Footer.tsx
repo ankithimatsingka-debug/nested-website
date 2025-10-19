@@ -47,7 +47,7 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6">Legal</h3>
             <ul className="space-y-3">
-              <li><a href="/terms-of-use" className="font-body text-muted-foreground hover:text-primary transition-colors">Terms of Use</a></li>
+              <li><a href="/terms-and-conditions" className="font-body text-muted-foreground hover:text-primary transition-colors">Terms & Conditions</a></li>
               <li><a href="/privacy-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="/cancellation-refund-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Cancellation & Refund Policy</a></li>
               <li><a href="/information-security-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Information Security Policy</a></li>

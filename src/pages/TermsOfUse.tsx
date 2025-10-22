@@ -12,7 +12,7 @@ const TermsOfUse = () => {
             Terms & Conditions
           </h1>
           <p className="text-muted-foreground text-lg">
-            Welcome to Nested Enterprises Private Limited ("we", "our", "us", "Platform"). These Terms of Use ("Terms") 
+            Welcome to GoPlug Enterprises Private Limited ("we", "our", "us", "Platform"). These Terms of Use ("Terms") 
             govern your access to and use of the Platform, including its website, mobile application (if any), content, 
             and services related to mutual funds and other financial products.
           </p>

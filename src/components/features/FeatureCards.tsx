@@ -4,14 +4,14 @@ import { Card, CardContent } from "@/components/ui/card";
 const features = [
   {
     icon: Target,
-    title: "Plans Made Just for You",
-    description: "Tell us your child's college goal and timeline - we'll craft a custom investment plan just for it.",
-    highlight: "Personal recommendations"
+    title: "Smart Plans for Smart Future",
+    description: "Tell us your child's education goal and we'll show indicative investment paths to help you reach it.",
+    highlight: "Goal planning"
   },
   {
     icon: BarChart3,
     title: "Smart Money Management",
-    description: "We monitor your investment and prompt you to rebalance to keep your investment healthy.",
+    description: "We help you stay on top of your investments with performance insights and timely updates.",
     highlight: "Automatic rebalancing"
   },
   {
@@ -35,7 +35,7 @@ const features = [
   {
     icon: Users,
     title: "Dedicated Expert",
-    description: "A certified expert will personally guide you through all your MF investments.",
+    description: "Our certified professionals help you understand and manage your investments.",
     highlight: "Hands-on support"
   }
 ];

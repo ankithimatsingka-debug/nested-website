@@ -73,13 +73,6 @@ export function Footer() {
                   <div className="font-medium">1800-123-NEST</div>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                <div>
-                  <div className="font-body text-muted-foreground">Office</div>
-                  <div className="font-medium">Mumbai, India</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -87,10 +80,11 @@ export function Footer() {
         <div className="border-t border-border/50 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="font-body text-muted-foreground text-sm">
-              © 2024 Nested Financial Services. All rights reserved. SEBI Registered Investment Advisor.
+              © 2025 GoPlug Enterprises Pvt Ltd is a mutual fund distributor with ARN xxxxxx.
             </div>
             <div className="font-body text-muted-foreground text-sm">
-              Mutual fund investments are subject to market risks. Please read all scheme-related documents carefully.
+              Mutual Fund investments are subject to market risks. Please read all scheme related documents carefully.<br />
+              GoPlug Enterprises Private Limited ("Nested") is not a Registered Investment Adviser (RIA). The "Nested" platform does not provide investment advice, financial planning, risk profiling, or personalized recommendations of any kind.
             </div>
           </div>
         </div>

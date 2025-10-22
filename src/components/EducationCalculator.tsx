@@ -52,15 +52,12 @@ export function EducationCalculator() {
               Education Cost <span className="text-primary">Calculator</span>
             </h2>
             <p className="font-body text-lg text-muted-foreground">
-              Get a personalized plan for your child's education goals in under 2 minutes.
+              Begin planning your child's future
             </p>
           </div>
 
           <Card className="shadow-glow border-0">
             <CardHeader className="pb-8">
-              <CardTitle className="text-center font-heading text-2xl">
-                Plan Your Child's Future Today
-              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-8">
               <div className="grid md:grid-cols-2 gap-8">

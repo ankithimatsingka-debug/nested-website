@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </h1>
           <p className="text-muted-foreground text-lg">
-            This Privacy Policy ("Policy") explains how Nested Enterprises Private Limited ("we," "us," "our") collects, 
+            This Privacy Policy ("Policy") explains how GoPlug Enterprises Private Limited ("we," "us," "our") collects, 
             uses, discloses, stores and protects your personal information when you use our website or mobile application 
             (collectively, the "Platform") for mutual fund investments and related financial services. By using the Platform, 
             you ("you," "your," "User," "Investor") consent to the practices described here.

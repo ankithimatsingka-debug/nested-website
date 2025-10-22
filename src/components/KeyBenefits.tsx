@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const benefits = [
   {
     icon: BarChart3,
-    title: "Personalized Asset Allocation",
-    description: "Your investment mix is tailored to your child's age, your goals timeline, and risk preferences.",
+    title: "Right Asset Allocation",
+    description: "Get portfolio categories based on child's education goals.",
     highlight: "Custom portfolios for every family"
   },
   {
@@ -32,7 +32,7 @@ export function KeyBenefits() {
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
             While other apps leave you to figure it out alone, Nested provides intelligent automation 
-            and personalization for busy parents.
+            and convenience for busy parents.
           </p>
         </div>
 

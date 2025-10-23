@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 export function TeamSection() {
   const teamMembers = [
@@ -9,14 +9,16 @@ export function TeamSection() {
       role: "Co-Founder & CEO",
       bio: "Finance professional with 15 years experience. Father of nine year old girl, passionate about making investing accessible to every parent.",
       image: "/placeholder.svg",
-      initials: "AH"
+      initials: "AH",
+      linkedin: "https://www.linkedin.com/in/ankithimatsingka/"
     },
     {
       name: "Dheeraj Reddy", 
       role: "CTO & Co-founder",
       bio: "Tech leader with expertise finance and technology.",
       image: "/placeholder.svg",
-      initials: "DR"
+      initials: "DR",
+      linkedin: "https://www.linkedin.com/in/dheeraj-kumar-reddy-dosakayala-25876a103/"
     }
   ];
 
@@ -56,12 +58,14 @@ export function TeamSection() {
                   </p>
                   
                   <div className="flex justify-center gap-3">
-                    <button className="w-8 h-8 bg-muted/50 hover:bg-muted rounded-full flex items-center justify-center transition-colors">
+                    <a 
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-muted/50 hover:bg-muted rounded-full flex items-center justify-center transition-colors"
+                    >
                       <Linkedin className="w-4 h-4 text-muted-foreground" />
-                    </button>
-                    <button className="w-8 h-8 bg-muted/50 hover:bg-muted rounded-full flex items-center justify-center transition-colors">
-                      <Mail className="w-4 h-4 text-muted-foreground" />
-                    </button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>

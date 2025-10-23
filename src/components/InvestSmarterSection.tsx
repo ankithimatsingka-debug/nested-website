@@ -137,21 +137,21 @@ const BalancingAnimation = () => (
 const cards: SmartCard[] = [
   {
     title: "Your own goal-based investment portfolio",
-    subtext: "Your portfolio is customized based on your investment appetite and the year you'll need the funds.",
+    subtext: "Invest in goal-based portfolios aligned with different risk levels.",
     icon: TrendingUp,
     gradient: "from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20",
     AnimationComponent: PortfolioAnimation,
   },
   {
     title: "Stay ahead of market changes",
-    subtext: "We continuously monitor market movements and alert you in advance about potential volatility.",
+    subtext: "We continuously monitor markets and share timely updates to help you stay informed.",
     icon: Bell,
     gradient: "from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20",
     AnimationComponent: GraphAnimation,
   },
   {
     title: "Annual SIP allocation review",
-    subtext: "We review your SIP allocation each year and suggest adjustments aligned with your child's goals.",
+    subtext: "We review portfolios each year to ensure they remain aligned with investment timelines.",
     icon: PieChart,
     gradient: "from-green-50 to-emerald-50 dark:from-green-950/20 dark:to-emerald-950/20",
     AnimationComponent: RefreshAnimation,

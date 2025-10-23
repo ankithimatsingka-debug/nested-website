@@ -83,8 +83,9 @@ export function Footer() {
               © 2025 GoPlug Enterprises Pvt Ltd is a mutual fund distributor with ARN xxxxxx.
             </div>
             <div className="font-body text-muted-foreground text-sm">
-              Mutual Fund investments are subject to market risks. Please read all scheme related documents carefully.<br />
-              GoPlug Enterprises Private Limited ("Nested") is not a Registered Investment Adviser (RIA). The "Nested" platform does not provide investment advice, financial planning, risk profiling, or personalized recommendations of any kind.
+              Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.<br />
+              GoPlug Enterprises Private Limited ("Nested") is not a SEBI-registered Investment Adviser (RIA). The "Nested" platform does not provide personalized investment advice, financial planning, risk profiling, or recommendations tailored to individual investors. All portfolio suggestions on the platform are based on predefined model portfolios only.<br />
+              Investors should make their own decisions based on their individual financial situation, risk tolerance, and investment goals. Past performance of mutual funds does not guarantee future returns.
             </div>
           </div>
         </div>

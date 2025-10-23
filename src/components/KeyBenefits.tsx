@@ -6,7 +6,7 @@ const benefits = [
     icon: BarChart3,
     title: "Right Asset Allocation",
     description: "Get portfolio categories based on child's education goals.",
-    highlight: "Custom portfolios for every family"
+    highlight: "Portfolio for every goal"
   },
   {
     icon: RefreshCw,

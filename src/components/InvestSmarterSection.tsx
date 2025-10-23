@@ -136,7 +136,7 @@ const BalancingAnimation = () => (
 
 const cards: SmartCard[] = [
   {
-    title: "Build your personalized investment portfolio",
+    title: "Your own goal-based investment portfolio",
     subtext: "Your portfolio is customized based on your investment appetite and the year you'll need the funds.",
     icon: TrendingUp,
     gradient: "from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20",

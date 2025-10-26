@@ -112,7 +112,7 @@ const FundSelection = () => {
             
             <div className="space-y-8">
               <p className="text-muted-foreground text-base text-center">
-                At our firm, fund selection is not driven by short-term performance or market noise. Instead, we rely on a structured framework that considers the long-term evolution of markets, changing risk profiles, and future shifts in interest rates.
+                At Nested, fund selection is not driven by short-term performance or market noise. Instead, we rely on a structured framework that considers the long-term evolution of markets, changing risk profiles, and future shifts in interest rates.
               </p>
               
               <p className="text-muted-foreground text-base text-center font-medium">
@@ -167,10 +167,10 @@ const FundSelection = () => {
                 </Card>
 
                 {/* Point 3 */}
-                <Card className="border-l-4 border-l-accent">
+                <Card className="border-l-4 border-l-primary">
                   <CardHeader>
                     <CardTitle className="text-xl font-bold flex items-center gap-3">
-                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground font-bold text-sm">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm">
                         3
                       </span>
                       Future Interest Rate Shifts

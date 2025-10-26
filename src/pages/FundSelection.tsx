@@ -105,7 +105,92 @@ const FundSelection = () => {
           </div>
         </section>
 
-        {/* Section 4: Framework Accordion */}
+        {/* Section 4: Nested's Thought Process */}
+        <section className="container mx-auto px-4 py-16 bg-muted/30">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">Nested's Thought Process</h2>
+            
+            <div className="space-y-8">
+              <p className="text-muted-foreground text-base text-center">
+                At our firm, fund selection is not driven by short-term performance or market noise. Instead, we rely on a structured framework that considers the long-term evolution of markets, changing risk profiles, and future shifts in interest rates.
+              </p>
+              
+              <p className="text-muted-foreground text-base text-center font-medium">
+                Here's how we approach it.
+              </p>
+
+              <div className="space-y-6">
+                {/* Point 1 */}
+                <Card className="border-l-4 border-l-primary">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-bold flex items-center gap-3">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm">
+                        1
+                      </span>
+                      Long-Term Market Assumptions
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4 text-muted-foreground text-base">
+                    <p>
+                      India today is a $4 trillion economy. Over the next decades, it will likely grow into a $10 trillion economy. But as economies mature, their growth rates naturally moderate — the same 6–7% GDP growth that feels normal today will not be sustainable in a $10 trillion India.
+                    </p>
+                    <p>
+                      This structural shift has deep implications for how we forecast returns from equity markets. Our models assume realistic, forward-looking growth rates, rather than simply extrapolating past performance. We believe this disciplined realism is key to setting the right expectations and designing robust portfolios.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Point 2 */}
+                <Card className="border-l-4 border-l-secondary">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-bold flex items-center gap-3">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-secondary text-secondary-foreground font-bold text-sm">
+                        2
+                      </span>
+                      Dynamic Asset Allocation Aligned to Life Goals
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4 text-muted-foreground text-base">
+                    <p>
+                      Your portfolio's composition should evolve as you move closer to your financial goals.
+                    </p>
+                    <p>
+                      When you start investing with 15 years remaining until the goal your allocation will be predominantly equity-oriented, allowing you to benefit from long-term compounding.
+                    </p>
+                    <p>
+                      As you progress, and particularly when you are within three years of the goal, the focus shifts toward capital protection. At that stage, the portfolio will be primarily invested in fixed income, reducing volatility and locking in gains.
+                    </p>
+                    <p>
+                      Each of these phases comes with different return assumptions, and our recommendations account for these changing dynamics rather than assuming a flat return trajectory throughout.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Point 3 */}
+                <Card className="border-l-4 border-l-accent">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-bold flex items-center gap-3">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground font-bold text-sm">
+                        3
+                      </span>
+                      Future Interest Rate Shifts
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4 text-muted-foreground text-base">
+                    <p>
+                      Interest rates are cyclical. The rates we see today will not persist indefinitely. As the economy evolves and inflation stabilizes, returns from fixed-income instruments will likely trend lower over the long term.
+                    </p>
+                    <p>
+                      We build these assumptions into our planning models ensuring that your expected returns reflect a realistic future, not just present-day yields.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 5: Framework Accordion */}
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Nested's Framework for Fund Selection</h2>

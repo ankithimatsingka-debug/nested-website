@@ -70,24 +70,6 @@ export function HeroLanding() {
               </div>
             </div>
 
-            {/* Download Buttons with QR Code */}
-            <div className="flex gap-4 items-center justify-center mb-4">
-              <div className="flex gap-3">
-                <Button variant="outline" size="sm">
-                  <Apple className="h-4 w-4 mr-2" />
-                  App Store
-                </Button>
-                <Button variant="outline" size="sm">
-                  <Play className="h-4 w-4 mr-2" />
-                  Play Store
-                </Button>
-              </div>
-              <img 
-                src={qrCode} 
-                alt="Scan QR code to download Nested app" 
-                className="hidden lg:block w-20 h-20 border-2 border-border rounded-lg"
-              />
-            </div>
           </div>
         </div>
       </div>

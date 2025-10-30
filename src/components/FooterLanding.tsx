@@ -13,26 +13,9 @@ export function FooterLanding() {
               <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3"></div>
               <span className="font-heading text-2xl font-bold">Nested</span>
             </div>
-            <p className="font-body text-muted-foreground mb-6 leading-relaxed">
+            <p className="font-body text-muted-foreground leading-relaxed">
               Funding dreams, one goal at a time. Smart mutual fund investing designed for Indian parents.
             </p>
-            <div className="flex justify-center mb-6">
-              <img 
-                src={qrCode} 
-                alt="Scan QR code to download Nested app" 
-                className="w-20 h-20 border-2 border-border rounded-lg"
-              />
-            </div>
-            <div className="flex gap-3 justify-center">
-              <Button variant="outline" size="sm">
-                <Apple className="h-4 w-4 mr-2" />
-                App Store
-              </Button>
-              <Button variant="outline" size="sm">
-                <Play className="h-4 w-4 mr-2" />
-                Play Store
-              </Button>
-            </div>
           </div>
         </div>
 

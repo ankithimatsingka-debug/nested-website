@@ -15,17 +15,12 @@ export function ContactUs() {
           <div className="flex justify-center">
             <div className="w-full max-w-2xl bg-card rounded-lg shadow-lg overflow-hidden">
               <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdQhUJMa9sDKfRUcTHbeBesjhLFonR9rgwIv7VqpzgNpatwow/viewform?embedded=true" 
-                width="100%" 
-                height="1043" 
+                aria-label='Sign Up' 
                 frameBorder="0" 
-                marginHeight={0} 
-                marginWidth={0}
-                title="Contact Us Form"
-                className="w-full"
-              >
-                Loading…
-              </iframe>
+                style={{ height: '500px', width: '99%', border: 'none' }}
+                src='https://forms.zohopublic.com/ankithimatsingkagm1/form/SignUp/formperma/PpY4yuUeJ3KQbk5I0zO8t3Cnf1vg_D1bAKwqAVS-fDo'
+                title="Sign Up Form"
+              />
             </div>
           </div>
         </div>

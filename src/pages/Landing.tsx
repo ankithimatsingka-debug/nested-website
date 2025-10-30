@@ -1,4 +1,3 @@
-import { Header } from "@/components/Header";
 import { HeroLanding } from "@/components/HeroLanding";
 import { KeyBenefits } from "@/components/KeyBenefits";
 import { FeatureCards } from "@/components/features/FeatureCards";
@@ -8,14 +7,13 @@ import { ContactUs } from "@/components/ContactUs";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { DownloadBanner } from "@/components/DownloadBanner";
-import { Footer } from "@/components/Footer";
+import { FooterLanding } from "@/components/FooterLanding";
 import { EnhancedComparisonSection } from "@/components/comparison/EnhancedComparisonSection";
 import { InvestSmarterSection } from "@/components/InvestSmarterSection";
 
 const Landing = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       <main>
         <HeroLanding />
         <section id="benefits">
@@ -43,7 +41,7 @@ const Landing = () => {
         </section>
         <DownloadBanner />
       </main>
-      <Footer />
+      <FooterLanding />
     </div>
   );
 };

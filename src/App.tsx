@@ -13,6 +13,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CancellationRefundPolicy from "./pages/CancellationRefundPolicy";
 import InformationSecurityPolicy from "./pages/InformationSecurityPolicy";
 import AccountDataDeletionPolicy from "./pages/AccountDataDeletionPolicy";
+import KYCModification from "./pages/KYCModification";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/cancellation-refund-policy" element={<CancellationRefundPolicy />} />
             <Route path="/information-security-policy" element={<InformationSecurityPolicy />} />
             <Route path="/account-data-deletion-policy" element={<AccountDataDeletionPolicy />} />
+            <Route path="/kyc-modification" element={<KYCModification />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

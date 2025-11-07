@@ -100,7 +100,7 @@ const KYCModification = () => {
               </CardHeader>
               <CardContent>
                 <ol className="list-decimal list-inside space-y-3 ml-4">
-                  <li>Go to the <strong>Protean (NSDL)</strong> or <strong>UTIITSL</strong> PAN correction portal.</li>
+                  <li>Go to the <a href="https://onlineservices.proteantech.in/paam/endUserRegisterContact.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline"><strong>Protean (NSDL)</strong></a> or <a href="https://www.pan.utiitsl.com/panonline_ipg/forms/csfPan.html/csfPreForm" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline"><strong>UTIITSL PAN</strong></a> correction portal.</li>
                   <li>Select <strong>"Changes or Correction in existing PAN data."</strong></li>
                   <li>Enter your PAN, choose the field(s) to be corrected.</li>
                   <li>Upload valid supporting documents showing correct details.</li>

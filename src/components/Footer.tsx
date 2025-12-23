@@ -80,7 +80,7 @@ export function Footer() {
         <div className="border-t border-border/50 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="font-body text-muted-foreground text-sm">
-              © 2025 GoPlug Enterprises Pvt Ltd is a mutual fund distributor with ARN xxxxxx.
+              © 2025 GoPlug Enterprises Pvt Ltd is a mutual fund distributor with ARN 348380.
             </div>
             <div className="font-body text-muted-foreground text-sm">
               Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.<br />

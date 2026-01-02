@@ -63,7 +63,7 @@ export function Footer() {
                 <Mail className="h-5 w-5 text-primary mt-0.5" />
                 <div>
                   <div className="font-body text-muted-foreground">Email</div>
-                  <div className="font-medium">support@nested.app</div>
+                  <div className="font-medium">support@nested.money</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">

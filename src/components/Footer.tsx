@@ -70,7 +70,7 @@ export function Footer() {
                 <Phone className="h-5 w-5 text-primary mt-0.5" />
                 <div>
                   <div className="font-body text-muted-foreground">Phone</div>
-                  <div className="font-medium">1800-123-NEST</div>
+                  <div className="font-medium">+91 6305 209 273</div>
                 </div>
               </div>
             </div>

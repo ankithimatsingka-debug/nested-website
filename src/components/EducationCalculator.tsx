@@ -38,7 +38,9 @@ export function EducationCalculator() {
       if (!isNaN(age) && age > 0 && age < 18) {
         const futureCost = calculateFutureCost(selectedCollege, age);
         if (futureCost > 0) {
-          setTargetAmount(futureCost.toString());
+          // Round to nearest 10,000
+          const roundedCost = Math.round(futureCost / 10000) * 10000;
+          setTargetAmount(roundedCost.toString());
         }
       }
     }

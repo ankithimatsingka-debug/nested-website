@@ -12,7 +12,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-6">
-              <img src={nestedLogo} alt="Nested" className="h-10" />
+              <img src={nestedLogo} alt="Nested logo" width="120" height="40" className="h-10" />
             </div>
             <p className="font-body text-muted-foreground mb-6 leading-relaxed">
               Funding dreams, one goal at a time. Smart mutual fund investing designed for Indian parents.
@@ -20,6 +20,9 @@ export function Footer() {
             <img 
               src={qrCode} 
               alt="Scan QR code to download Nested app" 
+              width="80"
+              height="80"
+              loading="lazy"
               className="hidden lg:block w-20 h-20 border-2 border-border rounded-lg mb-3"
             />
             <div className="flex gap-3">

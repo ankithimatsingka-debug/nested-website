@@ -41,8 +41,8 @@ export function TeamSection() {
             {teamMembers.map((member, index) => (
               <Card key={index} className="border-border/50 hover:border-border transition-all group hover:shadow-lg">
                 <CardContent className="p-6 text-center">
-                  <Avatar className="w-24 h-24 mx-auto mb-4 group-hover:scale-105 transition-transform">
-                    <AvatarImage src={member.image} alt={member.name} />
+                <Avatar className="w-24 h-24 mx-auto mb-4 group-hover:scale-105 transition-transform">
+                    <AvatarImage src={member.image} alt={`${member.name} - ${member.role}`} loading="lazy" />
                     <AvatarFallback className="text-lg font-semibold bg-gradient-to-br from-primary/20 to-secondary/20">
                       {member.initials}
                     </AvatarFallback>
@@ -63,9 +63,10 @@ export function TeamSection() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`View ${member.name}'s LinkedIn profile`}
                       className="w-8 h-8 bg-muted/50 hover:bg-muted rounded-full flex items-center justify-center transition-colors"
                     >
-                      <Linkedin className="w-4 h-4 text-muted-foreground" />
+                      <Linkedin className="w-4 h-4 text-muted-foreground" aria-hidden="true" />
                     </a>
                   </div>
                 </CardContent>

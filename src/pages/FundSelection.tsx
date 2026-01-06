@@ -4,10 +4,16 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { TrendingUp, Shield, Target, User, FileText, Building2 } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
 
 const FundSelection = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Fund Selection Methodology - Nested</title>
+        <meta name="description" content="Learn how Nested selects mutual funds. Our methodology balances returns, risk, and consistency for long-term wealth creation." />
+        <link rel="canonical" href="https://nested.money/fund-selection" />
+      </Helmet>
       <Header />
       
       <main className="pt-20">

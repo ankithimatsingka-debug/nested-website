@@ -14,8 +14,8 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center">
-            <img src={nestedLogo} alt="Nested" className="h-10" />
+          <a href="/" className="flex items-center" aria-label="Nested - Go to homepage">
+            <img src={nestedLogo} alt="Nested logo" className="h-10" width="120" height="40" />
           </a>
 
           {/* Desktop Navigation */}
@@ -53,6 +53,8 @@ export function Header() {
               size="sm"
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>

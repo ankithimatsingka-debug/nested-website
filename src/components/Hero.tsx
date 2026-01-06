@@ -57,7 +57,9 @@ export function Hero() {
                   <img 
                     key={index}
                     src={screen} 
-                    alt={`Nested app screen ${index + 1}`}
+                    alt={`Nested app screen ${index + 1} showing investment features`}
+                    width="280"
+                    height="560"
                     className={`absolute top-0 left-0 w-full h-auto rounded-3xl shadow-2xl transition-opacity duration-500 ${
                       index === currentScreenIndex ? 'opacity-100' : 'opacity-0'
                     }`}
@@ -66,6 +68,8 @@ export function Hero() {
                 <img 
                   src={appScreen1} 
                   alt="Nested app interface"
+                  width="280"
+                  height="560"
                   className="w-full h-auto rounded-3xl shadow-2xl opacity-0"
                 />
               </div>
@@ -86,7 +90,7 @@ export function Hero() {
               </p>
 
               {/* Rotating Text */}
-              <div className="h-16 flex items-center justify-center lg:justify-start">
+              <div className="h-16 flex items-center justify-center lg:justify-start" aria-live="polite" aria-atomic="true">
                 <p 
                   className={`font-body text-lg md:text-xl lg:[font-size:22px] text-white font-medium transition-all duration-300 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
@@ -112,6 +116,9 @@ export function Hero() {
               <img 
                 src={qrCode} 
                 alt="Scan QR code to download Nested app" 
+                width="80"
+                height="80"
+                loading="lazy"
                 className="hidden lg:block w-20 h-20 border-2 border-white/40 rounded-lg"
               />
             </div>

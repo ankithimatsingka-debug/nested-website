@@ -1,10 +1,16 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 
 const CancellationRefundPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Cancellation & Refund Policy - Nested</title>
+        <meta name="description" content="Cancellation and refund policy for Nested mutual fund services. Learn about SIP cancellations, transaction cancellations, and refund processes." />
+        <link rel="canonical" href="https://nested.money/cancellation-refund-policy" />
+      </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto space-y-8">

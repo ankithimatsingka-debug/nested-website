@@ -54,6 +54,20 @@ export function EducationCalculator() {
     setUserHasEditedAmount(true);
   };
 
+  // Get annual rate based on years to invest
+  const getAnnualRate = (years: number): number => {
+    if (years <= 2) return 0.09;
+    if (years <= 5) return 0.12;
+    return 0.14;
+  };
+
+  // Get disclaimer text based on years to invest
+  const getDisclaimerText = (years: number): string => {
+    if (years <= 2) return "Assumes 9% annual returns from debt & equity mutual funds";
+    if (years <= 5) return "Assumes 12% annual returns from debt & equity mutual funds";
+    return "Assumes 14% annual returns from equity mutual funds";
+  };
+
   const calculateInvestment = () => {
     if (!childAge || !targetAmount || !selectedCollege) return;
 
@@ -65,8 +79,9 @@ export function EducationCalculator() {
     // Assume college starts at 18
     const yearsToInvest = 18 - currentAge;
     
-    // Assuming 12% annual return (typical for equity mutual funds)
-    const monthlyRate = 0.12 / 12;
+    // Get rate based on investment horizon
+    const annualRate = getAnnualRate(yearsToInvest);
+    const monthlyRate = annualRate / 12;
     const totalMonths = yearsToInvest * 12;
     
     // SIP calculation: PMT = FV / [((1 + r)^n - 1) / r]
@@ -257,7 +272,7 @@ export function EducationCalculator() {
                       <div className="pt-4 border-t border-white/20">
                         <div className="flex items-center gap-2 text-sm opacity-90 mb-4">
                           <Target className="h-4 w-4" />
-                          <span>Assumes 12% annual returns from equity mutual funds</span>
+                          <span>{getDisclaimerText(result.totalYears)}</span>
                         </div>
                         <Button 
                           variant="secondary"

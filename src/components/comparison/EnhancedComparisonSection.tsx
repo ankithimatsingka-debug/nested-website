@@ -22,7 +22,7 @@ export const EnhancedComparisonSection = () => {
             Compare <span className="text-secondary">Investment Products</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive, user-friendly comparison to help you make the best decision for your child's education
+            Make the best decision for your child's education
           </p>
         </div>
 

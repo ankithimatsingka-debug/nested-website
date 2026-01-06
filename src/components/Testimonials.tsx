@@ -88,7 +88,7 @@ export function Testimonials() {
             Real Stories from <span className="text-primary">Real Parents</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of Indian parents who are successfully building their children's future with Nested.
+            Join thousands of Indian parents on Nested
           </p>
         </div>
 

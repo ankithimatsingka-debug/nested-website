@@ -8,7 +8,7 @@ export function TeamSection() {
   const teamMembers = [
     {
       name: "Ankit R Himatsingka",
-      role: "Co-Founder & CEO",
+      role: "CEO & Co-Founder",
       bio: "CA and Harvard alumnus",
       image: ankitImage,
       initials: "AH",
@@ -33,8 +33,7 @@ export function TeamSection() {
               Meet <span className="text-primary">Our Team</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We're a team of parents, finance professionals, and technology experts united by one mission: 
-              helping families build a brighter financial future for their children.
+              Experts in financial services, product & tech
             </p>
           </div>
 

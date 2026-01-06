@@ -15,7 +15,9 @@
     <!-- Preconnect to external resources - BEFORE preloading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload LCP image for faster rendering -->
+    <link rel="preload" as="image" href="/src/assets/app-screen-1.webp" type="image/webp" fetchpriority="high" />
     
     <!-- Critical CSS for above-the-fold content - prevents CLS and improves FCP -->
     <style>

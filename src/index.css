@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Critical: Optimize paint performance */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force GPU acceleration on hero section for faster paint */
+.bg-gradient-primary {
+  will-change: auto;
+  contain: layout style;
+}
+
 /* Nested Design System - Funding dreams, one goal at a time 
 All colors MUST be HSL for consistency and theming.
 */

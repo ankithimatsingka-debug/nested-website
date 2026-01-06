@@ -96,9 +96,9 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-primary overflow-hidden">
-      {/* Decorative blur circles - reduced for performance */}
-      <div className="absolute top-20 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl" aria-hidden="true"></div>
-      <div className="absolute bottom-20 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl" aria-hidden="true"></div>
+      {/* Decorative blur circles - lazy rendered for performance */}
+      <div className="absolute top-20 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl opacity-50" aria-hidden="true" style={{ contain: 'layout paint' }}></div>
+      <div className="absolute bottom-20 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl opacity-50" aria-hidden="true" style={{ contain: 'layout paint' }}></div>
       
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -108,16 +108,29 @@ export function Hero() {
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75" aria-hidden="true"></div>
               {/* Fixed aspect ratio container to prevent CLS */}
               <div className="relative z-10 w-[280px] aspect-[280/560]">
-                <img 
-                  key={currentScreenIndex}
-                  src={appScreens[currentScreenIndex]} 
-                  alt={`Nested app screen ${currentScreenIndex + 1} showing investment features`}
-                  width="280"
-                  height="560"
-                  fetchPriority={currentScreenIndex === 0 ? "high" : "auto"}
-                  decoding={currentScreenIndex === 0 ? "sync" : "async"}
-                  className="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl"
-                />
+                {/* Preload first image with high priority */}
+                {currentScreenIndex === 0 ? (
+                  <img 
+                    src={appScreen1} 
+                    alt="Nested app screen showing investment features"
+                    width="280"
+                    height="560"
+                    fetchPriority="high"
+                    decoding="sync"
+                    className="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl"
+                  />
+                ) : (
+                  <img 
+                    key={currentScreenIndex}
+                    src={appScreens[currentScreenIndex]} 
+                    alt={`Nested app screen ${currentScreenIndex + 1} showing investment features`}
+                    width="280"
+                    height="560"
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl"
+                  />
+                )}
               </div>
             </div>
           </div>

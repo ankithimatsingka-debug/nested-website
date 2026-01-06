@@ -1,10 +1,16 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Privacy Policy - Nested</title>
+        <meta name="description" content="Privacy policy for Nested. Learn how we collect, use, and protect your personal information when using our mutual fund investment platform." />
+        <link rel="canonical" href="https://nested.money/privacy-policy" />
+      </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto space-y-8">

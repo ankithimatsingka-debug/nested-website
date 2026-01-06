@@ -1,10 +1,16 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 
 const InformationSecurityPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Information Security Policy - Nested</title>
+        <meta name="description" content="Information security policy for Nested. Learn how we protect your data with encryption, access controls, and security best practices." />
+        <link rel="canonical" href="https://nested.money/information-security-policy" />
+      </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto space-y-8">

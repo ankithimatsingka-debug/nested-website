@@ -10,10 +10,16 @@ import { DownloadBanner } from "@/components/DownloadBanner";
 import { FooterLanding } from "@/components/FooterLanding";
 import { EnhancedComparisonSection } from "@/components/comparison/EnhancedComparisonSection";
 import { InvestSmarterSection } from "@/components/InvestSmarterSection";
+import { Helmet } from "react-helmet";
 
 const Landing = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Nested - Funding dreams, one goal at a time</title>
+        <meta name="description" content="Smart mutual fund investing designed for Indian parents. Goal-based planning, automatic rebalancing, and personalized asset allocation for your child's education." />
+        <link rel="canonical" href="https://nested.money/" />
+      </Helmet>
       <main>
         <HeroLanding />
         <section id="benefits">

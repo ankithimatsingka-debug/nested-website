@@ -20,6 +20,12 @@ export function Hero() {
   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
+  // Check for reduced motion preference
+  const prefersReducedMotion = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }, []);
+
   // Preload next image for smooth transitions
   const nextScreenIndex = useMemo(() => (currentScreenIndex + 1) % appScreens.length, [currentScreenIndex]);
 
@@ -29,24 +35,64 @@ export function Hero() {
   }, [nextScreenIndex]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(false);
-      setTimeout(() => {
-        setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
-        setIsVisible(true);
-      }, 300);
-    }, 3000);
+    if (prefersReducedMotion) return;
+    
+    let interval: ReturnType<typeof setInterval>;
+    
+    const startInterval = () => {
+      interval = setInterval(() => {
+        setIsVisible(false);
+        setTimeout(() => {
+          setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
+          setIsVisible(true);
+        }, 300);
+      }, 3000);
+    };
+    
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        clearInterval(interval);
+      } else {
+        startInterval();
+      }
+    };
+    
+    startInterval();
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [prefersReducedMotion]);
 
   useEffect(() => {
-    const screenInterval = setInterval(() => {
-      setCurrentScreenIndex((prev) => (prev + 1) % appScreens.length);
-    }, 4000);
+    if (prefersReducedMotion) return;
+    
+    let screenInterval: ReturnType<typeof setInterval>;
+    
+    const startScreenInterval = () => {
+      screenInterval = setInterval(() => {
+        setCurrentScreenIndex((prev) => (prev + 1) % appScreens.length);
+      }, 4000);
+    };
+    
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        clearInterval(screenInterval);
+      } else {
+        startScreenInterval();
+      }
+    };
+    
+    startScreenInterval();
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
-    return () => clearInterval(screenInterval);
-  }, []);
+    return () => {
+      clearInterval(screenInterval);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [prefersReducedMotion]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-primary overflow-hidden">
@@ -68,6 +114,8 @@ export function Hero() {
                   alt={`Nested app screen ${currentScreenIndex + 1} showing investment features`}
                   width="280"
                   height="560"
+                  fetchPriority={currentScreenIndex === 0 ? "high" : "auto"}
+                  decoding={currentScreenIndex === 0 ? "sync" : "async"}
                   className="w-full h-auto rounded-3xl shadow-2xl"
                 />
               </div>
@@ -105,9 +153,10 @@ export function Hero() {
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="bg-white/10 backdrop-blur-sm border-white/40 text-white hover:bg-white/20"
+                  className="bg-white/10 backdrop-blur-sm border-white/40 text-white hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary min-h-[44px]"
+                  aria-label="Download Nested app from Google Play Store"
                 >
-                  <Play className="h-4 w-4 mr-2" />
+                  <Play className="h-4 w-4 mr-2" aria-hidden="true" />
                   Play Store
                 </Button>
               </div>

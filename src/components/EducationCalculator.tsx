@@ -146,9 +146,12 @@ export function EducationCalculator() {
                       className={cn("mt-2 h-12", ageError && "border-destructive")}
                       min="0"
                       max="17"
+                      aria-describedby={ageError ? "age-error" : "age-hint"}
+                      aria-invalid={!!ageError}
                     />
+                    <p id="age-hint" className="sr-only">Enter your child's current age between 0 and 17 years</p>
                     {ageError && (
-                      <p className="text-sm text-destructive mt-1">{ageError}</p>
+                      <p id="age-error" className="text-sm text-destructive mt-1" role="alert">{ageError}</p>
                     )}
                   </div>
 
@@ -163,6 +166,8 @@ export function EducationCalculator() {
                           variant="outline"
                           role="combobox"
                           aria-expanded={open}
+                          aria-haspopup="listbox"
+                          aria-label={selectedCollege ? `Selected: ${selectedCollege.name}. Click to change.` : "Search for a college or course"}
                           className="w-full mt-2 h-12 justify-between text-left font-normal"
                         >
                           {selectedCollege ? (
@@ -170,7 +175,7 @@ export function EducationCalculator() {
                           ) : (
                             <span className="text-muted-foreground">Search for a college or course...</span>
                           )}
-                          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" aria-hidden="true" />
                         </Button>
                       </PopoverTrigger>
                       <PopoverContent className="w-[var(--radix-popover-trigger-width)] p-0 bg-background border shadow-lg z-50" align="start">
@@ -233,28 +238,32 @@ export function EducationCalculator() {
                       value={targetAmount}
                       onChange={(e) => handleTargetAmountChange(e.target.value)}
                       className="mt-2 h-12"
+                      aria-describedby="target-hint"
                     />
-                    {selectedCollege && childAge && yearsUntilCollege > 0 && selectedCollege.currentFee > 0 && (
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Projected cost in {yearsUntilCollege} years • Feel free to adjust
-                      </p>
-                    )}
-                    {(!selectedCollege || !childAge) && (
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Select a college and enter age to auto-calculate
-                      </p>
-                    )}
+                    <p id="target-hint" className="text-sm text-muted-foreground mt-1">
+                      {selectedCollege && childAge && yearsUntilCollege > 0 && selectedCollege.currentFee > 0 
+                        ? `Projected cost in ${yearsUntilCollege} years • Feel free to adjust`
+                        : "Select a college and enter age to auto-calculate"
+                      }
+                    </p>
                   </div>
 
                   <Button 
                     onClick={calculateInvestment}
                     size="lg"
-                    className="w-full h-12 font-medium shadow-md hover:shadow-lg transition-all"
+                    className="w-full h-12 font-medium shadow-md hover:shadow-lg transition-all min-h-[44px]"
                     disabled={!childAge || !targetAmount || !selectedCollege || !!ageError}
+                    aria-describedby="calculate-hint"
                   >
-                    <Calculator className="mr-2 h-5 w-5" />
+                    <Calculator className="mr-2 h-5 w-5" aria-hidden="true" />
                     Calculate My Plan
                   </Button>
+                  <p id="calculate-hint" className="sr-only">
+                    {!childAge || !targetAmount || !selectedCollege 
+                      ? "Please fill in all fields to calculate your investment plan"
+                      : "Click to calculate your monthly investment plan"
+                    }
+                  </p>
                 </div>
 
                 {result && (

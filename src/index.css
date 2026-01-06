@@ -31,7 +31,7 @@ All colors MUST be HSL for consistency and theming.
 
     /* Neutral colors */
     --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted-foreground: 215 16% 35%;
 
     --accent: 210 40% 96%;
     --accent-foreground: 215 28% 17%;
@@ -128,7 +128,7 @@ All colors MUST be HSL for consistency and theming.
     --secondary-dark: 16 84% 60%;
 
     --muted: 215 28% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted-foreground: 215 20% 75%;
 
     --accent: 215 28% 15%;
     --accent-foreground: 0 0% 98%;
@@ -207,4 +207,39 @@ All colors MUST be HSL for consistency and theming.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Focus visible styles for accessibility */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background rounded-sm;
+  }
+
+  /* Ensure minimum touch target size on mobile */
+  @media (pointer: coarse) {
+    button,
+    [role="button"],
+    a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Content visibility for lazy sections */
+.section-lazy {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
 }

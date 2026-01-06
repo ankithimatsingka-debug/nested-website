@@ -28,57 +28,61 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main>
+      <main id="main-content" role="main">
         <Hero />
-        <section id="benefits">
+        <section id="benefits" aria-label="Key Benefits">
           <KeyBenefits />
         </section>
         <Suspense fallback={<SectionLoader />}>
-          <section id="calculator">
+          <section id="calculator" aria-label="Education Calculator" className="section-lazy">
             <EducationCalculator />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <section id="steps">
+          <section id="steps" aria-label="How It Works" className="section-lazy">
             <ProcessSteps />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <section id="features">
+          <section id="features" aria-label="Features" className="section-lazy">
             <FeatureCards />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <section id="invest-smarter">
+          <section id="invest-smarter" aria-label="Invest Smarter" className="section-lazy">
             <InvestSmarterSection />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <section id="superfd">
+          <section id="superfd" aria-label="Super FD" className="section-lazy">
             <SuperFDSection />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <section id="testimonials">
+          <section id="testimonials-section" aria-label="Testimonials" className="section-lazy">
             <Testimonials />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <section id="about">
+          <section id="about" aria-label="About Us" className="section-lazy">
             <Compliance />
             <TeamSection />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <EnhancedComparisonSection />
+          <section aria-label="Investment Comparison" className="section-lazy">
+            <EnhancedComparisonSection />
+          </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <section id="faq">
+          <section id="faq" aria-label="Frequently Asked Questions" className="section-lazy">
             <FAQ />
           </section>
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <DownloadBanner />
+          <section aria-label="Download App" className="section-lazy">
+            <DownloadBanner />
+          </section>
         </Suspense>
       </main>
       <Footer />

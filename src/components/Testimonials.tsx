@@ -30,6 +30,12 @@ export function Testimonials() {
     return window.innerWidth < 768;
   }, []);
 
+  // Check for reduced motion preference
+  const prefersReducedMotion = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }, []);
+
   // Memoized position calculation
   const getRandomPosition = useCallback(() => {
     if (isMobile) {
@@ -47,20 +53,40 @@ export function Testimonials() {
   const [position, setPosition] = useState(getRandomPosition);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      // Start fade out
-      setIsVisible(false);
-      
-      // After fade out completes, change content and position, then fade in
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-        setPosition(getRandomPosition());
-        setIsVisible(true);
-      }, 300); // Match the fade-out duration
-    }, 3500); // Increased interval to account for transition time
+    if (prefersReducedMotion) return;
+    
+    let interval: ReturnType<typeof setInterval>;
+    
+    const startInterval = () => {
+      interval = setInterval(() => {
+        // Start fade out
+        setIsVisible(false);
+        
+        // After fade out completes, change content and position, then fade in
+        setTimeout(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+          setPosition(getRandomPosition());
+          setIsVisible(true);
+        }, 300); // Match the fade-out duration
+      }, 3500); // Increased interval to account for transition time
+    };
+    
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        clearInterval(interval);
+      } else {
+        startInterval();
+      }
+    };
+    
+    startInterval();
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
-    return () => clearInterval(interval);
-  }, [getRandomPosition]);
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [getRandomPosition, prefersReducedMotion]);
 
   const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);
@@ -86,10 +112,10 @@ export function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-hero relative overflow-hidden">
+    <section id="testimonials" aria-labelledby="testimonials-heading" className="py-20 bg-gradient-hero relative overflow-hidden section-lazy">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
+          <h2 id="testimonials-heading" className="font-heading text-3xl md:text-4xl font-bold mb-6">
             Real Stories from <span className="text-primary block sm:inline">Real Parents</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">

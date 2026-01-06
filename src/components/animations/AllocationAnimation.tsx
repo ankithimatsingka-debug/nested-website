@@ -1,8 +1,8 @@
 export function AllocationAnimation() {
   return (
-    <div className="w-32 h-32 relative">
+    <div className="w-32 h-32 relative" role="img" aria-label="Portfolio allocation animation showing equity, debt, and gold segments">
       {/* Animated Donut Chart */}
-      <svg viewBox="0 0 100 100" className="w-full h-full transform -rotate-90">
+      <svg viewBox="0 0 100 100" className="w-full h-full transform -rotate-90" style={{ willChange: 'transform' }} aria-hidden="true">
         {/* Background circle */}
         <circle
           cx="50"

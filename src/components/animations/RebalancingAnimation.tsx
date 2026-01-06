@@ -1,8 +1,8 @@
 export function RebalancingAnimation() {
   return (
-    <div className="w-32 h-32 relative flex items-center justify-center">
+    <div className="w-32 h-32 relative flex items-center justify-center" role="img" aria-label="Portfolio rebalancing animation">
       {/* Outer rotating ring */}
-      <div className="absolute inset-0 animate-[spin_8s_linear_infinite]">
+      <div className="absolute inset-0 animate-[spin_8s_linear_infinite]" style={{ willChange: 'transform' }} aria-hidden="true">
         <svg viewBox="0 0 100 100" className="w-full h-full">
           <circle
             cx="50"
@@ -18,7 +18,7 @@ export function RebalancingAnimation() {
       </div>
       
       {/* Counter-rotating inner ring */}
-      <div className="absolute inset-4 animate-[spin_6s_linear_infinite_reverse]">
+      <div className="absolute inset-4 animate-[spin_6s_linear_infinite_reverse]" style={{ willChange: 'transform' }} aria-hidden="true">
         <svg viewBox="0 0 100 100" className="w-full h-full">
           <circle
             cx="50"

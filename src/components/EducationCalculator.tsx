@@ -1,26 +1,66 @@
-import { useState } from "react";
-import { Calculator, TrendingUp, Target } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useState, useEffect, useMemo } from "react";
+import { Calculator, TrendingUp, Target, Check, ChevronsUpDown, Search } from "lucide-react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
+import { cn } from "@/lib/utils";
+import { educationCostData, calculateFutureCost, CollegeCourse } from "@/data/educationCostData";
 
 export function EducationCalculator() {
   const [childAge, setChildAge] = useState<string>("");
   const [targetAmount, setTargetAmount] = useState<string>("");
-  const [course, setCourse] = useState<string>("");
+  const [selectedCollege, setSelectedCollege] = useState<CollegeCourse | null>(null);
+  const [open, setOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [userHasEditedAmount, setUserHasEditedAmount] = useState(false);
   const [result, setResult] = useState<{
     monthlyInvestment: number;
     totalYears: number;
     totalInvestment: number;
   } | null>(null);
 
+  // Filter colleges based on search query
+  const filteredColleges = useMemo(() => {
+    if (!searchQuery) return educationCostData;
+    const query = searchQuery.toLowerCase();
+    return educationCostData.filter(college => 
+      college.name.toLowerCase().includes(query)
+    );
+  }, [searchQuery]);
+
+  // Auto-populate target amount when college or age changes
+  useEffect(() => {
+    if (selectedCollege && childAge && !userHasEditedAmount) {
+      const age = parseInt(childAge);
+      if (!isNaN(age) && age > 0 && age < 18) {
+        const futureCost = calculateFutureCost(selectedCollege, age);
+        if (futureCost > 0) {
+          setTargetAmount(futureCost.toString());
+        }
+      }
+    }
+  }, [selectedCollege, childAge, userHasEditedAmount]);
+
+  // Reset userHasEditedAmount when college changes
+  useEffect(() => {
+    setUserHasEditedAmount(false);
+  }, [selectedCollege]);
+
+  const handleTargetAmountChange = (value: string) => {
+    setTargetAmount(value);
+    setUserHasEditedAmount(true);
+  };
+
   const calculateInvestment = () => {
-    if (!childAge || !targetAmount || !course) return;
+    if (!childAge || !targetAmount || !selectedCollege) return;
 
     const currentAge = parseInt(childAge);
     const target = parseInt(targetAmount);
+    
+    if (isNaN(currentAge) || isNaN(target) || currentAge >= 18) return;
     
     // Assume college starts at 18
     const yearsToInvest = 18 - currentAge;
@@ -38,6 +78,8 @@ export function EducationCalculator() {
       totalInvestment: Math.round(monthlyInvestment * totalMonths)
     });
   };
+
+  const yearsUntilCollege = childAge ? 18 - parseInt(childAge) : 0;
 
   return (
     <section className="py-20 bg-gradient-card">
@@ -62,6 +104,7 @@ export function EducationCalculator() {
             <CardContent className="space-y-8">
               <div className={result ? "grid md:grid-cols-2 gap-8" : "max-w-md mx-auto"}>
                 <div className="space-y-6">
+                  {/* Child's Age - First */}
                   <div>
                     <Label htmlFor="childAge" className="text-base font-medium">
                       Your child's current age
@@ -73,27 +116,81 @@ export function EducationCalculator() {
                       value={childAge}
                       onChange={(e) => setChildAge(e.target.value)}
                       className="mt-2 h-12"
+                      min="0"
+                      max="17"
                     />
                   </div>
 
+                  {/* Searchable College Dropdown - Second */}
                   <div>
-                    <Label htmlFor="course" className="text-base font-medium">
+                    <Label className="text-base font-medium">
                       Desired course/college
                     </Label>
-                    <Select value={course} onValueChange={setCourse}>
-                      <SelectTrigger className="mt-2 h-12">
-                        <SelectValue placeholder="Select course type" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="engineering">Engineering (IIT/NIT)</SelectItem>
-                        <SelectItem value="medical">Medical (MBBS)</SelectItem>
-                        <SelectItem value="mba">MBA (IIM/Top B-Schools)</SelectItem>
-                        <SelectItem value="general">General Graduation</SelectItem>
-                        <SelectItem value="abroad">Study Abroad</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <Popover open={open} onOpenChange={setOpen}>
+                      <PopoverTrigger asChild>
+                        <Button
+                          variant="outline"
+                          role="combobox"
+                          aria-expanded={open}
+                          className="w-full mt-2 h-12 justify-between text-left font-normal"
+                        >
+                          {selectedCollege ? (
+                            <span className="truncate">{selectedCollege.name}</span>
+                          ) : (
+                            <span className="text-muted-foreground">Search for a college or course...</span>
+                          )}
+                          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-[var(--radix-popover-trigger-width)] p-0 bg-background border shadow-lg z-50" align="start">
+                        <Command shouldFilter={false}>
+                          <div className="flex items-center border-b px-3">
+                            <Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />
+                            <input
+                              placeholder="Search colleges and courses..."
+                              value={searchQuery}
+                              onChange={(e) => setSearchQuery(e.target.value)}
+                              className="flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground"
+                            />
+                          </div>
+                          <CommandList className="max-h-[300px] overflow-y-auto">
+                            <CommandEmpty>No college or course found.</CommandEmpty>
+                            <CommandGroup>
+                              {filteredColleges.map((college) => (
+                                <CommandItem
+                                  key={college.name}
+                                  value={college.name}
+                                  onSelect={() => {
+                                    setSelectedCollege(college);
+                                    setOpen(false);
+                                    setSearchQuery("");
+                                  }}
+                                  className="cursor-pointer"
+                                >
+                                  <Check
+                                    className={cn(
+                                      "mr-2 h-4 w-4",
+                                      selectedCollege?.name === college.name ? "opacity-100" : "opacity-0"
+                                    )}
+                                  />
+                                  <div className="flex flex-col">
+                                    <span>{college.name}</span>
+                                    {college.currentFee > 0 && (
+                                      <span className="text-xs text-muted-foreground">
+                                        Current: ₹{college.currentFee.toLocaleString('en-IN')}
+                                      </span>
+                                    )}
+                                  </div>
+                                </CommandItem>
+                              ))}
+                            </CommandGroup>
+                          </CommandList>
+                        </Command>
+                      </PopoverContent>
+                    </Popover>
                   </div>
 
+                  {/* Target Amount - Third (Auto-populated but editable) */}
                   <div>
                     <Label htmlFor="targetAmount" className="text-base font-medium">
                       Target amount needed (₹)
@@ -103,19 +200,26 @@ export function EducationCalculator() {
                       type="number"
                       placeholder="e.g., 2500000"
                       value={targetAmount}
-                      onChange={(e) => setTargetAmount(e.target.value)}
+                      onChange={(e) => handleTargetAmountChange(e.target.value)}
                       className="mt-2 h-12"
                     />
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Tip: Engineering ~₹25L, Medical ~₹50L, MBA ~₹30L
-                    </p>
+                    {selectedCollege && childAge && yearsUntilCollege > 0 && selectedCollege.currentFee > 0 && (
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Projected cost in {yearsUntilCollege} years • Feel free to adjust
+                      </p>
+                    )}
+                    {(!selectedCollege || !childAge) && (
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Select a college and enter age to auto-calculate
+                      </p>
+                    )}
                   </div>
 
                   <Button 
                     onClick={calculateInvestment}
                     size="lg"
                     className="w-full h-12 font-medium shadow-md hover:shadow-lg transition-all"
-                    disabled={!childAge || !targetAmount || !course}
+                    disabled={!childAge || !targetAmount || !selectedCollege}
                   >
                     <Calculator className="mr-2 h-5 w-5" />
                     Calculate My Plan

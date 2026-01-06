@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Apple, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import mobileMockup from "@/assets/mobile-mockup.png";
+import appScreen1 from "@/assets/app-screen-1.jpg";
+import appScreen2 from "@/assets/app-screen-2.jpg";
+import appScreen3 from "@/assets/app-screen-3.jpg";
 import qrCode from "@/assets/qr-code.png";
 
 const rotatingTexts = [
@@ -11,8 +13,11 @@ const rotatingTexts = [
   "Flexible SIPs"
 ];
 
+const appScreens = [appScreen1, appScreen2, appScreen3];
+
 export function Hero() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -27,6 +32,14 @@ export function Hero() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const screenInterval = setInterval(() => {
+      setCurrentScreenIndex((prev) => (prev + 1) % appScreens.length);
+    }, 4000);
+
+    return () => clearInterval(screenInterval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-primary overflow-hidden">
       {/* Decorative blur circles */}
@@ -39,11 +52,23 @@ export function Hero() {
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75"></div>
-              <img 
-                src={mobileMockup} 
-                alt="Nested app interface showing goal-based investing" 
-                className="relative z-10 max-w-md w-full h-auto drop-shadow-2xl"
-              />
+              <div className="relative z-10 max-w-[280px] w-full">
+                {appScreens.map((screen, index) => (
+                  <img 
+                    key={index}
+                    src={screen} 
+                    alt={`Nested app screen ${index + 1}`}
+                    className={`absolute top-0 left-0 w-full h-auto rounded-3xl shadow-2xl transition-opacity duration-500 ${
+                      index === currentScreenIndex ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                ))}
+                <img 
+                  src={appScreen1} 
+                  alt="Nested app interface"
+                  className="w-full h-auto rounded-3xl shadow-2xl opacity-0"
+                />
+              </div>
             </div>
           </div>
 

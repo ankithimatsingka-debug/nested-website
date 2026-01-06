@@ -142,7 +142,7 @@ export const FAQ = () => {
             Frequently Asked <span className="text-secondary">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Got questions? We've got answers.
+            Got questions? We've got answers
           </p>
         </div>
         

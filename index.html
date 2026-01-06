@@ -12,13 +12,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     
-    <!-- Preload LCP image - critical for performance -->
-    <link rel="preload" as="image" href="/src/assets/app-screen-1.jpg" fetchpriority="high" />
-    
-    <!-- Preconnect to external resources -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <!-- Preconnect to external resources - BEFORE preloading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
     <!-- Critical CSS for above-the-fold content - prevents CLS and improves FCP -->
@@ -59,9 +55,20 @@
       }
     </style>
     
-    <!-- Google Fonts - loaded asynchronously to prevent render blocking -->
+    <!-- Google Fonts - loaded after initial paint to prevent render blocking -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet" /></noscript>
+    
+    <!-- Defer non-critical JS -->
+    <script>
+      // Load fonts after first paint
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() {
+          var link = document.querySelector('link[rel="preload"][as="style"]');
+          if (link) link.rel = 'stylesheet';
+        });
+      }
+    </script>
 
     <!-- Open Graph -->
     <meta property="og:title" content="Nested - Funding dreams, one goal at a time" />

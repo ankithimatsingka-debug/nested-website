@@ -1,6 +1,7 @@
-import { Apple, Play, Mail, Phone, MapPin } from "lucide-react";
+import { Play, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import qrCode from "@/assets/qr-code.png";
+import nestedLogo from "@/assets/nested-logo.png";
 
 export function Footer() {
   return (
@@ -10,8 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3"></div>
-              <span className="font-heading text-2xl font-bold">Nested</span>
+              <img src={nestedLogo} alt="Nested" className="h-10" />
             </div>
             <p className="font-body text-muted-foreground mb-6 leading-relaxed">
               Funding dreams, one goal at a time. Smart mutual fund investing designed for Indian parents.
@@ -22,10 +22,6 @@ export function Footer() {
               className="hidden lg:block w-20 h-20 border-2 border-border rounded-lg mb-3"
             />
             <div className="flex gap-3">
-              <Button variant="outline" size="sm">
-                <Apple className="h-4 w-4 mr-2" />
-                App Store
-              </Button>
               <Button variant="outline" size="sm">
                 <Play className="h-4 w-4 mr-2" />
                 Play Store

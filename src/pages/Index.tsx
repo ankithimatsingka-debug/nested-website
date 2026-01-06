@@ -35,10 +35,10 @@ const Index = () => {
         <section id="features">
           <FeatureCards />
         </section>
-        <EnhancedComparisonSection />
         <section id="invest-smarter">
           <InvestSmarterSection />
         </section>
+        <EnhancedComparisonSection />
         <section id="superfd">
           <SuperFDSection />
         </section>

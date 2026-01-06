@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import appScreen1 from "@/assets/app-screen-1.jpg";
@@ -19,6 +19,14 @@ export function Hero() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+
+  // Preload next image for smooth transitions
+  const nextScreenIndex = useMemo(() => (currentScreenIndex + 1) % appScreens.length, [currentScreenIndex]);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = appScreens[nextScreenIndex];
+  }, [nextScreenIndex]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,24 +61,14 @@ export function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75"></div>
               <div className="relative z-10 max-w-[280px] w-full">
-                {appScreens.map((screen, index) => (
-                  <img 
-                    key={index}
-                    src={screen} 
-                    alt={`Nested app screen ${index + 1} showing investment features`}
-                    width="280"
-                    height="560"
-                    className={`absolute top-0 left-0 w-full h-auto rounded-3xl shadow-2xl transition-opacity duration-500 ${
-                      index === currentScreenIndex ? 'opacity-100' : 'opacity-0'
-                    }`}
-                  />
-                ))}
+                {/* Only render current image instead of all 3 */}
                 <img 
-                  src={appScreen1} 
-                  alt="Nested app interface"
+                  key={currentScreenIndex}
+                  src={appScreens[currentScreenIndex]} 
+                  alt={`Nested app screen ${currentScreenIndex + 1} showing investment features`}
                   width="280"
                   height="560"
-                  className="w-full h-auto rounded-3xl shadow-2xl opacity-0"
+                  className="w-full h-auto rounded-3xl shadow-2xl"
                 />
               </div>
             </div>

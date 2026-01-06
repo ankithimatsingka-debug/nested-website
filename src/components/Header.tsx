@@ -37,7 +37,7 @@ export function Header() {
           <div className="flex items-center justify-between h-16">
             {/* Logo - with fixed dimensions to prevent CLS */}
             <a href="/" className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md" aria-label="Nested - Go to homepage">
-              <img src={nestedLogo} alt="Nested logo" className="h-10 w-[120px]" width="120" height="40" loading="eager" decoding="async" />
+              <img src={nestedLogo} alt="Nested logo" className="h-12 w-[150px]" width="150" height="48" loading="eager" decoding="async" />
             </a>
 
             {/* Desktop Navigation */}

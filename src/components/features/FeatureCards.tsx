@@ -1,36 +1,26 @@
-import { Target, BarChart3, Clock, Shield, Zap, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { SmartPlanningAnimation } from "@/components/animations/SmartPlanningAnimation";
+import { EasyFastAnimation } from "@/components/animations/EasyFastAnimation";
+import { SafeSecureAnimation } from "@/components/animations/SafeSecureAnimation";
 
 const features = [
   {
-    icon: Target,
-    title: "Smart Plans for Smart Future",
-    description: "Custom plan for your child's education goals"
+    animation: SmartPlanningAnimation,
+    title: "Smart Planning",
+    description: "Custom plans for your child's education goals with automated rebalancing suggestions",
+    highlights: ["Goal-based portfolios", "Auto rebalancing"]
   },
   {
-    icon: BarChart3,
-    title: "Smart Money Management",
-    description: "Automated rebalancing suggestions"
+    animation: EasyFastAnimation,
+    title: "Easy & Fast",
+    description: "Quick 5-minute setup with digital KYC. Start with just ₹500",
+    highlights: ["5-min setup", "Start at ₹500"]
   },
   {
-    icon: Clock,
-    title: "Quick 5-Minute Setup",
-    description: "Fast digital KYC"
-  },
-  {
-    icon: Shield,
-    title: "Safe & Secure",
-    description: "Your investments are made directly with AMCs"
-  },
-  {
-    icon: Zap,
-    title: "Start with Just ₹500",
-    description: "Flexible investment options"
-  },
-  {
-    icon: Users,
-    title: "Dedicated Expert",
-    description: "Expert support on whatsapp"
+    animation: SafeSecureAnimation,
+    title: "Safe & Supported",
+    description: "Your investments go directly to AMCs. Get expert support on WhatsApp",
+    highlights: ["Direct to AMC", "Expert support"]
   }
 ];
 
@@ -47,44 +37,51 @@ export function FeatureCards() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {features.map((feature, index) => {
-            const pastelColors = [
-              'bg-[hsl(var(--pastel-lavender))]',
-              'bg-[hsl(var(--pastel-peach))]',
-              'bg-[hsl(var(--pastel-sky))]',
-              'bg-[hsl(var(--pastel-mint))]',
-              'bg-[hsl(var(--pastel-lemon))]',
-              'bg-[hsl(var(--pastel-rose))]'
+            const AnimationComponent = feature.animation;
+            const cardColors = [
+              'hover:border-primary/30',
+              'hover:border-secondary/30',
+              'hover:border-primary/30'
             ];
-            const iconColors = [
-              'text-purple-600',
-              'text-orange-600',
-              'text-blue-600',
-              'text-emerald-600',
-              'text-amber-600',
-              'text-rose-600'
-            ];
+            
             return (
               <div key={index} className="relative">
                 {/* Vertical divider line for mobile */}
                 {index > 0 && (
-                  <div className="md:hidden absolute -top-3 left-1/2 -translate-x-1/2 w-px h-6 bg-gradient-to-b from-transparent via-border to-transparent opacity-50" />
+                  <div className="md:hidden absolute -top-4 left-1/2 -translate-x-1/2 w-px h-8 bg-gradient-to-b from-transparent via-border to-transparent opacity-50" />
                 )}
-                <Card className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
-                  <CardContent className="p-5">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className={`w-12 h-12 flex-shrink-0 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-2 border-white/50`}>
-                        <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
+                <Card className={`h-full border-2 border-transparent shadow-md hover:shadow-lg transition-all duration-300 group ${cardColors[index]}`}>
+                  <CardContent className="p-6 text-center">
+                    {/* Animation */}
+                    <div className="flex justify-center mb-6">
+                      <div className="group-hover:scale-105 transition-transform duration-300">
+                        <AnimationComponent />
                       </div>
-                      <h3 className="font-heading text-lg font-semibold leading-tight">
-                        {feature.title}
-                      </h3>
                     </div>
                     
-                    <p className="font-body text-muted-foreground leading-snug">
+                    {/* Title */}
+                    <h3 className="font-heading text-xl font-semibold mb-3">
+                      {feature.title}
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="font-body text-muted-foreground leading-relaxed mb-4">
                       {feature.description}
                     </p>
+                    
+                    {/* Highlight badges */}
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {feature.highlights.map((highlight, hIndex) => (
+                        <span 
+                          key={hIndex}
+                          className="inline-block px-3 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full"
+                        >
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
                   </CardContent>
                 </Card>
               </div>

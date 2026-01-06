@@ -166,6 +166,68 @@ export default {
             transform: "rotate(5deg)",
           },
         },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-in": {
+          "0%": { opacity: "0", transform: "scale(0)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        "draw-segment": {
+          "0%": { strokeDashoffset: "251.2" },
+          "100%": { strokeDashoffset: "0" },
+        },
+        "draw-circle": {
+          "0%": { strokeDashoffset: "inherit" },
+          "100%": { strokeDashoffset: "0" },
+        },
+        "draw-line": {
+          "0%": { strokeDashoffset: "150" },
+          "100%": { strokeDashoffset: "0" },
+        },
+        heartbeat: {
+          "0%, 100%": { transform: "scale(1)" },
+          "15%": { transform: "scale(1.15)" },
+          "30%": { transform: "scale(1)" },
+          "45%": { transform: "scale(1.1)" },
+          "60%": { transform: "scale(1)" },
+        },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        "fill-field": {
+          "0%": { width: "0%", backgroundColor: "hsl(var(--muted))" },
+          "50%": { width: "100%", backgroundColor: "hsl(var(--primary) / 0.3)" },
+          "100%": { width: "100%", backgroundColor: "hsl(var(--muted))" },
+        },
+        "arrow-hit": {
+          "0%": { opacity: "0", transform: "translate(-20px, -20px)" },
+          "100%": { opacity: "1", transform: "translate(0, 0)" },
+        },
+        sparkle: {
+          "0%": { opacity: "0", transform: "scale(0) rotate(0deg)" },
+          "50%": { opacity: "1", transform: "scale(1.2) rotate(180deg)" },
+          "100%": { opacity: "1", transform: "scale(1) rotate(360deg)" },
+        },
+        "grow-stem": {
+          "0%": { strokeDashoffset: "45" },
+          "100%": { strokeDashoffset: "0" },
+        },
+        "grow-branch": {
+          "0%": { opacity: "0", transform: "scale(0)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        bloom: {
+          "0%": { opacity: "0", transform: "scale(0)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        "float-up": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "30%": { opacity: "1" },
+          "100%": { opacity: "1", transform: "translateY(-5px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -173,6 +235,10 @@ export default {
         slideIn: "slideIn 1.5s ease-out infinite",
         draw: "draw 3s ease-in-out infinite",
         swing: "swing 2s ease-in-out infinite",
+        "fade-in": "fade-in 0.5s ease-out forwards",
+        "scale-in": "scale-in 0.3s ease-out forwards",
+        heartbeat: "heartbeat 1.5s ease-in-out infinite",
+        blink: "blink 1s step-end infinite",
       },
     },
   },

@@ -11,6 +11,7 @@ import { educationCostData, calculateFutureCost, CollegeCourse } from "@/data/ed
 
 export function EducationCalculator() {
   const [childAge, setChildAge] = useState<string>("");
+  const [ageError, setAgeError] = useState<string>("");
   const [targetAmount, setTargetAmount] = useState<string>("");
   const [selectedCollege, setSelectedCollege] = useState<CollegeCourse | null>(null);
   const [open, setOpen] = useState(false);
@@ -131,11 +132,24 @@ export function EducationCalculator() {
                       type="number"
                       placeholder="e.g., 5"
                       value={childAge}
-                      onChange={(e) => setChildAge(e.target.value)}
-                      className="mt-2 h-12"
+                      onChange={(e) => {
+                        const value = e.target.value;
+                        setChildAge(value);
+                        
+                        const ageNum = parseInt(value);
+                        if (!isNaN(ageNum) && ageNum > 17) {
+                          setAgeError("Child's age cannot be more than 17");
+                        } else {
+                          setAgeError("");
+                        }
+                      }}
+                      className={cn("mt-2 h-12", ageError && "border-destructive")}
                       min="0"
                       max="17"
                     />
+                    {ageError && (
+                      <p className="text-sm text-destructive mt-1">{ageError}</p>
+                    )}
                   </div>
 
                   {/* Searchable College Dropdown - Second */}
@@ -236,7 +250,7 @@ export function EducationCalculator() {
                     onClick={calculateInvestment}
                     size="lg"
                     className="w-full h-12 font-medium shadow-md hover:shadow-lg transition-all"
-                    disabled={!childAge || !targetAmount || !selectedCollege}
+                    disabled={!childAge || !targetAmount || !selectedCollege || !!ageError}
                   >
                     <Calculator className="mr-2 h-5 w-5" />
                     Calculate My Plan

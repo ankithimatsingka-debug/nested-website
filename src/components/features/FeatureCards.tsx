@@ -23,7 +23,7 @@ const features = [
   {
     icon: Shield,
     title: "Safe & Secure",
-    description: "Your investments are made directly with AMCs through payment gateway of BSE/NSE.",
+    description: "Your investments are made directly with AMCs.",
     highlight: "SEBI compliant"
   },
   {

@@ -28,8 +28,7 @@ export function Compliance() {
               <span className="text-secondary">Compliance</span> & Security
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              When it comes to your family's financial future, trust isn't just important - it's everything. 
-              That's why we've built Nested on a foundation of regulatory compliance and security best practices.
+              Your investments are protected
             </p>
           </div>
 

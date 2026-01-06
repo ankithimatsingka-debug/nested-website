@@ -103,15 +103,15 @@ export const ProductSummaryCards = () => {
       </div>
 
       {/* Mobile: Navigation indicators */}
-      <div className="md:hidden flex justify-center gap-2 mb-6">
+      <div className="md:hidden flex justify-center gap-3 mb-6">
         {investmentProducts.map((_, index) => (
           <button
             key={index}
             onClick={() => scrollToCard(index)}
             className={`transition-all duration-300 rounded-full ${
               activeIndex === index
-                ? 'w-8 h-2 bg-primary'
-                : 'w-2 h-2 bg-muted-foreground/30'
+                ? 'w-6 h-3 bg-primary'
+                : 'w-3 h-3 bg-muted-foreground/40'
             }`}
             aria-label={`Go to product ${index + 1}`}
           />

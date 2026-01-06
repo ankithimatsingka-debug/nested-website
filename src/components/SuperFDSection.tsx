@@ -55,7 +55,7 @@ const products = [
       { emoji: "🔓", text: "No lock-in — withdraw anytime" },
       { emoji: "🔄", text: "Flexible — add any amount any time" },
       { emoji: "▶️", text: "Start from ₹500 ; SIP ₹200/month" },
-      { emoji: "⏳", text: "Ideal for at least 6+ months" },
+      { emoji: "⏳", text: "Ideal for at least 3+ months" },
     ],
     volatility: "Low",
   },

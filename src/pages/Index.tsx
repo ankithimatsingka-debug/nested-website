@@ -15,6 +15,7 @@ import { DownloadBanner } from "@/components/DownloadBanner";
 import { Footer } from "@/components/Footer";
 import { EnhancedComparisonSection } from "@/components/comparison/EnhancedComparisonSection";
 import { InvestSmarterSection } from "@/components/InvestSmarterSection";
+import { SuperFDSection } from "@/components/SuperFDSection";
 
 const Index = () => {
   return (
@@ -37,6 +38,9 @@ const Index = () => {
         <EnhancedComparisonSection />
         <section id="invest-smarter">
           <InvestSmarterSection />
+        </section>
+        <section id="superfd">
+          <SuperFDSection />
         </section>
         <section id="testimonials">
           <Testimonials />

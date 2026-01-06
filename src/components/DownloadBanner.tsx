@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Apple, Play, ArrowRight, Sparkles } from "lucide-react";
+import { Play, ArrowRight, Sparkles } from "lucide-react";
 
 export function DownloadBanner() {
   return (
@@ -31,18 +31,6 @@ export function DownloadBanner() {
 
           {/* Download buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="h-16 px-8 text-lg font-semibold bg-white/20 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white/30 hover:border-white/60 shadow-xl hover:shadow-2xl transition-all group"
-            >
-              <Apple className="mr-3 h-7 w-7" />
-              <div className="text-left">
-                <div className="text-sm font-normal opacity-80">Download on the</div>
-                <div className="font-bold">App Store</div>
-              </div>
-              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
             
             <Button 
               size="lg" 

@@ -3,6 +3,8 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
+import nestedLogo from "@/assets/nested-logo.png";
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,10 +13,9 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3"></div>
-            <span className="font-heading text-2xl font-bold text-foreground">Nested</span>
-          </div>
+          <a href="/" className="flex items-center">
+            <img src={nestedLogo} alt="Nested" className="h-10" />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

@@ -11,13 +11,13 @@ const benefits = [
   {
     icon: RefreshCw,
     title: "Timely Rebalancing",
-    description: "We continuously monitor your portfolio and notify rebalancing to maintain optimal performance without you sweating about it.",
+    description: "We monitor your portfolio and notify you when rebalancing is needed.",
     highlight: "Set it and forget it investing"
   },
   {
     icon: Heart,
     title: "Peace of Mind for Parents",
-    description: "Sleep better knowing your child's future is secured with professional management and regular progress updates.",
+    description: "Professional management with regular progress updates.",
     highlight: "Stress-free wealth building"
   }
 ];

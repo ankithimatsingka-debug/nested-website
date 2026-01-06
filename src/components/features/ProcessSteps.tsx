@@ -5,21 +5,21 @@ const steps = [
     icon: UserPlus,
     step: "Step 1",
     title: "Sign Up",
-    description: "Add basic details and complete onboarding in less than five minutes from your phone.",
+    description: "Complete onboarding in under 5 minutes.",
     time: "Quick"
   },
   {
     icon: Target,
     step: "Step 2", 
     title: "Plan Your Goal",
-    description: "Tell us about your child's dream college or education. We'll create a perfect plan.",
+    description: "Share your child's education goals. We'll create the perfect plan.",
     time: "Easy"
   },
   {
     icon: TrendingUp,
     step: "Step 3",
     title: "Invest with Confidence",
-    description: "Start your monthly investment. We handle everything else - just watch your child's future grow.",
+    description: "Start investing. We handle the rest.",
     time: "Ongoing"
   }
 ];

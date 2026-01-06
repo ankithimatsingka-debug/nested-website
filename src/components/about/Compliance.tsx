@@ -5,7 +5,7 @@ export function Compliance() {
     {
       icon: Shield,
       title: "AMFI Registered",
-      description: "Fully compliant and regulated by AMFI"
+      description: "Fully compliant and regulated by AMFI."
     },
     {
       icon: Lock,

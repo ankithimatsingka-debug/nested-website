@@ -33,7 +33,7 @@ export function KeyBenefits() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Smart Investing Made <span className="text-secondary">Simple</span>
+            Smart Investing Made <span className="text-secondary block sm:inline">Simple</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
             Other apps leave you on your own. Nested automates for busy parents.

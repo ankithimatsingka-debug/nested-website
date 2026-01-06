@@ -30,7 +30,7 @@ export function FeatureCards() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Why Parents <span className="text-secondary">Choose</span> <span className="text-secondary">Nested</span>
+            Why Parents <span className="text-secondary block sm:inline">Choose Nested</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
             Simple, safe, stress-free

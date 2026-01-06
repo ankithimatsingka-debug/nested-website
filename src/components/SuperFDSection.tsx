@@ -42,7 +42,7 @@ const products = [
   },
   {
     title: "Secure Money",
-    subtitle: "Upto 7.50% p.a.",
+    subtitle: null,
     icon: Umbrella,
     themeColor: "teal",
     borderColor: "border-l-teal-400",
@@ -61,7 +61,7 @@ const products = [
   },
   {
     title: "Grow Money",
-    subtitle: "Upto 11.00% p.a.",
+    subtitle: null,
     icon: PiggyBank,
     themeColor: "purple",
     borderColor: "border-l-purple-400",

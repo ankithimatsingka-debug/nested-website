@@ -1,4 +1,4 @@
-import { ShieldCheck, Umbrella, PiggyBank, ChevronRight } from "lucide-react";
+import { ShieldCheck, Umbrella, PiggyBank } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const WavyLine = ({ color, volatility }: { color: string; volatility: "Low" | "Medium" }) => {
@@ -135,17 +135,6 @@ export function SuperFDSection() {
                     </span>
                   </li>
                 </ul>
-
-                {/* Explore Link */}
-                <div className="flex justify-end">
-                  <a
-                    href="#"
-                    className={`inline-flex items-center text-sm font-medium ${product.iconColor} hover:underline`}
-                  >
-                    Explore
-                    <ChevronRight className="w-4 h-4 ml-0.5" />
-                  </a>
-                </div>
               </Card>
             );
           })}

@@ -133,9 +133,8 @@ export function Testimonials() {
               left: `${position.x}%`,
               top: `${position.y}%`,
               transform: 'translate(-50%, -50%)',
-              maxWidth: 'min(90vw, 28rem)',
-              width: 'fit-content',
-              minWidth: 'min(280px, 90vw)'
+              width: 'calc(100vw - 2rem)',
+              maxWidth: '24rem'
             }}
           >
             <CardContent className="p-6">

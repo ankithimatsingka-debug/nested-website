@@ -67,7 +67,14 @@ export function Footer() {
                 <Phone className="h-5 w-5 text-primary mt-0.5" />
                 <div>
                   <div className="font-body text-muted-foreground">Phone</div>
-                  <div className="font-medium">+91 6305 209 273</div>
+                  <a 
+                    href="https://wa.me/916305209273?text=Hello" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="font-medium hover:text-primary transition-colors"
+                  >
+                    +91 6305 209 273
+                  </a>
                 </div>
               </div>
             </div>

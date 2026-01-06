@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 
 const testimonials = [
   { text: "Nested made saving for my daughter's college so simple and stress-free.", name: "Anita R.", rating: 4.5 },
@@ -20,25 +20,31 @@ const testimonials = [
   { text: "I can finally sleep peacefully knowing my child's education is secure.", name: "Pooja L.", rating: 4 }
 ];
 
-const getRandomPosition = () => {
-  // Tighter range on mobile to prevent cutoff, wider range on desktop
-  const isMobile = window.innerWidth < 768;
-  if (isMobile) {
-    return {
-      x: Math.random() * 40 + 30, // 30% to 70% from left
-      y: Math.random() * 50 + 25  // 25% to 75% from top
-    };
-  }
-  return {
-    x: Math.random() * 60 + 20, // 20% to 80% from left
-    y: Math.random() * 60 + 20  // 20% to 80% from top
-  };
-};
-
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [position, setPosition] = useState(getRandomPosition());
   const [isVisible, setIsVisible] = useState(true);
+
+  // Cache mobile detection - only calculate once on mount
+  const isMobile = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    return window.innerWidth < 768;
+  }, []);
+
+  // Memoized position calculation
+  const getRandomPosition = useCallback(() => {
+    if (isMobile) {
+      return {
+        x: Math.random() * 40 + 30, // 30% to 70% from left
+        y: Math.random() * 50 + 25  // 25% to 75% from top
+      };
+    }
+    return {
+      x: Math.random() * 60 + 20, // 20% to 80% from left
+      y: Math.random() * 60 + 20  // 20% to 80% from top
+    };
+  }, [isMobile]);
+
+  const [position, setPosition] = useState(getRandomPosition);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,8 +60,7 @@ export function Testimonials() {
     }, 3500); // Increased interval to account for transition time
 
     return () => clearInterval(interval);
-  }, []);
-
+  }, [getRandomPosition]);
 
   const renderStars = (rating: number) => {
     const fullStars = Math.floor(rating);

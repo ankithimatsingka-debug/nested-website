@@ -1,16 +1,24 @@
 import { ShieldCheck, Umbrella, PiggyBank, ChevronRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
-const WavyLine = ({ color }: { color: string }) => (
-  <svg width="60" height="12" viewBox="0 0 60 12" fill="none" className="inline-block ml-1">
-    <path
-      d="M2 6C6 2 10 10 14 6C18 2 22 10 26 6C30 2 34 10 38 6C42 2 46 10 50 6C54 2 58 10 58 6"
-      stroke={color}
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-  </svg>
-);
+const WavyLine = ({ color, volatility }: { color: string; volatility: "Low" | "Medium" }) => {
+  // Low: fewer zigzags, upward trend
+  // Medium: more zigzags, upward trend
+  const path = volatility === "Low" 
+    ? "M2 14C10 10 18 12 26 8C34 4 42 6 50 2" // 2 waves, trending up
+    : "M2 14C6 12 10 14 14 10C18 6 22 12 26 8C30 4 34 10 38 6C42 2 46 6 50 2"; // 4 waves, trending up
+
+  return (
+    <svg width="54" height="16" viewBox="0 0 54 16" fill="none" className="inline-block ml-1">
+      <path
+        d={path}
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
 
 const products = [
   {
@@ -123,7 +131,7 @@ export function SuperFDSection() {
                     <span className="text-base leading-none mt-0.5">📊</span>
                     <span className="flex items-center">
                       {product.volatility} daily up & down
-                      <WavyLine color={product.wavyColor} />
+                      <WavyLine color={product.wavyColor} volatility={product.volatility as "Low" | "Medium"} />
                     </span>
                   </li>
                 </ul>

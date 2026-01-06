@@ -1,10 +1,11 @@
 import { useState, useEffect, useMemo } from "react";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import appScreen1 from "@/assets/app-screen-1.jpg";
-import appScreen2 from "@/assets/app-screen-2.jpg";
-import appScreen3 from "@/assets/app-screen-3.jpg";
+import appScreen1 from "@/assets/app-screen-1.webp";
+import appScreen2 from "@/assets/app-screen-2.webp";
+import appScreen3 from "@/assets/app-screen-3.webp";
 import qrCode from "@/assets/qr-code.png";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const rotatingTexts = [
   "Expert-designed portfolios",
@@ -19,6 +20,7 @@ export function Hero() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   // Check for reduced motion preference
   const prefersReducedMotion = useMemo(() => {
@@ -108,6 +110,10 @@ export function Hero() {
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75" aria-hidden="true"></div>
               {/* Fixed aspect ratio container to prevent CLS */}
               <div className="relative z-10 w-[280px] aspect-[280/560]">
+                {/* Skeleton loader while image loads */}
+                {!imageLoaded && (
+                  <Skeleton className="absolute inset-0 w-full h-full rounded-3xl bg-white/20" />
+                )}
                 {/* Preload first image with high priority */}
                 {currentScreenIndex === 0 ? (
                   <img 
@@ -117,7 +123,8 @@ export function Hero() {
                     height="560"
                     fetchPriority="high"
                     decoding="sync"
-                    className="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl"
+                    onLoad={() => setImageLoaded(true)}
+                    className={`absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                   />
                 ) : (
                   <img 

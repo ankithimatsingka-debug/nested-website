@@ -18,7 +18,7 @@ export const EnhancedComparisonSection = () => {
     <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-2xl font-bold mb-6">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
             Compare <span className="text-secondary">Investment Products</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">

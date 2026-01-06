@@ -84,7 +84,7 @@ export function Testimonials() {
     <section id="testimonials" className="py-20 bg-gradient-hero relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-2xl font-bold mb-6">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
             Real Stories from <span className="text-primary">Real Parents</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">

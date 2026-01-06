@@ -45,9 +45,9 @@ export function KeyBenefits() {
             const AnimationComponent = benefit.animation;
             return (
               <div key={index} className="group">
-                {/* Animation Container */}
-                <div className="mb-6 flex justify-center lg:justify-center">
-                  <div className="relative">
+                {/* Animation Container with fixed height to prevent CLS */}
+                <div className="mb-6 flex justify-center lg:justify-center h-32">
+                  <div className="relative w-32 h-32">
                     <AnimationComponent />
                   </div>
                 </div>

@@ -96,18 +96,18 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-primary overflow-hidden">
-      {/* Decorative blur circles */}
-      <div className="absolute top-20 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+      {/* Decorative blur circles - reduced for performance */}
+      <div className="absolute top-20 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl" aria-hidden="true"></div>
+      <div className="absolute bottom-20 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl" aria-hidden="true"></div>
       
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Mobile Mockup - Left Side */}
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
-              <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75"></div>
-              <div className="relative z-10 max-w-[280px] w-full">
-                {/* Only render current image instead of all 3 */}
+              <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75" aria-hidden="true"></div>
+              {/* Fixed aspect ratio container to prevent CLS */}
+              <div className="relative z-10 w-[280px] aspect-[280/560]">
                 <img 
                   key={currentScreenIndex}
                   src={appScreens[currentScreenIndex]} 
@@ -116,7 +116,7 @@ export function Hero() {
                   height="560"
                   fetchPriority={currentScreenIndex === 0 ? "high" : "auto"}
                   decoding={currentScreenIndex === 0 ? "sync" : "async"}
-                  className="w-full h-auto rounded-3xl shadow-2xl"
+                  className="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl"
                 />
               </div>
             </div>
@@ -135,11 +135,11 @@ export function Hero() {
                 Save for your child's education dreams
               </p>
 
-              {/* Rotating Text */}
-              <div className="h-16 flex items-center justify-center lg:justify-start" aria-live="polite" aria-atomic="true">
+              {/* Rotating Text - fixed height to prevent CLS */}
+              <div className="h-16 min-h-[4rem] flex items-center justify-center lg:justify-start" aria-live="polite" aria-atomic="true">
                 <p 
-                  className={`font-body text-lg md:text-xl lg:[font-size:22px] text-white font-medium transition-all duration-300 ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+                  className={`font-body text-lg md:text-xl lg:[font-size:22px] text-white font-medium transition-opacity duration-300 ${
+                    isVisible ? 'opacity-100' : 'opacity-0'
                   }`}
                 >
                   {rotatingTexts[currentTextIndex]}

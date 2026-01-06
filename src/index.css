@@ -243,3 +243,29 @@ All colors MUST be HSL for consistency and theming.
   content-visibility: auto;
   contain-intrinsic-size: auto 500px;
 }
+
+/* Optimize animations for GPU */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Prevent blur elements from causing repaints */
+.blur-3xl {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Font optimization */
+@font-face {
+  font-family: 'Poppins';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-display: swap;
+}

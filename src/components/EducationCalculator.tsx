@@ -60,7 +60,7 @@ export function EducationCalculator() {
             <CardHeader className="pb-8">
             </CardHeader>
             <CardContent className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className={result ? "grid md:grid-cols-2 gap-8" : "max-w-md mx-auto"}>
                 <div className="space-y-6">
                   <div>
                     <Label htmlFor="childAge" className="text-base font-medium">

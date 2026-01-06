@@ -379,12 +379,6 @@ const FundSelection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                size="lg" 
-                className="transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              >
-                Download on App Store
-              </Button>
-              <Button 
                 variant="outline" 
                 size="lg"
                 className="transition-all duration-300 hover:scale-105 hover:shadow-lg"

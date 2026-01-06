@@ -20,7 +20,7 @@ const features = [
   {
     icon: Shield,
     title: "Safe & Secure",
-    description: "Your investments are made directly with AMCs."
+    description: "Your investments are made directly with AMCs"
   },
   {
     icon: Zap,
@@ -43,7 +43,7 @@ export function FeatureCards() {
             Why Parents <span className="text-secondary">Choose</span> <span className="text-secondary">Nested</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Each feature is carefully designed to make investing simple, safe, and stress-free for busy parents like you.
+            Simple, safe, stress-free
           </p>
         </div>
 

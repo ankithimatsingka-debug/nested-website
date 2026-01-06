@@ -1,22 +1,25 @@
-import { UserPlus, Target, TrendingUp, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { SignUpAnimation } from "@/components/animations/SignUpAnimation";
+import { PlanGoalAnimation } from "@/components/animations/PlanGoalAnimation";
+import { GrowthAnimation } from "@/components/animations/GrowthAnimation";
 
 const steps = [
   {
-    icon: UserPlus,
+    animation: SignUpAnimation,
     step: "Step 1",
     title: "Sign Up",
     description: "Complete onboarding in under 5 minutes.",
     time: "Quick"
   },
   {
-    icon: Target,
+    animation: PlanGoalAnimation,
     step: "Step 2", 
     title: "Plan Your Goal",
     description: "Share your child's education goals. We'll create the perfect plan.",
     time: "Easy"
   },
   {
-    icon: TrendingUp,
+    animation: GrowthAnimation,
     step: "Step 3",
     title: "Invest with Confidence",
     description: "Start investing. We handle the rest.",
@@ -41,36 +44,28 @@ export function ProcessSteps() {
           <div className="grid md:flex gap-8 md:gap-6 md:justify-center md:items-start">
             {steps.map((step, index) => {
               const boxWidths = ['md:w-[270px]', 'md:w-[300px]', 'md:w-[330px]'];
-              const boxHeights = ['md:h-[300px]', 'md:h-[300px]', 'md:h-[300px]'];
+              const boxHeights = ['md:h-[320px]', 'md:h-[320px]', 'md:h-[320px]'];
+              const AnimationComponent = step.animation;
               
-              const pastelColors = [
-                'bg-[hsl(var(--pastel-mint))]',
-                'bg-[hsl(var(--pastel-peach))]',
-                'bg-[hsl(var(--pastel-lavender))]'
-              ];
-              const iconColors = [
-                'text-emerald-600',
-                'text-orange-600',
-                'text-purple-600'
-              ];
               return (
                 <div key={index} className={`relative ${boxWidths[index]}`}>
                   {/* Step Card */}
-                  <div className={`bg-background rounded-2xl p-6 md:p-5 ${boxHeights[index]} shadow-md hover:shadow-lg transition-all duration-300 text-center relative z-10 flex flex-col justify-between`}>
-                    <div className="mb-6">
-                      <div className={`w-14 h-14 rounded-3xl ${pastelColors[index]} flex items-center justify-center mx-auto mb-4 group hover:scale-105 hover:-rotate-6 transition-all duration-300 border-2 border-white/50`}>
-                        <step.icon className={`h-6 w-6 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
-                      </div>
-                      <span className="inline-block px-3 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full">
-                        {step.step}
-                      </span>
+                  <div className={`bg-background rounded-2xl p-6 md:p-5 ${boxHeights[index]} shadow-md hover:shadow-lg transition-all duration-300 text-center relative z-10 flex flex-col`}>
+                    {/* Animation */}
+                    <div className="flex justify-center mb-4">
+                      <AnimationComponent />
                     </div>
                     
-                    <h3 className="font-heading text-2xl font-semibold mb-4">
+                    {/* Step badge */}
+                    <span className="inline-block px-3 py-1 text-sm font-medium text-primary bg-primary/10 rounded-full mx-auto mb-3">
+                      {step.step}
+                    </span>
+                    
+                    <h3 className="font-heading text-2xl font-semibold mb-3">
                       {step.title}
                     </h3>
                     
-                    <p className="font-body text-muted-foreground leading-relaxed mb-4">
+                    <p className="font-body text-muted-foreground leading-relaxed mb-3 flex-grow">
                       {step.description}
                     </p>
                     

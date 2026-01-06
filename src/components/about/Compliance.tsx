@@ -1,19 +1,21 @@
-import { Shield, CheckCircle, Lock, FileCheck } from "lucide-react";
+import { AMFIAnimation } from "@/components/animations/AMFIAnimation";
+import { BankSecurityAnimation } from "@/components/animations/BankSecurityAnimation";
+import { TransparentReportAnimation } from "@/components/animations/TransparentReportAnimation";
 
 export function Compliance() {
   const compliancePoints = [
     {
-      icon: Shield,
+      animation: AMFIAnimation,
       title: "AMFI Registered",
       description: "Fully compliant and regulated by AMFI."
     },
     {
-      icon: Lock,
+      animation: BankSecurityAnimation,
       title: "Bank-Grade Security",
       description: "Industry-leading encryption for your personal and financial data."
     },
     {
-      icon: FileCheck,
+      animation: TransparentReportAnimation,
       title: "Transparent Reporting",
       description: "No hidden charges. Regular reports. Fully Transparent."
     }
@@ -33,17 +35,21 @@ export function Compliance() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {compliancePoints.map((point, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <point.icon className="w-6 h-6 text-primary opacity-50" />
-                </div>
-                <div>
+            {compliancePoints.map((point, index) => {
+              const AnimationComponent = point.animation;
+              return (
+                <div key={index} className="flex flex-col items-center text-center p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl hover:shadow-lg transition-all duration-300 group">
+                  {/* Animation */}
+                  <div className="mb-4 group-hover:scale-105 transition-transform duration-300">
+                    <AnimationComponent />
+                  </div>
+                  
+                  {/* Content */}
                   <h3 className="font-heading font-semibold text-foreground mb-2">{point.title}</h3>
                   <p className="text-muted-foreground">{point.description}</p>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

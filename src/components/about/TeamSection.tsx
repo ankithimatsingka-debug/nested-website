@@ -79,8 +79,7 @@ export function TeamSection() {
                 Join Our Mission
               </h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                We're always looking for passionate individuals who share our vision of making 
-                financial planning accessible to every family. Interested in joining our team?
+                Passionate about making financial planning accessible to every family? Join us.
               </p>
               <a 
                 href="mailto:support@nested.money"

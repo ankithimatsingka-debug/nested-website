@@ -119,7 +119,7 @@ export const ProductSummaryCards = () => {
       </div>
 
       {/* Desktop: Grid layout */}
-      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="hidden md:grid md:grid-cols-2 gap-6">
         {investmentProducts.map((product) => {
           const Icon = product.icon;
           return (

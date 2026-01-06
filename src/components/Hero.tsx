@@ -68,7 +68,7 @@ export function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75" aria-hidden="true"></div>
               {/* Fixed aspect ratio container to prevent CLS */}
-              <div className="relative z-10 w-[500px] aspect-square">
+              <div className="relative z-10 w-[280px] sm:w-[350px] md:w-[400px] lg:w-[500px] aspect-square mx-auto lg:mx-0">
                 {/* Skeleton loader while image loads */}
                 {!imageLoaded && (
                   <Skeleton className="absolute inset-0 w-full h-full rounded-3xl" />

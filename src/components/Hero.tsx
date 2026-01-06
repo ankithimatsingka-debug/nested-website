@@ -2,9 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import appScreen1 from "@/assets/app-screen-1.webp";
-import appScreen2 from "@/assets/app-screen-2.webp";
-import appScreen3 from "@/assets/app-screen-3.webp";
+import heroMockup from "@/assets/hero-mockup.webp";
 import qrCode from "@/assets/qr-code.png";
 
 const rotatingTexts = [
@@ -14,11 +12,8 @@ const rotatingTexts = [
   "Flexible SIPs"
 ];
 
-const appScreens = [appScreen1, appScreen2, appScreen3];
-
 export function Hero() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -27,14 +22,6 @@ export function Hero() {
     if (typeof window === "undefined") return false;
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   }, []);
-
-  // Preload next image for smooth transitions
-  const nextScreenIndex = useMemo(() => (currentScreenIndex + 1) % appScreens.length, [currentScreenIndex]);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = appScreens[nextScreenIndex];
-  }, [nextScreenIndex]);
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -68,34 +55,6 @@ export function Hero() {
     };
   }, [prefersReducedMotion]);
 
-  useEffect(() => {
-    if (prefersReducedMotion) return;
-    
-    let screenInterval: ReturnType<typeof setInterval>;
-    
-    const startScreenInterval = () => {
-      screenInterval = setInterval(() => {
-        setCurrentScreenIndex((prev) => (prev + 1) % appScreens.length);
-      }, 4000);
-    };
-    
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        clearInterval(screenInterval);
-      } else {
-        startScreenInterval();
-      }
-    };
-    
-    startScreenInterval();
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    return () => {
-      clearInterval(screenInterval);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, [prefersReducedMotion]);
-
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-primary overflow-hidden">
       {/* Decorative blur circles - lazy rendered for performance */}
@@ -109,35 +68,21 @@ export function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75" aria-hidden="true"></div>
               {/* Fixed aspect ratio container to prevent CLS */}
-              <div className="relative z-10 w-[280px] aspect-[280/560]">
+              <div className="relative z-10 w-[400px] aspect-square">
                 {/* Skeleton loader while image loads */}
                 {!imageLoaded && (
                   <Skeleton className="absolute inset-0 w-full h-full rounded-3xl" />
                 )}
-                {/* Preload first image with high priority */}
-                {currentScreenIndex === 0 ? (
-                  <img 
-                    src={appScreen1} 
-                    alt="Nested app screen showing investment features"
-                    width="280"
-                    height="560"
-                    fetchPriority="high"
-                    decoding="sync"
-                    onLoad={() => setImageLoaded(true)}
-                    className={`absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                  />
-                ) : (
-                  <img 
-                    key={currentScreenIndex}
-                    src={appScreens[currentScreenIndex]} 
-                    alt={`Nested app screen ${currentScreenIndex + 1} showing investment features`}
-                    width="280"
-                    height="560"
-                    loading="lazy"
-                    decoding="async"
-                    className="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl"
-                  />
-                )}
+                <img 
+                  src={heroMockup} 
+                  alt="Nested app screens showing portfolio tracking and education planning features"
+                  width="400"
+                  height="400"
+                  fetchPriority="high"
+                  decoding="sync"
+                  onLoad={() => setImageLoaded(true)}
+                  className={`absolute inset-0 w-full h-full object-contain rounded-3xl transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                />
               </div>
             </div>
           </div>

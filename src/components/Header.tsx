@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import nestedLogo from "@/assets/nested-logo.png";
 
@@ -25,9 +26,9 @@ export function Header() {
             <a href="/#steps" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Features
             </a>
-            <a href="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Fund Selection
-            </a>
+            </Link>
             <a href="/#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">
               FAQs
             </a>
@@ -76,13 +77,13 @@ export function Header() {
               >
                 Features
               </a>
-              <a 
-                href="/fund-selection" 
+              <Link 
+                to="/fund-selection" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Fund Selection
-              </a>
+              </Link>
               <a 
                 href="/#faq" 
                 className="font-body text-muted-foreground hover:text-primary transition-colors"

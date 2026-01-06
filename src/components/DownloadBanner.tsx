@@ -24,8 +24,7 @@ export function DownloadBanner() {
             </h2>
             
             <p className="font-body text-xl md:text-2xl opacity-90 mb-8 max-w-3xl mx-auto">
-              Don't wait for the "perfect time." Every month you delay is a month of potential growth lost. 
-              Your child's dreams are worth starting today.
+              Every month matters. Start building your child's future today.
             </p>
           </div>
 

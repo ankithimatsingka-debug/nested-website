@@ -139,7 +139,7 @@ export const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Frequently Asked <span className="text-secondary">Questions</span>
+            Frequently Asked <span className="text-secondary block sm:inline">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Got questions? We've got answers

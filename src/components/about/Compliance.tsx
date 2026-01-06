@@ -27,7 +27,7 @@ export function Compliance() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-              <span className="text-secondary">Compliance</span> & Security
+              <span className="text-secondary">Compliance</span> <span className="block sm:inline">& Security</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Your investments are protected

@@ -19,7 +19,7 @@ export const EnhancedComparisonSection = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-            Compare <span className="text-secondary">Investment Products</span>
+            Compare <span className="text-secondary block sm:inline">Investment Products</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Make the best decision for your child's education

@@ -5,38 +5,32 @@ const features = [
   {
     icon: Target,
     title: "Smart Plans for Smart Future",
-    description: "Tell us your child's education goal and we'll show indicative investment paths to help you reach it.",
-    highlight: "Goal planning"
+    description: "Custom plan for your child's education goals"
   },
   {
     icon: BarChart3,
     title: "Smart Money Management",
-    description: "We help you stay on top of your investments with performance insights and timely updates.",
-    highlight: "Automatic rebalancing"
+    description: "Automated rebalancing suggestions"
   },
   {
     icon: Clock,
     title: "Quick 5-Minute Setup",
-    description: "Complete your onboarding process in just 5 minutes. Rebalance portfolios with a single click.",
-    highlight: "Fast digital KYC"
+    description: "Fast digital KYC"
   },
   {
     icon: Shield,
     title: "Safe & Secure",
-    description: "Your investments are made directly with AMCs.",
-    highlight: "SEBI compliant"
+    description: "Your investments are made directly with AMCs."
   },
   {
     icon: Zap,
     title: "Start with Just ₹500",
-    description: "Start your child's future with just ₹500 p.m. for tomorrow's big opportunities.",
-    highlight: "Low minimum investment"
+    description: "Flexible investment options"
   },
   {
     icon: Users,
     title: "Dedicated Expert",
-    description: "Our certified professionals help you understand and manage your investments.",
-    highlight: "Hands-on support"
+    description: "Expert support on whatsapp"
   }
 ];
 
@@ -78,26 +72,21 @@ export function FeatureCards() {
                   <div className="md:hidden absolute -top-3 left-1/2 -translate-x-1/2 w-px h-6 bg-gradient-to-b from-transparent via-border to-transparent opacity-50" />
                 )}
                 <Card className="h-full border-0 shadow-md hover:shadow-glow transition-all duration-300 group">
-                <CardContent className="p-5">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className={`w-12 h-12 flex-shrink-0 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-2 border-white/50`}>
-                      <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-heading text-lg font-semibold leading-tight mb-2">
+                  <CardContent className="p-5">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`w-12 h-12 flex-shrink-0 rounded-3xl ${pastelColors[index]} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-2 border-white/50`}>
+                        <feature.icon className={`h-5 w-5 ${iconColors[index]} opacity-50`} strokeWidth={2.5} />
+                      </div>
+                      <h3 className="font-heading text-lg font-semibold leading-tight">
                         {feature.title}
                       </h3>
-                      <span className="inline-block px-3 py-1 text-sm font-medium text-secondary bg-secondary/10 dark:text-primary dark:bg-primary/10 rounded-full">
-                        {feature.highlight}
-                      </span>
                     </div>
-                  </div>
-                  
-                  <p className="font-body text-muted-foreground leading-snug">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
+                    
+                    <p className="font-body text-muted-foreground leading-snug">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             );
           })}

@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
+import ankitImage from "@/assets/ankit.jpeg";
 
 export function TeamSection() {
   const teamMembers = [
@@ -8,7 +9,7 @@ export function TeamSection() {
       name: "Ankit R Himatsingka",
       role: "Co-Founder & CEO",
       bio: "CA and Harvard alumnus",
-      image: "/placeholder.svg",
+      image: ankitImage,
       initials: "AH",
       linkedin: "https://www.linkedin.com/in/ankithimatsingka/"
     },

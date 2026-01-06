@@ -7,7 +7,7 @@ export function TeamSection() {
     {
       name: "Ankit R Himatsingka",
       role: "Co-Founder & CEO",
-      bio: "Finance professional with 15 years experience. Father of nine year old girl, passionate about making investing accessible to every parent.",
+      bio: "CA and Harvard alumnus",
       image: "/placeholder.svg",
       initials: "AH",
       linkedin: "https://www.linkedin.com/in/ankithimatsingka/"
@@ -15,7 +15,7 @@ export function TeamSection() {
     {
       name: "Dheeraj Reddy", 
       role: "CTO & Co-founder",
-      bio: "Tech leader with expertise finance and technology.",
+      bio: "IIT-Madras alumnus",
       image: "/placeholder.svg",
       initials: "DR",
       linkedin: "https://www.linkedin.com/in/dheeraj-kumar-reddy-dosakayala-25876a103/"

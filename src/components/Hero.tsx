@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Apple, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import appScreen1 from "@/assets/app-screen-1.jpg";
 import appScreen2 from "@/assets/app-screen-2.jpg";
@@ -100,14 +100,6 @@ export function Hero() {
             {/* Download Buttons with QR Code */}
             <div className="flex gap-4 items-center justify-center lg:justify-start mb-4">
               <div className="flex gap-3">
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="bg-white/10 backdrop-blur-sm border-white/40 text-white hover:bg-white/20"
-                >
-                  <Apple className="h-4 w-4 mr-2" />
-                  App Store
-                </Button>
                 <Button 
                   variant="outline" 
                   size="sm"

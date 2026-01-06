@@ -20,7 +20,7 @@ export function DownloadBanner() {
             </div>
             
             <h2 className="font-heading text-2xl font-bold mb-6">
-              Start Investing Today for Your Child's Future
+              Start Investing Today For Your Child's Future
             </h2>
             
             <p className="font-body text-xl md:text-2xl opacity-90 mb-8 max-w-3xl mx-auto">

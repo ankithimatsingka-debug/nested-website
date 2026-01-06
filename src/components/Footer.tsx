@@ -6,7 +6,7 @@ import nestedLogo from "@/assets/nested-logo.png";
 
 export function Footer() {
   return (
-    <footer className="bg-muted/30 border-t border-border/50">
+    <footer role="contentinfo" className="bg-muted/30 border-t border-border/50">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
@@ -26,8 +26,13 @@ export function Footer() {
               className="hidden lg:block w-20 h-20 border-2 border-border rounded-lg mb-3"
             />
             <div className="flex gap-3">
-              <Button variant="outline" size="sm">
-                <Play className="h-4 w-4 mr-2" />
+              <Button 
+                variant="outline" 
+                size="sm"
+                aria-label="Download Nested app from Google Play Store"
+                className="min-h-[44px]"
+              >
+                <Play className="h-4 w-4 mr-2" aria-hidden="true" />
                 Play Store
               </Button>
             </div>

@@ -107,7 +107,7 @@ export function EducationCalculator() {
               <Calculator className="h-5 w-5" />
               <span className="font-medium">Interactive Tool</span>
             </div>
-            <h2 className="font-heading text-2xl font-bold mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
               Education Cost <span className="text-primary">Calculator</span>
             </h2>
             <p className="font-body text-lg text-muted-foreground">

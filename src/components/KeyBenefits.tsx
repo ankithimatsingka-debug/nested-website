@@ -31,8 +31,7 @@ export function KeyBenefits() {
             Smart Investing Made <span className="text-secondary">Simple</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            While other apps leave you to figure it out alone, Nested provides intelligent automation 
-            and convenience for busy parents.
+            Other apps leave you on your own. Nested automates for busy parents.
           </p>
         </div>
 

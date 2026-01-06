@@ -10,12 +10,12 @@ export function Compliance() {
     {
       icon: Lock,
       title: "Bank-Grade Security",
-      description: "Your personal and financial data is protected with industry-leading encryption"
+      description: "Industry-leading encryption for your personal and financial data."
     },
     {
       icon: FileCheck,
       title: "Transparent Reporting",
-      description: "Regular portfolio reports and clear fee structures with no hidden charges"
+      description: "No hidden charges. Regular reports. Fully Transparent."
     }
   ];
 

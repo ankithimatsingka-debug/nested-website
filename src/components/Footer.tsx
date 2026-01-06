@@ -1,4 +1,5 @@
 import { Play, Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import qrCode from "@/assets/qr-code.png";
 import nestedLogo from "@/assets/nested-logo.png";
@@ -43,11 +44,11 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6">Legal</h3>
             <ul className="space-y-3">
-              <li><a href="/terms-and-conditions" className="font-body text-muted-foreground hover:text-primary transition-colors">Terms & Conditions</a></li>
-              <li><a href="/privacy-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="/cancellation-refund-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Cancellation & Refund Policy</a></li>
-              <li><a href="/information-security-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Information Security Policy</a></li>
-              <li><a href="/account-data-deletion-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Account & Data Deletion Policy</a></li>
+              <li><Link to="/terms-and-conditions" className="font-body text-muted-foreground hover:text-primary transition-colors">Terms & Conditions</Link></li>
+              <li><Link to="/privacy-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/cancellation-refund-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Cancellation & Refund Policy</Link></li>
+              <li><Link to="/information-security-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Information Security Policy</Link></li>
+              <li><Link to="/account-data-deletion-policy" className="font-body text-muted-foreground hover:text-primary transition-colors">Account & Data Deletion Policy</Link></li>
             </ul>
           </div>
 

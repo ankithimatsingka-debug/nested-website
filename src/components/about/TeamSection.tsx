@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
 import ankitImage from "@/assets/ankit.jpeg";
+import dheerajImage from "@/assets/dheeraj.jpeg";
 
 export function TeamSection() {
   const teamMembers = [
@@ -17,7 +18,7 @@ export function TeamSection() {
       name: "Dheeraj Reddy", 
       role: "CTO & Co-founder",
       bio: "IIT-Madras alumnus",
-      image: "/placeholder.svg",
+      image: dheerajImage,
       initials: "DR",
       linkedin: "https://www.linkedin.com/in/dheeraj-kumar-reddy-dosakayala-25876a103/"
     }

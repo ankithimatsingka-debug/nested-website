@@ -46,11 +46,8 @@ export function Hero() {
           {/* Content - Right Side */}
           <div className="text-center lg:text-left space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                Welcome to{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Nested
-                </span>
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-primary bg-clip-text text-transparent">
+                Welcome to Nested
               </h1>
               <p className="font-body text-xl md:text-2xl text-muted-foreground">
                 Save for your child's education dreams

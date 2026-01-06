@@ -84,7 +84,7 @@ const Taxation = () => {
       
       <Header />
       
-      <main className="flex-grow">
+      <main className="flex-grow pt-20">
         <div className="container mx-auto px-4 py-8 md:py-12">
           {/* Header Section */}
           <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">

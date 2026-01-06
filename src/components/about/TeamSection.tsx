@@ -82,7 +82,7 @@ export function TeamSection() {
                 financial planning accessible to every family. Interested in joining our team?
               </p>
               <a 
-                href="mailto:info@nested.com"
+                href="mailto:support@nested.money"
                 className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors inline-block"
               >
                 View Open Positions

@@ -21,6 +21,7 @@ export function EducationCalculator() {
     monthlyInvestment: number;
     totalYears: number;
     totalInvestment: number;
+    targetAmount: number;
   } | null>(null);
 
   // Filter colleges based on search query
@@ -93,7 +94,8 @@ export function EducationCalculator() {
     setResult({
       monthlyInvestment: Math.round(monthlyInvestment),
       totalYears: yearsToInvest,
-      totalInvestment: Math.round(monthlyInvestment * totalMonths)
+      totalInvestment: Math.round(monthlyInvestment * totalMonths),
+      targetAmount: target
     });
   };
 
@@ -281,7 +283,15 @@ export function EducationCalculator() {
                         <div className="text-lg opacity-90">Monthly SIP Required</div>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/20">
+                      <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/20">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold">
+                            ₹{result.targetAmount >= 10000000 
+                              ? `${(result.targetAmount / 10000000).toFixed(1)}Cr`
+                              : `${(result.targetAmount / 100000).toFixed(1)}L`}
+                          </div>
+                          <div className="text-sm opacity-80">Goal Amount</div>
+                        </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold">{result.totalYears}</div>
                           <div className="text-sm opacity-80">Years to Invest</div>

@@ -304,7 +304,7 @@ export function EducationCalculator() {
                           size="lg"
                           className="w-full bg-white text-primary hover:bg-white/90"
                         >
-                          Start Investing Today
+                          Customise Plan In App
                         </Button>
                       </div>
                     </div>

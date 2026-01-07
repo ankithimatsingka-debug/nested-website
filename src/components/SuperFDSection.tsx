@@ -51,7 +51,7 @@ const products = [
     iconColor: "text-teal-600 dark:text-teal-400",
     wavyColor: "#14B8A6",
     features: [
-      { emoji: "💰", text: "Earn upto 7.50%/year" },
+      { emoji: "💰", text: "Earn up to 7.50%/year" },
       { emoji: "🔓", text: "No lock-in — withdraw anytime" },
       { emoji: "🔄", text: "Flexible — add any amount any time" },
       { emoji: "▶️", text: "Start from ₹500 ; SIP ₹200/month" },
@@ -70,7 +70,7 @@ const products = [
     iconColor: "text-purple-600 dark:text-purple-400",
     wavyColor: "#8B5CF6",
     features: [
-      { emoji: "💰", text: "Earn upto 11%/year" },
+      { emoji: "💰", text: "Earn up to 11%/year" },
       { emoji: "🔓", text: "No lock-in — withdraw anytime" },
       { emoji: "🔄", text: "Flexible — add any amount any time" },
       { emoji: "▶️", text: "Start from ₹1000 ; SIP ₹200/month" },

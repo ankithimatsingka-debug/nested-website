@@ -29,7 +29,7 @@ export const investmentProducts: InvestmentProduct[] = [
     icon: Award,
     score: { safety: 5, flexibility: 2, growth: 3, taxEfficiency: 5, overall: 3.75 },
     highlights: ['Government backed', 'Tax benefits (in old tax regime)', 'Safe investment'],
-    drawbacks: ['Only for girl child under age 10', 'Long lock-in of 21 years', 'Can invest only upto Rs 1.5 lakh per annum'],
+    drawbacks: ['Only for girl child under age 10', 'Long lock-in of 21 years', 'Can invest only up to Rs 1.5 lakh per annum'],
     bestFor: 'Parents of girl children seeking safe, tax-free returns'
   },
   {

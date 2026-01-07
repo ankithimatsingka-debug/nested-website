@@ -1,6 +1,4 @@
-import { Apple, Play } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import qrCode from "@/assets/qr-code.png";
+import nestedLogo from "@/assets/nested-logo.png";
 
 export function FooterLanding() {
   return (
@@ -10,8 +8,7 @@ export function FooterLanding() {
           {/* Brand */}
           <div>
             <div className="flex items-center justify-center mb-6">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg mr-3"></div>
-              <span className="font-heading text-2xl font-bold">Nested</span>
+              <img src={nestedLogo} alt="Nested logo" height="40" className="h-10 w-auto" loading="lazy" decoding="async" />
             </div>
             <p className="font-body text-muted-foreground leading-relaxed">
               Funding dreams, one goal at a time. Smart mutual fund investing designed for Indian parents.

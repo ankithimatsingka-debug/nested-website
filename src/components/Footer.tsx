@@ -12,7 +12,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-6 h-10">
-              <img src={nestedLogo} alt="Nested logo" width="120" height="40" className="h-10 w-[120px]" loading="lazy" decoding="async" />
+              <img src={nestedLogo} alt="Nested logo" height="40" className="h-10 w-auto" loading="lazy" decoding="async" />
             </div>
             <p className="font-body text-muted-foreground mb-6 leading-relaxed">
               Funding dreams, one goal at a time. Smart mutual fund investing designed for Indian parents.

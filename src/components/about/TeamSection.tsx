@@ -16,7 +16,7 @@ export function TeamSection() {
     },
     {
       name: "Dheeraj Reddy", 
-      role: "CTO & Co-founder",
+      role: "CTO & Co-Founder",
       bio: "IIT-Madras alumnus",
       image: dheerajImage,
       initials: "DR",

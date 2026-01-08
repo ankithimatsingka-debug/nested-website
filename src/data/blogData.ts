@@ -86,8 +86,8 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read"
   },
   {
-    slug: "understanding-mutual-fund-taxation-2025",
-    title: "Understanding Mutual Fund Taxation in 2025",
+    slug: "understanding-mutual-fund-taxation-2026",
+    title: "Understanding Mutual Fund Taxation in 2026",
     excerpt: "A comprehensive guide to how your mutual fund returns are taxed in India, including the latest budget changes and strategies to minimize your tax burden.",
     content: `
       <p class="text-lg text-muted-foreground mb-6">Mutual fund taxation in India can seem complex, but understanding the basics can help you make smarter investment decisions and potentially save on taxes.</p>

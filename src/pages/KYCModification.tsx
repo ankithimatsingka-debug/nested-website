@@ -26,9 +26,9 @@ const KYCModification = () => {
   const content = {
     en: {
       title: "How to Correct Name, Father's Name, and Date of Birth on PAN, Aadhaar & Bank Records",
-      subtitle: "Complete 2025 Guide",
-      metaTitle: "How to Correct Name, Father's Name, and DOB on PAN, Aadhaar & Bank Records — Step-by-Step 2025 Guide",
-      metaDescription: "A complete 2025 guide to update or correct your name, father's name, and date of birth on PAN, Aadhaar, and bank records. Includes documents required, online/offline steps, pro tips, timelines, and sample application letter.",
+      subtitle: "Complete Guide",
+      metaTitle: "How to Correct Name, Father's Name, and DOB on PAN, Aadhaar & Bank Records — Step-by-Step Guide",
+      metaDescription: "A complete guide to update or correct your name, father's name, and date of birth on PAN, Aadhaar, and bank records. Includes documents required, online/offline steps, pro tips, timelines, and sample application letter.",
       overview: {
         title: "Overview",
         p1: "Inconsistent personal details across PAN, Aadhaar, and bank accounts can cause serious KYC issues — blocking tax refunds, mutual fund transactions, and even bank transfers.",
@@ -262,9 +262,9 @@ Sincerely,
     },
     hi: {
       title: "पैन, आधार और बैंक रिकॉर्ड में नाम, पिता का नाम और जन्म तिथि को सही करने का तरीका",
-      subtitle: "संपूर्ण 2025 गाइड",
-      metaTitle: "पैन, आधार और बैंक रिकॉर्ड में नाम, पिता का नाम और जन्म तिथि सही करें — चरण-दर-चरण 2025 गाइड",
-      metaDescription: "पैन, आधार और बैंक रिकॉर्ड में अपना नाम, पिता का नाम और जन्म तिथि अपडेट या सही करने के लिए 2025 की संपूर्ण गाइड। आवश्यक दस्तावेज, ऑनलाइन/ऑफलाइन चरण, प्रो टिप्स, समयसीमा और नमूना आवेदन पत्र शामिल है।",
+      subtitle: "संपूर्ण गाइड",
+      metaTitle: "पैन, आधार और बैंक रिकॉर्ड में नाम, पिता का नाम और जन्म तिथि सही करें — चरण-दर-चरण गाइड",
+      metaDescription: "पैन, आधार और बैंक रिकॉर्ड में अपना नाम, पिता का नाम और जन्म तिथि अपडेट या सही करने के लिए संपूर्ण गाइड। आवश्यक दस्तावेज, ऑनलाइन/ऑफलाइन चरण, प्रो टिप्स, समयसीमा और नमूना आवेदन पत्र शामिल है।",
       overview: {
         title: "अवलोकन",
         p1: "पैन, आधार और बैंक खातों में असंगत व्यक्तिगत विवरण गंभीर केवाईसी समस्याएं पैदा कर सकते हैं — टैक्स रिफंड, म्यूचुअल फंड लेनदेन और यहां तक कि बैंक ट्रांसफर को भी ब्लॉक कर सकते हैं।",
@@ -540,7 +540,7 @@ Sincerely,
           </div>
         </div>
 
-        <main className="container mx-auto px-4 py-12 max-w-5xl">
+        <main className="container mx-auto px-4 pt-8 pb-12 max-w-5xl">
           <header className="mb-12 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {t.title}

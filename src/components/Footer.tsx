@@ -44,6 +44,8 @@ export function Footer() {
             <ul className="space-y-3">
               <li><a href="/#invest-smarter" className="font-body text-muted-foreground hover:text-primary transition-colors">How It Works</a></li>
               <li><a href="/#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">Success Stories</a></li>
+              <li><Link to="/taxation" className="font-body text-muted-foreground hover:text-primary transition-colors">Taxation Guide</Link></li>
+              <li><Link to="/kyc-modification" className="font-body text-muted-foreground hover:text-primary transition-colors">KYC Modification</Link></li>
               <li><a href="#" className="font-body text-muted-foreground hover:text-primary transition-colors">Blog</a></li>
             </ul>
           </div>

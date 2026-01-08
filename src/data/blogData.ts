@@ -81,7 +81,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">If you want your savings to be flexible and grow more efficiently, it is time to look beyond the FD. Debt mutual funds can offer similar safety with much better benefits for your long-term wealth.</p>
     `,
     author: "Nested Team",
-    publishedAt: "2025-01-08",
+    publishedAt: "2026-01-08",
     category: "Investment Strategy",
     readTime: "5 min read"
   },
@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Understanding mutual fund taxation helps you plan your investments better. Always consider the tax implications alongside returns when making investment decisions. For personalized advice, consult a tax professional.</p>
     `,
     author: "Nested Team",
-    publishedAt: "2025-01-08",
+    publishedAt: "2026-01-08",
     category: "Tax Planning",
     readTime: "6 min read"
   },
@@ -157,7 +157,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">As your child grows closer to needing the funds, gradually shift from equity to debt to protect your corpus from market volatility. A good rule of thumb is to start shifting 2-3 years before you need the money.</p>
     `,
     author: "Nested Team",
-    publishedAt: "2025-01-05",
+    publishedAt: "2026-01-05",
     category: "Education Planning",
     readTime: "5 min read"
   },
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">For most investors, especially beginners, SIP is the recommended approach. It takes the emotion out of investing and helps build wealth consistently over time.</p>
     `,
     author: "Nested Team",
-    publishedAt: "2025-01-02",
+    publishedAt: "2026-01-02",
     category: "Investment Strategy",
     readTime: "5 min read"
   }

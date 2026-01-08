@@ -12,6 +12,80 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "why-fixed-deposits-might-not-be-best-for-growth",
+    title: "Why Fixed Deposits Might Not Be the Best Way to Grow Your Money",
+    excerpt: "FDs feel safe and easy, but yearly taxes and rigid rules often slow down your wealth. Learn why debt mutual funds might be a smarter choice.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">Many people put their extra savings into a Fixed Deposit (FD). It feels safe and easy. You know exactly how much interest the bank will pay you, and there is almost no risk.</p>
+      
+      <p class="mb-4">However, if you look closely at how taxes and rules work, FDs are often not as profitable as they seem. Here is why your money might grow slower in an FD compared to other options like Debt Mutual Funds.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">1. The Problem with Yearly Taxes</h2>
+      <p class="mb-4">Most people think their money grows untouched until the FD ends. This is not true.</p>
+      <p class="mb-4">In an FD, the bank takes tax (TDS) out of your interest every year. If you are in a high tax bracket, you have to pay even more tax to the government every year.</p>
+      <p class="mb-4">Think of your investment like a growing tree. Every year, the bank cuts off a few branches for taxes. Because those branches are gone, they can't grow bigger next year. This is called <strong>"interrupted compounding."</strong> It slows down your total wealth.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">2. Debt Funds: Let Your Money Stay Whole</h2>
+      <p class="mb-4">Debt Mutual Funds work differently. There is no tax taken out every year. You only pay tax when you decide to take your money out.</p>
+      <p class="mb-4">Because the tax is delayed, your full amount stays invested. You earn "interest on your interest" for a much longer time. Even when the tax rate is the same in the end, leaving your money untouched for years usually results in a bigger final amount.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">3. The "Lock-in" Problem</h2>
+      <p class="mb-4">To get a good interest rate on an FD, you usually have to "lock" your money away for 3 to 5 years. If you want to keep your money for a shorter time, like 6 months or 1 year, the bank gives you a much lower interest rate.</p>
+      <p class="mb-4">Debt funds are more flexible. You generally get a fair market rate whether you stay for a few months or a few years.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">4. Penalties for Needing Your Cash</h2>
+      <p class="mb-4">Life is unpredictable. If you need your money early and "break" your FD, the bank will punish you. They will:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Lower the interest rate they promised you.</li>
+        <li>Charge you a penalty fee (usually 1%).</li>
+      </ul>
+      <p class="mb-4">With most debt funds, you can withdraw your money in 1 or 2 days. There are usually no penalties, and you don't have to "re-negotiate" with the bank.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">FD vs Debt Mutual Fund: A Quick Comparison</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Feature</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Fixed Deposit (FD)</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Debt Mutual Fund</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-border px-4 py-3 font-medium">When do you pay tax?</td>
+              <td class="border border-border px-4 py-3">Every year</td>
+              <td class="border border-border px-4 py-3">Only when you withdraw</td>
+            </tr>
+            <tr class="bg-muted/50">
+              <td class="border border-border px-4 py-3 font-medium">How does it grow?</td>
+              <td class="border border-border px-4 py-3">Slower (because of yearly tax)</td>
+              <td class="border border-border px-4 py-3">Faster (tax is delayed)</td>
+            </tr>
+            <tr>
+              <td class="border border-border px-4 py-3 font-medium">Early withdrawal</td>
+              <td class="border border-border px-4 py-3">You pay a penalty</td>
+              <td class="border border-border px-4 py-3">Usually no penalty</td>
+            </tr>
+            <tr class="bg-muted/50">
+              <td class="border border-border px-4 py-3 font-medium">Flexibility</td>
+              <td class="border border-border px-4 py-3">Must choose a fixed time</td>
+              <td class="border border-border px-4 py-3">Withdraw anytime</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Final Word</h2>
+      <p class="mb-4">Fixed Deposits are not "bad," but they are often "lazy" investments. They stop your money from growing fully because of yearly taxes and they make it hard to access your cash.</p>
+      <p class="mb-4">If you want your savings to be flexible and grow more efficiently, it is time to look beyond the FD. Debt mutual funds can offer similar safety with much better benefits for your long-term wealth.</p>
+    `,
+    author: "Nested Team",
+    publishedAt: "2025-01-08",
+    category: "Investment Strategy",
+    readTime: "5 min read"
+  },
+  {
     slug: "understanding-mutual-fund-taxation-2025",
     title: "Understanding Mutual Fund Taxation in 2025",
     excerpt: "A comprehensive guide to how your mutual fund returns are taxed in India, including the latest budget changes and strategies to minimize your tax burden.",

@@ -8,6 +8,8 @@ const Index = lazy(() => import("./pages/Index"));
 const Landing = lazy(() => import("./pages/Landing"));
 const Features = lazy(() => import("./pages/Features"));
 const FundSelection = lazy(() => import("./pages/FundSelection"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
 const TermsOfUse = lazy(() => import("./pages/TermsOfUse"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const CancellationRefundPolicy = lazy(() => import("./pages/CancellationRefundPolicy"));
@@ -34,6 +36,8 @@ const App = () => (
             <Route path="/landing" element={<Landing />} />
             <Route path="/features" element={<Features />} />
             <Route path="/fund-selection" element={<FundSelection />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/terms-and-conditions" element={<TermsOfUse />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/cancellation-refund-policy" element={<CancellationRefundPolicy />} />

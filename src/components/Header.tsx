@@ -51,6 +51,9 @@ export function Header() {
             <Link to="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">
               Fund Selection
             </Link>
+            <Link to="/blog" className="font-body text-muted-foreground hover:text-primary transition-colors">
+              Blog
+            </Link>
             <a href="/#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">
               FAQs
             </a>
@@ -113,6 +116,13 @@ export function Header() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Fund Selection
+                </Link>
+                <Link 
+                  to="/blog" 
+                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Blog
                 </Link>
                 <a 
                   href="/#faq" 

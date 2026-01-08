@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // Keep base as "/" for custom domains (e.g., www.yourdomain.com)
+  // FOR CUSTOM DOMAINS: This MUST be "/"
   base: "/", 
   server: {
     host: "::",
@@ -19,8 +19,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    // This ensures assets are placed in the right spot for GitHub Pages
-    outDir: "dist",
-  }
 }));

@@ -541,7 +541,7 @@ Sincerely,
         </div>
 
         <main className="container mx-auto px-4 pt-8 pb-12 max-w-5xl">
-          <header className="mb-12 text-center">
+          <header className="mb-12 text-center pt-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {t.title}
             </h1>

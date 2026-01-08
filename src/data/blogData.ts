@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">Equity Mutual Funds</h3>
       <p class="mb-4">Equity mutual funds are those that invest at least 65% of their corpus in equity and equity-related instruments. For these funds:</p>
       <ul class="list-disc pl-6 mb-4 space-y-2">
-        <li><strong>Short-term capital gains (STCG):</strong> If you sell within 1 year, gains are taxed at 15%.</li>
+        <li><strong>Short-term capital gains (STCG):</strong> If you sell within 1 year, gains are taxed at 20%.</li>
         <li><strong>Long-term capital gains (LTCG):</strong> If you hold for more than 1 year, gains above ₹1 lakh are taxed at 10% without indexation benefit.</li>
       </ul>
       

@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Equity mutual funds are those that invest at least 65% of their corpus in equity and equity-related instruments. For these funds:</p>
       <ul class="list-disc pl-6 mb-4 space-y-2">
         <li><strong>Short-term capital gains (STCG):</strong> If you sell within 1 year, gains are taxed at 20%.</li>
-        <li><strong>Long-term capital gains (LTCG):</strong> If you hold for more than 1 year, gains above ₹1 lakh are taxed at 10% without indexation benefit.</li>
+        <li><strong>Long-term capital gains (LTCG):</strong> If you hold for more than 1 year, gains above ₹1.25 lakh are taxed at 12.5% without indexation benefit.</li>
       </ul>
       
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">Debt Mutual Funds</h3>
@@ -39,8 +39,8 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Here are some strategies to optimize your mutual fund taxation:</p>
       <ol class="list-decimal pl-6 mb-4 space-y-2">
         <li><strong>Hold equity funds for more than 1 year</strong> to benefit from lower LTCG tax rates.</li>
-        <li><strong>Utilize the ₹1 lakh exemption</strong> on equity LTCG by booking profits strategically.</li>
-        <li><strong>Invest in ELSS funds</strong> for tax deduction under Section 80C (up to ₹1.5 lakh).</li>
+        <li><strong>Utilize the ₹1.25 lakh exemption</strong> on equity LTCG by booking profits strategically.</li>
+        <li><strong>Invest in ELSS funds</strong> for tax deduction under Section 80C (up to ₹1.5 lakh). <em>Note: This benefit is only available under the old tax regime.</em></li>
         <li><strong>Consider SWP from equity funds</strong> for regular income with tax efficiency.</li>
       </ol>
       

@@ -11,6 +11,7 @@ const EducationCalculator = lazy(() => import("@/components/EducationCalculator"
 const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
 const Compliance = lazy(() => import("@/components/about/Compliance").then(m => ({ default: m.Compliance })));
 const TeamSection = lazy(() => import("@/components/about/TeamSection").then(m => ({ default: m.TeamSection })));
+const TalkToUs = lazy(() => import("@/components/TalkToUs").then(m => ({ default: m.TalkToUs })));
 const EnhancedComparisonSection = lazy(() => import("@/components/comparison/EnhancedComparisonSection").then(m => ({ default: m.EnhancedComparisonSection })));
 const FAQ = lazy(() => import("@/components/FAQ").then(m => ({ default: m.FAQ })));
 const DownloadBanner = lazy(() => import("@/components/DownloadBanner").then(m => ({ default: m.DownloadBanner })));
@@ -69,6 +70,7 @@ const Index = () => {
         <Suspense fallback={<SectionLoader height="300px" />}>
           <section id="about" aria-label="About Us" className="section-lazy">
             <Compliance />
+            <TalkToUs />
             <TeamSection />
           </section>
         </Suspense>

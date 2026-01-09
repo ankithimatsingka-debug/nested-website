@@ -88,7 +88,6 @@ const products = [
 const sharedFeatures = [
   { icon: Clock, text: "No lock-in period" },
   { icon: Wallet, text: "Withdraw anytime" },
-  { icon: ArrowDownUp, text: "SIP from ₹200/month" },
   { icon: PiggyBank, text: "Add any amount" },
 ];
 

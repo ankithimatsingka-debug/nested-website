@@ -1,83 +1,95 @@
-import { ShieldCheck, Umbrella, PiggyBank } from "lucide-react";
+import { Shield, TrendingUp, Coins, Clock, Wallet, ArrowDownUp, PiggyBank, Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
-const WavyLine = ({ color, volatility }: { color: string; volatility: "Low" | "Medium" }) => {
-  // Low: fewer zigzags, upward trend
-  // Medium: more zigzags, upward trend
-  const path = volatility === "Low" 
-    ? "M2 14C10 10 18 12 26 8C34 4 42 6 50 2" // 2 waves, trending up
-    : "M2 14C6 12 10 14 14 10C18 6 22 12 26 8C30 4 34 10 38 6C42 2 46 6 50 2"; // 4 waves, trending up
-
+const RiskIndicator = ({ level }: { level: "Low" | "Medium" | "Medium-High" }) => {
+  const segments = level === "Low" ? 2 : level === "Medium" ? 4 : 5;
+  const color = level === "Low" ? "bg-emerald-500" : level === "Medium" ? "bg-amber-500" : "bg-orange-500";
+  
   return (
-    <svg width="54" height="16" viewBox="0 0 54 16" fill="none" className="inline-block ml-1">
-      <path
-        d={path}
-        stroke={color}
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-    </svg>
+    <div className="flex items-center gap-2">
+      <div className="flex gap-0.5">
+        {[1, 2, 3, 4, 5, 6].map((i) => (
+          <div
+            key={i}
+            className={`w-2 h-3 rounded-sm transition-colors ${
+              i <= segments ? color : "bg-muted"
+            }`}
+          />
+        ))}
+      </div>
+      <span className="text-xs text-muted-foreground font-medium">{level} volatility</span>
+    </div>
   );
 };
 
 const products = [
   {
-    title: "Gold & Silver Basket",
-    subtitle: null,
-    icon: ShieldCheck,
-    themeColor: "amber",
-    borderColor: "border-l-amber-400",
-    bgColor: "bg-amber-50 dark:bg-amber-950/20",
-    iconBg: "bg-amber-100 dark:bg-amber-900/40",
-    iconColor: "text-amber-600 dark:text-amber-400",
-    wavyColor: "#F59E0B",
-    features: [
-      { emoji: "💰", text: "Earn from Gold and Silver both" },
-      { emoji: "🔓", text: "No lock-in — withdraw anytime" },
-      { emoji: "🔄", text: "Flexible — add any amount any time" },
-      { emoji: "▶️", text: "Start from ₹500 ; SIP ₹200/month" },
-      { emoji: "⏳", text: "Ideal for at least 6+ months" },
+    title: "Secure Money",
+    tagline: "Best for 3+ months",
+    icon: Shield,
+    heroMetric: "Up to 7.50%",
+    heroLabel: "per year",
+    riskLevel: "Low" as const,
+    themeColor: "teal",
+    gradientFrom: "from-teal-500/10",
+    gradientTo: "to-teal-600/5",
+    borderColor: "border-teal-500/30",
+    iconBg: "bg-gradient-to-br from-teal-400 to-teal-600",
+    uniqueFeatures: [
+      "Stable, predictable returns",
+      "Lowest daily fluctuation",
+      "Ideal for emergency funds",
     ],
-    volatility: "Medium",
+    minInvestment: "₹500",
+    isPopular: false,
   },
   {
-    title: "Secure Money",
-    subtitle: null,
-    icon: Umbrella,
-    themeColor: "teal",
-    borderColor: "border-l-teal-400",
-    bgColor: "bg-teal-50 dark:bg-teal-950/20",
-    iconBg: "bg-teal-100 dark:bg-teal-900/40",
-    iconColor: "text-teal-600 dark:text-teal-400",
-    wavyColor: "#14B8A6",
-    features: [
-      { emoji: "💰", text: "Earn up to 7.50%/year" },
-      { emoji: "🔓", text: "No lock-in — withdraw anytime" },
-      { emoji: "🔄", text: "Flexible — add any amount any time" },
-      { emoji: "▶️", text: "Start from ₹500 ; SIP ₹200/month" },
-      { emoji: "⏳", text: "Ideal for at least 3+ months" },
+    title: "Gold & Silver Basket",
+    tagline: "Best for 6+ months",
+    icon: Coins,
+    heroMetric: "Precious",
+    heroLabel: "metals growth",
+    riskLevel: "Medium" as const,
+    themeColor: "amber",
+    gradientFrom: "from-amber-500/10",
+    gradientTo: "to-amber-600/5",
+    borderColor: "border-amber-500/30",
+    iconBg: "bg-gradient-to-br from-amber-400 to-amber-600",
+    uniqueFeatures: [
+      "Earn from Gold & Silver both",
+      "Hedge against inflation",
+      "Portfolio diversification",
     ],
-    volatility: "Low",
+    minInvestment: "₹500",
+    isPopular: false,
   },
   {
     title: "Grow Money",
-    subtitle: null,
-    icon: PiggyBank,
+    tagline: "Best for 12+ months",
+    icon: TrendingUp,
+    heroMetric: "Up to 11%",
+    heroLabel: "per year",
+    riskLevel: "Medium-High" as const,
     themeColor: "purple",
-    borderColor: "border-l-purple-400",
-    bgColor: "bg-purple-50 dark:bg-purple-950/20",
-    iconBg: "bg-purple-100 dark:bg-purple-900/40",
-    iconColor: "text-purple-600 dark:text-purple-400",
-    wavyColor: "#8B5CF6",
-    features: [
-      { emoji: "💰", text: "Earn up to 11%/year" },
-      { emoji: "🔓", text: "No lock-in — withdraw anytime" },
-      { emoji: "🔄", text: "Flexible — add any amount any time" },
-      { emoji: "▶️", text: "Start from ₹1000 ; SIP ₹200/month" },
-      { emoji: "⏳", text: "Ideal for at least 12+ months" },
+    gradientFrom: "from-purple-500/10",
+    gradientTo: "to-purple-600/5",
+    borderColor: "border-purple-500/30",
+    iconBg: "bg-gradient-to-br from-purple-400 to-purple-600",
+    uniqueFeatures: [
+      "Higher growth potential",
+      "Balanced risk-reward",
+      "Long-term wealth building",
     ],
-    volatility: "Medium",
+    minInvestment: "₹1,000",
+    isPopular: true,
   },
+];
+
+const sharedFeatures = [
+  { icon: Clock, text: "No lock-in period" },
+  { icon: Wallet, text: "Withdraw anytime" },
+  { icon: ArrowDownUp, text: "SIP from ₹200/month" },
+  { icon: PiggyBank, text: "Add any amount" },
 ];
 
 export function SuperFDSection() {
@@ -98,46 +110,84 @@ export function SuperFDSection() {
         </div>
 
         {/* Product Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8">
           {products.map((product) => {
             const IconComponent = product.icon;
             return (
               <Card
                 key={product.title}
-                className={`relative overflow-hidden border-l-4 ${product.borderColor} ${product.bgColor} p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow`}
+                className={`relative overflow-hidden bg-gradient-to-br ${product.gradientFrom} ${product.gradientTo} border ${product.borderColor} p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
               >
-                {/* Header */}
-                <div className="flex items-center gap-3 mb-5">
-                  <div className={`w-12 h-12 rounded-full ${product.iconBg} flex items-center justify-center`}>
-                    <IconComponent className={`w-6 h-6 ${product.iconColor}`} />
+                {/* Popular Badge */}
+                {product.isPopular && (
+                  <div className="absolute top-4 right-4 flex items-center gap-1 bg-secondary/10 text-secondary px-2.5 py-1 rounded-full text-xs font-semibold">
+                    <Star className="w-3 h-3 fill-secondary" />
+                    Popular
+                  </div>
+                )}
+
+                {/* Header with Icon */}
+                <div className="flex items-start gap-4 mb-6">
+                  <div className={`w-14 h-14 rounded-xl ${product.iconBg} flex items-center justify-center shadow-lg`}>
+                    <IconComponent className="w-7 h-7 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg text-foreground">{product.title}</h3>
-                    {product.subtitle && (
-                      <p className="text-sm text-muted-foreground">{product.subtitle}</p>
-                    )}
+                    <h3 className="font-bold text-xl text-foreground">{product.title}</h3>
+                    <p className="text-sm text-muted-foreground font-medium">{product.tagline}</p>
                   </div>
                 </div>
 
-                {/* Features List */}
-                <ul className="space-y-3 mb-5">
-                  {product.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-foreground/90">
-                      <span className="text-base leading-none mt-0.5">{feature.emoji}</span>
-                      <span>{feature.text}</span>
+                {/* Hero Metric */}
+                <div className="mb-6 p-4 bg-background/60 rounded-xl border border-border/50">
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-3xl font-bold text-foreground">{product.heroMetric}</span>
+                    <span className="text-sm text-muted-foreground">{product.heroLabel}</span>
+                  </div>
+                  <div className="mt-3">
+                    <RiskIndicator level={product.riskLevel} />
+                  </div>
+                </div>
+
+                {/* Unique Features */}
+                <ul className="space-y-2.5 mb-6">
+                  {product.uniqueFeatures.map((feature, idx) => (
+                    <li key={idx} className="flex items-center gap-2.5 text-sm text-foreground/90">
+                      <div className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0" />
+                      <span>{feature}</span>
                     </li>
                   ))}
-                  <li className="flex items-start gap-2 text-sm text-foreground/90">
-                    <span className="text-base leading-none mt-0.5">📊</span>
-                    <span className="flex items-center">
-                      {product.volatility} daily up & down
-                      <WavyLine color={product.wavyColor} volatility={product.volatility as "Low" | "Medium"} />
-                    </span>
-                  </li>
                 </ul>
+
+                {/* Minimum Investment Badge */}
+                <div className="pt-4 border-t border-border/50">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-muted-foreground">Start from</span>
+                    <span className="font-semibold text-foreground">{product.minInvestment}</span>
+                  </div>
+                </div>
               </Card>
             );
           })}
+        </div>
+
+        {/* Shared Features Strip */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-background/80 backdrop-blur-sm border border-border/50 rounded-2xl p-4 md:p-6">
+            <p className="text-xs text-muted-foreground text-center mb-4 font-medium uppercase tracking-wide">
+              All SuperFD products include
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+              {sharedFeatures.map((feature, idx) => {
+                const FeatureIcon = feature.icon;
+                return (
+                  <div key={idx} className="flex items-center gap-2 text-sm text-foreground/80">
+                    <FeatureIcon className="w-4 h-4 text-secondary" />
+                    <span>{feature.text}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>

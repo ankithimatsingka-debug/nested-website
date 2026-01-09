@@ -105,7 +105,7 @@ export function AllocationAnimation() {
           Equity
         </span>
       </div>
-      <div className="absolute -left-8 top-1/2 -translate-y-1/2">
+      <div className="absolute -left-8 top-1/4">
         <span className="text-xs font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
           Debt
         </span>

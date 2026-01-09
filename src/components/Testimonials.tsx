@@ -40,7 +40,7 @@ export function Testimonials() {
   const getRandomPosition = useCallback(() => {
     if (isMobile) {
       return {
-        x: Math.random() * 40 + 30, // 30% to 70% from left
+        x: 50, // Center horizontally on mobile to prevent cutoff
         y: Math.random() * 50 + 25  // 25% to 75% from top
       };
     }
@@ -133,7 +133,7 @@ export function Testimonials() {
               left: `${position.x}%`,
               top: `${position.y}%`,
               transform: 'translate(-50%, -50%)',
-              width: 'calc(100vw - 2rem)',
+              width: 'calc(100vw - 3rem)',
               maxWidth: '24rem'
             }}
           >

@@ -64,20 +64,7 @@ export function AllocationAnimation() {
           className="transition-all duration-1000 ease-in-out"
           style={{ opacity: 0.9 }}
         />
-        {/* Debt segment - Secondary */}
-        <circle
-          cx="50"
-          cy="50"
-          r="40"
-          fill="none"
-          stroke="hsl(var(--secondary))"
-          strokeWidth="12"
-          strokeDasharray={`${debtDash} ${circumference}`}
-          strokeDashoffset={debtOffset}
-          className="transition-all duration-1000 ease-in-out"
-          style={{ opacity: 0.8 }}
-        />
-        {/* Gold segment - Amber */}
+        {/* Debt segment - Amber */}
         <circle
           cx="50"
           cy="50"
@@ -85,10 +72,23 @@ export function AllocationAnimation() {
           fill="none"
           stroke="hsl(45 93% 47%)"
           strokeWidth="12"
+          strokeDasharray={`${debtDash} ${circumference}`}
+          strokeDashoffset={debtOffset}
+          className="transition-all duration-1000 ease-in-out"
+          style={{ opacity: 0.85 }}
+        />
+        {/* Gold segment - Secondary */}
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          fill="none"
+          stroke="hsl(var(--secondary))"
+          strokeWidth="12"
           strokeDasharray={`${goldDash} ${circumference}`}
           strokeDashoffset={goldOffset}
           className="transition-all duration-1000 ease-in-out"
-          style={{ opacity: 0.85 }}
+          style={{ opacity: 0.8 }}
         />
       </svg>
       
@@ -106,12 +106,12 @@ export function AllocationAnimation() {
         </span>
       </div>
       <div className="absolute -left-8 top-2">
-        <span className="text-xs font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
+        <span className="text-xs font-medium text-amber-600 bg-amber-100 dark:bg-amber-900/30 px-2 py-0.5 rounded-full">
           Debt
         </span>
       </div>
       <div className="absolute -left-8 bottom-2">
-        <span className="text-xs font-medium text-amber-600 bg-amber-100 dark:bg-amber-900/30 px-2 py-0.5 rounded-full">
+        <span className="text-xs font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
           Gold
         </span>
       </div>

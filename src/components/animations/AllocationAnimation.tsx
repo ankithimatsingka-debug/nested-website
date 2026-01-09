@@ -1,6 +1,44 @@
+import { useEffect, useState } from "react";
+
+// Define allocation presets that the pie chart will cycle through
+const allocations = [
+  { equity: 50, debt: 30, gold: 20 }, // Aggressive
+  { equity: 40, debt: 40, gold: 20 }, // Balanced
+  { equity: 30, debt: 50, gold: 20 }, // Conservative
+  { equity: 60, debt: 25, gold: 15 }, // Growth
+  { equity: 35, debt: 35, gold: 30 }, // Gold-heavy
+];
+
+// Convert percentage to strokeDasharray values (circumference = 2 * π * 40 ≈ 251.2)
+const circumference = 251.2;
+
 export function AllocationAnimation() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [allocation, setAllocation] = useState(allocations[0]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % allocations.length);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    setAllocation(allocations[currentIndex]);
+  }, [currentIndex]);
+
+  // Calculate stroke values
+  const equityDash = (allocation.equity / 100) * circumference;
+  const debtDash = (allocation.debt / 100) * circumference;
+  const goldDash = (allocation.gold / 100) * circumference;
+  
+  const equityOffset = 0;
+  const debtOffset = -equityDash;
+  const goldOffset = -(equityDash + debtDash);
+
   return (
-    <div className="w-32 h-32 relative" role="img" aria-label="Portfolio allocation animation showing equity, debt, and gold segments">
+    <div className="w-32 h-32 relative" role="img" aria-label="Portfolio allocation animation showing equity, debt, and gold segments dynamically adjusting">
       {/* Animated Donut Chart */}
       <svg viewBox="0 0 100 100" className="w-full h-full transform -rotate-90" style={{ willChange: 'transform' }} aria-hidden="true">
         {/* Background circle */}
@@ -21,9 +59,9 @@ export function AllocationAnimation() {
           fill="none"
           stroke="hsl(var(--primary))"
           strokeWidth="12"
-          strokeDasharray="125.6 251.2"
-          strokeDashoffset="0"
-          className="animate-[draw-segment_1.5s_ease-out_forwards]"
+          strokeDasharray={`${equityDash} ${circumference}`}
+          strokeDashoffset={equityOffset}
+          className="transition-all duration-1000 ease-in-out"
           style={{ opacity: 0.9 }}
         />
         {/* Debt segment - Secondary */}
@@ -34,9 +72,9 @@ export function AllocationAnimation() {
           fill="none"
           stroke="hsl(var(--secondary))"
           strokeWidth="12"
-          strokeDasharray="75.4 251.2"
-          strokeDashoffset="-125.6"
-          className="animate-[draw-segment_1.5s_ease-out_0.3s_forwards]"
+          strokeDasharray={`${debtDash} ${circumference}`}
+          strokeDashoffset={debtOffset}
+          className="transition-all duration-1000 ease-in-out"
           style={{ opacity: 0.8 }}
         />
         {/* Gold segment - Amber */}
@@ -47,29 +85,35 @@ export function AllocationAnimation() {
           fill="none"
           stroke="hsl(45 93% 47%)"
           strokeWidth="12"
-          strokeDasharray="50.2 251.2"
-          strokeDashoffset="-201"
-          className="animate-[draw-segment_1.5s_ease-out_0.6s_forwards]"
+          strokeDasharray={`${goldDash} ${circumference}`}
+          strokeDashoffset={goldOffset}
+          className="transition-all duration-1000 ease-in-out"
           style={{ opacity: 0.85 }}
         />
       </svg>
       
-      {/* Center text */}
+      {/* Center text with dynamic percentage */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center">
           <div className="text-xs font-medium text-muted-foreground">Portfolio</div>
         </div>
       </div>
       
-      {/* Floating labels */}
-      <div className="absolute -right-2 top-2 animate-[fade-in_0.5s_ease-out_1s_forwards] opacity-0">
-        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">Equity</span>
+      {/* Floating labels with dynamic percentages */}
+      <div className="absolute -right-4 top-1 transition-opacity duration-500">
+        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full whitespace-nowrap">
+          Equity {allocation.equity}%
+        </span>
       </div>
-      <div className="absolute -left-2 top-1/2 animate-[fade-in_0.5s_ease-out_1.2s_forwards] opacity-0">
-        <span className="text-xs font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">Debt</span>
+      <div className="absolute -left-4 top-1/2 -translate-y-1/2 transition-opacity duration-500">
+        <span className="text-xs font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-full whitespace-nowrap">
+          Debt {allocation.debt}%
+        </span>
       </div>
-      <div className="absolute -right-1 bottom-4 animate-[fade-in_0.5s_ease-out_1.4s_forwards] opacity-0">
-        <span className="text-xs font-medium text-amber-600 bg-amber-100 dark:bg-amber-900/30 px-2 py-0.5 rounded-full">Gold</span>
+      <div className="absolute -right-4 bottom-3 transition-opacity duration-500">
+        <span className="text-xs font-medium text-amber-600 bg-amber-100 dark:bg-amber-900/30 px-2 py-0.5 rounded-full whitespace-nowrap">
+          Gold {allocation.gold}%
+        </span>
       </div>
     </div>
   );

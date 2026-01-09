@@ -99,20 +99,20 @@ export function AllocationAnimation() {
         </div>
       </div>
       
-      {/* Floating labels with dynamic percentages */}
-      <div className="absolute -right-4 top-1 transition-opacity duration-500">
-        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full whitespace-nowrap">
-          Equity {allocation.equity}%
+      {/* Floating labels positioned outside the chart */}
+      <div className="absolute -right-10 top-0">
+        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+          Equity
         </span>
       </div>
-      <div className="absolute -left-4 top-1/2 -translate-y-1/2 transition-opacity duration-500">
-        <span className="text-xs font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-full whitespace-nowrap">
-          Debt {allocation.debt}%
+      <div className="absolute -left-8 top-1/2 -translate-y-1/2">
+        <span className="text-xs font-medium text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
+          Debt
         </span>
       </div>
-      <div className="absolute -right-4 bottom-3 transition-opacity duration-500">
-        <span className="text-xs font-medium text-amber-600 bg-amber-100 dark:bg-amber-900/30 px-2 py-0.5 rounded-full whitespace-nowrap">
-          Gold {allocation.gold}%
+      <div className="absolute -right-8 bottom-0">
+        <span className="text-xs font-medium text-amber-600 bg-amber-100 dark:bg-amber-900/30 px-2 py-0.5 rounded-full">
+          Gold
         </span>
       </div>
     </div>

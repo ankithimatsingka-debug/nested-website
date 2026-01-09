@@ -104,7 +104,7 @@ export function SuperFDSection() {
           <p className="text-lg md:text-xl text-muted-foreground">
             Save for your short-term needs
           </p>
-          <p className="text-base md:text-lg text-muted-foreground mt-1">
+          <p className="text-base md:text-lg text-muted-foreground mt-1 font-semibold">
             Better than bank FD, safer than share market
           </p>
         </div>

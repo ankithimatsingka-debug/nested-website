@@ -133,7 +133,7 @@ export function Testimonials() {
               left: `${position.x}%`,
               top: `${position.y}%`,
               transform: 'translate(-50%, -50%)',
-              width: 'calc(100vw - 3rem)',
+              width: 'calc(100vw - 4rem)',
               maxWidth: '24rem'
             }}
           >

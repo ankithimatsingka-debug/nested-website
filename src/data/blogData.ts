@@ -12,6 +12,76 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "understanding-money-market-funds",
+    title: "Understanding Money Market Funds: A Safe Haven for Your Cash?",
+    excerpt: "If you're looking for a place to park your savings that's a step up from a regular savings account but safer than the volatile stock market, Money Market Funds might be exactly what you need.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">If you're looking for a place to park your savings that's a step up from a regular savings account but safer than the volatile stock market, Money Market Funds (MMFs) might be exactly what you need.</p>
+      
+      <p class="mb-4">Think of these funds as the "middle ground" of investing. They aim to provide better returns than a standard bank account while keeping your principal investment as secure as possible. Here is a breakdown of how they work and why they might fit into your portfolio.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What Exactly is a Money Market Fund?</h2>
+      <p class="mb-4">At its core, a Money Market Fund is a type of mutual fund that invests in high-quality, short-term debt instruments. Instead of betting on the growth of a company's stock, these funds essentially "lend" your money to very reliable borrowers for a short period.</p>
+      
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Where does your money go?</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Government Securities:</strong> Bonds issued by the Government of India (Treasury Bills).</li>
+        <li><strong>Bank Deposits:</strong> Certificates of Deposit (CDs) issued by scheduled commercial banks.</li>
+        <li><strong>Government-Backed Entities:</strong> Highly secure institutions like SIDBI (Small Industries Development Bank of India) and NABARD (National Bank for Agriculture and Rural Development).</li>
+        <li><strong>Reputed Private Players:</strong> Commercial Paper (short-term unsecured IOUs) from top-tier Non-Banking Financial Companies (NBFCs) like Bajaj Finance.</li>
+      </ul>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The "Short-Term" Advantage</h2>
+      <p class="mb-4">The defining characteristic of these funds is their timeline. Most of the bonds and deposits held in the portfolio mature in 3 to 9 months.</p>
+      <p class="mb-4">Because the money is returned so quickly, these funds are highly liquid. This short duration leads to two major outcomes:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Low Risk of Loss:</strong> Since the borrowers are high-quality and the duration is short, there is very little time for things to go wrong. Unlike long-term bonds, these are not very sensitive to dramatic swings in interest rates.</li>
+        <li><strong>Market Alignment:</strong> The interest rates you earn on these funds correlate closely with current market conditions. If the Reserve Bank of India (RBI) hikes rates, the returns on your Money Market Fund usually follow suit quite quickly.</li>
+      </ul>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Trade-Off: What's the Catch?</h2>
+      <p class="mb-4">While Money Market Funds are excellent for safety, they aren't designed for building massive wealth over decades.</p>
+      <p class="mb-4"><strong>The Reinvestment Risk:</strong> Because these funds deal in short-term instruments, you cannot lock in a high interest rate for the long term. If market interest rates drop, the fund's yield will drop shortly after as the old deposits mature and are replaced by new ones at the lower rate.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Is it Right for You?</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Feature</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Money Market Funds</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-border px-4 py-3 font-medium">Risk Level</td>
+              <td class="border border-border px-4 py-3">Very Low</td>
+            </tr>
+            <tr class="bg-muted/50">
+              <td class="border border-border px-4 py-3 font-medium">Liquidity</td>
+              <td class="border border-border px-4 py-3">High (Usually 1-2 day withdrawal)</td>
+            </tr>
+            <tr>
+              <td class="border border-border px-4 py-3 font-medium">Ideal Horizon</td>
+              <td class="border border-border px-4 py-3">3 months to 1 year</td>
+            </tr>
+            <tr class="bg-muted/50">
+              <td class="border border-border px-4 py-3 font-medium">Best For</td>
+              <td class="border border-border px-4 py-3">Emergency funds, parking surplus business cash, or waiting for a market opportunity.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Bottom Line</h2>
+      <p class="mb-4">If you have money sitting idle in a savings account earning 3% while inflation is higher, a Money Market Fund is a smarter, "human-friendly" way to make your cash work a little harder without taking on the stress of the stock market.</p>
+    `,
+    author: "Nested Team",
+    publishedAt: "2026-01-10",
+    category: "Investment Strategy",
+    readTime: "4 min read"
+  },
+  {
     slug: "why-fixed-deposits-might-not-be-best-for-growth",
     title: "Why Fixed Deposits Might Not Be the Best Way to Grow Your Money",
     excerpt: "FDs feel safe and easy, but yearly taxes and rigid rules often slow down your wealth. Learn why debt mutual funds might be a smarter choice.",

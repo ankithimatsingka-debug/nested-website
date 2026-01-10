@@ -2,13 +2,40 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import nestedLogo from "@/assets/nested-logo.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Handle anchor link clicks with HashRouter
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    
+    // If not on homepage, navigate there first
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // Already on homepage, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    
+    setIsMenuOpen(false);
+  };
 
   // Trap focus in mobile menu when open
   useEffect(() => {
@@ -36,55 +63,71 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo - with fixed dimensions to prevent CLS */}
-            <a href="/" className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md" aria-label="Nested - Go to homepage">
+            <Link to="/" className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md" aria-label="Nested - Go to homepage">
               <img src={nestedLogo} alt="Nested logo" className="h-10 w-auto" height="40" loading="eager" decoding="async" />
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav role="navigation" aria-label="Main navigation" className="hidden md:flex items-center space-x-8">
-            <a href="/" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Home
-            </a>
-            <a href="/#steps" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Features
-            </a>
-            <Link to="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Fund Selection
-            </Link>
-            <Link to="/blog" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Blog
-            </Link>
-            <a href="/#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              FAQs
-            </a>
-            <a href="/#testimonials" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Stories
-            </a>
-            <a href="/#calculator" className="font-body text-muted-foreground hover:text-primary transition-colors">
-              Calculator
-            </a>
-          </nav>
+              <Link to="/" className="font-body text-muted-foreground hover:text-primary transition-colors">
+                Home
+              </Link>
+              <a 
+                href="#steps" 
+                onClick={(e) => handleAnchorClick(e, "steps")}
+                className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+              >
+                Features
+              </a>
+              <Link to="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">
+                Fund Selection
+              </Link>
+              <Link to="/blog" className="font-body text-muted-foreground hover:text-primary transition-colors">
+                Blog
+              </Link>
+              <a 
+                href="#faq" 
+                onClick={(e) => handleAnchorClick(e, "faq")}
+                className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+              >
+                FAQs
+              </a>
+              <a 
+                href="#testimonials" 
+                onClick={(e) => handleAnchorClick(e, "testimonials")}
+                className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+              >
+                Stories
+              </a>
+              <a 
+                href="#calculator" 
+                onClick={(e) => handleAnchorClick(e, "calculator")}
+                className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+              >
+                Calculator
+              </a>
+            </nav>
 
-          {/* Right side */}
-          <div className="flex items-center gap-4">
-            <ThemeToggle />
-            <Button size="sm" className="hidden md:inline-flex">
-              Download App
-            </Button>
-            
-            {/* Mobile menu button */}
-            <Button
-              variant="ghost"
-              size="sm"
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMenuOpen}
-            >
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
+            {/* Right side */}
+            <div className="flex items-center gap-4">
+              <ThemeToggle />
+              <Button size="sm" className="hidden md:inline-flex">
+                Download App
+              </Button>
+              
+              {/* Mobile menu button */}
+              <Button
+                variant="ghost"
+                size="sm"
+                className="md:hidden"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMenuOpen}
+              >
+                {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              </Button>
+            </div>
           </div>
-        </div>
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
@@ -96,17 +139,17 @@ export function Header() {
               aria-label="Mobile navigation menu"
             >
               <nav role="navigation" aria-label="Mobile navigation" className="flex flex-col space-y-4">
-                <a 
-                  href="/" 
+                <Link 
+                  to="/" 
                   className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
-                </a>
+                </Link>
                 <a 
-                  href="/#steps" 
-                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
-                  onClick={() => setIsMenuOpen(false)}
+                  href="#steps" 
+                  onClick={(e) => handleAnchorClick(e, "steps")}
+                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1 cursor-pointer"
                 >
                   Features
                 </a>
@@ -125,23 +168,23 @@ export function Header() {
                   Blog
                 </Link>
                 <a 
-                  href="/#faq" 
-                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
-                  onClick={() => setIsMenuOpen(false)}
+                  href="#faq" 
+                  onClick={(e) => handleAnchorClick(e, "faq")}
+                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1 cursor-pointer"
                 >
                   FAQs
                 </a>
                 <a 
-                  href="/#testimonials" 
-                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
-                  onClick={() => setIsMenuOpen(false)}
+                  href="#testimonials" 
+                  onClick={(e) => handleAnchorClick(e, "testimonials")}
+                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1 cursor-pointer"
                 >
                   Stories
                 </a>
                 <a 
-                  href="/#calculator" 
-                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
-                  onClick={() => setIsMenuOpen(false)}
+                  href="#calculator" 
+                  onClick={(e) => handleAnchorClick(e, "calculator")}
+                  className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1 cursor-pointer"
                 >
                   Calculator
                 </a>

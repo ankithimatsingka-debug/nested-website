@@ -1,10 +1,41 @@
 import { Play, Mail, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import qrCode from "@/assets/qr-code.png";
 import nestedLogo from "@/assets/nested-logo.png";
 
 export function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Handle anchor link clicks with HashRouter
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    } else {
+      scrollToSection(sectionId);
+    }
+  };
+
   return (
     <footer role="contentinfo" className="bg-muted/30 border-t border-border/50">
       <div className="container mx-auto px-4 py-16">
@@ -42,11 +73,11 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="/#steps" className="font-body text-muted-foreground hover:text-primary transition-colors">Features</a></li>
+              <li><a href="#steps" onClick={(e) => handleAnchorClick(e, "steps")} className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer">Features</a></li>
               <li><Link to="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">Fund Selection</Link></li>
-              <li><a href="/#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">FAQs</a></li>
-              <li><a href="/#testimonials-section" className="font-body text-muted-foreground hover:text-primary transition-colors">Stories</a></li>
-              <li><a href="/#calculator" className="font-body text-muted-foreground hover:text-primary transition-colors">Calculator</a></li>
+              <li><a href="#faq" onClick={(e) => handleAnchorClick(e, "faq")} className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer">FAQs</a></li>
+              <li><a href="#testimonials-section" onClick={(e) => handleAnchorClick(e, "testimonials-section")} className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer">Stories</a></li>
+              <li><a href="#calculator" onClick={(e) => handleAnchorClick(e, "calculator")} className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer">Calculator</a></li>
               <li><Link to="/taxation" className="font-body text-muted-foreground hover:text-primary transition-colors">Taxation Guide</Link></li>
               <li><Link to="/kyc-modification" className="font-body text-muted-foreground hover:text-primary transition-colors">KYC Modification</Link></li>
               <li><Link to="/blog" className="font-body text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>

@@ -20,7 +20,7 @@ const FundSelection = () => {
         {/* Hero Section */}
         <section className="container mx-auto px-4 pt-16 pb-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-8 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+            <h1 className="text-3xl font-bold mb-8 text-foreground">
               Fund Selection Methodology: Balancing Returns, Risk, and Consistency
             </h1>
           </div>

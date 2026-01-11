@@ -85,7 +85,8 @@ export const SwipeableProductCards = () => {
         </div>
       </div>
 
-      <div className="flex justify-center gap-2 pt-2">
+      {/* Navigation dots - hidden on mobile */}
+      <div className="hidden sm:flex justify-center gap-2 pt-2">
         {atAGlanceData.map((_, idx) => (
           <button
             key={idx}

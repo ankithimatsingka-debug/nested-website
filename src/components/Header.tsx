@@ -93,8 +93,8 @@ export function Header() {
                 FAQs
               </a>
               <a 
-                href="#testimonials" 
-                onClick={(e) => handleAnchorClick(e, "testimonials")}
+                href="#testimonials-section" 
+                onClick={(e) => handleAnchorClick(e, "testimonials-section")}
                 className="font-body text-muted-foreground hover:text-primary transition-colors cursor-pointer"
               >
                 Stories
@@ -175,8 +175,8 @@ export function Header() {
                   FAQs
                 </a>
                 <a 
-                  href="#testimonials" 
-                  onClick={(e) => handleAnchorClick(e, "testimonials")}
+                  href="#testimonials-section" 
+                  onClick={(e) => handleAnchorClick(e, "testimonials-section")}
                   className="font-body text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1 cursor-pointer"
                 >
                   Stories

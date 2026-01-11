@@ -13,25 +13,33 @@ export function Header() {
   const location = useLocation();
 
   // Handle anchor link clicks with HashRouter
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 80; // Account for fixed header (64px) + some padding
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     
     // If not on homepage, navigate there first
     if (location.pathname !== "/") {
       navigate("/");
-      // Wait for navigation, then scroll
+      // Wait for navigation, then scroll with offset
       setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
+        scrollToSection(sectionId);
       }, 100);
     } else {
-      // Already on homepage, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+      // Already on homepage, just scroll with offset
+      scrollToSection(sectionId);
     }
     
     setIsMenuOpen(false);

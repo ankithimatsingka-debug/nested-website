@@ -2,8 +2,20 @@ import { useState, useEffect, useMemo } from "react";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import heroMockup from "@/assets/hero-mockup.webp";
 import qrCode from "@/assets/qr-code.png";
+import appScreenHome from "@/assets/app-screen-home.webp";
+import appScreenCalculator from "@/assets/app-screen-calculator.webp";
+import appScreenSuperfd from "@/assets/app-screen-superfd.webp";
+import appScreenPortfolio from "@/assets/app-screen-portfolio.webp";
+import appScreenAccount from "@/assets/app-screen-account.webp";
+
+const appScreens = [
+  { src: appScreenHome, alt: "Nested app home screen with Super FD investment options" },
+  { src: appScreenCalculator, alt: "Education cost calculator for planning your child's future" },
+  { src: appScreenSuperfd, alt: "Super FD products - Secure Money and Grow Money options" },
+  { src: appScreenPortfolio, alt: "Portfolio view showing investment progress and returns" },
+  { src: appScreenAccount, alt: "Account management with SIPs, bank accounts, and settings" },
+];
 
 const rotatingTexts = [
   "Expert-designed portfolios",
@@ -14,6 +26,7 @@ const rotatingTexts = [
 
 export function Hero() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -22,6 +35,17 @@ export function Hero() {
     if (typeof window === "undefined") return false;
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   }, []);
+
+  // Auto-rotate app screens
+  useEffect(() => {
+    if (prefersReducedMotion) return;
+    
+    const interval = setInterval(() => {
+      setCurrentScreenIndex((prev) => (prev + 1) % appScreens.length);
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, [prefersReducedMotion]);
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -67,22 +91,48 @@ export function Hero() {
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
               <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-75" aria-hidden="true"></div>
-              {/* Fixed aspect ratio container to prevent CLS */}
-              <div className="relative z-10 w-[280px] sm:w-[350px] md:w-[400px] lg:w-[500px] aspect-square mx-auto lg:mx-0">
-                {/* Skeleton loader while image loads */}
-                {!imageLoaded && (
-                  <Skeleton className="absolute inset-0 w-full h-full rounded-3xl" />
-                )}
-                <img 
-                  src={heroMockup} 
-                  alt="Nested app screens showing portfolio tracking and education planning features"
-                  width="400"
-                  height="400"
-                  fetchPriority="high"
-                  decoding="sync"
-                  onLoad={() => setImageLoaded(true)}
-                  className={`absolute inset-0 w-full h-full object-contain rounded-3xl transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                />
+              {/* Phone frame container */}
+              <div className="relative z-10 w-[220px] sm:w-[260px] md:w-[280px] lg:w-[320px] mx-auto lg:mx-0">
+                {/* Phone frame */}
+                <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-900 rounded-b-2xl z-10" aria-hidden="true"></div>
+                  <div className="relative bg-white rounded-[2rem] overflow-hidden aspect-[9/19.5]">
+                    {/* Skeleton loader while image loads */}
+                    {!imageLoaded && (
+                      <Skeleton className="absolute inset-0 w-full h-full" />
+                    )}
+                    {appScreens.map((screen, index) => (
+                      <img 
+                        key={index}
+                        src={screen.src} 
+                        alt={screen.alt}
+                        width="320"
+                        height="693"
+                        fetchPriority={index === 0 ? "high" : "low"}
+                        decoding={index === 0 ? "sync" : "async"}
+                        onLoad={() => index === 0 && setImageLoaded(true)}
+                        className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${
+                          currentScreenIndex === index ? 'opacity-100' : 'opacity-0'
+                        } ${imageLoaded || index !== 0 ? '' : 'invisible'}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+                {/* Screen indicator dots */}
+                <div className="flex justify-center gap-2 mt-4">
+                  {appScreens.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentScreenIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        currentScreenIndex === index 
+                          ? 'bg-white w-6' 
+                          : 'bg-white/40 hover:bg-white/60'
+                      }`}
+                      aria-label={`View screen ${index + 1}`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -4,14 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import qrCode from "@/assets/qr-code.png";
 import appScreenHome from "@/assets/app-screen-home.webp";
-import appScreenCalculator from "@/assets/app-screen-calculator.webp";
 import appScreenSuperfd from "@/assets/app-screen-superfd.webp";
 import appScreenPortfolio from "@/assets/app-screen-portfolio.webp";
 import appScreenAccount from "@/assets/app-screen-account.webp";
 
 const appScreens = [
   { src: appScreenHome, alt: "Nested app home screen with Super FD investment options" },
-  { src: appScreenCalculator, alt: "Education cost calculator for planning your child's future" },
   { src: appScreenSuperfd, alt: "Super FD products - Secure Money and Grow Money options" },
   { src: appScreenPortfolio, alt: "Portfolio view showing investment progress and returns" },
   { src: appScreenAccount, alt: "Account management with SIPs, bank accounts, and settings" },

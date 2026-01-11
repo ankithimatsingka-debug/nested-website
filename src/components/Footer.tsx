@@ -41,12 +41,12 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="font-heading text-lg font-semibold mb-6">Quick Links</h3>
-          <ul className="space-y-3">
-              <li><a href="https://nested.money/#steps" className="font-body text-muted-foreground hover:text-primary transition-colors">Features</a></li>
+            <ul className="space-y-3">
+              <li><a href="https://nested.money/" className="font-body text-muted-foreground hover:text-primary transition-colors">Features</a></li>
               <li><Link to="/fund-selection" className="font-body text-muted-foreground hover:text-primary transition-colors">Fund Selection</Link></li>
-              <li><a href="https://nested.money/#faq" className="font-body text-muted-foreground hover:text-primary transition-colors">FAQs</a></li>
-              <li><a href="https://nested.money/#testimonials-section" className="font-body text-muted-foreground hover:text-primary transition-colors">Stories</a></li>
-              <li><a href="https://nested.money/#calculator" className="font-body text-muted-foreground hover:text-primary transition-colors">Calculator</a></li>
+              <li><a href="https://nested.money/" className="font-body text-muted-foreground hover:text-primary transition-colors">FAQs</a></li>
+              <li><a href="https://nested.money/" className="font-body text-muted-foreground hover:text-primary transition-colors">Stories</a></li>
+              <li><a href="https://nested.money/" className="font-body text-muted-foreground hover:text-primary transition-colors">Calculator</a></li>
               <li><Link to="/taxation" className="font-body text-muted-foreground hover:text-primary transition-colors">Taxation Guide</Link></li>
               <li><Link to="/kyc-modification" className="font-body text-muted-foreground hover:text-primary transition-colors">KYC Modification</Link></li>
               <li><Link to="/blog" className="font-body text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>

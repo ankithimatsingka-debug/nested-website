@@ -116,8 +116,8 @@ export function Hero() {
                     ))}
                   </div>
                 </div>
-                {/* Screen indicator dots */}
-                <div className="flex justify-center gap-2 mt-4">
+                {/* Screen indicator dots - hidden on mobile */}
+                <div className="hidden sm:flex justify-center gap-2 mt-4">
                   {appScreens.map((_, index) => (
                     <button
                       key={index}

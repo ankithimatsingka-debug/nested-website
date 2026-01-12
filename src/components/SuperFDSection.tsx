@@ -1,4 +1,4 @@
-import { Shield, TrendingUp, Coins, Clock, Wallet, ArrowDownUp, PiggyBank, Star } from "lucide-react";
+import { Shield, TrendingUp, Coins, Clock, Wallet, PiggyBank, Star, BarChart3, PieChart, Landmark } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const RiskIndicator = ({ level }: { level: "Low" | "Medium" | "Medium-High" }) => {
@@ -89,6 +89,9 @@ const sharedFeatures = [
   { icon: Clock, text: "No lock-in period" },
   { icon: Wallet, text: "Withdraw anytime" },
   { icon: PiggyBank, text: "Add any amount" },
+  { icon: BarChart3, text: "Back-tested across 20+ years of market data" },
+  { icon: PieChart, text: "Very low share market allocation" },
+  { icon: Landmark, text: "Full control — withdraw directly from AMC" },
 ];
 
 export function SuperFDSection() {
@@ -175,12 +178,12 @@ export function SuperFDSection() {
             <p className="text-xs text-muted-foreground text-center mb-4 font-medium uppercase tracking-wide">
               All SuperFD products include
             </p>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
               {sharedFeatures.map((feature, idx) => {
                 const FeatureIcon = feature.icon;
                 return (
                   <div key={idx} className="flex items-center gap-2 text-sm text-foreground/80">
-                    <FeatureIcon className="w-4 h-4 text-secondary" />
+                    <FeatureIcon className="w-4 h-4 text-secondary flex-shrink-0" />
                     <span>{feature.text}</span>
                   </div>
                 );

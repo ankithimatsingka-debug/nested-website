@@ -1,5 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
+// Talk to Us section - WhatsApp contact CTA
 export function TalkToUs() {
   return (
     <section className="py-16 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10">

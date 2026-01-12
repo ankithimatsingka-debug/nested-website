@@ -89,7 +89,7 @@ const sharedFeatures = [
   { icon: Clock, text: "No lock-in period" },
   { icon: Wallet, text: "Withdraw anytime" },
   { icon: PiggyBank, text: "Add any amount" },
-  { icon: BarChart3, text: "Back-tested across 20+ years of market data" },
+  { icon: BarChart3, text: "AI developed over 20+ years of data" },
   { icon: PieChart, text: "Nil or very low share market allocation" },
   { icon: Landmark, text: "Full control - withdraw from AMC if you choose" },
 ];

@@ -87,11 +87,11 @@ const products = [
 
 const sharedFeatures = [
   { icon: Clock, text: "No lock-in period" },
-  { icon: Wallet, text: "Withdraw anytime" },
   { icon: PiggyBank, text: "Add any amount" },
+  { icon: Wallet, text: "Withdraw anytime" },
   { icon: BarChart3, text: "AI developed over 20+ years of data" },
   { icon: PieChart, text: "Nil or very low share market allocation" },
-  { icon: Landmark, text: "Full control - withdraw from AMC if you choose" },
+  { icon: Landmark, text: "Flexibility to withdraw from AMC if you choose" },
 ];
 
 export function SuperFDSection() {

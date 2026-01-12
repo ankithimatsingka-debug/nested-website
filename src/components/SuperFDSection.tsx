@@ -90,7 +90,7 @@ const sharedFeatures = [
   { icon: Wallet, text: "Withdraw anytime" },
   { icon: PiggyBank, text: "Add any amount" },
   { icon: BarChart3, text: "Back-tested across 20+ years of market data" },
-  { icon: PieChart, text: "Very low share market allocation" },
+  { icon: PieChart, text: "Nil or very low share market allocation" },
   { icon: Landmark, text: "Full control — withdraw directly from AMC" },
 ];
 

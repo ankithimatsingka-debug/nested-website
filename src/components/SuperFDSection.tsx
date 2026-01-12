@@ -176,7 +176,7 @@ export function SuperFDSection() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-background/80 backdrop-blur-sm border border-border/50 rounded-2xl p-4 md:p-6">
             <p className="text-xs text-muted-foreground text-center mb-4 font-medium uppercase tracking-wide">
-              All SuperFD products include
+              All SuperFD MFs include
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
               {sharedFeatures.map((feature, idx) => {

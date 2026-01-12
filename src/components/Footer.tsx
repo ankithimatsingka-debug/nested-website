@@ -101,7 +101,7 @@ export function Footer() {
             </div>
             <div className="font-body text-muted-foreground text-sm">
               Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.<br />
-              GoPlug Enterprises Private Limited ("Nested") is a SEBI-registered Mutual Fund Distributor. The "Nested" platform does not provide personalized investment advice, financial planning, risk profiling, or recommendations tailored to individual investors. All portfolio suggestions on the platform are based on predefined model portfolios only.<br />
+              GoPlug Enterprises Private Limited ("Nested") is a SEBI-registered Mutual Fund Distributor. The "Nested" platform does not provide personalized investment advice, financial planning, risk profiling, or recommendations tailored to individual investors. All portfolio suggestions on the platform are based on predefined model portfolios only. SuperFD is a curated basket of mutual funds. Returns shown are based on 15-year CAGR; actual future returns may vary.<br />
               Investors should make their own decisions based on their individual financial situation, risk tolerance, and investment goals. Past performance of mutual funds does not guarantee future returns.
             </div>
           </div>

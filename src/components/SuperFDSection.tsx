@@ -90,7 +90,7 @@ const sharedFeatures = [
   { icon: PiggyBank, text: "Add any amount" },
   { icon: Wallet, text: "Withdraw anytime" },
   { icon: BarChart3, text: "AI developed over 20+ years of data" },
-  { icon: PieChart, text: "Nil or very low share market allocation" },
+  { icon: PieChart, text: "Nil or low share market risk" },
   { icon: Landmark, text: "Complete flexibility: withdraw from the Nested app or directly from the AMC" },
 ];
 

@@ -222,7 +222,7 @@ const Taxation = () => {
                   <div>
                     <div className="flex items-center gap-2 mb-4">
                       <TrendingUp className="h-5 w-5 text-emerald-600" />
-                      <h2 className="text-xl font-semibold">Equity-oriented Funds</h2>
+                      <h2 className="text-xl font-semibold">Taxed as Equity</h2>
                       <Badge className={getTaxationBadgeStyle('equity')}>
                         {groupedFunds.equity.length}
                       </Badge>
@@ -255,7 +255,7 @@ const Taxation = () => {
                   <div>
                     <div className="flex items-center gap-2 mb-4">
                       <Wallet className="h-5 w-5 text-amber-600" />
-                      <h2 className="text-xl font-semibold">Debt-oriented Funds</h2>
+                      <h2 className="text-xl font-semibold">Taxed as Debt</h2>
                       <Badge className={getTaxationBadgeStyle('debt')}>
                         {groupedFunds.debt.length}
                       </Badge>

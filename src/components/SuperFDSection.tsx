@@ -91,7 +91,7 @@ const sharedFeatures = [
   { icon: Wallet, text: "Withdraw anytime" },
   { icon: BarChart3, text: "AI developed over 20+ years of data" },
   { icon: PieChart, text: "Nil or low share market risk" },
-  { icon: Landmark, text: "Complete flexibility: withdraw from the Nested app or directly from the AMC" },
+  { icon: Landmark, text: "Flexibility to withdraw from the Nested app or directly from the AMC" },
 ];
 
 export function SuperFDSection() {

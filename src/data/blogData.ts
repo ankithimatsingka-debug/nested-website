@@ -12,6 +12,65 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sdl-debt-funds-explained",
+    title: "All About New Mutual Fund Schemes of SDL Debt Funds",
+    excerpt: "A State Development Loan (SDL) mutual fund isn't a special new type of mutual fund — it's simply a debt mutual fund that holds State Development Loans (SDLs) as part of its portfolio.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">A State Development Loan (SDL) mutual fund isn't a special new type of mutual fund — it's simply a debt mutual fund that holds State Development Loans (SDLs) as part of its portfolio.</p>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What are SDLs?</h2>
+      <p class="mb-4">SDLs are bonds issued by Indian state governments to raise money for infrastructure and development projects, and to bridge budget shortfalls.</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>They function like government bonds, paying fixed interest (coupon) typically semi-annually, with principal returned at maturity.</li>
+        <li>They trade in the secondary market and are auctioned by the Reserve Bank of India (RBI) on behalf of the states.</li>
+        <li>Yields are usually slightly higher than central government securities (G-Secs) because states have slightly more credit risk than the central government.</li>
+      </ul>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">🧠 How SDLs Fit in Mutual Funds</h2>
+      <p class="mb-4">Debt mutual funds invest in a mix of fixed-income instruments — like government bonds, SDLs, corporate bonds, money-market instruments, etc. When a debt fund holds SDLs, that exposure can influence:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Yield:</strong> SDLs typically pay a tad higher yields than G-Secs, which can lift a fund's income.</li>
+        <li><strong>Risk:</strong> They're government-issued but carry state credit risk — not the same safety as central government bonds.</li>
+        <li><strong>Duration sensitivity:</strong> SDLs are usually longer-dated, so they react to interest rate changes similarly to long bonds.</li>
+      </ul>
+      
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">What does "SDL mutual fund" mean?</h3>
+      <p class="mb-4">When someone refers to an "SDL mutual fund", they usually mean one of two things:</p>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>A debt mutual fund with significant SDL exposure.</strong> Many medium- to long-duration debt funds hold SDLs along with G-Secs and corporate bonds.</li>
+        <li><strong>Target-maturity or index funds built around SDLs.</strong> Some funds (e.g., SDL-focused index/target maturity schemes) deliberately structure portfolios around specific SDL maturities.</li>
+      </ol>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">📊 What This Means for You as an Investor</h2>
+      
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Pros</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Higher yield</strong> than pure G-Sec funds (because SDL yields typically trade above similar-tenor government bonds).</li>
+        <li><strong>Government backing</strong> — while not as strong as central govt bonds, SDLs are still issued by sovereign entities.</li>
+        <li><strong>Diversification</strong> — useful in diversifying a debt portfolio versus corporate bond-only funds.</li>
+      </ul>
+      
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Cons / Risks</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Credit/repayment risk varies by state.</strong> A distressed state's SDL can underperform or price wider than healthier peers.</li>
+        <li><strong>Interest rate risk:</strong> Longer maturities mean sensitivity to RBI rate moves or yield curve shifts.</li>
+        <li><strong>Not truly "risk-free."</strong> Unlike central government securities that are generally taken as sovereign risk-free, SDLs can carry meaningful credit risk — in extreme fiscal stress a state might struggle to service debt without RBI intervention.</li>
+      </ul>
+      
+      <div class="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg p-4 my-6">
+        <p class="text-amber-800 dark:text-amber-200 font-medium mb-2">📋 Taxation Note</p>
+        <p class="text-amber-700 dark:text-amber-300">These are still debt instruments — interest is taxed per your slab, and capital gains on selling fund units before/after 3 years attract short- or long-term capital gains tax respectively.</p>
+      </div>
+      
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Bottom Line</h2>
+      <p class="mb-4">SDL mutual funds offer a middle ground between the ultra-safe G-Sec funds and higher-risk corporate bond funds. They can provide slightly better yields while still maintaining a government backing. However, investors should be aware of state-level credit risk and interest rate sensitivity, especially in longer-dated SDL funds.</p>
+    `,
+    author: "Nested Team",
+    publishedAt: "2026-01-14",
+    category: "Investment Strategy",
+    readTime: "5 min read"
+  },
+  {
     slug: "understanding-money-market-funds",
     title: "Understanding Money Market Funds: A Safe Haven for Your Cash?",
     excerpt: "If you're looking for a place to park your savings that's a step up from a regular savings account but safer than the volatile stock market, Money Market Funds might be exactly what you need.",

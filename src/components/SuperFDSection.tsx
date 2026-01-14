@@ -1,7 +1,7 @@
 import { Shield, TrendingUp, Coins, Clock, Wallet, PiggyBank, Star, BarChart3, PieChart, Landmark, Download } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import googlePlayBadge from "@/assets/google-play-badge.png";
+import googlePlayBadge from "@/assets/gplay.png";
 
 const RiskIndicator = ({ level }: { level: "Low" | "Medium" | "Medium-High" }) => {
   const segments = level === "Low" ? 2 : level === "Medium" ? 4 : 5;

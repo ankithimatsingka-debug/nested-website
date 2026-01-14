@@ -123,13 +123,16 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="relative h-96 w-full flex items-center justify-center">
+        <div className="relative h-96 w-full">
           <Card 
             key={`${currentIndex}-${position.x}-${position.y}`}
-            className={`border-0 shadow-lg bg-card/90 backdrop-blur-sm transition-opacity duration-300 ease-in-out ${
+            className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm transition-opacity duration-300 ease-in-out ${
               isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'
-            } ${isMobile ? '' : 'absolute'}`}
+            }`}
             style={isMobile ? {
+              left: '50%',
+              top: `${position.y}%`,
+              transform: 'translateX(-50%) translateY(-50%)',
               width: 'calc(100vw - 3rem)',
               maxWidth: '24rem'
             } : {

@@ -129,13 +129,7 @@ export function Testimonials() {
             className={`absolute border-0 shadow-lg bg-card/90 backdrop-blur-sm transition-opacity duration-300 ease-in-out ${
               isVisible ? 'opacity-100 animate-fade-in' : 'opacity-0'
             }`}
-            style={isMobile ? {
-              left: '50%',
-              top: `${position.y}%`,
-              transform: 'translateX(-50%) translateY(-50%)',
-              width: 'calc(100vw - 3rem)',
-              maxWidth: '24rem'
-            } : {
+            style={{
               left: `${position.x}%`,
               top: `${position.y}%`,
               transform: 'translate(-50%, -50%)',

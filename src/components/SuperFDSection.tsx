@@ -1,5 +1,7 @@
-import { Shield, TrendingUp, Coins, Clock, Wallet, PiggyBank, Star, BarChart3, PieChart, Landmark } from "lucide-react";
+import { Shield, TrendingUp, Coins, Clock, Wallet, PiggyBank, Star, BarChart3, PieChart, Landmark, Download } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 
 const RiskIndicator = ({ level }: { level: "Low" | "Medium" | "Medium-High" }) => {
   const segments = level === "Low" ? 2 : level === "Medium" ? 4 : 5;
@@ -190,6 +192,23 @@ export function SuperFDSection() {
               })}
             </div>
           </div>
+        </div>
+
+        {/* Download CTA */}
+        <div className="text-center mt-10">
+          <p className="text-muted-foreground mb-4">Start investing in SuperFD today</p>
+          <a 
+            href="https://play.google.com/store/apps/details?id=money.nested.app" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <img 
+              src={googlePlayBadge} 
+              alt="Get it on Google Play" 
+              className="h-14 hover:opacity-90 transition-opacity"
+            />
+          </a>
         </div>
       </div>
     </section>

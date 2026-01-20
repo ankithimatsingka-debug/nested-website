@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const FinalCTA = () => {
   return (
-    <section className="px-6 py-16 md:py-24 relative overflow-hidden">
+    <section id="superfd-footer" className="px-6 py-16 md:py-24 relative overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50" />
       

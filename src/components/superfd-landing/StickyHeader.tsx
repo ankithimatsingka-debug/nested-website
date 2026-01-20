@@ -14,8 +14,8 @@ const StickyHeader = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToReturns = () => {
-    const element = document.getElementById("returns-section");
+  const scrollToFooter = () => {
+    const element = document.getElementById("superfd-footer");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -42,7 +42,7 @@ const StickyHeader = () => {
 
         {/* CTA Button */}
         <button
-          onClick={scrollToReturns}
+          onClick={scrollToFooter}
           className={`font-body text-sm font-medium px-4 py-2 rounded-full transition-all duration-300 ${
             isScrolled
               ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md hover:shadow-lg"

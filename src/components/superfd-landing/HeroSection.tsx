@@ -128,7 +128,7 @@ const HeroSection = () => {
           className="space-y-2"
         >
           <p className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-            Meet <span className="text-primary">SuperFD</span>
+            Meet <span className="text-primary drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">SuperFD</span>
           </p>
           <p className="font-body text-base md:text-lg text-muted-foreground">
             Better than FD, Safer than share market.

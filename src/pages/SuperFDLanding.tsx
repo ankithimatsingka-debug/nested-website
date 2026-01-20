@@ -4,7 +4,6 @@ import ProblemSection from "@/components/superfd-landing/ProblemSection";
 import PositioningSection from "@/components/superfd-landing/PositioningSection";
 import ProductsSection from "@/components/superfd-landing/ProductsSection";
 import ReturnsSection from "@/components/superfd-landing/ReturnsSection";
-import FlexibilitySection from "@/components/superfd-landing/FlexibilitySection";
 import IdealForSection from "@/components/superfd-landing/IdealForSection";
 import FinalCTA from "@/components/superfd-landing/FinalCTA";
 import ComplianceFooter from "@/components/superfd-landing/ComplianceFooter";
@@ -18,7 +17,6 @@ const SuperFDLanding = () => {
       <PositioningSection />
       <ProductsSection />
       <ReturnsSection />
-      <FlexibilitySection />
       <IdealForSection />
       <FinalCTA />
       <ComplianceFooter />

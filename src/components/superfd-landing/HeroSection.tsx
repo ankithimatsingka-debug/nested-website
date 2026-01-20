@@ -121,14 +121,19 @@ const HeroSection = () => {
         </motion.p>
 
         {/* Value Proposition */}
-        <motion.p 
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-body text-base md:text-lg text-foreground font-medium"
+          className="space-y-2"
         >
-          Meet <span className="text-primary font-semibold">SuperFD</span>. Better than FD, Safer than share market.
-        </motion.p>
+          <p className="font-heading text-2xl md:text-3xl font-bold text-foreground">
+            Meet <span className="text-primary">SuperFD</span>
+          </p>
+          <p className="font-body text-base md:text-lg text-muted-foreground">
+            Better than FD, Safer than share market.
+          </p>
+        </motion.div>
 
         {/* Primary CTA */}
         <motion.div 

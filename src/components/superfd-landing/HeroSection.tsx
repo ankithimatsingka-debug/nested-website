@@ -131,7 +131,7 @@ const HeroSection = () => {
             Meet <span className="text-primary drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">SuperFD</span>
           </p>
           <p className="font-body text-base md:text-lg text-muted-foreground">
-            Better than FD, Safer than share market.
+            Better than Bank FD, Safer than share market.
           </p>
         </motion.div>
 

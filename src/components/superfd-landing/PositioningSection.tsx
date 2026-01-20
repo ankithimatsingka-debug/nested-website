@@ -51,14 +51,14 @@ const PositioningSection = () => {
           </div>
 
           {/* Spectrum Bar */}
-          <div className="relative h-4 rounded-full bg-gradient-to-r from-amber-200 via-blue-400 to-red-300 overflow-visible shadow-inner">
+          <div className="relative h-4 rounded-full bg-gradient-to-r from-amber-200 via-blue-400 to-red-300 shadow-inner flex items-center">
             {/* SuperFD marker */}
             <motion.div 
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.5, type: "spring", stiffness: 300 }}
-              className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 border-4 border-white shadow-lg" 
+              className="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 border-4 border-white shadow-lg" 
             />
           </div>
 

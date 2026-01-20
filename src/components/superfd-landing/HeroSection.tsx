@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* Pastel gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50" />
       
-      {/* Decorative shapes */}
+      {/* Decorative blur shapes */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -33,6 +33,71 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.3 }}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-50/30 rounded-full blur-3xl" 
       />
+
+      {/* Decorative SVG elements */}
+      <motion.svg
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 0.6, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="absolute top-32 left-4 md:left-16 w-16 h-16 md:w-24 md:h-24 text-blue-300"
+        viewBox="0 0 100 100"
+        fill="none"
+      >
+        <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="2" strokeDasharray="8 4" />
+        <circle cx="50" cy="50" r="30" stroke="currentColor" strokeWidth="2" />
+        <circle cx="50" cy="50" r="15" fill="currentColor" opacity="0.3" />
+      </motion.svg>
+
+      <motion.svg
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 0.5, x: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+        className="absolute top-48 right-4 md:right-20 w-20 h-20 md:w-32 md:h-32 text-indigo-300"
+        viewBox="0 0 100 100"
+        fill="none"
+      >
+        <rect x="10" y="10" width="80" height="80" rx="8" stroke="currentColor" strokeWidth="2" strokeDasharray="6 6" />
+        <rect x="25" y="25" width="50" height="50" rx="4" stroke="currentColor" strokeWidth="2" />
+        <rect x="40" y="40" width="20" height="20" fill="currentColor" opacity="0.3" rx="2" />
+      </motion.svg>
+
+      <motion.svg
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 0.4, y: 0 }}
+        transition={{ duration: 1, delay: 0.7 }}
+        className="absolute bottom-32 left-8 md:left-24 w-14 h-14 md:w-20 md:h-20 text-purple-300"
+        viewBox="0 0 100 100"
+        fill="none"
+      >
+        <polygon points="50,5 95,75 5,75" stroke="currentColor" strokeWidth="2" fill="none" />
+        <polygon points="50,25 75,65 25,65" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.2" />
+      </motion.svg>
+
+      <motion.svg
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 0.5, y: 0 }}
+        transition={{ duration: 1, delay: 0.8 }}
+        className="absolute bottom-40 right-8 md:right-32 w-12 h-12 md:w-16 md:h-16 text-teal-300"
+        viewBox="0 0 100 100"
+        fill="none"
+      >
+        <path d="M50 5 L61 40 L95 40 L68 62 L79 95 L50 75 L21 95 L32 62 L5 40 L39 40 Z" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.2" />
+      </motion.svg>
+
+      <motion.svg
+        initial={{ opacity: 0, rotate: -45 }}
+        animate={{ opacity: 0.3, rotate: 0 }}
+        transition={{ duration: 1.2, delay: 0.9 }}
+        className="absolute top-1/3 right-1/4 w-10 h-10 md:w-14 md:h-14 text-amber-300"
+        viewBox="0 0 100 100"
+        fill="none"
+      >
+        <circle cx="50" cy="50" r="40" stroke="currentColor" strokeWidth="3" />
+        <line x1="50" y1="10" x2="50" y2="30" stroke="currentColor" strokeWidth="2" />
+        <line x1="50" y1="70" x2="50" y2="90" stroke="currentColor" strokeWidth="2" />
+        <line x1="10" y1="50" x2="30" y2="50" stroke="currentColor" strokeWidth="2" />
+        <line x1="70" y1="50" x2="90" y2="50" stroke="currentColor" strokeWidth="2" />
+      </motion.svg>
 
       <div className="max-w-2xl mx-auto text-center space-y-6 relative z-10">
         {/* Main Headline */}

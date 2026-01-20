@@ -1,0 +1,25 @@
+import HeroSection from "@/components/superfd-landing/HeroSection";
+import ProblemSection from "@/components/superfd-landing/ProblemSection";
+import PositioningSection from "@/components/superfd-landing/PositioningSection";
+import ReturnsSection from "@/components/superfd-landing/ReturnsSection";
+import FlexibilitySection from "@/components/superfd-landing/FlexibilitySection";
+import IdealForSection from "@/components/superfd-landing/IdealForSection";
+import FinalCTA from "@/components/superfd-landing/FinalCTA";
+import ComplianceFooter from "@/components/superfd-landing/ComplianceFooter";
+
+const SuperFDLanding = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <HeroSection />
+      <ProblemSection />
+      <PositioningSection />
+      <ReturnsSection />
+      <FlexibilitySection />
+      <IdealForSection />
+      <FinalCTA />
+      <ComplianceFooter />
+    </div>
+  );
+};
+
+export default SuperFDLanding;

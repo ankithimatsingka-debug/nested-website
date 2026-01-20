@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Clock, Wallet, Coins, Smartphone } from "lucide-react";
 
 const features = [
@@ -28,6 +29,25 @@ const features = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.5 }
+  },
+};
+
 const FlexibilitySection = () => {
   return (
     <section className="px-6 py-16 md:py-24 relative overflow-hidden">
@@ -36,15 +56,29 @@ const FlexibilitySection = () => {
       
       <div className="max-w-3xl mx-auto relative z-10">
         {/* Title */}
-        <h2 className="font-heading text-2xl md:text-3xl font-semibold text-foreground text-center mb-10 md:mb-14">
+        <motion.h2 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="font-heading text-2xl md:text-3xl font-semibold text-foreground text-center mb-10 md:mb-14"
+        >
           Designed for flexibility
-        </h2>
+        </motion.h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+        >
           {features.map((feature, index) => (
-            <div 
+            <motion.div 
               key={index} 
+              variants={itemVariants}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
               className={`text-center p-5 md:p-6 rounded-2xl ${feature.bgColor} border border-white/50 hover:shadow-md transition-shadow`}
             >
               <div className={`w-14 h-14 md:w-16 md:h-16 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mx-auto mb-4 shadow-sm`}>
@@ -58,9 +92,9 @@ const FlexibilitySection = () => {
                   {feature.subtitle}
                 </p>
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

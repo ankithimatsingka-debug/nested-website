@@ -1,3 +1,4 @@
+import StickyHeader from "@/components/superfd-landing/StickyHeader";
 import HeroSection from "@/components/superfd-landing/HeroSection";
 import ProblemSection from "@/components/superfd-landing/ProblemSection";
 import PositioningSection from "@/components/superfd-landing/PositioningSection";
@@ -10,6 +11,7 @@ import ComplianceFooter from "@/components/superfd-landing/ComplianceFooter";
 const SuperFDLanding = () => {
   return (
     <div className="min-h-screen bg-background">
+      <StickyHeader />
       <HeroSection />
       <ProblemSection />
       <PositioningSection />

@@ -38,15 +38,20 @@ const ReturnsSection = () => {
           <p className="font-body text-sm text-emerald-600 uppercase tracking-wide mb-3 mt-2">
             Targeting
           </p>
-          <motion.p 
+          <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4, type: "spring", stiffness: 150 }}
-            className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-4"
+            className="mb-4"
           >
-            Up to 11% p.a.*
-          </motion.p>
+            <p className="font-heading text-2xl md:text-3xl font-semibold text-emerald-600 mb-1">
+              Up to
+            </p>
+            <p className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              11% p.a.*
+            </p>
+          </motion.div>
           <p className="font-body text-sm md:text-base text-muted-foreground">
             Returns are based on 20+ years of data. But may vary in future.
           </p>

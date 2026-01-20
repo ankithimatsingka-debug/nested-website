@@ -2,6 +2,7 @@ import StickyHeader from "@/components/superfd-landing/StickyHeader";
 import HeroSection from "@/components/superfd-landing/HeroSection";
 import ProblemSection from "@/components/superfd-landing/ProblemSection";
 import PositioningSection from "@/components/superfd-landing/PositioningSection";
+import ProductsSection from "@/components/superfd-landing/ProductsSection";
 import ReturnsSection from "@/components/superfd-landing/ReturnsSection";
 import FlexibilitySection from "@/components/superfd-landing/FlexibilitySection";
 import IdealForSection from "@/components/superfd-landing/IdealForSection";
@@ -15,6 +16,7 @@ const SuperFDLanding = () => {
       <HeroSection />
       <ProblemSection />
       <PositioningSection />
+      <ProductsSection />
       <ReturnsSection />
       <FlexibilitySection />
       <IdealForSection />

@@ -280,7 +280,7 @@ const PrivacyPolicy = () => {
             <CardContent className="space-y-4">
               <p>You may contact us with questions, concerns or complaints about our privacy practices at <a href="mailto:support@nested.money" className="text-primary hover:underline">support@nested.money</a>.</p>
               <p>Provide contact details of a Grievance Officer if required by law in your jurisdiction.</p>
-              <p>We'll attempt to respond to your requests concerning your rights within a reasonable time (e.g. 30 days) subject to applicable legal limits.</p>
+              <p>We'll attempt to respond to your requests concerning your rights within a reasonable time (within 10 business days) subject to applicable legal limits.</p>
             </CardContent>
           </Card>
         </div>

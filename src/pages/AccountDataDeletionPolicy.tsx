@@ -206,7 +206,7 @@ const AccountDataDeletionPolicy = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p>To request deletion, contact us via [support email / helpdesk / in-app deletion request form].</p>
+              <p>To request deletion, contact us on <a href="mailto:support@nested.money" className="text-primary hover:underline">support@nested.money</a>.</p>
               <p>You may need to provide identity verification.</p>
             </CardContent>
           </Card>

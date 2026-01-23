@@ -168,9 +168,12 @@ export function Hero() {
                   size="sm"
                   className="bg-white/10 backdrop-blur-sm border-white/40 text-white hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary min-h-[44px]"
                   aria-label="Download Nested app from Google Play Store"
+                  asChild
                 >
-                  <Play className="h-4 w-4 mr-2" aria-hidden="true" />
-                  Play Store
+                  <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                    <Play className="h-4 w-4 mr-2" aria-hidden="true" />
+                    Play Store
+                  </a>
                 </Button>
               </div>
               <img 

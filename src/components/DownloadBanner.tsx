@@ -36,13 +36,16 @@ export function DownloadBanner() {
               variant="outline"
               className="h-16 px-8 text-lg font-semibold bg-white/20 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white/30 hover:border-white/60 shadow-xl hover:shadow-2xl transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
               aria-label="Download Nested app from Google Play Store"
+              asChild
             >
-              <Play className="mr-3 h-7 w-7" aria-hidden="true" />
-              <div className="text-left">
-                <div className="text-sm font-normal opacity-80">Get it on</div>
-                <div className="font-bold">Google Play</div>
-              </div>
-              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+              <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                <Play className="mr-3 h-7 w-7" aria-hidden="true" />
+                <div className="text-left">
+                  <div className="text-sm font-normal opacity-80">Get it on</div>
+                  <div className="font-bold">Google Play</div>
+                </div>
+                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+              </a>
             </Button>
           </div>
 

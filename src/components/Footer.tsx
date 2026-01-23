@@ -31,9 +31,12 @@ export function Footer() {
                 size="sm"
                 aria-label="Download Nested app from Google Play Store"
                 className="min-h-[44px]"
+                asChild
               >
-                <Play className="h-4 w-4 mr-2" aria-hidden="true" />
-                Play Store
+                <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                  <Play className="h-4 w-4 mr-2" aria-hidden="true" />
+                  Play Store
+                </a>
               </Button>
             </div>
           </div>

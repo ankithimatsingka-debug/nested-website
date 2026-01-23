@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Apple, Play, ArrowRight, Download } from "lucide-react";
+import { Play, ArrowRight, Download } from "lucide-react";
 
 export function FeaturesCTA() {
   return (
@@ -29,32 +29,22 @@ export function FeaturesCTA() {
             </p>
           </div>
 
-          {/* Download buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+          {/* Download button */}
+          <div className="flex justify-center items-center mb-12">
             <Button 
               size="lg" 
               variant="secondary"
               className="h-16 px-8 text-lg font-semibold bg-white text-primary hover:bg-white/90 shadow-xl hover:shadow-2xl transition-all group"
+              asChild
             >
-              <Apple className="mr-3 h-7 w-7" />
-              <div className="text-left">
-                <div className="text-sm font-normal opacity-80">Download on the</div>
-                <div className="font-bold">App Store</div>
-              </div>
-              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="h-16 px-8 text-lg font-semibold border-white/30 text-white hover:bg-white/10 hover:border-white shadow-xl hover:shadow-2xl transition-all group"
-            >
-              <Play className="mr-3 h-7 w-7" />
-              <div className="text-left">
-                <div className="text-sm font-normal opacity-80">Get it on</div>
-                <div className="font-bold">Google Play</div>
-              </div>
-              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                <Play className="mr-3 h-7 w-7" />
+                <div className="text-left">
+                  <div className="text-sm font-normal opacity-80">Get it on</div>
+                  <div className="font-bold">Google Play</div>
+                </div>
+                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
 

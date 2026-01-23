@@ -55,7 +55,7 @@ const FinalCTA = () => {
           transition={{ duration: 0.5, delay: 0.2, type: "spring", stiffness: 200 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
-          href="https://play.google.com/store/apps/details?id=money.nested.app"
+          href="https://play.google.com/store/apps/details?id=com.nexted.app"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block"

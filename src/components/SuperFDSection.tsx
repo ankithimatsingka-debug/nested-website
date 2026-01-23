@@ -118,58 +118,65 @@ export function SuperFDSection() {
           {products.map((product) => {
             const IconComponent = product.icon;
             return (
-              <Card
+              <a
                 key={product.title}
-                className={`relative overflow-hidden bg-gradient-to-br ${product.gradientFrom} ${product.gradientTo} border ${product.borderColor} p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
+                href="https://play.google.com/store/apps/details?id=com.nexted.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                {/* Popular Badge */}
-                {product.isPopular && (
-                  <div className="absolute top-4 right-4 flex items-center gap-1 bg-secondary/10 text-secondary px-2.5 py-1 rounded-full text-xs font-semibold">
-                    <Star className="w-3 h-3 fill-secondary" />
-                    Popular
-                  </div>
-                )}
+                <Card
+                  className={`relative overflow-hidden bg-gradient-to-br ${product.gradientFrom} ${product.gradientTo} border ${product.borderColor} p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full`}
+                >
+                  {/* Popular Badge */}
+                  {product.isPopular && (
+                    <div className="absolute top-4 right-4 flex items-center gap-1 bg-secondary/10 text-secondary px-2.5 py-1 rounded-full text-xs font-semibold">
+                      <Star className="w-3 h-3 fill-secondary" />
+                      Popular
+                    </div>
+                  )}
 
-                {/* Header with Icon */}
-                <div className="flex items-start gap-4 mb-6">
-                  <div className={`w-14 h-14 rounded-xl ${product.iconBg} flex items-center justify-center shadow-lg`}>
-                    <IconComponent className="w-7 h-7 text-white" />
+                  {/* Header with Icon */}
+                  <div className="flex items-start gap-4 mb-6">
+                    <div className={`w-14 h-14 rounded-xl ${product.iconBg} flex items-center justify-center shadow-lg`}>
+                      <IconComponent className="w-7 h-7 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl text-foreground">{product.title}</h3>
+                      <p className="text-sm text-muted-foreground font-medium">{product.tagline}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-xl text-foreground">{product.title}</h3>
-                    <p className="text-sm text-muted-foreground font-medium">{product.tagline}</p>
-                  </div>
-                </div>
 
-                {/* Hero Metric */}
-                <div className="mb-6 p-4 bg-background/60 rounded-xl border border-border/50">
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold text-foreground">{product.heroMetric}</span>
-                    <span className="text-sm text-muted-foreground">{product.heroLabel}</span>
+                  {/* Hero Metric */}
+                  <div className="mb-6 p-4 bg-background/60 rounded-xl border border-border/50">
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-3xl font-bold text-foreground">{product.heroMetric}</span>
+                      <span className="text-sm text-muted-foreground">{product.heroLabel}</span>
+                    </div>
+                    <div className="mt-3">
+                      <RiskIndicator level={product.riskLevel} />
+                    </div>
                   </div>
-                  <div className="mt-3">
-                    <RiskIndicator level={product.riskLevel} />
-                  </div>
-                </div>
 
-                {/* Unique Features */}
-                <ul className="space-y-2.5 mb-6">
-                  {product.uniqueFeatures.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2.5 text-sm text-foreground/90">
-                      <div className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                  {/* Unique Features */}
+                  <ul className="space-y-2.5 mb-6">
+                    {product.uniqueFeatures.map((feature, idx) => (
+                      <li key={idx} className="flex items-center gap-2.5 text-sm text-foreground/90">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                {/* Minimum Investment Badge */}
-                <div className="pt-4 border-t border-border/50">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">Start from</span>
-                    <span className="font-semibold text-foreground">{product.minInvestment}</span>
+                  {/* Minimum Investment Badge */}
+                  <div className="pt-4 border-t border-border/50">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-muted-foreground">Start from</span>
+                      <span className="font-semibold text-foreground">{product.minInvestment}</span>
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </a>
             );
           })}
         </div>

@@ -388,8 +388,11 @@ const FundSelection = () => {
                 variant="outline" 
                 size="lg"
                 className="transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                asChild
               >
-                Download on Play Store
+                <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                  Download on Play Store
+                </a>
               </Button>
             </div>
           </div>

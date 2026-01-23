@@ -223,7 +223,7 @@ const ProductsSection = () => {
         >
           <p className="text-muted-foreground mb-4">Start investing in SuperFD today</p>
           <a 
-            href="https://play.google.com/store/apps/details?id=money.nested.app" 
+            href="https://play.google.com/store/apps/details?id=com.nexted.app" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block"

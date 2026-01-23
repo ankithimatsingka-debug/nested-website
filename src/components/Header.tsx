@@ -119,8 +119,10 @@ export function Header() {
             {/* Right side */}
             <div className="flex items-center gap-4">
               <ThemeToggle />
-              <Button size="sm" className="hidden md:inline-flex">
-                Download App
+              <Button size="sm" className="hidden md:inline-flex" asChild>
+                <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                  Download App
+                </a>
               </Button>
               
               {/* Mobile menu button */}
@@ -196,8 +198,10 @@ export function Header() {
                 >
                   Calculator
                 </a>
-                <Button size="sm" className="w-fit">
-                  Download App
+                <Button size="sm" className="w-fit" asChild>
+                  <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                    Download App
+                  </a>
                 </Button>
               </nav>
             </div>

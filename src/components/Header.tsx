@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
@@ -119,8 +119,9 @@ export function Header() {
             {/* Right side */}
             <div className="flex items-center gap-4">
               <ThemeToggle />
-              <Button size="sm" className="hidden md:inline-flex" asChild>
+              <Button size="sm" className="hidden md:inline-flex gap-2" asChild>
                 <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                  <Download className="h-4 w-4" />
                   Download App
                 </a>
               </Button>
@@ -198,8 +199,9 @@ export function Header() {
                 >
                   Calculator
                 </a>
-                <Button size="sm" className="w-fit" asChild>
+                <Button size="sm" className="w-fit gap-2" asChild>
                   <a href="https://play.google.com/store/apps/details?id=com.nexted.app" target="_blank" rel="noopener noreferrer">
+                    <Download className="h-4 w-4" />
                     Download App
                   </a>
                 </Button>

@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { SignUpAnimation } from "@/components/animations/SignUpAnimation";
 import { PlanGoalAnimation } from "@/components/animations/PlanGoalAnimation";
 import { GrowthAnimation } from "@/components/animations/GrowthAnimation";
+import googlePlayBadge from "@/assets/gplay.png";
 
 const steps = [
   {
@@ -86,6 +87,23 @@ export function ProcessSteps() {
               );
             })}
           </div>
+        </div>
+
+        {/* Download CTA */}
+        <div className="text-center mt-12">
+          <p className="text-muted-foreground mb-4">Ready to start?</p>
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.nexted.app" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <img 
+              src={googlePlayBadge} 
+              alt="Get it on Google Play" 
+              className="h-14 hover:opacity-90 transition-opacity"
+            />
+          </a>
         </div>
       </div>
     </section>

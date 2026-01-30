@@ -303,8 +303,15 @@ export function EducationCalculator() {
                           variant="secondary"
                           size="lg"
                           className="w-full bg-white text-primary hover:bg-white/90"
+                          asChild
                         >
-                          Customise Plan In App
+                          <a 
+                            href="https://play.google.com/store/apps/details?id=com.nexted.app" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            Customise Plan In App
+                          </a>
                         </Button>
                       </div>
                     </div>

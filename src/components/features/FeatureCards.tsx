@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { SmartPlanningAnimation } from "@/components/animations/SmartPlanningAnimation";
-import { EasyFastAnimation } from "@/components/animations/EasyFastAnimation";
+import { DedicatedAccountAnimation } from "@/components/animations/DedicatedAccountAnimation";
 import { SafeSecureAnimation } from "@/components/animations/SafeSecureAnimation";
 
 const features = [
@@ -11,10 +11,10 @@ const features = [
     highlights: ["Goal-based portfolios", "Auto rebalancing"]
   },
   {
-    animation: EasyFastAnimation,
-    title: "Easy & Fast",
-    description: "Quick 5-minute setup with digital KYC. Start with just ₹500",
-    highlights: ["5-min setup", "Start at ₹500"]
+    animation: DedicatedAccountAnimation,
+    title: "Dedicated Account",
+    description: "Dedicated secure account for children's education fund",
+    highlights: ["Child-focused", "Secure"]
   },
   {
     animation: SafeSecureAnimation,

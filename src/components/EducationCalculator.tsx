@@ -112,7 +112,7 @@ export function EducationCalculator() {
               Education Cost <span className="text-primary block sm:inline">Calculator</span>
             </h2>
             <p className="font-body text-lg text-muted-foreground">
-              Begin planning your child's future
+              Estimate your child's education cost
             </p>
           </div>
 

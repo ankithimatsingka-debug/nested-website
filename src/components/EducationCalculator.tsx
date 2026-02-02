@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { Calculator, TrendingUp, Target, Check, ChevronsUpDown, Search } from "lucide-react";
+import { Calculator, TrendingUp, Target, Check, ChevronsUpDown, Search, Mail } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,6 +22,11 @@ export function EducationCalculator() {
     totalYears: number;
     totalInvestment: number;
   } | null>(null);
+  
+  // Email gate state
+  const [emailUnlocked, setEmailUnlocked] = useState(false);
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
 
   // Filter colleges based on search query
   const filteredColleges = useMemo(() => {
@@ -95,6 +100,26 @@ export function EducationCalculator() {
       totalYears: yearsToInvest,
       totalInvestment: Math.round(monthlyInvestment * totalMonths)
     });
+  };
+
+  // Email validation
+  const validateEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email.trim());
+  };
+
+  const handleEmailSubmit = () => {
+    const trimmedEmail = email.trim();
+    if (!trimmedEmail) {
+      setEmailError("Please enter your email address");
+      return;
+    }
+    if (!validateEmail(trimmedEmail)) {
+      setEmailError("Please enter a valid email address");
+      return;
+    }
+    setEmailError("");
+    setEmailUnlocked(true);
   };
 
   const yearsUntilCollege = childAge ? 18 - parseInt(childAge) : 0;
@@ -274,44 +299,103 @@ export function EducationCalculator() {
 
                     <div className="space-y-6">
                       <div className="text-center">
-                        <div className="text-xl font-bold mb-2">
-                          ₹{(parseInt(targetAmount) / 100000).toFixed(1)}L
+                        <div className={cn(
+                          "text-xl font-bold mb-2 transition-all duration-500",
+                          !emailUnlocked && "blur-md select-none"
+                        )}>
+                          {emailUnlocked 
+                            ? `₹${(parseInt(targetAmount) / 100000).toFixed(1)}L`
+                            : "₹XX.XL"
+                          }
                         </div>
                         <div className="text-lg opacity-90">Estimated cost in {result.totalYears} years</div>
                       </div>
 
                       <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/20">
                         <div className="text-center">
-                          <div className="text-2xl font-bold">₹{(result.totalInvestment / 100000).toFixed(1)}L</div>
+                          <div className={cn(
+                            "text-2xl font-bold transition-all duration-500",
+                            !emailUnlocked && "blur-md select-none"
+                          )}>
+                            {emailUnlocked 
+                              ? `₹${(result.totalInvestment / 100000).toFixed(1)}L`
+                              : "₹X.XL"
+                            }
+                          </div>
                           <div className="text-sm opacity-80">Total Investment</div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl font-bold">
-                            ₹{result.monthlyInvestment.toLocaleString('en-IN')}
+                          <div className={cn(
+                            "text-2xl font-bold transition-all duration-500",
+                            !emailUnlocked && "blur-md select-none"
+                          )}>
+                            {emailUnlocked 
+                              ? `₹${result.monthlyInvestment.toLocaleString('en-IN')}`
+                              : "₹XX,XXX"
+                            }
                           </div>
                           <div className="text-sm opacity-80">Monthly SIP Required</div>
                         </div>
                       </div>
 
                       <div className="pt-4 border-t border-white/20">
-                        <div className="flex items-center gap-2 text-sm opacity-90 mb-4">
-                          <Target className="h-4 w-4" />
-                          <span>{getDisclaimerText(result.totalYears)}</span>
-                        </div>
-                        <Button 
-                          variant="secondary"
-                          size="lg"
-                          className="w-full bg-white text-primary hover:bg-white/90"
-                          asChild
-                        >
-                          <a 
-                            href="https://play.google.com/store/apps/details?id=com.nexted.app" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                          >
-                            Customise Plan In App
-                          </a>
-                        </Button>
+                        {!emailUnlocked ? (
+                          <div className="space-y-4">
+                            <div className="flex items-center gap-2 text-sm opacity-90">
+                              <Mail className="h-4 w-4" />
+                              <span>Enter your email to unlock your personalized plan</span>
+                            </div>
+                            <div className="space-y-2">
+                              <Input
+                                type="email"
+                                placeholder="your@email.com"
+                                value={email}
+                                onChange={(e) => {
+                                  setEmail(e.target.value);
+                                  if (emailError) setEmailError("");
+                                }}
+                                className={cn(
+                                  "bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12",
+                                  emailError && "border-red-300"
+                                )}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter') handleEmailSubmit();
+                                }}
+                              />
+                              {emailError && (
+                                <p className="text-sm text-red-200">{emailError}</p>
+                              )}
+                            </div>
+                            <Button 
+                              onClick={handleEmailSubmit}
+                              size="lg"
+                              className="w-full bg-white text-primary hover:bg-white/90"
+                            >
+                              Unlock Your Plan
+                            </Button>
+                          </div>
+                        ) : (
+                          <>
+                            <div className="flex items-center gap-2 text-sm opacity-90 mb-4">
+                              <Target className="h-4 w-4" />
+                              <span>{getDisclaimerText(result.totalYears)}</span>
+                            </div>
+                            <Button 
+                              variant="secondary"
+                              size="lg"
+                              className="w-full bg-white text-primary hover:bg-white/90"
+                              asChild
+                            >
+                              <a 
+                                href="https://play.google.com/store/apps/details?id=com.nexted.app" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                              >
+                                Customise Plan In App
+                              </a>
+                            </Button>
+                          </>
+                        )}
                       </div>
                     </div>
                   </div>

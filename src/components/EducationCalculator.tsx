@@ -282,8 +282,8 @@ export function EducationCalculator() {
 
                       <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/20">
                         <div className="text-center">
-                          <div className="text-2xl font-bold">{result.totalYears}</div>
-                          <div className="text-sm opacity-80">Years to Invest</div>
+                          <div className="text-2xl font-bold">₹{(result.totalInvestment / 100000).toFixed(1)}L</div>
+                          <div className="text-sm opacity-80">Total Investment</div>
                         </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold">

@@ -1,74 +1,125 @@
 
-# Plan: Replace Education Calculator Data with New Excel Data
+
+# Email Gate for Education Calculator Results
 
 ## Overview
-Replace the existing education cost data in `src/data/educationCostData.ts` with the 354 entries from the uploaded `nesteddropdown.xlsx` file.
+Add a lead capture mechanism where calculator results are initially blurred/hidden until the user provides their email address.
 
-## Data Transformation Required
-The Excel data needs to be converted to match the existing TypeScript interface:
+## User Flow
 
-| Excel Column | TypeScript Field | Transformation |
-|--------------|-----------------|----------------|
-| Name | name | Direct copy |
-| Last Year Fee (INR) | currentFee | Direct copy |
-| Expected % Increase (<10 Yr) | increaseRateLessThan10 | Divide by 100 (e.g., 10 becomes 0.10) |
-| Expected % Increase (>10 Yr) | increaseRateMoreThan10 | Divide by 100 (e.g., 8 becomes 0.08) |
-
-Note: The "Type" column (INSTITUTION/COURSE) will not be included in the current interface structure.
-
----
-
-## Implementation Steps
-
-### Step 1: Update the educationCostData.ts file
-Replace the entire `educationCostData` array with 354 new entries from the Excel file.
-
-**File to modify:** `src/data/educationCostData.ts`
-
-**Sample of converted data:**
-```typescript
-export const educationCostData: CollegeCourse[] = [
-  { name: "Academy of Carver Aviation Pvt. Ltd.", currentFee: 5160000, increaseRateLessThan10: 0.06, increaseRateMoreThan10: 0.05 },
-  { name: "Al Falah School of Medical Sciences, Faridabad", currentFee: 5750000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 },
-  { name: "Amity University – School of Design, Noida", currentFee: 2000000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 },
-  // ... 351 more entries
-];
+```text
+┌─────────────────────────────────────────────────────────────────┐
+│  1. User fills calculator inputs (age, college, target amount)  │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│  2. User clicks "Show My Investment Plan"                       │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│  3. Results card appears with BLURRED/GRAYED OUT amounts:       │
+│     - "₹X.XL" → "₹XX.XL" (blurred)                              │
+│     - Total Investment (blurred)                                 │
+│     - Monthly SIP (blurred)                                      │
+│                                                                  │
+│     + Email input field with "Unlock Your Plan" button           │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│  4. User enters valid email and submits                          │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│  5. Amounts are revealed with smooth animation                   │
+│     + "Customise Plan In App" CTA becomes visible                │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-### Step 2: Preserve existing helper functions
-The file contains a `calculateFutureCost` function that will remain unchanged:
+## Implementation Details
+
+### State Management
+Add new state variables to track:
+- `emailUnlocked` - whether user has submitted email (boolean)
+- `email` - the email input value (string)
+- `emailError` - validation error message (string)
+
+### Visual Treatment for Blurred State
+When results are calculated but email not yet provided:
+- Display placeholder text like "₹XX.XL" with blur filter
+- Use CSS `filter: blur(8px)` on the amount values
+- Show a semi-transparent overlay with email form
+
+### Email Input Section
+- Add email input field inside the results card
+- Basic email validation (format check)
+- "Unlock Your Plan" submit button
+- Error message display for invalid emails
+
+### Reveal Animation
+- When email submitted, remove blur with smooth transition
+- Use CSS transition for the unblur effect
+
+## Technical Approach
+
+### File to Modify
+- `src/components/EducationCalculator.tsx`
+
+### New State Variables
 ```typescript
-export function calculateFutureCost(college: CollegeCourse, currentAge: number): number {
-  const yearsUntilCollege = 18 - currentAge;
-  if (yearsUntilCollege <= 0) return college.currentFee;
-  
-  const rate = yearsUntilCollege < 10 
-    ? college.increaseRateLessThan10 
-    : college.increaseRateMoreThan10;
-    
-  return college.currentFee * Math.pow(1 + rate, yearsUntilCollege);
-}
+const [emailUnlocked, setEmailUnlocked] = useState(false);
+const [email, setEmail] = useState("");
+const [emailError, setEmailError] = useState("");
 ```
 
----
+### Email Validation
+Simple regex validation for email format before revealing results.
 
-## Data Summary
+### CSS Blur Effect
+Apply conditional classes to amount displays:
+- When locked: `blur-md select-none` + show placeholder values
+- When unlocked: normal display with transition
 
-The new dataset includes:
-- **Engineering (India):** IITs, NITs, BITS, VIT, SRM, Manipal, etc.
-- **Engineering (International):** MIT, Stanford, Caltech, Carnegie Mellon, etc.
-- **Medical (India):** Private medical colleges across India
-- **Medical (International):** Foreign MBBS programs in Georgia, Russia, Philippines, etc.
-- **MBA (India):** All IIMs, XLRI, ISB, SPJIMR, MDI, etc.
-- **MBA (International):** Harvard, Wharton, Stanford GSB, INSEAD, etc.
-- **Design:** NID, NIFT, Pearl Academy, Srishti, etc.
-- **Aviation:** Pilot training programs
-- **International Undergraduate:** US Ivy League, UK universities, Canadian universities, Australian universities
+### Results Card Structure (Modified)
+```text
+┌──────────────────────────────────────┐
+│  Your Investment Plan                │
+├──────────────────────────────────────┤
+│  [Blurred: ₹XX.XL]                   │  ← Locked state
+│  Estimated cost in X years           │
+├──────────────────────────────────────┤
+│  [Blurred] Total Investment          │
+│  [Blurred] Monthly SIP Required      │
+├──────────────────────────────────────┤
+│  📧 Enter email to unlock            │
+│  [Email Input]                       │
+│  [Unlock Your Plan Button]           │
+└──────────────────────────────────────┘
+```
 
----
+After email submission:
+```text
+┌──────────────────────────────────────┐
+│  Your Investment Plan                │
+├──────────────────────────────────────┤
+│  ₹25.0L                              │  ← Revealed
+│  Estimated cost in 13 years          │
+├──────────────────────────────────────┤
+│  ₹8.5L Total Investment              │
+│  ₹5,450 Monthly SIP Required         │
+├──────────────────────────────────────┤
+│  [Customise Plan In App Button]      │
+└──────────────────────────────────────┘
+```
 
-## Technical Notes
+## Considerations
 
-- The interface `CollegeCourse` and `calculateFutureCost` function remain unchanged
-- The `EducationCalculator` component will automatically use the new data
-- No changes required to the calculator logic - it already handles the data correctly
+### Lead Storage
+The current implementation only validates the email client-side. If you want to actually capture and store these leads, you would need:
+- A backend/database to store the emails
+- Either Supabase integration or a third-party service (like the existing Zoho forms)
+
+For now, this plan implements client-side gating only. Let me know if you'd like to add lead storage as well.
+
+### Reset Behavior
+If user changes calculator inputs after unlocking, they won't need to re-enter email (stays unlocked for the session).
+

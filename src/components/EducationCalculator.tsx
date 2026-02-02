@@ -233,19 +233,18 @@ export function EducationCalculator() {
                     </Label>
                     <Input
                       id="targetAmount"
-                      type="number"
-                      placeholder="e.g., 2500000"
-                      value={targetAmount}
-                      onChange={(e) => handleTargetAmountChange(e.target.value)}
+                      type="text"
+                      placeholder="e.g., 25,00,000"
+                      value={targetAmount ? parseInt(targetAmount).toLocaleString('en-IN') : ""}
+                      onChange={(e) => {
+                        const rawValue = e.target.value.replace(/,/g, '');
+                        if (rawValue === '' || /^\d+$/.test(rawValue)) {
+                          handleTargetAmountChange(rawValue);
+                        }
+                      }}
                       className="mt-2 h-12"
                       aria-describedby="target-hint"
                     />
-                    <p id="target-hint" className="text-sm text-muted-foreground mt-1">
-                      {selectedCollege && childAge && yearsUntilCollege > 0 && selectedCollege.currentFee > 0 
-                        ? `Projected cost in ${yearsUntilCollege} years • Feel free to adjust`
-                        : "Select a college and enter age to auto-calculate"
-                      }
-                    </p>
                   </div>
 
                   <Button 
@@ -256,7 +255,7 @@ export function EducationCalculator() {
                     aria-describedby="calculate-hint"
                   >
                     <Calculator className="mr-2 h-5 w-5" aria-hidden="true" />
-                    Calculate My Plan
+                    Show My Investment Plan
                   </Button>
                   <p id="calculate-hint" className="sr-only">
                     {!childAge || !targetAmount || !selectedCollege 
@@ -276,9 +275,9 @@ export function EducationCalculator() {
                     <div className="space-y-6">
                       <div className="text-center">
                         <div className="text-xl font-bold mb-2">
-                          ₹{result.monthlyInvestment.toLocaleString('en-IN')}
+                          ₹{(parseInt(targetAmount) / 100000).toFixed(1)}L
                         </div>
-                        <div className="text-lg opacity-90">Monthly SIP Required</div>
+                        <div className="text-lg opacity-90">Estimated cost in {result.totalYears} years</div>
                       </div>
 
                       <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/20">
@@ -288,9 +287,9 @@ export function EducationCalculator() {
                         </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold">
-                            ₹{(result.totalInvestment / 100000).toFixed(1)}L
+                            ₹{result.monthlyInvestment.toLocaleString('en-IN')}
                           </div>
-                          <div className="text-sm opacity-80">Total Investment</div>
+                          <div className="text-sm opacity-80">Monthly SIP Required</div>
                         </div>
                       </div>
 

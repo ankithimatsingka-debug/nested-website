@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { Calculator, TrendingUp, Target, Check, ChevronsUpDown, Search, Mail } from "lucide-react";
+import { Calculator, TrendingUp, Target, Check, ChevronsUpDown, Search, Mail, Loader2 } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,6 +8,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/lib/utils";
 import { educationCostData, calculateFutureCost, CollegeCourse } from "@/data/educationCostData";
+import { supabase } from "@/integrations/supabase/client";
 
 export function EducationCalculator() {
   const [childAge, setChildAge] = useState<string>("");
@@ -27,6 +28,7 @@ export function EducationCalculator() {
   const [emailUnlocked, setEmailUnlocked] = useState(false);
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Filter colleges based on search query
   const filteredColleges = useMemo(() => {
@@ -108,7 +110,7 @@ export function EducationCalculator() {
     return emailRegex.test(email.trim());
   };
 
-  const handleEmailSubmit = () => {
+  const handleEmailSubmit = async () => {
     const trimmedEmail = email.trim();
     if (!trimmedEmail) {
       setEmailError("Please enter your email address");
@@ -118,8 +120,37 @@ export function EducationCalculator() {
       setEmailError("Please enter a valid email address");
       return;
     }
+    
+    setIsSubmitting(true);
     setEmailError("");
-    setEmailUnlocked(true);
+    
+    try {
+      // Save lead to database
+      const { error } = await supabase
+        .from('education_calculator_leads')
+        .insert({
+          email: trimmedEmail,
+          child_age: childAge ? parseInt(childAge) : null,
+          selected_college: selectedCollege?.name || null,
+          target_amount: targetAmount ? parseInt(targetAmount) : null,
+          monthly_sip: result?.monthlyInvestment || null,
+          total_investment: result?.totalInvestment || null,
+          years_to_invest: result?.totalYears || null,
+        });
+      
+      if (error) {
+        console.error('Error saving lead:', error);
+        // Still unlock even if save fails - don't block user
+      }
+      
+      setEmailUnlocked(true);
+    } catch (err) {
+      console.error('Error saving lead:', err);
+      // Still unlock even if save fails
+      setEmailUnlocked(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const yearsUntilCollege = childAge ? 18 - parseInt(childAge) : 0;
@@ -370,8 +401,16 @@ export function EducationCalculator() {
                               onClick={handleEmailSubmit}
                               size="lg"
                               className="w-full bg-white text-primary hover:bg-white/90"
+                              disabled={isSubmitting}
                             >
-                              Unlock Your Plan
+                              {isSubmitting ? (
+                                <>
+                                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                                  Unlocking...
+                                </>
+                              ) : (
+                                "Unlock Your Plan"
+                              )}
                             </Button>
                           </div>
                         ) : (

@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      education_calculator_leads: {
+        Row: {
+          child_age: number | null
+          created_at: string
+          email: string
+          id: string
+          monthly_sip: number | null
+          selected_college: string | null
+          target_amount: number | null
+          total_investment: number | null
+          years_to_invest: number | null
+        }
+        Insert: {
+          child_age?: number | null
+          created_at?: string
+          email: string
+          id?: string
+          monthly_sip?: number | null
+          selected_college?: string | null
+          target_amount?: number | null
+          total_investment?: number | null
+          years_to_invest?: number | null
+        }
+        Update: {
+          child_age?: number | null
+          created_at?: string
+          email?: string
+          id?: string
+          monthly_sip?: number | null
+          selected_college?: string | null
+          target_amount?: number | null
+          total_investment?: number | null
+          years_to_invest?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

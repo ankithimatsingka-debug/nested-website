@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 // Lazy load all pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
 const Landing = lazy(() => import("./pages/Landing"));
+const EducationCalculatorLanding = lazy(() => import("./pages/EducationCalculatorLanding"));
 const SuperFDLanding = lazy(() => import("./pages/SuperFDLanding"));
 const Features = lazy(() => import("./pages/Features"));
 const FundSelection = lazy(() => import("./pages/FundSelection"));
@@ -35,6 +36,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/landing" element={<Landing />} />
+            <Route path="/educationcalculator" element={<EducationCalculatorLanding />} />
             <Route path="/superfd" element={<SuperFDLanding />} />
             <Route path="/features" element={<Features />} />
             <Route path="/fund-selection" element={<FundSelection />} />

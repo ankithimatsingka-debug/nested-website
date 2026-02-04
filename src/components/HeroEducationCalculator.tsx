@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Command, CommandEmpty, CommandGroup, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/lib/utils";
+import { validateEmail as validateEmailUtil } from "@/lib/emailValidation";
 import { educationCostData, calculateFutureCost, CollegeCourse } from "@/data/educationCostData";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -147,9 +148,15 @@ export function HeroEducationCalculator() {
     });
   };
 
-  const validateEmail = (email: string): boolean => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email.trim());
+  // Email validation using shared utility
+  const validateEmail = (emailValue: string): boolean => {
+    const result = validateEmailUtil(emailValue);
+    return result.isValid;
+  };
+  
+  const getEmailError = (emailValue: string): string | null => {
+    const result = validateEmailUtil(emailValue);
+    return result.error;
   };
 
   const handleEmailSubmit = async () => {
@@ -413,18 +420,14 @@ export function HeroEducationCalculator() {
                                 onChange={(e) => {
                                   const value = e.target.value;
                                   setEmail(value);
-                                  // Real-time validation
-                                  if (value.trim() && !validateEmail(value)) {
-                                    setEmailError("Please enter a valid email address");
-                                  } else {
-                                    setEmailError("");
-                                  }
+                                  // Real-time validation with disposable email check
+                                  const error = getEmailError(value);
+                                  setEmailError(error || "");
                                 }}
                                 onBlur={() => {
                                   // Validate on blur if field has content
-                                  if (email.trim() && !validateEmail(email)) {
-                                    setEmailError("Please enter a valid email address");
-                                  }
+                                  const error = getEmailError(email);
+                                  if (error) setEmailError(error);
                                 }}
                                 className={cn(
                                   "bg-white/10 border-white/20 text-white placeholder:text-white/60 h-10 text-sm",

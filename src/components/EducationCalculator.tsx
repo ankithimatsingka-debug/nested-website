@@ -287,20 +287,32 @@ export function EducationCalculator() {
                     <Label htmlFor="targetAmount" className="text-base font-medium">
                       Target amount needed (₹)
                     </Label>
-                    <Input
-                      id="targetAmount"
-                      type="text"
-                      placeholder="e.g., 25,00,000"
-                      value={targetAmount ? parseInt(targetAmount).toLocaleString('en-IN') : ""}
-                      onChange={(e) => {
-                        const rawValue = e.target.value.replace(/,/g, '');
-                        if (rawValue === '' || /^\d+$/.test(rawValue)) {
-                          handleTargetAmountChange(rawValue);
-                        }
-                      }}
-                      className="mt-2 h-12"
-                      aria-describedby="target-hint"
-                    />
+                    <div className="relative">
+                      <Input
+                        id="targetAmount"
+                        type="text"
+                        placeholder="e.g., 25,00,000"
+                        value={emailUnlocked && targetAmount ? parseInt(targetAmount).toLocaleString('en-IN') : ""}
+                        onChange={(e) => {
+                          const rawValue = e.target.value.replace(/,/g, '');
+                          if (rawValue === '' || /^\d+$/.test(rawValue)) {
+                            handleTargetAmountChange(rawValue);
+                          }
+                        }}
+                        className={cn(
+                          "mt-2 h-12",
+                          !emailUnlocked && targetAmount && "blur-md select-none pointer-events-none"
+                        )}
+                        aria-describedby="target-hint"
+                        disabled={!emailUnlocked && !!targetAmount}
+                        readOnly={!emailUnlocked && !!targetAmount}
+                      />
+                      {!emailUnlocked && targetAmount && (
+                        <div className="absolute inset-0 mt-2 flex items-center justify-center bg-muted/50 rounded-md">
+                          <span className="text-sm text-muted-foreground font-medium">₹XX,XX,XXX</span>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   <Button 

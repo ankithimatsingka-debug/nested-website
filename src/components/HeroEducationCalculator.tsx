@@ -312,19 +312,31 @@ export function HeroEducationCalculator() {
                   <Label htmlFor="heroTargetAmount" className="text-sm font-medium">
                     Target amount needed (₹)
                   </Label>
-                  <Input
-                    id="heroTargetAmount"
-                    type="text"
-                    placeholder="e.g., 25,00,000"
-                    value={targetAmount ? parseInt(targetAmount).toLocaleString('en-IN') : ""}
-                    onChange={(e) => {
-                      const rawValue = e.target.value.replace(/,/g, '');
-                      if (rawValue === '' || /^\d+$/.test(rawValue)) {
-                        handleTargetAmountChange(rawValue);
-                      }
-                    }}
-                    className="mt-1.5 h-11"
-                  />
+                  <div className="relative">
+                    <Input
+                      id="heroTargetAmount"
+                      type="text"
+                      placeholder="e.g., 25,00,000"
+                      value={emailUnlocked && targetAmount ? parseInt(targetAmount).toLocaleString('en-IN') : ""}
+                      onChange={(e) => {
+                        const rawValue = e.target.value.replace(/,/g, '');
+                        if (rawValue === '' || /^\d+$/.test(rawValue)) {
+                          handleTargetAmountChange(rawValue);
+                        }
+                      }}
+                      className={cn(
+                        "mt-1.5 h-11",
+                        !emailUnlocked && targetAmount && "blur-md select-none pointer-events-none"
+                      )}
+                      disabled={!emailUnlocked && !!targetAmount}
+                      readOnly={!emailUnlocked && !!targetAmount}
+                    />
+                    {!emailUnlocked && targetAmount && (
+                      <div className="absolute inset-0 mt-1.5 flex items-center justify-center bg-muted/50 rounded-md">
+                        <span className="text-sm text-muted-foreground font-medium">₹XX,XX,XXX</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
 
                 <Button 

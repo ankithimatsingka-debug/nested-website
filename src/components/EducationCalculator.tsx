@@ -394,15 +394,28 @@ export function EducationCalculator() {
                                 placeholder="your@email.com"
                                 value={email}
                                 onChange={(e) => {
-                                  setEmail(e.target.value);
-                                  if (emailError) setEmailError("");
+                                  const value = e.target.value;
+                                  setEmail(value);
+                                  // Real-time validation
+                                  if (value.trim() && !validateEmail(value)) {
+                                    setEmailError("Please enter a valid email address");
+                                  } else {
+                                    setEmailError("");
+                                  }
+                                }}
+                                onBlur={() => {
+                                  // Validate on blur if field has content
+                                  if (email.trim() && !validateEmail(email)) {
+                                    setEmailError("Please enter a valid email address");
+                                  }
                                 }}
                                 className={cn(
                                   "bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12",
-                                  emailError && "border-red-300"
+                                  emailError && "border-red-300",
+                                  email.trim() && validateEmail(email) && "border-green-400"
                                 )}
                                 onKeyDown={(e) => {
-                                  if (e.key === 'Enter') handleEmailSubmit();
+                                  if (e.key === 'Enter' && validateEmail(email)) handleEmailSubmit();
                                 }}
                               />
                               {emailError && (
@@ -413,7 +426,7 @@ export function EducationCalculator() {
                               onClick={handleEmailSubmit}
                               size="lg"
                               className="w-full bg-white text-primary hover:bg-white/90"
-                              disabled={isSubmitting}
+                              disabled={isSubmitting || !email.trim() || !validateEmail(email)}
                             >
                               {isSubmitting ? (
                                 <>

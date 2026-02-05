@@ -352,7 +352,7 @@ export function EducationCalculator() {
                     <div className="space-y-6">
                       <div className="text-center">
                         <div className={cn(
-                          "text-xl font-bold mb-2 transition-all duration-500",
+                          "text-xl font-bold mb-2 transition-all duration-500 animate-pulse",
                           !emailUnlocked && "blur-md select-none"
                         )}>
                           {emailUnlocked 

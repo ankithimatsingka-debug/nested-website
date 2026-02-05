@@ -386,7 +386,7 @@ export function EducationCalculator() {
                               : "₹XX.XL"
                             }
                           </div>
-                          <div className="text-sm opacity-80">Estimated cost in {result.totalYears} years</div>
+                          <div className="text-sm opacity-80">Estimated value in {result.totalYears} years</div>
                         </div>
                       </div>
 

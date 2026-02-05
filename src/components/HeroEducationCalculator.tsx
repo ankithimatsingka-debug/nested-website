@@ -41,6 +41,7 @@ export function HeroEducationCalculator() {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPulse, setShowPulse] = useState(false);
 
   // Check for reduced motion preference
   const prefersReducedMotion = useMemo(() => {
@@ -108,6 +109,15 @@ export function HeroEducationCalculator() {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [prefersReducedMotion]);
+
+  // Pulse animation timer
+  useEffect(() => {
+    if (result) {
+      setShowPulse(true);
+      const timer = setTimeout(() => setShowPulse(false), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [result]);
 
   const handleTargetAmountChange = (value: string) => {
     setTargetAmount(value);
@@ -372,7 +382,8 @@ export function HeroEducationCalculator() {
                     <div className="space-y-4">
                       <div className="text-center">
                         <div className={cn(
-                          "text-lg font-bold mb-1 transition-all duration-500 animate-pulse",
+                          "text-lg font-bold mb-1 transition-all duration-500",
+                          showPulse && emailUnlocked && "animate-pulse",
                           !emailUnlocked && "blur-md select-none"
                         )}>
                           {emailUnlocked 

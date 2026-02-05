@@ -30,6 +30,7 @@ export function EducationCalculator() {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPulse, setShowPulse] = useState(false);
 
   // Filter colleges based on search query
   const filteredColleges = useMemo(() => {
@@ -59,6 +60,15 @@ export function EducationCalculator() {
   useEffect(() => {
     setUserHasEditedAmount(false);
   }, [selectedCollege]);
+
+  // Pulse animation timer
+  useEffect(() => {
+    if (result) {
+      setShowPulse(true);
+      const timer = setTimeout(() => setShowPulse(false), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [result]);
 
   const handleTargetAmountChange = (value: string) => {
     setTargetAmount(value);
@@ -352,7 +362,8 @@ export function EducationCalculator() {
                     <div className="space-y-6">
                       <div className="text-center">
                         <div className={cn(
-                          "text-xl font-bold mb-2 transition-all duration-500 animate-pulse",
+                          "text-xl font-bold mb-2 transition-all duration-500",
+                          showPulse && emailUnlocked && "animate-pulse",
                           !emailUnlocked && "blur-md select-none"
                         )}>
                           {emailUnlocked 

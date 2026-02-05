@@ -376,11 +376,11 @@ export function HeroEducationCalculator() {
                           !emailUnlocked && "blur-md select-none"
                         )}>
                           {emailUnlocked 
-                            ? `₹${(parseInt(targetAmount) / 100000).toFixed(1)}L`
-                            : "₹XX.XL"
+                            ? `₹${result.monthlyInvestment.toLocaleString('en-IN')}`
+                            : "₹XX,XXX"
                           }
                         </div>
-                        <div className="text-sm opacity-90">Estimated cost in {result.totalYears} years</div>
+                        <div className="text-sm opacity-90">Monthly SIP Required</div>
                       </div>
 
                       <div className="grid grid-cols-2 gap-3 pt-3 border-t border-white/20">
@@ -402,11 +402,11 @@ export function HeroEducationCalculator() {
                             !emailUnlocked && "blur-md select-none"
                           )}>
                             {emailUnlocked 
-                              ? `₹${result.monthlyInvestment.toLocaleString('en-IN')}`
-                              : "₹XX,XXX"
+                              ? `₹${(parseInt(targetAmount) / 100000).toFixed(1)}L`
+                              : "₹XX.XL"
                             }
                           </div>
-                          <div className="text-xs opacity-80">Monthly SIP Required</div>
+                          <div className="text-xs opacity-80">Estimated cost in {result.totalYears} years</div>
                         </div>
                       </div>
 
@@ -416,7 +416,7 @@ export function HeroEducationCalculator() {
                             <div className="flex items-center gap-2 text-sm">
                               <Mail className="h-4 w-4 text-yellow-300" />
                               <span className="font-bold text-yellow-300">
-                                👉 Enter your email to unlock
+                                Enter your email to unlock
                               </span>
                             </div>
                             <div className="space-y-2">

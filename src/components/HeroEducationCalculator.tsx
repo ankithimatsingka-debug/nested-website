@@ -372,7 +372,7 @@ export function HeroEducationCalculator() {
                     <div className="space-y-4">
                       <div className="text-center">
                         <div className={cn(
-                          "text-lg font-bold mb-1 transition-all duration-500",
+                          "text-lg font-bold mb-1 transition-all duration-500 animate-pulse",
                           !emailUnlocked && "blur-md select-none"
                         )}>
                           {emailUnlocked 

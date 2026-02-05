@@ -61,7 +61,7 @@ export function HeroEducationCalculator() {
   useEffect(() => {
     if (selectedCollege && childAge && !userHasEditedAmount) {
       const age = parseInt(childAge);
-      if (!isNaN(age) && age > 0 && age < 18) {
+      if (!isNaN(age) && age >= 0 && age < 18) {
         const futureCost = calculateFutureCost(selectedCollege, age);
         if (futureCost > 0) {
           const roundedCost = Math.round(futureCost / 10000) * 10000;
@@ -134,16 +134,21 @@ export function HeroEducationCalculator() {
     
     if (isNaN(currentAge) || isNaN(target) || currentAge >= 18) return;
     
-    const yearsToInvest = 18 - currentAge;
-    const annualRate = getAnnualRate(yearsToInvest);
+    // Display years (for "Estimated cost in X years")
+    const displayYears = 18 - currentAge;
+    
+    // Calculation years (for SIP computation)
+    const calculationYears = 20 - currentAge;
+    
+    const annualRate = getAnnualRate(calculationYears);
     const monthlyRate = annualRate / 12;
-    const totalMonths = yearsToInvest * 12;
+    const totalMonths = calculationYears * 12;
     
     const monthlyInvestment = target / (((Math.pow(1 + monthlyRate, totalMonths) - 1) / monthlyRate));
     
     setResult({
       monthlyInvestment: Math.round(monthlyInvestment),
-      totalYears: yearsToInvest,
+      totalYears: displayYears,
       totalInvestment: Math.round(monthlyInvestment * totalMonths)
     });
   };
@@ -408,9 +413,11 @@ export function HeroEducationCalculator() {
                       <div className="pt-3 border-t border-white/20">
                         {!emailUnlocked ? (
                           <div className="space-y-3">
-                            <div className="flex items-center gap-2 text-xs opacity-90">
-                              <Mail className="h-3.5 w-3.5" />
-                              <span>Enter your email to unlock your plan</span>
+                            <div className="flex items-center gap-2 text-sm">
+                              <Mail className="h-4 w-4 text-yellow-300" />
+                              <span className="font-bold text-yellow-300">
+                                👉 Enter your email to unlock
+                              </span>
                             </div>
                             <div className="space-y-2">
                               <Input
@@ -430,7 +437,7 @@ export function HeroEducationCalculator() {
                                   if (error) setEmailError(error);
                                 }}
                                 className={cn(
-                                  "bg-white/10 border-white/20 text-white placeholder:text-white/60 h-10 text-sm",
+                                  "bg-white/10 border-2 border-yellow-300 text-white placeholder:text-white/60 h-10 text-sm ring-2 ring-yellow-300/50",
                                   emailError && "border-red-300",
                                   email.trim() && validateEmail(email) && "border-green-400"
                                 )}

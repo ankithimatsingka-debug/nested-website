@@ -44,7 +44,7 @@ export function EducationCalculator() {
   useEffect(() => {
     if (selectedCollege && childAge && !userHasEditedAmount) {
       const age = parseInt(childAge);
-      if (!isNaN(age) && age > 0 && age < 18) {
+      if (!isNaN(age) && age >= 0 && age < 18) {
         const futureCost = calculateFutureCost(selectedCollege, age);
         if (futureCost > 0) {
           // Round to nearest 10,000
@@ -87,20 +87,23 @@ export function EducationCalculator() {
     
     if (isNaN(currentAge) || isNaN(target) || currentAge >= 18) return;
     
-    // Assume college starts at 18
-    const yearsToInvest = 18 - currentAge;
+    // Display years (for "Estimated cost in X years")
+    const displayYears = 18 - currentAge;
+    
+    // Calculation years (for SIP computation)
+    const calculationYears = 20 - currentAge;
     
     // Get rate based on investment horizon
-    const annualRate = getAnnualRate(yearsToInvest);
+    const annualRate = getAnnualRate(calculationYears);
     const monthlyRate = annualRate / 12;
-    const totalMonths = yearsToInvest * 12;
+    const totalMonths = calculationYears * 12;
     
     // SIP calculation: PMT = FV / [((1 + r)^n - 1) / r]
     const monthlyInvestment = target / (((Math.pow(1 + monthlyRate, totalMonths) - 1) / monthlyRate));
     
     setResult({
       monthlyInvestment: Math.round(monthlyInvestment),
-      totalYears: yearsToInvest,
+      totalYears: displayYears,
       totalInvestment: Math.round(monthlyInvestment * totalMonths)
     });
   };
@@ -390,9 +393,11 @@ export function EducationCalculator() {
                       <div className="pt-4 border-t border-white/20">
                         {!emailUnlocked ? (
                           <div className="space-y-4">
-                            <div className="flex items-center gap-2 text-sm opacity-90">
-                              <Mail className="h-4 w-4" />
-                              <span>Enter your email to unlock your personalized plan</span>
+                            <div className="flex items-center gap-2 text-sm">
+                              <Mail className="h-4 w-4 text-yellow-300" />
+                              <span className="font-bold text-yellow-300">
+                                👉 Enter your email to unlock your personalized plan
+                              </span>
                             </div>
                             <div className="space-y-2">
                               <Input
@@ -412,7 +417,7 @@ export function EducationCalculator() {
                                   if (error) setEmailError(error);
                                 }}
                                 className={cn(
-                                  "bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12",
+                                  "bg-white/10 border-2 border-yellow-300 text-white placeholder:text-white/60 h-12 ring-2 ring-yellow-300/50",
                                   emailError && "border-red-300",
                                   email.trim() && validateEmail(email) && "border-green-400"
                                 )}

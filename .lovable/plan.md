@@ -1,125 +1,56 @@
 
 
-# Email Gate for Education Calculator Results
+# Reimagine the Education Calculator -- More Interactive and Engaging
 
 ## Overview
-Add a lead capture mechanism where calculator results are initially blurred/hidden until the user provides their email address.
+Transform the current static form-based calculator into a multi-step, animated experience that feels like a guided journey rather than a form. Both `EducationCalculator.tsx` (standalone section) and `HeroEducationCalculator.tsx` (landing page hero) will be updated.
 
-## User Flow
+## What Changes
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│  1. User fills calculator inputs (age, college, target amount)  │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│  2. User clicks "Show My Investment Plan"                       │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│  3. Results card appears with BLURRED/GRAYED OUT amounts:       │
-│     - "₹X.XL" → "₹XX.XL" (blurred)                              │
-│     - Total Investment (blurred)                                 │
-│     - Monthly SIP (blurred)                                      │
-│                                                                  │
-│     + Email input field with "Unlock Your Plan" button           │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│  4. User enters valid email and submits                          │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│  5. Amounts are revealed with smooth animation                   │
-│     + "Customise Plan In App" CTA becomes visible                │
-└─────────────────────────────────────────────────────────────────┘
-```
+### 1. Multi-Step Wizard Flow
+Replace the single-form layout with a 3-step guided flow using smooth transitions between steps:
+- **Step 1**: Child's age input with a visual age slider (large, tappable number buttons or a styled slider alongside the number input)
+- **Step 2**: College/course selection with the existing searchable dropdown
+- **Step 3**: Auto-populated target amount with the calculate button
 
-## Implementation Details
+Each step has a progress indicator (3 dots or a thin progress bar) showing where the user is. Steps animate in/out using framer-motion (already installed).
 
-### State Management
-Add new state variables to track:
-- `emailUnlocked` - whether user has submitted email (boolean)
-- `email` - the email input value (string)
-- `emailError` - validation error message (string)
+### 2. Visual Progress Bar
+A horizontal progress bar at the top of the card that fills as the user completes each field (33% per step). Animated with a smooth width transition.
 
-### Visual Treatment for Blurred State
-When results are calculated but email not yet provided:
-- Display placeholder text like "₹XX.XL" with blur filter
-- Use CSS `filter: blur(8px)` on the amount values
-- Show a semi-transparent overlay with email form
+### 3. Animated Number Counter for Results
+When results appear, the Monthly SIP, Total Investment, and Estimated Value numbers will count up from 0 to their final value (animated counter effect over ~1 second) instead of just appearing. This replaces the current static reveal.
 
-### Email Input Section
-- Add email input field inside the results card
-- Basic email validation (format check)
-- "Unlock Your Plan" submit button
-- Error message display for invalid emails
+### 4. Confetti/Sparkle Micro-Animation on Unlock
+When the user submits their email and unlocks the plan, a brief sparkle/celebration animation plays (CSS-only particles or a simple scale-bounce effect on the result card) to reward the action.
 
-### Reveal Animation
-- When email submitted, remove blur with smooth transition
-- Use CSS transition for the unblur effect
+### 5. Interactive Age Selection Enhancement
+Add visual age "chips" (quick-select buttons for common ages like 0, 2, 5, 8, 10, 14) above or alongside the number input, so users can tap to quickly select.
 
-## Technical Approach
+### 6. Live Cost Preview
+As soon as college is selected and age is entered (before clicking calculate), show a subtle "peek" line like "Estimated future cost: ~Rs XX,XX,XXX" below the college dropdown to build anticipation and encourage the user to proceed.
 
-### File to Modify
-- `src/components/EducationCalculator.tsx`
+## Technical Details
 
-### New State Variables
-```typescript
-const [emailUnlocked, setEmailUnlocked] = useState(false);
-const [email, setEmail] = useState("");
-const [emailError, setEmailError] = useState("");
-```
+### Files to Modify
+- `src/components/EducationCalculator.tsx` -- standalone calculator section
+- `src/components/HeroEducationCalculator.tsx` -- hero variant for landing page
 
-### Email Validation
-Simple regex validation for email format before revealing results.
+### New State
+- `currentStep` (1 | 2 | 3) for wizard flow
+- `animatedValues` for the counting number animation (using `useEffect` + `requestAnimationFrame`)
 
-### CSS Blur Effect
-Apply conditional classes to amount displays:
-- When locked: `blur-md select-none` + show placeholder values
-- When unlocked: normal display with transition
+### Animation Approach
+- Use `framer-motion` (already installed) for step transitions with `AnimatePresence` and slide/fade effects
+- Animated number counter via a small custom hook (`useCountUp`) using `requestAnimationFrame`
+- Progress bar uses Tailwind `transition-all duration-500` on width
+- Sparkle effect on unlock uses CSS keyframes (scale + opacity burst)
 
-### Results Card Structure (Modified)
-```text
-┌──────────────────────────────────────┐
-│  Your Investment Plan                │
-├──────────────────────────────────────┤
-│  [Blurred: ₹XX.XL]                   │  ← Locked state
-│  Estimated cost in X years           │
-├──────────────────────────────────────┤
-│  [Blurred] Total Investment          │
-│  [Blurred] Monthly SIP Required      │
-├──────────────────────────────────────┤
-│  📧 Enter email to unlock            │
-│  [Email Input]                       │
-│  [Unlock Your Plan Button]           │
-└──────────────────────────────────────┘
-```
+### Step Navigation Logic
+- Step auto-advances when the field is completed (age entered -> moves to step 2 after a brief delay; college selected -> moves to step 3)
+- Users can click the progress dots to go back to any completed step
+- The "Show My Investment Plan" button only appears on step 3
 
-After email submission:
-```text
-┌──────────────────────────────────────┐
-│  Your Investment Plan                │
-├──────────────────────────────────────┤
-│  ₹25.0L                              │  ← Revealed
-│  Estimated cost in 13 years          │
-├──────────────────────────────────────┤
-│  ₹8.5L Total Investment              │
-│  ₹5,450 Monthly SIP Required         │
-├──────────────────────────────────────┤
-│  [Customise Plan In App Button]      │
-└──────────────────────────────────────┘
-```
-
-## Considerations
-
-### Lead Storage
-The current implementation only validates the email client-side. If you want to actually capture and store these leads, you would need:
-- A backend/database to store the emails
-- Either Supabase integration or a third-party service (like the existing Zoho forms)
-
-For now, this plan implements client-side gating only. Let me know if you'd like to add lead storage as well.
-
-### Reset Behavior
-If user changes calculator inputs after unlocking, they won't need to re-enter email (stays unlocked for the session).
+### Both Components Updated Consistently
+The Hero variant will have a more compact version of the same interactions (smaller chips, tighter spacing) to fit within the hero card constraints.
 

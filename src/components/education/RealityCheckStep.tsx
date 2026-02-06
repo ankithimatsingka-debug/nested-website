@@ -259,7 +259,7 @@ export function RealityCheckStep({
       </div>
 
       {/* Section 5: Interactive Calculator */}
-      <div className="rounded-2xl p-5 text-white space-y-4" style={{ background: "linear-gradient(135deg, #1e3a5f 0%, #d97706 100%)" }}>
+      <div className="rounded-2xl p-5 text-white space-y-4" style={{ background: "linear-gradient(135deg, #f7a8a0 0%, #f4c8b0 50%, #fddcc7 100%)" }}>
         <p className="text-sm font-medium opacity-90">
           See how small daily savings grow for {childDisplay}
         </p>

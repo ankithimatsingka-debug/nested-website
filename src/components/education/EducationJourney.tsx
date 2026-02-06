@@ -409,14 +409,6 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                       </AreaChart>
                     </ResponsiveContainer>
                   </div>
-                  <div className="flex items-center justify-end mt-3 pt-3 border-t border-border/50">
-                    <div className="text-right">
-                      <p className="text-xs text-muted-foreground">Growth</p>
-                      <p className="text-base font-bold text-destructive">
-                        {Math.round((calc.selectedCollege.increaseRateLessThan10) * 100)}% / year
-                      </p>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Key insight */}

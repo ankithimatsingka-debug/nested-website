@@ -535,7 +535,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                   <div className="space-y-3">
                     <div className="h-52 w-full">
                       <ResponsiveContainer width="100%" height="100%">
-                        <AreaChart data={calc.chartData} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+                        <AreaChart data={calc.chartData.map(d => ({ ...d, year: new Date().getFullYear() + d.year }))} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
                           <defs>
                             <linearGradient id="sipGrowth" x1="0" y1="0" x2="0" y2="1">
                               <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3} />
@@ -547,7 +547,6 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                             tick={{ fontSize: 11, fill: "hsl(var(--muted-foreground))" }}
                             axisLine={false}
                             tickLine={false}
-                            label={{ value: "Years", position: "insideBottom", offset: -2, fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
                           />
                           <YAxis
                             tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}

@@ -55,7 +55,7 @@ function getAnnualRate(years: number): number {
   return 0.14;
 }
 
-const FD_ANNUAL_RATE = 0.07;
+const FD_ANNUAL_RATE = 0.06;
 
 export function useEducationCalculator() {
   const [childName, setChildName] = useState("");

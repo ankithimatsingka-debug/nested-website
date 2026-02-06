@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -7,13 +7,9 @@ import {
   Mail,
   Loader2,
   Search,
-  Shield,
-  RefreshCw,
-  BarChart3,
   TrendingUp,
   GraduationCap,
   Heart,
-  Clock,
   AlertTriangle,
   Sparkles,
   Building2,
@@ -23,11 +19,12 @@ import {
   Palette,
   BookOpen,
   Plane,
+  TrendingDown,
 } from "lucide-react";
 import type { CollegeCourse } from "@/data/educationCostData";
+import { educationCostData, calculateFutureCost } from "@/data/educationCostData";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
 import {
   useEducationCalculator,
@@ -36,13 +33,12 @@ import {
   formatLakhsShort,
 } from "@/hooks/useEducationCalculator";
 import { useCountUp } from "@/hooks/useCountUp";
-import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from "recharts";
-import { RealityCheckStep } from "./RealityCheckStep";
+import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine } from "recharts";
 import { RevealPage } from "./RevealPage";
 
-type Step = 1 | 2 | 3 | 4 | 5 | 6 | "reveal";
+type Step = 1 | 2 | 3 | 4 | "reveal";
 
-const TOTAL_STEPS = 6;
+const TOTAL_STEPS = 4;
 
 const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; color: string; iconColor: string; selectedBg: string; college: CollegeCourse }[] = [
   { label: "IIT", icon: GraduationCap, color: "bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800", iconColor: "text-blue-600 dark:text-blue-400", selectedBg: "bg-blue-100 dark:bg-blue-900/50 border-blue-500", college: { name: "IIT (Average)", currentFee: 2000000, increaseRateLessThan10: 0.15, increaseRateMoreThan10: 0.10 } },
@@ -81,7 +77,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   const animatedTarget = useCountUp(calc.result?.targetAmount || 0, 1200, calc.emailUnlocked && !!calc.result);
 
   useEffect(() => {
-    if (step === 6 && !calc.result) {
+    if (step === 4 && !calc.result) {
       calc.calculate();
     }
   }, [step, calc.result, calc.calculate]);
@@ -94,7 +90,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
 
   const goBack = () => {
     if (step === "reveal") {
-      setStep(6);
+      setStep(4);
     } else if (typeof step === "number" && step > 1) {
       setStep((step - 1) as Step);
     }
@@ -122,6 +118,37 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
     </button>
   );
 
+  // Generate historical and future fee data for selected college
+  const feeChartData = useMemo(() => {
+    if (!calc.selectedCollege) return [];
+    const currentYear = new Date().getFullYear();
+    const data = [];
+    
+    // Historical: 10 years back (simulated with reverse compound)
+    const avgRate = calc.selectedCollege.increaseRateLessThan10;
+    for (let i = -10; i <= 0; i++) {
+      const fee = calc.selectedCollege.currentFee / Math.pow(1 + avgRate, Math.abs(i));
+      data.push({
+        year: currentYear + i,
+        fee: Math.round(fee),
+        type: i === 0 ? "current" : "historical",
+      });
+    }
+    
+    // Future: 15 years forward
+    for (let i = 1; i <= 15; i++) {
+      const rate = i < 10 ? calc.selectedCollege.increaseRateLessThan10 : calc.selectedCollege.increaseRateMoreThan10;
+      const fee = calc.selectedCollege.currentFee * Math.pow(1 + rate, i);
+      data.push({
+        year: currentYear + i,
+        fee: Math.round(fee),
+        type: "projected",
+      });
+    }
+    
+    return data;
+  }, [calc.selectedCollege]);
+
   return (
     <div ref={containerRef} className={cn("w-full max-w-lg mx-auto relative z-10", compact ? "px-0" : "px-4")}>
       <div className="bg-card rounded-2xl shadow-lg border border-border/50 overflow-hidden">
@@ -138,182 +165,57 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
         <div className={cn("p-8", compact && "p-6")}>
           <AnimatePresence mode="wait">
 
-            {/* Step 1: Problem Awareness */}
+            {/* Step 1: Reality Moment */}
             {step === 1 && (
               <motion.div key="s1" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
                 <div className="flex justify-center">
-                  <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center">
-                    <AlertTriangle className="h-7 w-7 text-secondary animate-pulse" />
+                  <div className="w-14 h-14 rounded-2xl bg-red-100 dark:bg-red-950/50 flex items-center justify-center">
+                    <AlertTriangle className="h-7 w-7 text-red-500 animate-pulse" />
                   </div>
                 </div>
 
                 <div className="text-center space-y-4">
                   <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground leading-snug">
-                    Most parents don't plan early.
+                    Your child's education will cost more than you think.
                   </h2>
-                  <div className="space-y-3">
-                    <p className="text-sm text-muted-foreground">
-                      For <span className="font-bold text-secondary">65 out of 100</span> families, college fees become a financial burden.
-                    </p>
-                    <div className="flex items-center justify-center gap-2 py-2">
-                      <div className="flex -space-x-1">
-                        {Array.from({ length: 5 }).map((_, i) => (
-                          <div
-                            key={i}
-                            className={cn(
-                              "w-3 h-3 rounded-full border-2 border-card",
-                              i < 3 ? "bg-secondary" : "bg-muted"
-                            )}
-                          />
-                        ))}
-                      </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    College fees in India have increased <span className="font-bold text-red-500">3–4X</span> in the last decade — and they continue to rise faster than inflation. They will continue to rise more than <span className="font-bold text-red-500">10% every year</span> in the next decade.
+                  </p>
+                </div>
+
+                {/* Stat block */}
+                <div className="bg-muted/50 rounded-xl p-4 border border-border/50">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
+                      <TrendingDown className="h-6 w-6 text-secondary" />
                     </div>
-                    <p className="text-sm text-muted-foreground">
-                      Even <span className="font-semibold text-primary">₹50–₹300 a day</span>, saved consistently, compounds quietly.
-                    </p>
+                    <div>
+                      <p className="text-lg font-bold text-foreground">65 out of 100</p>
+                      <p className="text-sm text-muted-foreground">parents say higher education has become a financial burden.</p>
+                    </div>
                   </div>
+                </div>
+
+                {/* Reassurance line */}
+                <div className="flex items-start gap-2 p-3 rounded-xl bg-primary/5 border border-primary/10">
+                  <Sparkles className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                  <p className="text-sm text-foreground">
+                    With the right plan, small consistent savings today can protect your child's future choices tomorrow.
+                  </p>
                 </div>
 
                 <div className="pt-2 space-y-3">
                   <Button onClick={goNext} className="w-full h-12 text-base bg-gradient-to-r from-primary to-primary-dark hover:opacity-90 transition-opacity relative z-10">
-                    Let's build a plan in 60 seconds <ArrowRight className="ml-2 h-4 w-4" />
+                    See how fees have grown <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                   <p className="text-[11px] text-muted-foreground text-center">Free · No signup required</p>
                 </div>
               </motion.div>
             )}
 
-            {/* Step 2: Child Personalisation */}
+            {/* Step 2: College Fee Visualization */}
             {step === 2 && (
-              <motion.div key="s2" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
-                <BackButton />
-                <div className="flex justify-center">
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
-                    <Heart className="h-7 w-7 text-primary" />
-                  </div>
-                </div>
-                <div className="text-center space-y-1">
-                  <h3 className="font-heading text-lg font-semibold text-foreground">
-                    Who are we building this for?
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    This plan will be created especially for your child.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <Input
-                    placeholder="Child's name"
-                    value={calc.childName}
-                    onChange={(e) => calc.setChildName(e.target.value)}
-                    className="h-12 text-base text-center"
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" && calc.childName.trim()) goNext();
-                    }}
-                  />
-                  {calc.childName.trim() && (
-                    <motion.p
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      className="text-sm text-primary font-medium text-center flex items-center justify-center gap-1"
-                    >
-                      <Sparkles className="h-3.5 w-3.5" />
-                      Planning for {calc.childName}'s future
-                    </motion.p>
-                  )}
-                </div>
-                <Button
-                  onClick={goNext}
-                  className="w-full h-12 bg-gradient-to-r from-primary to-primary-dark hover:opacity-90"
-                  disabled={!calc.childName.trim()}
-                >
-                  Continue <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </motion.div>
-            )}
-
-            {/* Step 3: Timeline with Slider */}
-            {step === 3 && (
-              <motion.div key="s3" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
-                <BackButton />
-                <div className="flex justify-center">
-                  <div className="w-14 h-14 rounded-2xl bg-info/10 flex items-center justify-center">
-                    <Clock className="h-7 w-7 text-info" />
-                  </div>
-                </div>
-                <div className="text-center space-y-1">
-                  <h3 className="font-heading text-lg font-semibold text-foreground">
-                    When will {childDisplay} need this?
-                  </h3>
-                </div>
-
-                {/* Years display */}
-                <div className="text-center">
-                  <div className="inline-flex items-baseline gap-1">
-                    <span className="font-heading text-4xl font-bold text-primary">{calc.yearsToGoal}</span>
-                    <span className="text-lg text-muted-foreground">years from now</span>
-                  </div>
-                </div>
-
-                {/* Slider */}
-                <div className="px-2 space-y-3">
-                  <Slider
-                    value={[calc.yearsToGoal]}
-                    onValueChange={([v]) => calc.setYearsToGoal(v)}
-                    min={1}
-                    max={20}
-                    step={1}
-                    className="w-full"
-                  />
-                  <div className="flex justify-between text-xs text-muted-foreground">
-                    <span>1 year</span>
-                    <span>20 years</span>
-                  </div>
-                </div>
-
-                {/* Or type */}
-                <div className="flex items-center gap-3">
-                  <div className="h-px flex-1 bg-border" />
-                  <span className="text-xs text-muted-foreground">or type</span>
-                  <div className="h-px flex-1 bg-border" />
-                </div>
-                <Input
-                  type="number"
-                  min={1}
-                  max={20}
-                  value={calc.yearsToGoal}
-                  onChange={(e) => {
-                    const v = parseInt(e.target.value);
-                    if (v >= 1 && v <= 20) calc.setYearsToGoal(v);
-                  }}
-                  className="h-10 text-center text-base w-24 mx-auto"
-                />
-
-                {/* Dynamic reassurance */}
-                <motion.p
-                  key={calc.yearsToGoal}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="text-sm text-muted-foreground italic text-center"
-                >
-                  {calc.yearsToGoal <= 3
-                    ? "We prioritise safety for short-term goals."
-                    : calc.yearsToGoal <= 8
-                    ? "A balanced approach for medium-term goals."
-                    : "We let time work in your child's favour."}
-                </motion.p>
-
-                <Button
-                  onClick={goNext}
-                  className="w-full h-12 bg-gradient-to-r from-primary to-primary-dark hover:opacity-90"
-                >
-                  Continue <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </motion.div>
-            )}
-
-            {/* Step 4: Dream College */}
-            {step === 4 && (
-              <motion.div key="s4" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
+              <motion.div key="s2" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-5">
                 <BackButton />
                 <div className="flex justify-center">
                   <div className="w-14 h-14 rounded-2xl bg-success/10 flex items-center justify-center">
@@ -322,12 +224,12 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                 </div>
                 <div className="text-center space-y-1">
                   <h3 className="font-heading text-lg font-semibold text-foreground">
-                    Is there a dream college?
+                    See how college fees have grown
                   </h3>
-                   <p className="text-sm text-muted-foreground">
-                     Pick a category or search below.
-                   </p>
-                 </div>
+                  <p className="text-sm text-muted-foreground">
+                    Pick a college category to visualize the trend.
+                  </p>
+                </div>
 
                 {/* Quick-pick tiles */}
                 <div className="grid grid-cols-2 gap-2">
@@ -392,7 +294,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     <motion.div
                       initial={{ opacity: 0, y: -4 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="absolute z-10 w-full mt-1 bg-popover border border-border rounded-xl shadow-lg max-h-[400px] overflow-y-auto"
+                      className="absolute z-10 w-full mt-1 bg-popover border border-border rounded-xl shadow-lg max-h-[300px] overflow-y-auto"
                     >
                       {calc.filteredColleges.map((college) => (
                         <button
@@ -412,15 +314,75 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                   )}
                 </div>
 
-                {calc.selectedCollege && (
+                {/* Fee Visualization Chart */}
+                {calc.selectedCollege && feeChartData.length > 0 && (
                   <motion.div
-                    initial={{ opacity: 0, y: 4 }}
+                    initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="bg-primary/5 rounded-xl p-4 border border-primary/10"
+                    className="space-y-3"
                   >
-                    <p className="text-sm text-muted-foreground">
-                      Typical cost today: <span className="font-bold text-primary text-base">{calc.currentCostDisplay}</span>
-                    </p>
+                    <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-4 border border-primary/10">
+                      <div className="flex items-center justify-between mb-3">
+                        <div>
+                          <p className="text-xs text-muted-foreground">Today's cost</p>
+                          <p className="text-lg font-bold text-primary">{formatLakhs(calc.selectedCollege.currentFee)}</p>
+                        </div>
+                        <TrendingUp className="h-5 w-5 text-red-500" />
+                        <div className="text-right">
+                          <p className="text-xs text-muted-foreground">In 15 years</p>
+                          <p className="text-lg font-bold text-red-500">{formatLakhs(feeChartData[feeChartData.length - 1]?.fee || 0)}</p>
+                        </div>
+                      </div>
+                      <div className="h-40 w-full">
+                        <ResponsiveContainer width="100%" height="100%">
+                          <AreaChart
+                            data={feeChartData}
+                            margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
+                          >
+                            <defs>
+                              <linearGradient id="feeGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="5%" stopColor="#ef4444" stopOpacity={0.2} />
+                                <stop offset="95%" stopColor="#ef4444" stopOpacity={0} />
+                              </linearGradient>
+                            </defs>
+                            <XAxis
+                              dataKey="year"
+                              tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
+                              axisLine={false}
+                              tickLine={false}
+                              interval="preserveStartEnd"
+                            />
+                            <YAxis
+                              tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
+                              axisLine={false}
+                              tickLine={false}
+                              tickFormatter={(v) =>
+                                v >= 10000000
+                                  ? `${(v / 10000000).toFixed(1)}Cr`
+                                  : v >= 100000
+                                  ? `${(v / 100000).toFixed(0)}L`
+                                  : `${(v / 1000).toFixed(0)}K`
+                              }
+                              width={40}
+                            />
+                            <ReferenceLine x={new Date().getFullYear()} stroke="hsl(var(--primary))" strokeDasharray="3 3" />
+                            <Area
+                              type="monotone"
+                              dataKey="fee"
+                              stroke="#ef4444"
+                              strokeWidth={2}
+                              fill="url(#feeGrad)"
+                            />
+                          </AreaChart>
+                        </ResponsiveContainer>
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center mt-2">
+                        <span className="text-red-500 font-semibold">
+                          {Math.round(((feeChartData[feeChartData.length - 1]?.fee || 0) / calc.selectedCollege.currentFee - 1) * 100)}% increase
+                        </span>{" "}
+                        projected over 15 years
+                      </p>
+                    </div>
                   </motion.div>
                 )}
 
@@ -434,20 +396,64 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
               </motion.div>
             )}
 
-            {/* Step 5: Reality Check */}
-            {step === 5 && calc.selectedCollege && (
-              <RealityCheckStep
-                childName={calc.childName}
-                currentFee={calc.selectedCollege.currentFee}
-                yearsToGoal={calc.yearsToGoal}
-                onNext={goNext}
-                onBack={goBack}
-              />
+            {/* Step 3: Child's Name + Customize Plan */}
+            {step === 3 && (
+              <motion.div key="s3" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
+                <BackButton />
+                <div className="flex justify-center">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
+                    <Heart className="h-7 w-7 text-primary" />
+                  </div>
+                </div>
+                <div className="text-center space-y-1">
+                  <h3 className="font-heading text-lg font-semibold text-foreground">
+                    Who are we building this plan for?
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Let's personalize this journey.
+                  </p>
+                </div>
+                <div className="space-y-3">
+                  <Input
+                    placeholder="Child's name"
+                    value={calc.childName}
+                    onChange={(e) => calc.setChildName(e.target.value)}
+                    className="h-12 text-base text-center"
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && calc.childName.trim()) goNext();
+                    }}
+                  />
+                  {calc.childName.trim() && (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      className="space-y-3"
+                    >
+                      <p className="text-sm text-primary font-medium text-center flex items-center justify-center gap-1">
+                        <Sparkles className="h-3.5 w-3.5" />
+                        Planning for {calc.childName}'s future
+                      </p>
+                      <div className="bg-muted/50 rounded-xl p-4 border border-border/50">
+                        <p className="text-sm text-foreground text-center">
+                          Would you like us to create a <span className="font-semibold text-primary">customized investing plan</span> to help {calc.childName} reach their education goal in the most efficient way?
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </div>
+                <Button
+                  onClick={goNext}
+                  className="w-full h-12 bg-gradient-to-r from-primary to-primary-dark hover:opacity-90"
+                  disabled={!calc.childName.trim()}
+                >
+                  Yes, create my plan <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </motion.div>
             )}
 
-            {/* Step 6: Email Gate */}
-            {step === 6 && (
-              <motion.div key="s6" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
+            {/* Step 4: Email Collection + Show SIP Result */}
+            {step === 4 && (
+              <motion.div key="s4" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
                 <BackButton />
                 <div className="flex justify-center">
                   <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center">
@@ -456,10 +462,10 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                 </div>
                 <div className="text-center space-y-1">
                   <h3 className="font-heading text-lg font-semibold text-foreground">
-                    Where should we send {childDisplay}'s savings snapshot?
+                    Where should we send {childDisplay}'s plan?
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    A simple, personalised view of how this could grow over time.
+                    Enter your email to see the complete savings snapshot.
                   </p>
                 </div>
                 <div className="space-y-2">
@@ -481,7 +487,6 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                         calc.emailError && "border-destructive",
                         calc.email.trim() && calc.isEmailValid && "border-primary"
                       )}
-                      
                     />
                   </div>
                   {calc.emailError && (

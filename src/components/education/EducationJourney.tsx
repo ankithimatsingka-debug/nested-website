@@ -62,7 +62,9 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   };
 
   const goBack = () => {
-    if (typeof step === "number" && step > 1) {
+    if (step === "reveal") {
+      setStep(5);
+    } else if (typeof step === "number" && step > 1) {
       setStep((step - 1) as Step);
     }
   };
@@ -315,7 +317,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     <motion.div
                       initial={{ opacity: 0, y: -4 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="absolute z-10 w-full mt-1 bg-popover border border-border rounded-xl shadow-lg max-h-56 overflow-y-auto"
+                      className="absolute z-10 w-full mt-1 bg-popover border border-border rounded-xl shadow-lg max-h-80 overflow-y-auto"
                     >
                       {calc.filteredColleges.map((college) => (
                         <button
@@ -420,6 +422,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
             {/* Reveal */}
             {step === "reveal" && calc.result && (
               <motion.div key="reveal" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.5 }} className="space-y-8">
+                <BackButton />
                 {/* Primary highlight */}
                 <motion.div
                   initial={{ scale: 0.9, opacity: 0 }}
@@ -507,11 +510,10 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                           />
                           <Area
                             type="monotone"
-                            dataKey="invested"
-                            stroke="hsl(var(--muted-foreground))"
-                            strokeWidth={1.5}
-                            strokeDasharray="4 4"
-                            fill="none"
+                            dataKey="amount"
+                            stroke="hsl(var(--primary))"
+                            strokeWidth={2.5}
+                            fill="url(#sipGrowth)"
                           />
                           <Area
                             type="monotone"
@@ -523,10 +525,11 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                           />
                           <Area
                             type="monotone"
-                            dataKey="amount"
-                            stroke="hsl(var(--primary))"
-                            strokeWidth={2.5}
-                            fill="url(#sipGrowth)"
+                            dataKey="invested"
+                            stroke="hsl(var(--muted-foreground))"
+                            strokeWidth={1.5}
+                            strokeDasharray="4 4"
+                            fill="none"
                           />
                         </AreaChart>
                       </ResponsiveContainer>
@@ -542,6 +545,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                   <div className="space-y-3">
                     {[
                       { icon: Shield, color: "text-primary", bg: "bg-primary/10", text: `A separate account dedicated to ${childDisplay}` },
+                      { icon: Sparkles, color: "text-secondary", bg: "bg-secondary/10", text: `Curated selection of mutual funds for ${childDisplay}'s needs` },
                       { icon: RefreshCw, color: "text-success", bg: "bg-success/10", text: "Portfolio rebalancing as the goal approaches" },
                       { icon: BarChart3, color: "text-info", bg: "bg-info/10", text: "Continuous tracking so parents stay on course without constant decisions" },
                     ].map(({ icon: Icon, color, bg, text }, i) => (
@@ -574,7 +578,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Customise {childDisplay}'s plan in the app <ArrowRight className="ml-2 h-4 w-4" />
+                    Customise plan with Nested MFs to reach goals faster <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </motion.div>

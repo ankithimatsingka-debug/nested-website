@@ -167,7 +167,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
 
   return (
     <div ref={containerRef} className={cn("w-full max-w-lg mx-auto relative z-10", compact ? "px-0" : "px-4")}>
-      <div className="bg-card rounded-2xl shadow-lg border border-border/50 overflow-hidden">
+      <div className="bg-card rounded-2xl shadow-lg border border-border/50 overflow-visible">
         {/* Progress bar */}
         <div className="w-full h-1.5 bg-muted">
           <motion.div

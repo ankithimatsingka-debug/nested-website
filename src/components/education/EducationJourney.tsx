@@ -41,15 +41,15 @@ type Step = 1 | 2 | 3 | 4 | 5 | "reveal";
 
 const TOTAL_STEPS = 5;
 
-const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; college: CollegeCourse }[] = [
-  { label: "IIT", icon: GraduationCap, college: { name: "IIT (Average)", currentFee: 2000000, increaseRateLessThan10: 0.15, increaseRateMoreThan10: 0.10 } },
-  { label: "Tier 1 Private Engineering", icon: Building2, college: { name: "Tier 1 Private Engineering", currentFee: 2500000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
-  { label: "IIM", icon: Award, college: { name: "IIM (Average)", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
-  { label: "Tier 1 MBA College", icon: Briefcase, college: { name: "Tier 1 MBA College", currentFee: 2800000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
-  { label: "Masters in US", icon: Globe, college: { name: "Masters in US", currentFee: 5000000, increaseRateLessThan10: 0.08, increaseRateMoreThan10: 0.07 } },
-  { label: "Design (NID, NIFT etc)", icon: Palette, college: { name: "Design (NID, NIFT etc)", currentFee: 1800000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
-  { label: "ISB, XLRI, FMS & more", icon: BookOpen, college: { name: "ISB, XLRI, FMS & more", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
-  { label: "MBA in US", icon: Plane, college: { name: "MBA in US", currentFee: 8000000, increaseRateLessThan10: 0.06, increaseRateMoreThan10: 0.05 } },
+const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; color: string; iconColor: string; selectedBg: string; college: CollegeCourse }[] = [
+  { label: "IIT", icon: GraduationCap, color: "bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800", iconColor: "text-blue-600 dark:text-blue-400", selectedBg: "bg-blue-100 dark:bg-blue-900/50 border-blue-500", college: { name: "IIT (Average)", currentFee: 2000000, increaseRateLessThan10: 0.15, increaseRateMoreThan10: 0.10 } },
+  { label: "Tier 1 Private Engineering", icon: Building2, color: "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800", iconColor: "text-emerald-600 dark:text-emerald-400", selectedBg: "bg-emerald-100 dark:bg-emerald-900/50 border-emerald-500", college: { name: "Tier 1 Private Engineering", currentFee: 2500000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
+  { label: "IIM", icon: Award, color: "bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-800", iconColor: "text-amber-600 dark:text-amber-400", selectedBg: "bg-amber-100 dark:bg-amber-900/50 border-amber-500", college: { name: "IIM (Average)", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
+  { label: "Tier 1 MBA College", icon: Briefcase, color: "bg-violet-50 dark:bg-violet-950/40 border-violet-200 dark:border-violet-800", iconColor: "text-violet-600 dark:text-violet-400", selectedBg: "bg-violet-100 dark:bg-violet-900/50 border-violet-500", college: { name: "Tier 1 MBA College", currentFee: 2800000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
+  { label: "Masters in US", icon: Globe, color: "bg-sky-50 dark:bg-sky-950/40 border-sky-200 dark:border-sky-800", iconColor: "text-sky-600 dark:text-sky-400", selectedBg: "bg-sky-100 dark:bg-sky-900/50 border-sky-500", college: { name: "Masters in US", currentFee: 5000000, increaseRateLessThan10: 0.08, increaseRateMoreThan10: 0.07 } },
+  { label: "Design (NID, NIFT etc)", icon: Palette, color: "bg-pink-50 dark:bg-pink-950/40 border-pink-200 dark:border-pink-800", iconColor: "text-pink-600 dark:text-pink-400", selectedBg: "bg-pink-100 dark:bg-pink-900/50 border-pink-500", college: { name: "Design (NID, NIFT etc)", currentFee: 1800000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
+  { label: "ISB, XLRI, FMS & more", icon: BookOpen, color: "bg-orange-50 dark:bg-orange-950/40 border-orange-200 dark:border-orange-800", iconColor: "text-orange-600 dark:text-orange-400", selectedBg: "bg-orange-100 dark:bg-orange-900/50 border-orange-500", college: { name: "ISB, XLRI, FMS & more", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
+  { label: "MBA in US", icon: Plane, color: "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800", iconColor: "text-rose-600 dark:text-rose-400", selectedBg: "bg-rose-100 dark:bg-rose-900/50 border-rose-500", college: { name: "MBA in US", currentFee: 8000000, increaseRateLessThan10: 0.06, increaseRateMoreThan10: 0.05 } },
 ];
 
 const fade = {
@@ -336,14 +336,16 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                           setShowSearchResults(false);
                         }}
                         className={cn(
-                          "flex items-start gap-2 border rounded-xl p-3 text-left transition-colors hover:border-primary/50",
-                          isSelected ? "border-primary bg-primary/5" : "border-border"
+                          "flex items-start gap-2 border rounded-xl p-3 text-left transition-all hover:scale-[1.02] hover:shadow-sm",
+                          isSelected ? qp.selectedBg : qp.color
                         )}
                       >
-                        <Icon className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        <div className={cn("h-7 w-7 rounded-lg flex items-center justify-center shrink-0", isSelected ? qp.selectedBg : qp.color)}>
+                          <Icon className={cn("h-4 w-4 shrink-0", qp.iconColor)} />
+                        </div>
                         <div className="min-w-0">
                           <p className="text-xs font-medium text-foreground leading-tight">{qp.label}</p>
-                          <p className="text-[11px] text-muted-foreground">{costLabel}</p>
+                          <p className={cn("text-[11px] font-semibold", qp.iconColor)}>{costLabel}</p>
                         </div>
                       </button>
                     );

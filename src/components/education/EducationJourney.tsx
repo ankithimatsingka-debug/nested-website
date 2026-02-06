@@ -15,7 +15,15 @@ import {
   Clock,
   AlertTriangle,
   Sparkles,
+  Building2,
+  Award,
+  Briefcase,
+  Globe,
+  Palette,
+  BookOpen,
+  Plane,
 } from "lucide-react";
+import type { CollegeCourse } from "@/data/educationCostData";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Slider } from "@/components/ui/slider";
@@ -32,6 +40,17 @@ import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } f
 type Step = 1 | 2 | 3 | 4 | 5 | "reveal";
 
 const TOTAL_STEPS = 5;
+
+const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; college: CollegeCourse }[] = [
+  { label: "IIT", icon: GraduationCap, college: { name: "IIT (Average)", currentFee: 2000000, increaseRateLessThan10: 0.15, increaseRateMoreThan10: 0.10 } },
+  { label: "Tier 1 Private Engineering", icon: Building2, college: { name: "Tier 1 Private Engineering", currentFee: 2500000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
+  { label: "IIM", icon: Award, college: { name: "IIM (Average)", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
+  { label: "Tier 1 MBA College", icon: Briefcase, college: { name: "Tier 1 MBA College", currentFee: 2800000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
+  { label: "Masters in US", icon: Globe, college: { name: "Masters in US", currentFee: 5000000, increaseRateLessThan10: 0.08, increaseRateMoreThan10: 0.07 } },
+  { label: "Design (NID, NIFT etc)", icon: Palette, college: { name: "Design (NID, NIFT etc)", currentFee: 1800000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
+  { label: "ISB, XLRI, FMS & more", icon: BookOpen, college: { name: "ISB, XLRI, FMS & more", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
+  { label: "MBA in US", icon: Plane, college: { name: "MBA in US", currentFee: 8000000, increaseRateLessThan10: 0.06, increaseRateMoreThan10: 0.05 } },
+];
 
 const fade = {
   enter: { opacity: 0, y: 20 },
@@ -294,9 +313,48 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                   <h3 className="font-heading text-lg font-semibold text-foreground">
                     Is there a dream college?
                   </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Type a college or course name to see today's cost.
-                  </p>
+                   <p className="text-sm text-muted-foreground">
+                     Pick a category or search below.
+                   </p>
+                 </div>
+
+                {/* Quick-pick tiles */}
+                <div className="grid grid-cols-2 gap-2">
+                  {QUICK_PICK_COLLEGES.map((qp) => {
+                    const Icon = qp.icon;
+                    const isSelected = calc.selectedCollege?.name === qp.college.name;
+                    const costLabel = qp.college.currentFee >= 10000000
+                      ? `₹${(qp.college.currentFee / 10000000).toFixed(1)} Cr`
+                      : `₹${(qp.college.currentFee / 100000).toFixed(0)} L`;
+                    return (
+                      <button
+                        key={qp.label}
+                        type="button"
+                        onClick={() => {
+                          calc.setSelectedCollege(qp.college);
+                          calc.setSearchQuery("");
+                          setShowSearchResults(false);
+                        }}
+                        className={cn(
+                          "flex items-start gap-2 border rounded-xl p-3 text-left transition-colors hover:border-primary/50",
+                          isSelected ? "border-primary bg-primary/5" : "border-border"
+                        )}
+                      >
+                        <Icon className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        <div className="min-w-0">
+                          <p className="text-xs font-medium text-foreground leading-tight">{qp.label}</p>
+                          <p className="text-[11px] text-muted-foreground">{costLabel}</p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Divider */}
+                <div className="flex items-center gap-3">
+                  <div className="h-px flex-1 bg-border" />
+                  <span className="text-xs text-muted-foreground">or search below</span>
+                  <div className="h-px flex-1 bg-border" />
                 </div>
 
                 <div className="relative">

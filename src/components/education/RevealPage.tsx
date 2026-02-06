@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useMemo } from "react";
 import { ConfettiCanvas } from "./ConfettiCanvas";
 import { motion } from "framer-motion";
 import {
@@ -8,6 +8,7 @@ import {
   BarChart3,
   TrendingUp,
   Sparkles,
+  ArrowUpRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -84,6 +85,13 @@ export function RevealPage({
   onBack,
 }: RevealPageProps) {
   useCelebrationChime(true);
+
+  // Calculate delta between Nested and FD at the end
+  const finalData = chartData[chartData.length - 1];
+  const nestedFinal = finalData?.amount || 0;
+  const fdFinal = finalData?.fd || 0;
+  const deltaAmount = nestedFinal - fdFinal;
+  const deltaPercent = fdFinal > 0 ? Math.round((deltaAmount / fdFinal) * 100) : 0;
 
   return (
     <motion.div
@@ -183,9 +191,40 @@ export function RevealPage({
         </motion.div>
       </div>
 
+      {/* Delta comparison card - Nested vs FD */}
+      <motion.div
+        {...stagger(2.5)}
+        className="relative p-4 rounded-xl border-2 border-success/40 overflow-hidden"
+        style={{
+          background: "linear-gradient(135deg, hsl(var(--success) / 0.08), hsl(var(--success) / 0.04))",
+        }}
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-xs text-muted-foreground mb-1">With Nested vs Fixed Deposit (6%)</p>
+            <div className="flex items-baseline gap-2">
+              <p className="text-2xl font-bold text-success">+{formatLakhsShort(deltaAmount)}</p>
+              <span className="text-sm font-medium text-success/80 flex items-center gap-0.5">
+                <ArrowUpRight className="h-3.5 w-3.5" />
+                {deltaPercent}% more
+              </span>
+            </div>
+          </div>
+          <div className="w-12 h-12 rounded-xl bg-success/10 flex items-center justify-center">
+            <TrendingUp className="h-6 w-6 text-success" />
+          </div>
+        </div>
+        <p className="text-xs text-muted-foreground mt-2">
+          That's the power of smart investing over traditional savings.
+        </p>
+      </motion.div>
+
       {/* Chart */}
       {chartData.length > 1 && (
         <motion.div {...stagger(3)} className="space-y-3">
+          <p className="text-sm font-semibold text-foreground text-center">
+            Nested vs Fixed Deposit (6% annual)
+          </p>
           <div className="h-52 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart
@@ -199,6 +238,10 @@ export function RevealPage({
                   <linearGradient id="sipGrowth" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3} />
                     <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0} />
+                  </linearGradient>
+                  <linearGradient id="fdGrowth" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="hsl(var(--warning))" stopOpacity={0.15} />
+                    <stop offset="95%" stopColor="hsl(var(--warning))" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <XAxis
@@ -223,7 +266,7 @@ export function RevealPage({
                     const labels: Record<string, string> = {
                       amount: "With Nested",
                       invested: "Amount Invested",
-                      fd: "Fixed Deposit (7%)",
+                      fd: "Fixed Deposit (6%)",
                     };
                     return [formatLakhs(value), labels[name] || name];
                   }}
@@ -247,20 +290,27 @@ export function RevealPage({
                     return labels[value] || value;
                   }}
                 />
-                <Area type="monotone" dataKey="amount" stroke="hsl(var(--primary))" strokeWidth={2.5} fill="url(#sipGrowth)" />
-                <Area type="monotone" dataKey="fd" stroke="hsl(var(--warning))" strokeWidth={1.5} strokeDasharray="6 3" fill="none" />
-                <Area type="monotone" dataKey="invested" stroke="hsl(var(--muted-foreground))" strokeWidth={1.5} strokeDasharray="4 4" fill="none" />
+                <Area type="monotone" dataKey="amount" stroke="hsl(var(--primary))" strokeWidth={2.5} fill="url(#sipGrowth)" name="amount" />
+                <Area type="monotone" dataKey="fd" stroke="hsl(var(--warning))" strokeWidth={2} fill="url(#fdGrowth)" name="fd" />
+                <Area type="monotone" dataKey="invested" stroke="hsl(var(--muted-foreground))" strokeWidth={1.5} strokeDasharray="4 4" fill="none" name="invested" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
           <p className="text-xs text-muted-foreground text-center italic">
-            This is how steady saving unlocks {childDisplay}'s education goal.
+            Nested's smart investing helps you reach {childDisplay}'s goal faster.
           </p>
         </motion.div>
       )}
 
+      {/* Why Nested is better */}
+      <motion.div {...stagger(3.5)} className="space-y-2">
+        <p className="text-sm font-semibold text-foreground text-center">
+          How Nested creates this value
+        </p>
+      </motion.div>
+
       {/* Benefit tiles — colorful gradient cards */}
-      <div className="space-y-3 pt-2">
+      <div className="space-y-3">
         {BENEFIT_TILES.map((tile, i) => {
           const Icon = tile.icon;
           return (
@@ -306,7 +356,7 @@ export function RevealPage({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Upgrade your plan with Nested MFs
+            Start saving with Nested
           </a>
         </Button>
         <p className="text-xs text-muted-foreground text-center">Start for free</p>

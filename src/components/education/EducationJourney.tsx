@@ -36,9 +36,9 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine } from "recharts";
 import { RevealPage } from "./RevealPage";
 
-type Step = 1 | 2 | 3 | 4 | "reveal";
+type Step = 1 | 2 | 3 | 4 | 5 | "reveal";
 
-const TOTAL_STEPS = 4;
+const TOTAL_STEPS = 5;
 
 const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; color: string; iconColor: string; selectedBg: string; college: CollegeCourse }[] = [
   { label: "IIT", icon: GraduationCap, color: "bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800", iconColor: "text-blue-600 dark:text-blue-400", selectedBg: "bg-blue-100 dark:bg-blue-900/50 border-blue-500", college: { name: "IIT (Average)", currentFee: 2000000, increaseRateLessThan10: 0.15, increaseRateMoreThan10: 0.10 } },
@@ -77,7 +77,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   const animatedTarget = useCountUp(calc.result?.targetAmount || 0, 1200, calc.emailUnlocked && !!calc.result);
 
   useEffect(() => {
-    if (step === 4 && !calc.result) {
+    if (step === 5 && !calc.result) {
       calc.calculate();
     }
   }, [step, calc.result, calc.calculate]);
@@ -90,7 +90,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
 
   const goBack = () => {
     if (step === "reveal") {
-      setStep(4);
+      setStep(5);
     } else if (typeof step === "number" && step > 1) {
       setStep((step - 1) as Step);
     }
@@ -213,7 +213,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
               </motion.div>
             )}
 
-            {/* Step 2: College Fee Visualization */}
+            {/* Step 2: College Selection */}
             {step === 2 && (
               <motion.div key="s2" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-5">
                 <BackButton />
@@ -224,10 +224,10 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                 </div>
                 <div className="text-center space-y-1">
                   <h3 className="font-heading text-lg font-semibold text-foreground">
-                    See how college fees have grown
+                    Pick a dream college or course
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Pick a college category to visualize the trend.
+                    Let's see how the fees have grown over time.
                   </p>
                 </div>
 
@@ -247,6 +247,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                           calc.setSelectedCollege(qp.college);
                           calc.setSearchQuery("");
                           setShowSearchResults(false);
+                          goNext();
                         }}
                         className={cn(
                           "flex items-start gap-2 border rounded-xl p-3 text-left transition-all hover:scale-[1.02] hover:shadow-sm",
@@ -303,6 +304,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                             calc.setSelectedCollege(college);
                             calc.setSearchQuery("");
                             setShowSearchResults(false);
+                            goNext();
                           }}
                           className="w-full text-left px-4 py-3 text-sm hover:bg-primary/5 transition-colors border-b border-border/30 last:border-0 flex items-center gap-2"
                         >
@@ -313,92 +315,153 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     </motion.div>
                   )}
                 </div>
+              </motion.div>
+            )}
 
-                {/* Fee Visualization Chart */}
-                {calc.selectedCollege && feeChartData.length > 0 && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="space-y-3"
-                  >
-                    <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-4 border border-primary/10">
-                      <div className="flex items-center justify-between mb-3">
-                        <div>
-                          <p className="text-xs text-muted-foreground">Today's cost</p>
-                          <p className="text-lg font-bold text-primary">{formatLakhs(calc.selectedCollege.currentFee)}</p>
-                        </div>
-                        <TrendingUp className="h-5 w-5 text-red-500" />
-                        <div className="text-right">
-                          <p className="text-xs text-muted-foreground">In 15 years</p>
-                          <p className="text-lg font-bold text-red-500">{formatLakhs(feeChartData[feeChartData.length - 1]?.fee || 0)}</p>
-                        </div>
-                      </div>
-                      <div className="h-40 w-full">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <AreaChart
-                            data={feeChartData}
-                            margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
-                          >
-                            <defs>
-                              <linearGradient id="feeGrad" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="5%" stopColor="#ef4444" stopOpacity={0.2} />
-                                <stop offset="95%" stopColor="#ef4444" stopOpacity={0} />
-                              </linearGradient>
-                            </defs>
-                            <XAxis
-                              dataKey="year"
-                              tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
-                              axisLine={false}
-                              tickLine={false}
-                              interval="preserveStartEnd"
-                            />
-                            <YAxis
-                              tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
-                              axisLine={false}
-                              tickLine={false}
-                              tickFormatter={(v) =>
-                                v >= 10000000
-                                  ? `${(v / 10000000).toFixed(1)}Cr`
-                                  : v >= 100000
-                                  ? `${(v / 100000).toFixed(0)}L`
-                                  : `${(v / 1000).toFixed(0)}K`
-                              }
-                              width={40}
-                            />
-                            <ReferenceLine x={new Date().getFullYear()} stroke="hsl(var(--primary))" strokeDasharray="3 3" />
-                            <Area
-                              type="monotone"
-                              dataKey="fee"
-                              stroke="#ef4444"
-                              strokeWidth={2}
-                              fill="url(#feeGrad)"
-                            />
-                          </AreaChart>
-                        </ResponsiveContainer>
-                      </div>
-                      <p className="text-xs text-muted-foreground text-center mt-2">
-                        <span className="text-red-500 font-semibold">
-                          {Math.round(((feeChartData[feeChartData.length - 1]?.fee || 0) / calc.selectedCollege.currentFee - 1) * 100)}% increase
-                        </span>{" "}
-                        projected over 15 years
+            {/* Step 3: Fee Visualization + Nested Story */}
+            {step === 3 && calc.selectedCollege && (
+              <motion.div key="s3" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-5">
+                <BackButton />
+                
+                {/* College header */}
+                <div className="text-center space-y-2">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-success/10 text-success text-xs font-medium">
+                    <GraduationCap className="h-3.5 w-3.5" />
+                    {calc.selectedCollege.name}
+                  </div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground">
+                    Here's how fees have changed
+                  </h3>
+                </div>
+
+                {/* Fee Chart - Full View */}
+                <div className="bg-gradient-to-br from-muted/50 to-muted/30 rounded-xl p-4 border border-border/50">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <p className="text-xs text-muted-foreground">10 years ago</p>
+                      <p className="text-base font-bold text-foreground">{formatLakhs(feeChartData[0]?.fee || 0)}</p>
+                    </div>
+                    <TrendingUp className="h-5 w-5 text-destructive" />
+                    <div className="text-right">
+                      <p className="text-xs text-muted-foreground">Today</p>
+                      <p className="text-base font-bold text-primary">{formatLakhs(calc.selectedCollege.currentFee)}</p>
+                    </div>
+                  </div>
+                  <div className="h-44 w-full">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <AreaChart
+                        data={feeChartData}
+                        margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
+                      >
+                        <defs>
+                          <linearGradient id="feeGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="5%" stopColor="hsl(var(--destructive))" stopOpacity={0.2} />
+                            <stop offset="95%" stopColor="hsl(var(--destructive))" stopOpacity={0} />
+                          </linearGradient>
+                        </defs>
+                        <XAxis
+                          dataKey="year"
+                          tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
+                          axisLine={false}
+                          tickLine={false}
+                          interval="preserveStartEnd"
+                        />
+                        <YAxis
+                          tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
+                          axisLine={false}
+                          tickLine={false}
+                          tickFormatter={(v) =>
+                            v >= 10000000
+                              ? `${(v / 10000000).toFixed(1)}Cr`
+                              : v >= 100000
+                              ? `${(v / 100000).toFixed(0)}L`
+                              : `${(v / 1000).toFixed(0)}K`
+                          }
+                          width={40}
+                        />
+                        <ReferenceLine x={new Date().getFullYear()} stroke="hsl(var(--primary))" strokeDasharray="3 3" />
+                        <Area
+                          type="monotone"
+                          dataKey="fee"
+                          stroke="hsl(var(--destructive))"
+                          strokeWidth={2}
+                          fill="url(#feeGrad)"
+                        />
+                      </AreaChart>
+                    </ResponsiveContainer>
+                  </div>
+                  <div className="flex items-center justify-between mt-3 pt-3 border-t border-border/50">
+                    <div>
+                      <p className="text-xs text-muted-foreground">In 15 years</p>
+                      <p className="text-base font-bold text-destructive">{formatLakhs(feeChartData[feeChartData.length - 1]?.fee || 0)}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-xs text-muted-foreground">Growth</p>
+                      <p className="text-base font-bold text-destructive">
+                        {Math.round((calc.selectedCollege.increaseRateLessThan10) * 100)}% / year
                       </p>
                     </div>
-                  </motion.div>
-                )}
+                  </div>
+                </div>
+
+                {/* Key insight */}
+                <div className="bg-destructive/5 rounded-xl p-4 border border-destructive/20">
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
+                    <div className="space-y-1">
+                      <p className="text-sm font-semibold text-foreground">
+                        Fees have grown ~{Math.round(((calc.selectedCollege.currentFee / (feeChartData[0]?.fee || 1)) - 1) * 100)}% in the last 10 years
+                      </p>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        That's faster than most savings accounts or Fixed Deposits can keep up with.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Nested Way - Story Section */}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="h-4 w-4 text-primary" />
+                    <p className="text-sm font-semibold text-foreground">The Smarter Approach</p>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-4 border border-primary/10 space-y-3">
+                    <p className="text-sm text-foreground leading-relaxed">
+                      Most parents either <span className="font-semibold">don't plan</span> or park savings in FDs — which barely beat inflation and fall short of rising education costs.
+                    </p>
+                    <p className="text-sm text-foreground leading-relaxed">
+                      <span className="font-bold text-primary">Nested</span> takes a smarter approach: we analyze <span className="font-semibold">2,000+ mutual funds</span>, design the right portfolio based on your child's age, and rebalance as they grow — so your money works harder for their future.
+                    </p>
+                    <div className="flex items-center gap-4 pt-2">
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-2 h-2 rounded-full bg-primary" />
+                        <span className="text-xs text-muted-foreground">Goal-based</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-2 h-2 rounded-full bg-secondary" />
+                        <span className="text-xs text-muted-foreground">Age-appropriate</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-2 h-2 rounded-full bg-success" />
+                        <span className="text-xs text-muted-foreground">Auto-rebalanced</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <Button
                   onClick={goNext}
                   className="w-full h-12 bg-gradient-to-r from-primary to-primary-dark hover:opacity-90"
-                  disabled={!calc.selectedCollege}
                 >
-                  Continue <ArrowRight className="ml-2 h-4 w-4" />
+                  Build a plan for this goal <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </motion.div>
             )}
 
-            {/* Step 3: Child's Name + Customize Plan */}
-            {step === 3 && (
-              <motion.div key="s3" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
+            {/* Step 4: Child's Name + Customize Plan */}
+            {step === 4 && (
+              <motion.div key="s4" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
                 <BackButton />
                 <div className="flex justify-center">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
@@ -451,9 +514,9 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
               </motion.div>
             )}
 
-            {/* Step 4: Email Collection + Show SIP Result */}
-            {step === 4 && (
-              <motion.div key="s4" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
+            {/* Step 5: Email Collection + Show SIP Result */}
+            {step === 5 && (
+              <motion.div key="s5" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
                 <BackButton />
                 <div className="flex justify-center">
                   <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center">

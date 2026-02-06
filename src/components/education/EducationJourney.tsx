@@ -69,10 +69,10 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
 
-  // On mobile, scroll calculator card into view when step changes
+  // On mobile, scroll to top of page when step changes
   useEffect(() => {
-    if (isMobile && compact && containerRef.current) {
-      containerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (isMobile && compact) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [step, isMobile, compact]);
 

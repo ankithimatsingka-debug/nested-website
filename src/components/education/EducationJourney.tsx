@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
@@ -65,6 +66,15 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   const calc = useEducationCalculator();
   const [showSearchResults, setShowSearchResults] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
+
+  // On mobile, scroll calculator card into view when step changes
+  useEffect(() => {
+    if (isMobile && compact && containerRef.current) {
+      containerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [step, isMobile, compact]);
 
   const animatedSIP = useCountUp(calc.result?.monthlyInvestment || 0, 1200, calc.emailUnlocked && !!calc.result);
   const animatedTotal = useCountUp(calc.result?.totalInvestment || 0, 1200, calc.emailUnlocked && !!calc.result);
@@ -113,7 +123,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   );
 
   return (
-    <div className={cn("w-full max-w-lg mx-auto relative z-10", compact ? "px-0" : "px-4")}>
+    <div ref={containerRef} className={cn("w-full max-w-lg mx-auto relative z-10", compact ? "px-0" : "px-4")}>
       <div className="bg-card rounded-2xl shadow-lg border border-border/50 overflow-hidden">
         {/* Progress bar */}
         <div className="w-full h-1.5 bg-muted">

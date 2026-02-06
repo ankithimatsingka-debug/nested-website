@@ -79,8 +79,13 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
 
   const BackButton = () => (
     <button
-      onClick={goBack}
-      className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors mb-1"
+      type="button"
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        goBack();
+      }}
+      className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors mb-1 relative z-10"
     >
       <ArrowLeft className="h-3 w-3" /> Back
     </button>
@@ -317,7 +322,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     <motion.div
                       initial={{ opacity: 0, y: -4 }}
                       animate={{ opacity: 1, y: 0 }}
-                      className="absolute z-10 w-full mt-1 bg-popover border border-border rounded-xl shadow-lg max-h-80 overflow-y-auto"
+                      className="absolute z-10 w-full mt-1 bg-popover border border-border rounded-xl shadow-lg max-h-[400px] overflow-y-auto"
                     >
                       {calc.filteredColleges.map((college) => (
                         <button

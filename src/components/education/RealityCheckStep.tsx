@@ -108,7 +108,7 @@ export function RealityCheckStep({
           onClick={onNext}
           className="bg-gradient-to-r from-primary to-primary-dark hover:opacity-90 text-xs h-8 px-3"
         >
-          See {childDisplay}'s Plan <ArrowRight className="ml-1 h-3 w-3" />
+          See {childDisplay}'s customised plan <ArrowRight className="ml-1 h-3 w-3" />
         </Button>
       </div>
 
@@ -301,7 +301,7 @@ export function RealityCheckStep({
         onClick={onNext}
         className="w-full h-12 bg-gradient-to-r from-primary to-primary-dark hover:opacity-90"
       >
-        See {childDisplay}'s Plan <ArrowRight className="ml-2 h-4 w-4" />
+        See {childDisplay}'s customised plan <ArrowRight className="ml-2 h-4 w-4" />
       </Button>
     </motion.div>
   );

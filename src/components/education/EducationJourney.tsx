@@ -36,10 +36,11 @@ import {
 } from "@/hooks/useEducationCalculator";
 import { useCountUp } from "@/hooks/useCountUp";
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from "recharts";
+import { RealityCheckStep } from "./RealityCheckStep";
 
-type Step = 1 | 2 | 3 | 4 | 5 | "reveal";
+type Step = 1 | 2 | 3 | 4 | 5 | 6 | "reveal";
 
-const TOTAL_STEPS = 5;
+const TOTAL_STEPS = 6;
 
 const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; color: string; iconColor: string; selectedBg: string; college: CollegeCourse }[] = [
   { label: "IIT", icon: GraduationCap, color: "bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800", iconColor: "text-blue-600 dark:text-blue-400", selectedBg: "bg-blue-100 dark:bg-blue-900/50 border-blue-500", college: { name: "IIT (Average)", currentFee: 2000000, increaseRateLessThan10: 0.15, increaseRateMoreThan10: 0.10 } },
@@ -69,7 +70,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   const animatedTarget = useCountUp(calc.result?.targetAmount || 0, 1200, calc.emailUnlocked && !!calc.result);
 
   useEffect(() => {
-    if (step === 5 && !calc.result) {
+    if (step === 6 && !calc.result) {
       calc.calculate();
     }
   }, [step, calc.result, calc.calculate]);
@@ -82,7 +83,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
 
   const goBack = () => {
     if (step === "reveal") {
-      setStep(5);
+      setStep(6);
     } else if (typeof step === "number" && step > 1) {
       setStep((step - 1) as Step);
     }
@@ -424,9 +425,20 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
               </motion.div>
             )}
 
-            {/* Step 5: Email Gate */}
-            {step === 5 && (
-              <motion.div key="s5" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
+            {/* Step 5: Reality Check */}
+            {step === 5 && calc.selectedCollege && (
+              <RealityCheckStep
+                childName={calc.childName}
+                currentFee={calc.selectedCollege.currentFee}
+                yearsToGoal={calc.yearsToGoal}
+                onNext={goNext}
+                onBack={goBack}
+              />
+            )}
+
+            {/* Step 6: Email Gate */}
+            {step === 6 && (
+              <motion.div key="s6" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
                 <BackButton />
                 <div className="flex justify-center">
                   <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center">

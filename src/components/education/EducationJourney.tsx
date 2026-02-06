@@ -654,9 +654,10 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Upgrade your plan with Nested MFs <ArrowRight className="ml-2 h-4 w-4" />
+                    Upgrade your plan with Nested MFs
                   </a>
                 </Button>
+                <p className="text-xs text-muted-foreground text-center">Start for free</p>
               </motion.div>
             )}
           </AnimatePresence>

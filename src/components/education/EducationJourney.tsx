@@ -14,17 +14,18 @@ import {
   Sparkles,
   Building2,
   Award,
-  Briefcase,
   Globe,
-  Palette,
-  BookOpen,
+  Stethoscope,
   Plane,
   TrendingDown,
+  Baby,
 } from "lucide-react";
 import type { CollegeCourse } from "@/data/educationCostData";
 import { educationCostData, calculateFutureCost } from "@/data/educationCostData";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Slider } from "@/components/ui/slider";
+import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import {
   useEducationCalculator,
@@ -40,15 +41,15 @@ type Step = 1 | 2 | 3 | 4 | 5 | "reveal";
 
 const TOTAL_STEPS = 5;
 
-const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; color: string; iconColor: string; selectedBg: string; college: CollegeCourse }[] = [
-  { label: "IIT", icon: GraduationCap, color: "bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800", iconColor: "text-blue-600 dark:text-blue-400", selectedBg: "bg-blue-100 dark:bg-blue-900/50 border-blue-500", college: { name: "IIT (Average)", currentFee: 2000000, increaseRateLessThan10: 0.15, increaseRateMoreThan10: 0.10 } },
-  { label: "Tier 1 Private Engineering", icon: Building2, color: "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800", iconColor: "text-emerald-600 dark:text-emerald-400", selectedBg: "bg-emerald-100 dark:bg-emerald-900/50 border-emerald-500", college: { name: "Tier 1 Private Engineering", currentFee: 2500000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
-  { label: "IIM", icon: Award, color: "bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-800", iconColor: "text-amber-600 dark:text-amber-400", selectedBg: "bg-amber-100 dark:bg-amber-900/50 border-amber-500", college: { name: "IIM (Average)", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
-  { label: "Tier 1 MBA College", icon: Briefcase, color: "bg-violet-50 dark:bg-violet-950/40 border-violet-200 dark:border-violet-800", iconColor: "text-violet-600 dark:text-violet-400", selectedBg: "bg-violet-100 dark:bg-violet-900/50 border-violet-500", college: { name: "Tier 1 MBA College", currentFee: 2800000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
-  { label: "Masters in US", icon: Globe, color: "bg-sky-50 dark:bg-sky-950/40 border-sky-200 dark:border-sky-800", iconColor: "text-sky-600 dark:text-sky-400", selectedBg: "bg-sky-100 dark:bg-sky-900/50 border-sky-500", college: { name: "Masters in US", currentFee: 5000000, increaseRateLessThan10: 0.08, increaseRateMoreThan10: 0.07 } },
-  { label: "Design (NID, NIFT etc)", icon: Palette, color: "bg-pink-50 dark:bg-pink-950/40 border-pink-200 dark:border-pink-800", iconColor: "text-pink-600 dark:text-pink-400", selectedBg: "bg-pink-100 dark:bg-pink-900/50 border-pink-500", college: { name: "Design (NID, NIFT etc)", currentFee: 1800000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.08 } },
-  { label: "ISB, XLRI, FMS & more", icon: BookOpen, color: "bg-orange-50 dark:bg-orange-950/40 border-orange-200 dark:border-orange-800", iconColor: "text-orange-600 dark:text-orange-400", selectedBg: "bg-orange-100 dark:bg-orange-900/50 border-orange-500", college: { name: "ISB, XLRI, FMS & more", currentFee: 2500000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.06 } },
-  { label: "MBA in US", icon: Plane, color: "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800", iconColor: "text-rose-600 dark:text-rose-400", selectedBg: "bg-rose-100 dark:bg-rose-900/50 border-rose-500", college: { name: "MBA in US", currentFee: 8000000, increaseRateLessThan10: 0.06, increaseRateMoreThan10: 0.05 } },
+// Updated with user-provided data (2015 fee is historical reference, 2025 is currentFee)
+const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; color: string; iconColor: string; selectedBg: string; college: CollegeCourse & { fee2015: number } }[] = [
+  { label: "IIT", icon: GraduationCap, color: "bg-blue-50 dark:bg-blue-950/40 border-blue-200 dark:border-blue-800", iconColor: "text-blue-600 dark:text-blue-400", selectedBg: "bg-blue-100 dark:bg-blue-900/50 border-blue-500", college: { name: "IIT", currentFee: 1200000, fee2015: 200000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.10 } },
+  { label: "Tier 1 Private Engineering", icon: Building2, color: "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800", iconColor: "text-emerald-600 dark:text-emerald-400", selectedBg: "bg-emerald-100 dark:bg-emerald-900/50 border-emerald-500", college: { name: "Tier 1 Private Engineering", currentFee: 1500000, fee2015: 400000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.10 } },
+  { label: "IIM", icon: Award, color: "bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-800", iconColor: "text-amber-600 dark:text-amber-400", selectedBg: "bg-amber-100 dark:bg-amber-900/50 border-amber-500", college: { name: "IIM", currentFee: 3500000, fee2015: 1800000, increaseRateLessThan10: 0.08, increaseRateMoreThan10: 0.08 } },
+  { label: "USA STEM", icon: Globe, color: "bg-sky-50 dark:bg-sky-950/40 border-sky-200 dark:border-sky-800", iconColor: "text-sky-600 dark:text-sky-400", selectedBg: "bg-sky-100 dark:bg-sky-900/50 border-sky-500", college: { name: "USA STEM", currentFee: 30000000, fee2015: 15000000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.07 } },
+  { label: "MBBS", icon: Stethoscope, color: "bg-red-50 dark:bg-red-950/40 border-red-200 dark:border-red-800", iconColor: "text-red-600 dark:text-red-400", selectedBg: "bg-red-100 dark:bg-red-900/50 border-red-500", college: { name: "MBBS", currentFee: 10000000, fee2015: 4000000, increaseRateLessThan10: 0.10, increaseRateMoreThan10: 0.10 } },
+  { label: "Pilot Course", icon: Plane, color: "bg-violet-50 dark:bg-violet-950/40 border-violet-200 dark:border-violet-800", iconColor: "text-violet-600 dark:text-violet-400", selectedBg: "bg-violet-100 dark:bg-violet-900/50 border-violet-500", college: { name: "Pilot Course", currentFee: 1600000, fee2015: 900000, increaseRateLessThan10: 0.06, increaseRateMoreThan10: 0.06 } },
+  { label: "Ivy League MBA", icon: Award, color: "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800", iconColor: "text-rose-600 dark:text-rose-400", selectedBg: "bg-rose-100 dark:bg-rose-900/50 border-rose-500", college: { name: "Ivy League MBA", currentFee: 25000000, fee2015: 13000000, increaseRateLessThan10: 0.07, increaseRateMoreThan10: 0.07 } },
 ];
 
 const fade = {
@@ -124,10 +125,25 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
     const currentYear = new Date().getFullYear();
     const data = [];
     
-    // Historical: 10 years back (simulated with reverse compound)
+    // Check if this college has historical 2015 data (quick-pick colleges)
+    const quickPick = QUICK_PICK_COLLEGES.find(qp => qp.college.name === calc.selectedCollege?.name);
+    const fee2015 = quickPick?.college.fee2015;
+    
+    // Historical: 10 years back (use actual 2015 data if available, otherwise simulate)
     const avgRate = calc.selectedCollege.increaseRateLessThan10;
     for (let i = -10; i <= 0; i++) {
-      const fee = calc.selectedCollege.currentFee / Math.pow(1 + avgRate, Math.abs(i));
+      let fee: number;
+      if (fee2015 && i === -10) {
+        // Use actual 2015 fee
+        fee = fee2015;
+      } else if (fee2015) {
+        // Interpolate between 2015 and current
+        const progress = (i + 10) / 10; // 0 at -10, 1 at 0
+        fee = fee2015 + (calc.selectedCollege.currentFee - fee2015) * progress;
+      } else {
+        // Reverse compound for search results
+        fee = calc.selectedCollege.currentFee / Math.pow(1 + avgRate, Math.abs(i));
+      }
       data.push({
         year: currentYear + i,
         fee: Math.round(fee),
@@ -227,7 +243,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     Pick a dream college or course
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Let's see how the fees have grown over time.
+                    See how fees have grown — and where they're headed.
                   </p>
                 </div>
 
@@ -459,7 +475,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
               </motion.div>
             )}
 
-            {/* Step 4: Child's Name + Customize Plan */}
+            {/* Step 4: Child's Name + Age + Customize Plan */}
             {step === 4 && (
               <motion.div key="s4" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
                 <BackButton />
@@ -476,16 +492,42 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     Let's personalize this journey.
                   </p>
                 </div>
-                <div className="space-y-3">
-                  <Input
-                    placeholder="Child's name"
-                    value={calc.childName}
-                    onChange={(e) => calc.setChildName(e.target.value)}
-                    className="h-12 text-base text-center"
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" && calc.childName.trim()) goNext();
-                    }}
-                  />
+                <div className="space-y-5">
+                  {/* Child's Name Input */}
+                  <div className="space-y-2">
+                    <Label htmlFor="child-name" className="text-sm font-medium text-muted-foreground">Child's Name</Label>
+                    <Input
+                      id="child-name"
+                      placeholder="Enter name"
+                      value={calc.childName}
+                      onChange={(e) => calc.setChildName(e.target.value)}
+                      className="h-12 text-base text-center"
+                    />
+                  </div>
+
+                  {/* Child's Age Slider */}
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <Label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
+                        <Baby className="h-4 w-4" />
+                        Child's Age
+                      </Label>
+                      <span className="text-lg font-bold text-primary">{calc.equivalentAge} years</span>
+                    </div>
+                    <Slider
+                      value={[calc.equivalentAge]}
+                      onValueChange={(value) => calc.setYearsToGoal(18 - value[0])}
+                      min={0}
+                      max={17}
+                      step={1}
+                      className="w-full"
+                    />
+                    <div className="flex justify-between text-xs text-muted-foreground">
+                      <span>Newborn</span>
+                      <span>17 years</span>
+                    </div>
+                  </div>
+
                   {calc.childName.trim() && (
                     <motion.div
                       initial={{ opacity: 0, scale: 0.95 }}
@@ -494,7 +536,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     >
                       <p className="text-sm text-primary font-medium text-center flex items-center justify-center gap-1">
                         <Sparkles className="h-3.5 w-3.5" />
-                        Planning for {calc.childName}'s future
+                        Planning for {calc.childName}'s future ({18 - calc.equivalentAge} years to goal)
                       </p>
                       <div className="bg-muted/50 rounded-xl p-4 border border-border/50">
                         <p className="text-sm text-foreground text-center">

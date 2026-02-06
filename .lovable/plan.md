@@ -1,56 +1,34 @@
 
+## Add Quick-Pick College Tiles to Education Calculator
 
-# Reimagine the Education Calculator -- More Interactive and Engaging
+### What changes
+In Step 4 ("Is there a dream college?"), add a grid of 8 prominent college category tiles above the search input. Each tile shows an icon, a short label, and today's cost. Tapping a tile selects it as the college input (same as searching and picking from the dropdown).
 
-## Overview
-Transform the current static form-based calculator into a multi-step, animated experience that feels like a guided journey rather than a form. Both `EducationCalculator.tsx` (standalone section) and `HeroEducationCalculator.tsx` (landing page hero) will be updated.
+### Tiles to add
 
-## What Changes
+| Label | Cost | Icon |
+|-------|------|------|
+| IIT | 20.00 L | GraduationCap |
+| Tier 1 Private Engineering | 25.00 L | Building2 |
+| IIM | 25.00 L | Award |
+| Tier 1 MBA College | 28.00 L | Briefcase |
+| Masters in US | 50.00 L | Globe |
+| Design (NID, NIFT etc) | 18.00 L | Palette |
+| ISB, XLRI, FMS and more | 25.00 L | BookOpen |
+| MBA in US | 80.00 L | Plane |
 
-### 1. Multi-Step Wizard Flow
-Replace the single-form layout with a 3-step guided flow using smooth transitions between steps:
-- **Step 1**: Child's age input with a visual age slider (large, tappable number buttons or a styled slider alongside the number input)
-- **Step 2**: College/course selection with the existing searchable dropdown
-- **Step 3**: Auto-populated target amount with the calculate button
+### How it works
+- Each tile maps to a synthetic `CollegeCourse` object with the specified `currentFee` and reasonable inflation rates (matching similar entries in the existing dataset).
+- When a tile is tapped, it calls `calc.setSelectedCollege(...)` with that object -- identical to selecting from search results.
+- The "Typical cost today" confirmation line appears as usual.
+- The search input remains below the tiles so users can still type a specific college name.
 
-Each step has a progress indicator (3 dots or a thin progress bar) showing where the user is. Steps animate in/out using framer-motion (already installed).
+### Technical details
 
-### 2. Visual Progress Bar
-A horizontal progress bar at the top of the card that fills as the user completes each field (33% per step). Animated with a smooth width transition.
+**File: `src/components/education/EducationJourney.tsx`**
 
-### 3. Animated Number Counter for Results
-When results appear, the Monthly SIP, Total Investment, and Estimated Value numbers will count up from 0 to their final value (animated counter effect over ~1 second) instead of just appearing. This replaces the current static reveal.
-
-### 4. Confetti/Sparkle Micro-Animation on Unlock
-When the user submits their email and unlocks the plan, a brief sparkle/celebration animation plays (CSS-only particles or a simple scale-bounce effect on the result card) to reward the action.
-
-### 5. Interactive Age Selection Enhancement
-Add visual age "chips" (quick-select buttons for common ages like 0, 2, 5, 8, 10, 14) above or alongside the number input, so users can tap to quickly select.
-
-### 6. Live Cost Preview
-As soon as college is selected and age is entered (before clicking calculate), show a subtle "peek" line like "Estimated future cost: ~Rs XX,XX,XXX" below the college dropdown to build anticipation and encourage the user to proceed.
-
-## Technical Details
-
-### Files to Modify
-- `src/components/EducationCalculator.tsx` -- standalone calculator section
-- `src/components/HeroEducationCalculator.tsx` -- hero variant for landing page
-
-### New State
-- `currentStep` (1 | 2 | 3) for wizard flow
-- `animatedValues` for the counting number animation (using `useEffect` + `requestAnimationFrame`)
-
-### Animation Approach
-- Use `framer-motion` (already installed) for step transitions with `AnimatePresence` and slide/fade effects
-- Animated number counter via a small custom hook (`useCountUp`) using `requestAnimationFrame`
-- Progress bar uses Tailwind `transition-all duration-500` on width
-- Sparkle effect on unlock uses CSS keyframes (scale + opacity burst)
-
-### Step Navigation Logic
-- Step auto-advances when the field is completed (age entered -> moves to step 2 after a brief delay; college selected -> moves to step 3)
-- Users can click the progress dots to go back to any completed step
-- The "Show My Investment Plan" button only appears on step 3
-
-### Both Components Updated Consistently
-The Hero variant will have a more compact version of the same interactions (smaller chips, tighter spacing) to fit within the hero card constraints.
-
+1. Define a `QUICK_PICK_COLLEGES` array of objects containing `label`, `icon`, and a `CollegeCourse` (with name, currentFee, and inflation rates).
+2. In Step 4, insert a responsive grid (`grid-cols-2 gap-2`) of clickable tiles between the heading and the search input.
+3. Each tile is a small card with the icon, label, and cost formatted as "XX L". Tapping it sets `selectedCollege` and clears search state.
+4. Style tiles with `border border-border rounded-xl p-3 hover:border-primary/50 transition-colors` and highlight the selected one with `border-primary bg-primary/5`.
+5. Add a small "or search below" divider text between the tiles and the search input.

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { ConfettiCanvas } from "./ConfettiCanvas";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -91,8 +92,9 @@ export function RevealPage({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, y: -16 }}
       transition={{ duration: 0.4 }}
-      className="space-y-6"
+      className="space-y-6 relative"
     >
+      <ConfettiCanvas />
       {/* Back */}
       <button
         type="button"

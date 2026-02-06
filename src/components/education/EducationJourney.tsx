@@ -37,6 +37,7 @@ import {
 import { useCountUp } from "@/hooks/useCountUp";
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend } from "recharts";
 import { RealityCheckStep } from "./RealityCheckStep";
+import { RevealPage } from "./RevealPage";
 
 type Step = 1 | 2 | 3 | 4 | 5 | 6 | "reveal";
 
@@ -498,167 +499,15 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
 
             {/* Reveal */}
             {step === "reveal" && calc.result && (
-              <motion.div key="reveal" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.5 }} className="space-y-8">
-                <BackButton />
-                {/* Primary highlight */}
-                <motion.div
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                  className="text-center space-y-3 p-6 rounded-2xl border-2 border-primary/20"
-                  style={{ background: "linear-gradient(135deg, hsl(var(--primary) / 0.05), hsl(var(--secondary) / 0.05))" }}
-                >
-                  <p className="text-sm text-muted-foreground flex items-center justify-center gap-1.5">
-                    <TrendingUp className="h-4 w-4 text-primary" />
-                    Monthly saving for {childDisplay}
-                  </p>
-                  <p className="font-heading text-3xl md:text-4xl font-bold text-primary">
-                    ₹{formatINR(animatedSIP)}
-                    <span className="text-base font-normal text-muted-foreground"> /month</span>
-                  </p>
-                </motion.div>
-
-                {/* Supporting metrics */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-4 rounded-xl bg-muted/50 border border-border/50">
-                    <p className="text-lg font-bold text-foreground">{formatLakhsShort(animatedTotal)}</p>
-                    <p className="text-xs text-muted-foreground mt-1">Total invested</p>
-                  </div>
-                  <div className="text-center p-4 rounded-xl bg-muted/50 border border-border/50">
-                    <p className="text-lg font-bold text-foreground">{formatLakhsShort(animatedTarget)}</p>
-                    <p className="text-xs text-muted-foreground mt-1">Estimated at goal</p>
-                  </div>
-                </div>
-
-                {/* Chart with invested + FD comparison */}
-                {calc.chartData.length > 1 && (
-                  <div className="space-y-3">
-                    <div className="h-52 w-full">
-                      <ResponsiveContainer width="100%" height="100%">
-                        <AreaChart data={calc.chartData.map(d => ({ ...d, year: new Date().getFullYear() + d.year }))} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
-                          <defs>
-                            <linearGradient id="sipGrowth" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.3} />
-                              <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0} />
-                            </linearGradient>
-                          </defs>
-                          <XAxis
-                            dataKey="year"
-                            tick={{ fontSize: 11, fill: "hsl(var(--muted-foreground))" }}
-                            axisLine={false}
-                            tickLine={false}
-                          />
-                          <YAxis
-                            tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
-                            axisLine={false}
-                            tickLine={false}
-                            tickFormatter={(v) => v >= 100000 ? `${(v / 100000).toFixed(0)}L` : `${(v / 1000).toFixed(0)}K`}
-                            width={40}
-                          />
-                          <Tooltip
-                            formatter={(value: number, name: string) => {
-                              const labels: Record<string, string> = {
-                                amount: "With Nested",
-                                invested: "Amount Invested",
-                                fd: "Fixed Deposit (7%)",
-                              };
-                              return [formatLakhs(value), labels[name] || name];
-                            }}
-                            labelFormatter={(label) => `Year ${label}`}
-                            contentStyle={{
-                              background: "hsl(var(--card))",
-                              border: "1px solid hsl(var(--border))",
-                              borderRadius: "8px",
-                              fontSize: "12px",
-                            }}
-                          />
-                          <Legend
-                            iconType="line"
-                            wrapperStyle={{ fontSize: "11px" }}
-                            formatter={(value) => {
-                              const labels: Record<string, string> = {
-                                amount: "With Nested",
-                                invested: "Invested",
-                                fd: "Fixed Deposit",
-                              };
-                              return labels[value] || value;
-                            }}
-                          />
-                          <Area
-                            type="monotone"
-                            dataKey="amount"
-                            stroke="hsl(var(--primary))"
-                            strokeWidth={2.5}
-                            fill="url(#sipGrowth)"
-                          />
-                          <Area
-                            type="monotone"
-                            dataKey="fd"
-                            stroke="hsl(var(--warning))"
-                            strokeWidth={1.5}
-                            strokeDasharray="6 3"
-                            fill="none"
-                          />
-                          <Area
-                            type="monotone"
-                            dataKey="invested"
-                            stroke="hsl(var(--muted-foreground))"
-                            strokeWidth={1.5}
-                            strokeDasharray="4 4"
-                            fill="none"
-                          />
-                        </AreaChart>
-                      </ResponsiveContainer>
-                    </div>
-                    <p className="text-xs text-muted-foreground text-center italic">
-                      This is how steady saving unlocks {childDisplay}'s education goal.
-                    </p>
-                  </div>
-                )}
-
-                {/* Trust & Differentiation */}
-                <div className="space-y-4 pt-2">
-                  <div className="space-y-3">
-                    {[
-                      { icon: Shield, color: "text-primary", bg: "bg-primary/10", text: `A separate account dedicated to ${childDisplay}` },
-                      { icon: Sparkles, color: "text-secondary", bg: "bg-secondary/10", text: `Curated selection of mutual funds for ${childDisplay}'s needs` },
-                      { icon: RefreshCw, color: "text-success", bg: "bg-success/10", text: "Portfolio rebalancing as the goal approaches" },
-                      { icon: BarChart3, color: "text-info", bg: "bg-info/10", text: "Continuous tracking so parents stay on course without constant decisions" },
-                    ].map(({ icon: Icon, color, bg, text }, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, x: -12 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.3 + i * 0.15 }}
-                        className="flex items-start gap-3"
-                      >
-                        <div className={cn("w-8 h-8 rounded-lg flex items-center justify-center shrink-0", bg)}>
-                          <Icon className={cn("h-4 w-4", color)} />
-                        </div>
-                        <p className="text-sm text-muted-foreground pt-1">{text}</p>
-                      </motion.div>
-                    ))}
-                  </div>
-                  <p className="text-sm text-foreground font-medium text-center pt-2">
-                    You save regularly. <span className="text-primary">Nested</span> takes care of the rest.
-                  </p>
-                </div>
-
-                {/* Final CTA */}
-                <Button
-                  className="w-full h-12 bg-gradient-to-r from-primary to-primary-dark hover:opacity-90"
-                  asChild
-                >
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.nexted.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Upgrade your plan with Nested MFs
-                  </a>
-                </Button>
-                <p className="text-xs text-muted-foreground text-center">Start for free</p>
-              </motion.div>
+              <RevealPage
+                childDisplay={childDisplay}
+                animatedSIP={animatedSIP}
+                animatedTotal={animatedTotal}
+                animatedTarget={animatedTarget}
+                chartData={calc.chartData}
+                yearsToGoal={calc.yearsToGoal}
+                onBack={goBack}
+              />
             )}
           </AnimatePresence>
         </div>

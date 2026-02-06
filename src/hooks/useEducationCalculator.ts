@@ -28,6 +28,8 @@ export type CalculatorResult = {
 export type ChartDataPoint = {
   year: number;
   amount: number;
+  invested: number;
+  fd: number;
   goal: number;
 };
 
@@ -53,8 +55,11 @@ function getAnnualRate(years: number): number {
   return 0.14;
 }
 
+const FD_ANNUAL_RATE = 0.07;
+
 export function useEducationCalculator() {
   const [childName, setChildName] = useState("");
+  const [yearsToGoal, setYearsToGoal] = useState(13);
   const [selectedHorizon, setSelectedHorizon] = useState<TimeHorizon | null>(null);
   const [selectedCollege, setSelectedCollege] = useState<CollegeCourse | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -64,12 +69,15 @@ export function useEducationCalculator() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [result, setResult] = useState<CalculatorResult | null>(null);
 
+  // Derive equivalentAge from yearsToGoal
+  const equivalentAge = useMemo(() => Math.max(0, 18 - yearsToGoal), [yearsToGoal]);
+
   const filteredColleges = useMemo(() => {
-    if (!searchQuery || searchQuery.length < 2) return [];
+    if (!searchQuery || searchQuery.length < 1) return [];
     const query = searchQuery.toLowerCase();
     return educationCostData
       .filter((c) => c.name.toLowerCase().includes(query))
-      .slice(0, 8);
+      .slice(0, 15);
   }, [searchQuery]);
 
   const currentCostDisplay = useMemo(() => {
@@ -78,9 +86,8 @@ export function useEducationCalculator() {
   }, [selectedCollege]);
 
   const calculate = useCallback(() => {
-    if (!selectedHorizon || !selectedCollege) return;
+    if (!selectedCollege) return;
 
-    const equivalentAge = selectedHorizon.equivalentAge;
     const futureCost = calculateFutureCost(selectedCollege, equivalentAge);
     const target = Math.round(futureCost / 10000) * 10000;
 
@@ -97,23 +104,31 @@ export function useEducationCalculator() {
       totalInvestment: Math.round(monthlyInvestment * totalMonths),
       targetAmount: target,
     });
-  }, [selectedHorizon, selectedCollege]);
+  }, [selectedCollege, equivalentAge]);
 
   const chartData = useMemo((): ChartDataPoint[] => {
-    if (!result || !selectedHorizon) return [];
-    const equivalentAge = selectedHorizon.equivalentAge;
+    if (!result) return [];
     const calculationYears = 20 - equivalentAge;
     const annualRate = getAnnualRate(calculationYears);
     const monthlyRate = annualRate / 12;
+    const fdMonthlyRate = FD_ANNUAL_RATE / 12;
     const data: ChartDataPoint[] = [];
 
     for (let year = 0; year <= result.totalYears; year++) {
       const months = year * 12;
       const amount = result.monthlyInvestment * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate);
-      data.push({ year, amount: Math.round(amount), goal: result.targetAmount });
+      const invested = result.monthlyInvestment * months;
+      const fd = result.monthlyInvestment * ((Math.pow(1 + fdMonthlyRate, months) - 1) / fdMonthlyRate);
+      data.push({
+        year,
+        amount: Math.round(amount),
+        invested: Math.round(invested),
+        fd: Math.round(fd),
+        goal: result.targetAmount,
+      });
     }
     return data;
-  }, [result, selectedHorizon]);
+  }, [result, equivalentAge]);
 
   const handleEmailSubmit = useCallback(async () => {
     const trimmedEmail = email.trim();
@@ -133,7 +148,7 @@ export function useEducationCalculator() {
     try {
       await supabase.from("education_calculator_leads").insert({
         email: trimmedEmail,
-        child_age: selectedHorizon?.equivalentAge ?? null,
+        child_age: equivalentAge,
         selected_college: selectedCollege?.name || null,
         target_amount: result?.targetAmount || null,
         monthly_sip: result?.monthlyInvestment || null,
@@ -146,7 +161,7 @@ export function useEducationCalculator() {
       setIsSubmitting(false);
       setEmailUnlocked(true);
     }
-  }, [email, selectedHorizon, selectedCollege, result]);
+  }, [email, equivalentAge, selectedCollege, result]);
 
   const isEmailValid = useMemo(() => {
     return validateEmailUtil(email.trim()).isValid;
@@ -155,6 +170,9 @@ export function useEducationCalculator() {
   return {
     childName,
     setChildName,
+    yearsToGoal,
+    setYearsToGoal,
+    equivalentAge,
     selectedHorizon,
     setSelectedHorizon,
     selectedCollege,

@@ -113,7 +113,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   );
 
   return (
-    <div className={cn("w-full max-w-lg mx-auto", compact ? "px-0" : "px-4")}>
+    <div className={cn("w-full max-w-lg mx-auto relative z-10", compact ? "px-0" : "px-4")}>
       <div className="bg-card rounded-2xl shadow-lg border border-border/50 overflow-hidden">
         {/* Progress bar */}
         <div className="w-full h-1.5 bg-muted">
@@ -165,7 +165,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                 </div>
 
                 <div className="pt-2 space-y-3">
-                  <Button onClick={goNext} className="w-full h-12 text-base bg-gradient-to-r from-primary to-primary-dark hover:opacity-90 transition-opacity">
+                  <Button onClick={goNext} className="w-full h-12 text-base bg-gradient-to-r from-primary to-primary-dark hover:opacity-90 transition-opacity relative z-10">
                     Let's build a plan in 60 seconds <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                   <p className="text-[11px] text-muted-foreground text-center">Free · No signup required</p>
@@ -196,7 +196,6 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     value={calc.childName}
                     onChange={(e) => calc.setChildName(e.target.value)}
                     className="h-12 text-base text-center"
-                    autoFocus
                     onKeyDown={(e) => {
                       if (e.key === "Enter" && calc.childName.trim()) goNext();
                     }}
@@ -377,7 +376,6 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                       }}
                       onFocus={() => setShowSearchResults(true)}
                       className="h-12 pl-10 text-sm"
-                      autoFocus
                     />
                   </div>
                   {showSearchResults && calc.filteredColleges.length > 0 && !calc.selectedCollege && (
@@ -473,7 +471,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                         calc.emailError && "border-destructive",
                         calc.email.trim() && calc.isEmailValid && "border-primary"
                       )}
-                      autoFocus
+                      
                     />
                   </div>
                   {calc.emailError && (

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { HeroEducationCalculator } from "@/components/HeroEducationCalculator";
 import { KeyBenefits } from "@/components/KeyBenefits";
@@ -28,6 +28,11 @@ const SectionLoader = ({ height = "400px" }: { height?: string }) => (
 );
 
 const EducationCalculatorLanding = () => {
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />

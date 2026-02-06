@@ -578,7 +578,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Customise plan with Nested MFs to reach goals faster <ArrowRight className="ml-2 h-4 w-4" />
+                    Upgrade your plan with Nested MFs <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </motion.div>

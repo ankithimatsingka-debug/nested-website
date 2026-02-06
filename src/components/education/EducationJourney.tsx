@@ -357,10 +357,13 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                       <p className="text-xs text-muted-foreground">10 years ago</p>
                       <p className="text-base font-bold text-foreground">{formatLakhs(feeChartData[0]?.fee || 0)}</p>
                     </div>
-                    <TrendingUp className="h-5 w-5 text-destructive" />
-                    <div className="text-right">
+                    <div className="text-center">
                       <p className="text-xs text-muted-foreground">Today</p>
                       <p className="text-base font-bold text-primary">{formatLakhs(calc.selectedCollege.currentFee)}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-xs text-muted-foreground">In 15 years</p>
+                      <p className="text-base font-bold text-destructive">{formatLakhs(feeChartData[feeChartData.length - 1]?.fee || 0)}</p>
                     </div>
                   </div>
                   <div className="h-44 w-full">
@@ -406,11 +409,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                       </AreaChart>
                     </ResponsiveContainer>
                   </div>
-                  <div className="flex items-center justify-between mt-3 pt-3 border-t border-border/50">
-                    <div>
-                      <p className="text-xs text-muted-foreground">In 15 years</p>
-                      <p className="text-base font-bold text-destructive">{formatLakhs(feeChartData[feeChartData.length - 1]?.fee || 0)}</p>
-                    </div>
+                  <div className="flex items-center justify-end mt-3 pt-3 border-t border-border/50">
                     <div className="text-right">
                       <p className="text-xs text-muted-foreground">Growth</p>
                       <p className="text-base font-bold text-destructive">
@@ -444,10 +443,10 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                   
                   <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-4 border border-primary/10 space-y-3">
                     <p className="text-sm text-foreground leading-relaxed">
-                      Most parents either <span className="font-semibold">don't plan</span> or park savings in FDs — which barely beat inflation and fall short of rising education costs.
+                      Most parents either don't plan or park savings in FDs — which barely beat inflation and fall short of rising education costs.
                     </p>
                     <p className="text-sm text-foreground leading-relaxed">
-                      <span className="font-bold text-primary">Nested</span> takes a smarter approach: we analyze <span className="font-semibold">2,000+ mutual funds</span>, design the right portfolio based on your child's age, and rebalance as they grow — so your money works harder for their future.
+                      Nested takes a smarter approach: we analyze 2,000+ mutual funds, <span className="font-bold">design the right portfolio</span> based on your child's age, and <span className="font-bold">rebalance as they grow</span> — so your money works harder for their future.
                     </p>
                     <div className="flex items-center gap-4 pt-2">
                       <div className="flex items-center gap-1.5">

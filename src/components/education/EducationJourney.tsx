@@ -257,9 +257,6 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                   {QUICK_PICK_COLLEGES.map((qp) => {
                     const Icon = qp.icon;
                     const isSelected = calc.selectedCollege?.name === qp.college.name;
-                    const costLabel = qp.college.currentFee >= 10000000
-                      ? `₹${(qp.college.currentFee / 10000000).toFixed(1)} Cr`
-                      : `₹${(qp.college.currentFee / 100000).toFixed(0)} L`;
                     return (
                       <button
                         key={qp.label}
@@ -271,17 +268,14 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                           goNext();
                         }}
                         className={cn(
-                          "flex items-start gap-2 border rounded-xl p-3 text-left transition-all hover:scale-[1.02] hover:shadow-sm",
+                          "flex items-center gap-3 border rounded-xl p-4 text-left transition-all hover:scale-[1.02] hover:shadow-sm",
                           isSelected ? qp.selectedBg : qp.color
                         )}
                       >
-                        <div className={cn("h-7 w-7 rounded-lg flex items-center justify-center shrink-0", isSelected ? qp.selectedBg : qp.color)}>
-                          <Icon className={cn("h-4 w-4 shrink-0", qp.iconColor)} />
+                        <div className={cn("h-10 w-10 rounded-xl flex items-center justify-center shrink-0", isSelected ? qp.selectedBg : qp.color)}>
+                          <Icon className={cn("h-5 w-5 shrink-0", qp.iconColor)} />
                         </div>
-                        <div className="min-w-0">
-                          <p className="text-xs font-medium text-foreground leading-tight">{qp.label}</p>
-                          <p className={cn("text-[11px] font-semibold", qp.iconColor)}>{costLabel}</p>
-                        </div>
+                        <p className="text-sm font-semibold text-foreground leading-tight">{qp.label}</p>
                       </button>
                     );
                   })}

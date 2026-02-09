@@ -527,7 +527,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                   {/* Optional email — no label for clean look */}
                   <Input
                     type="email"
-                    placeholder="Your email — so we can send you the plan"
+                    placeholder="Email (optional) — we'll send you the plan"
                     value={calc.email}
                     onChange={(e) => { calc.setEmail(e.target.value); calc.setEmailError(""); }}
                     className="h-12 text-base text-center"

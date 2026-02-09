@@ -145,29 +145,6 @@ export function RevealPage({
       <div className="grid grid-cols-2 gap-3">
         <motion.div
           {...stagger(1)}
-          className="text-center p-4 rounded-xl border border-emerald-200 dark:border-emerald-800/50 overflow-hidden relative"
-          style={{
-            background:
-              "linear-gradient(135deg, hsl(142 71% 95%), hsl(142 71% 90%))",
-          }}
-        >
-          <div className="dark:hidden absolute inset-0" style={{ background: "linear-gradient(135deg, hsl(142 71% 95%), hsl(142 71% 90%))" }} />
-          <div className="hidden dark:block absolute inset-0" style={{ background: "linear-gradient(135deg, hsl(142 71% 15%), hsl(142 71% 20%))" }} />
-          <motion.p
-            key={animatedTotal}
-            initial={{ scale: 1.08 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 250 }}
-            className="text-lg font-bold text-emerald-700 dark:text-emerald-300 relative z-10"
-          >
-            {formatLakhsShort(animatedTotal)}
-          </motion.p>
-          <p className="text-xs text-emerald-600/80 dark:text-emerald-400/80 mt-1 relative z-10">
-            Total invested
-          </p>
-        </motion.div>
-        <motion.div
-          {...stagger(2)}
           className="text-center p-4 rounded-xl border border-blue-200 dark:border-blue-800/50 overflow-hidden relative"
           style={{
             background:
@@ -177,15 +154,38 @@ export function RevealPage({
           <div className="dark:hidden absolute inset-0" style={{ background: "linear-gradient(135deg, hsl(221 83% 95%), hsl(221 83% 90%))" }} />
           <div className="hidden dark:block absolute inset-0" style={{ background: "linear-gradient(135deg, hsl(221 83% 15%), hsl(221 83% 20%))" }} />
           <motion.p
-            key={animatedTarget}
+            key={animatedTotal}
             initial={{ scale: 1.08 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 250 }}
             className="text-lg font-bold text-blue-700 dark:text-blue-300 relative z-10"
           >
-            {formatLakhsShort(animatedTarget)}
+            {formatLakhsShort(animatedTotal)}
           </motion.p>
           <p className="text-xs text-blue-600/80 dark:text-blue-400/80 mt-1 relative z-10">
+            Total invested
+          </p>
+        </motion.div>
+        <motion.div
+          {...stagger(2)}
+          className="text-center p-4 rounded-xl border border-emerald-200 dark:border-emerald-800/50 overflow-hidden relative"
+          style={{
+            background:
+              "linear-gradient(135deg, hsl(142 71% 95%), hsl(142 71% 90%))",
+          }}
+        >
+          <div className="dark:hidden absolute inset-0" style={{ background: "linear-gradient(135deg, hsl(142 71% 95%), hsl(142 71% 90%))" }} />
+          <div className="hidden dark:block absolute inset-0" style={{ background: "linear-gradient(135deg, hsl(142 71% 15%), hsl(142 71% 20%))" }} />
+          <motion.p
+            key={animatedTarget}
+            initial={{ scale: 1.08 }}
+            animate={{ scale: 1 }}
+            transition={{ type: "spring", stiffness: 250 }}
+            className="text-lg font-bold text-emerald-700 dark:text-emerald-300 relative z-10"
+          >
+            {formatLakhsShort(animatedTarget)}
+          </motion.p>
+          <p className="text-xs text-emerald-600/80 dark:text-emerald-400/80 mt-1 relative z-10">
             Estimated at goal
           </p>
         </motion.div>

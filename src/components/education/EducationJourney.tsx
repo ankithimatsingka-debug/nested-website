@@ -491,7 +491,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                 <div className="space-y-5">
                   {/* Child's Name Input */}
                   <div className="space-y-2">
-                    <Label htmlFor="child-name" className="text-sm font-medium text-muted-foreground">Child's Name</Label>
+                    <Label htmlFor="child-name" className="text-sm font-medium text-muted-foreground">{calc.childName.trim() ? `${calc.childName.trim()}'s Name` : "Child's Name"}</Label>
                     <Input
                       id="child-name"
                       placeholder="Enter name"
@@ -506,7 +506,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                     <div className="flex items-center justify-between">
                       <Label className="text-sm font-medium text-muted-foreground flex items-center gap-2">
                         <Baby className="h-4 w-4" />
-                        Child's Age
+                        {calc.childName.trim() ? `${calc.childName.trim()}'s Age` : "Child's Age"}
                       </Label>
                       <span className="text-lg font-bold text-primary">{calc.equivalentAge} years</span>
                     </div>

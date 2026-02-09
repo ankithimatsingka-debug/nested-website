@@ -491,7 +491,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                 <div className="space-y-5">
                   {/* Child's Name Input */}
                   <div className="space-y-2">
-                    <Label htmlFor="child-name" className="text-sm font-medium text-muted-foreground">{calc.childName.trim() ? `${calc.childName.trim()}'s Name` : "Child's Name"}</Label>
+                    <Label htmlFor="child-name" className="text-sm font-medium text-muted-foreground">{calc.childName.trim() || "Child's Name"}</Label>
                     <Input
                       id="child-name"
                       placeholder="Enter name"

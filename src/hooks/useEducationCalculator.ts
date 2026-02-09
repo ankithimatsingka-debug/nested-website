@@ -156,7 +156,9 @@ export function useEducationCalculator() {
         years_to_invest: result?.totalYears || null,
       });
     } catch (err) {
-      console.error("Error saving lead:", err);
+      if (import.meta.env.DEV) {
+        console.error("Error saving lead:", err);
+      }
     } finally {
       setIsSubmitting(false);
       setEmailUnlocked(true);

@@ -305,7 +305,7 @@ export function RevealPage({
       {/* Why Nested is better */}
       <motion.div {...stagger(3.5)} className="space-y-2">
         <p className="text-sm font-semibold text-foreground text-center">
-          How Nested creates this value
+          Turn Estimate into Action
         </p>
       </motion.div>
 
@@ -359,7 +359,7 @@ export function RevealPage({
             Start saving with Nested
           </a>
         </Button>
-        <p className="text-xs text-muted-foreground text-center">Start for free</p>
+        <p className="text-xs text-muted-foreground text-center">AI powered personalized plan, built exactly for you</p>
       </motion.div>
     </motion.div>
   );

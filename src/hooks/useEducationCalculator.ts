@@ -65,7 +65,7 @@ export function useEducationCalculator() {
   const [searchQuery, setSearchQuery] = useState("");
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
-  const [emailUnlocked, setEmailUnlocked] = useState(false);
+  const [emailUnlocked, setEmailUnlocked] = useState(true); // Email gate disabled — set to false to re-enable
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [result, setResult] = useState<CalculatorResult | null>(null);
 

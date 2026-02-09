@@ -37,9 +37,9 @@ import { useCountUp } from "@/hooks/useCountUp";
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine } from "recharts";
 import { RevealPage } from "./RevealPage";
 
-type Step = 1 | 2 | 3 | 4 | 5 | "reveal";
+type Step = 1 | 2 | 3 | 4 | /* 5 | */ "reveal"; // Step 5 (email gate) disabled — uncomment to re-enable
 
-const TOTAL_STEPS = 5;
+const TOTAL_STEPS = 4; // Was 5 when email gate was active
 
 // Updated with user-provided data (2015 fee is historical reference, 2025 is currentFee)
 const QUICK_PICK_COLLEGES: { label: string; icon: React.ElementType; color: string; iconColor: string; selectedBg: string; college: CollegeCourse & { fee2015: number } }[] = [
@@ -77,8 +77,9 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   const animatedTotal = useCountUp(calc.result?.totalInvestment || 0, 1200, calc.emailUnlocked && !!calc.result);
   const animatedTarget = useCountUp(calc.result?.targetAmount || 0, 1200, calc.emailUnlocked && !!calc.result);
 
+  // Auto-calculate and go to reveal when reaching the last step (email gate bypassed)
   useEffect(() => {
-    if (step === 5 && !calc.result) {
+    if (step === TOTAL_STEPS && !calc.result) {
       calc.calculate();
     }
   }, [step, calc.result, calc.calculate]);
@@ -86,12 +87,16 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
   const goNext = () => {
     if (typeof step === "number" && step < TOTAL_STEPS) {
       setStep((step + 1) as Step);
+    } else if (typeof step === "number" && step === TOTAL_STEPS) {
+      // Skip email gate — go straight to reveal
+      calc.calculate();
+      setStep("reveal");
     }
   };
 
   const goBack = () => {
     if (step === "reveal") {
-      setStep(5);
+      setStep(TOTAL_STEPS as Step); // Goes back to last active step (was 5, now 4)
     } else if (typeof step === "number" && step > 1) {
       setStep((step - 1) as Step);
     }
@@ -547,7 +552,8 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
               </motion.div>
             )}
 
-            {/* Step 5: Email Collection + Show SIP Result */}
+            {/* Step 5: Email Collection — DISABLED (email gate removed)
+               To re-enable: restore TOTAL_STEPS to 5, restore Step type, and uncomment this block.
             {step === 5 && (
               <motion.div key="s5" variants={fade} initial="enter" animate="center" exit="exit" transition={{ duration: 0.35 }} className="space-y-6">
                 <BackButton />
@@ -605,6 +611,7 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                 </Button>
               </motion.div>
             )}
+            */}
 
             {/* Reveal */}
             {step === "reveal" && calc.result && (

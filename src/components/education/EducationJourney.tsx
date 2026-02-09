@@ -543,11 +543,6 @@ export function EducationJourney({ compact = false }: { compact?: boolean }) {
                         <Sparkles className="h-3.5 w-3.5" />
                         Planning for {calc.childName}'s future ({18 - calc.equivalentAge} years to goal)
                       </p>
-                      <div className="bg-muted/50 rounded-xl p-4 border border-border/50">
-                        <p className="text-sm text-foreground text-center">
-                          Would you like us to create a <span className="font-semibold text-primary">customized investing plan</span> to help {calc.childName} reach their education goal in the most efficient way?
-                        </p>
-                      </div>
                     </motion.div>
                   )}
                 </div>

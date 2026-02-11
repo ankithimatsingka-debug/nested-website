@@ -14,6 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
+      contest_registrations: {
+        Row: {
+          age_group: string
+          child_name: string
+          created_at: string
+          dream_career: string
+          dream_career_other: string | null
+          email: string
+          entry_code: string
+          id: string
+          instagram_handle: string
+          parent_name: string
+          phone: string
+          pincode: string
+        }
+        Insert: {
+          age_group: string
+          child_name: string
+          created_at?: string
+          dream_career: string
+          dream_career_other?: string | null
+          email: string
+          entry_code: string
+          id?: string
+          instagram_handle: string
+          parent_name: string
+          phone: string
+          pincode: string
+        }
+        Update: {
+          age_group?: string
+          child_name?: string
+          created_at?: string
+          dream_career?: string
+          dream_career_other?: string | null
+          email?: string
+          entry_code?: string
+          id?: string
+          instagram_handle?: string
+          parent_name?: string
+          phone?: string
+          pincode?: string
+        }
+        Relationships: []
+      }
       education_calculator_leads: {
         Row: {
           child_age: number | null

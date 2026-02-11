@@ -19,6 +19,8 @@ const InformationSecurityPolicy = lazy(() => import("./pages/InformationSecurity
 const AccountDataDeletionPolicy = lazy(() => import("./pages/AccountDataDeletionPolicy"));
 const KYCModification = lazy(() => import("./pages/KYCModification"));
 const Taxation = lazy(() => import("./pages/Taxation"));
+const NestedDreamersRegistration = lazy(() => import("./pages/NestedDreamersRegistration"));
+const NestedDreamersDashboard = lazy(() => import("./pages/NestedDreamersDashboard"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Simple loading fallback
@@ -49,6 +51,8 @@ const App = () => (
             <Route path="/account-data-deletion-policy" element={<AccountDataDeletionPolicy />} />
             <Route path="/kyc-modification" element={<KYCModification />} />
             <Route path="/taxation" element={<Taxation />} />
+            <Route path="/nested-dreamers" element={<NestedDreamersRegistration />} />
+            <Route path="/nested-dreamers/dashboard" element={<NestedDreamersDashboard />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

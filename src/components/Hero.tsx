@@ -139,10 +139,7 @@ export function Hero() {
           <div className="text-center lg:text-left space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
-                Welcome to{" "}
-                <span className="text-white/90">
-                  Nested
-                </span>
+                Hello papaji, ankit here
               </h1>
               <p className="font-body text-xl md:text-2xl text-white/80">
                 Save for your child's education dreams

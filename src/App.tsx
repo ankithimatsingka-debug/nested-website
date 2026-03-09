@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { BrowserserRouter, Routes, Route } from "react-router-dom";
+import { BrowserserserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 
 // Lazy load all pages for code splitting
@@ -33,7 +33,7 @@ const PageLoader = () => (
 const App = () => (
   <ThemeProvider attribute="class" defaultTheme="light">
     <TooltipProvider>
-    BrowserashRouter>
+ BrowserrowserashRouter>
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -57,7 +57,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
-      </HashRouter>
+  Browser</HashRouter>
     </TooltipProvider>
   </ThemeProvider>
 );

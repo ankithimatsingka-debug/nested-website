@@ -78,6 +78,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-09",
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/education-inflation-india" }
           })}</script>
+        )}
       </Helmet>
 
       <Header />

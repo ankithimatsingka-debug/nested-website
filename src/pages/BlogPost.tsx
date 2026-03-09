@@ -101,6 +101,17 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education" }
           })}</script>
         )}
+        {post.slug === "how-much-save-for-child-education-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How Much Should Parents Save for Child Education in India?",
+            "description": "Learn how much parents should save for child education in India including future cost estimates, SIP calculations, and investment strategies.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-education-india" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

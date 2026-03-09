@@ -12,6 +12,188 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-much-save-for-child-education-india",
+    title: "How Much Should Parents Save for Child Education in India?",
+    excerpt: "Discover how much parents should save for child education in India. Learn future education costs, required monthly investments, and the smartest investment strategy.",
+    coverImage: "/blog/how-much-save-for-child-education-india.png",
+    content: `
+      <img src="/blog/how-much-save-for-child-education-india.png" alt="How much should parents save for child education in India" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">Education is one of the <strong>largest financial commitments parents make for their children</strong>. Whether it's engineering, medicine, business school, or studying abroad, the cost of higher education continues to rise every year.</p>
+
+      <p class="mb-4">Many parents start saving early but still struggle with one key question:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"How much money should parents save for their child's education?"</blockquote>
+
+      <p class="mb-4">The answer depends on three critical factors:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>The <strong>current cost of education</strong></li>
+        <li>The <strong>time remaining until college</strong></li>
+        <li>The <strong>rate of education inflation</strong></li>
+      </ul>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Quick Expert Summary</h3>
+        <p class="mb-3">To plan for child education effectively, parents should:</p>
+        <ol class="list-decimal pl-6 mb-4 space-y-1">
+          <li>Estimate the <strong>future cost of education</strong></li>
+          <li>Calculate the <strong>investment required each month</strong></li>
+          <li>Invest in a <strong>diversified mutual fund portfolio</strong></li>
+          <li>Adjust the portfolio risk as the goal approaches</li>
+        </ol>
+        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate future costs, calculate the required investment amount, and manage portfolios automatically.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How Education Costs Are Rising in India</h2>
+      <p class="mb-4">Education inflation in India is estimated to be <strong>8–10% annually</strong>, which is significantly higher than general inflation.</p>
+      <p class="mb-4">This means education costs can <strong>triple over a 15–18 year period</strong>.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-2 text-left">Current Cost</th><th class="border border-border px-4 py-2 text-left">Years Until College</th><th class="border border-border px-4 py-2 text-left">Estimated Future Cost</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-2">₹20 lakh</td><td class="border border-border px-4 py-2">10 years</td><td class="border border-border px-4 py-2">₹43 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-2">₹20 lakh</td><td class="border border-border px-4 py-2">15 years</td><td class="border border-border px-4 py-2">₹63 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-2">₹25 lakh</td><td class="border border-border px-4 py-2">18 years</td><td class="border border-border px-4 py-2">₹99 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Typical Cost of Higher Education in India</h2>
+      <p class="mb-4">Here are approximate current costs for popular courses:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-2 text-left">Course</th><th class="border border-border px-4 py-2 text-left">Current Cost</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-2">Engineering</td><td class="border border-border px-4 py-2">₹10–₹20 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-2">Medicine</td><td class="border border-border px-4 py-2">₹50 lakh – ₹1 crore</td></tr>
+            <tr><td class="border border-border px-4 py-2">MBA</td><td class="border border-border px-4 py-2">₹20–₹40 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-2">Studying Abroad</td><td class="border border-border px-4 py-2">₹60 lakh – ₹1.5 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 1: Estimate Your Child's Future Education Cost</h2>
+      <p class="mb-4">To estimate the future cost, parents need to account for <strong>education inflation</strong>.</p>
+      <p class="mb-4">Example:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Current MBA cost: ₹25 lakh</li>
+        <li>Time horizon: 15 years</li>
+        <li>Education inflation: 8%</li>
+        <li>Estimated future cost: <strong>₹79 lakh</strong></li>
+      </ul>
+      <p class="mb-4">This estimated amount becomes the <strong>target goal for investments</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 2: Calculate the Monthly Investment Required</h2>
+      <p class="mb-4">Once the goal amount is known, the next step is determining how much needs to be invested every month.</p>
+      <p class="mb-4">Example calculation:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Goal amount: ₹75 lakh</li>
+        <li>Time horizon: 15 years</li>
+        <li>Expected return: 12%</li>
+        <li>Required monthly investment: <strong>₹10,000–₹11,000</strong></li>
+      </ul>
+      <p class="mb-4">Instead of calculating manually, parents can use tools provided by platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a>, which automatically determine the required SIP based on the goal and timeline.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Invest in the Right Mutual Fund Portfolio</h2>
+      <p class="mb-4">Many parents search online for the <strong>best mutual fund for child education</strong>. However, relying on a single fund is rarely the best approach for long-term goals.</p>
+      <p class="mb-4">A diversified portfolio generally includes:</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Large Cap Funds</h3>
+      <p class="mb-4">Provide stability and relatively lower volatility.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Flexi Cap Funds</h3>
+      <p class="mb-4">Offer flexibility to invest across different market segments.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Mid Cap Funds</h3>
+      <p class="mb-4">Provide higher growth potential over long investment horizons.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Debt Funds</h3>
+      <p class="mb-4">Used closer to the goal to protect accumulated wealth.</p>
+
+      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across suitable funds based on the goal timeline.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Adjust the Portfolio as the Goal Approaches</h2>
+      <p class="mb-4">As the child approaches college age, investment risk should gradually decrease.</p>
+      <p class="mb-4">Typical strategy:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Early years → <strong>Equity-focused portfolio</strong></li>
+        <li>Middle years → <strong>Balanced allocation</strong></li>
+        <li>Final years → <strong>Debt-heavy allocation</strong></li>
+      </ul>
+      <p class="mb-4">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> rebalance portfolios automatically to maintain the appropriate asset allocation.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">When Should Parents Start Saving?</h2>
+      <p class="mb-4">The earlier parents start investing, the easier it becomes to reach the goal.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-2 text-left">Child's Age</th><th class="border border-border px-4 py-2 text-left">Investment Horizon</th><th class="border border-border px-4 py-2 text-left">Monthly Investment Needed</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-2">Newborn</td><td class="border border-border px-4 py-2">18 years</td><td class="border border-border px-4 py-2">₹7,000</td></tr>
+            <tr><td class="border border-border px-4 py-2">Age 5</td><td class="border border-border px-4 py-2">13 years</td><td class="border border-border px-4 py-2">₹11,500</td></tr>
+            <tr><td class="border border-border px-4 py-2">Age 10</td><td class="border border-border px-4 py-2">8 years</td><td class="border border-border px-4 py-2">₹22,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Underestimating Education Inflation</h3>
+      <p class="mb-4">Future education costs can be much higher than current expenses.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Starting Investments Too Late</h3>
+      <p class="mb-4">Delaying investments drastically increases the monthly amount required.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Choosing Random Mutual Funds</h3>
+      <p class="mb-4">Investments should align with the <strong>goal timeline and risk level</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Ignoring Portfolio Rebalancing</h3>
+      <p class="mb-4">Asset allocation should evolve as the goal approaches.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan for Your Child's Education</h2>
+      <p class="mb-4">Planning for child education involves multiple steps: estimating costs, calculating investments, selecting funds, and managing portfolios over time.</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify this process by helping parents:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Estimate the future cost of education</li>
+        <li>Calculate the required monthly investment</li>
+        <li>Automatically invest in diversified mutual funds</li>
+        <li>Rebalance the portfolio periodically</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Guides</h2>
+      <p class="mb-4">Parents planning their child's financial future may also find these guides useful:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline">Best Mutual Fund for Children in India</a></li>
+        <li><a href="/blog/sip-for-child-education" class="text-primary hover:underline">SIP for Child Education Planning</a></li>
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/education-inflation-india" class="text-primary hover:underline">Education Inflation in India</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">FAQs</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">How much should parents save for child education in India?</h3>
+      <p class="mb-4">The required amount depends on the course and time horizon. For many professional degrees, parents may need to plan for <strong>₹60 lakh to ₹1 crore</strong> over a 15–18 year period.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Is ₹10,000 SIP enough for child education?</h3>
+      <p class="mb-4">A ₹10,000 monthly SIP invested for 15 years at 12% annual returns could grow to around <strong>₹50–₹60 lakh</strong>, depending on market performance.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-2">What is the best investment option for child education?</h3>
+      <p class="mb-4">Mutual funds through systematic investment plans are commonly used for long-term goals because they provide diversification and growth potential.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8 text-center">
+        <h3 class="text-xl font-heading font-semibold mb-2">Calculate Your Child's Education Plan</h3>
+        <p class="text-muted-foreground mb-4">Use the Nested education calculator to estimate future costs and the required monthly investment.</p>
+        <a href="/educationcalculator" class="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity">Calculate Your Child's Education Plan</a>
+      </div>
+    `,
+    author: "Nested Team",
+    publishedAt: "2026-03-09",
+    category: "Education Planning",
+    readTime: "10 min read"
+  },
+  {
     slug: "sip-for-child-education",
     title: "SIP for Child Education: How Much Should You Invest Every Month?",
     excerpt: "Planning your child's education with SIP? Learn how much you need to invest monthly, how SIP works for long-term goals, and the best strategy for child education planning.",

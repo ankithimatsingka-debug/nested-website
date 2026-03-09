@@ -6,14 +6,14 @@
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafgraph/spa-github-pages
+      // Stores the real URL in sessionStorage, then redirects to index.html
+      // index.html reads it back and calls history.replaceState
       var pathSegmentsToKeep = 0;
       var l = window.location;
+      sessionStorage.redirect = l.href;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=/' +
-        l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/')
       );
     </script>
   </head>

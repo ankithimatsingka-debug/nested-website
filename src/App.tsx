@@ -33,7 +33,7 @@ const PageLoader = () => (
 const App = () => (
   <ThemeProvider attribute="class" defaultTheme="light">
     <TooltipProvider>
- BrowserrowserashRouter>
+ <BrowserRouter>
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />

@@ -79,6 +79,17 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/education-inflation-india" }
           })}</script>
         )}
+        {post.slug === "child-education-planning-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Child Education Planning in India: How Much Should You Invest for Your Child's Future?",
+            "description": "A complete guide to child education planning in India including future education cost calculations, required SIP, and mutual fund strategy.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-planning-india" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

@@ -68,6 +68,16 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education-india" }
           })}</script>
         )}
+        {post.slug === "education-inflation-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Education Inflation in India: Future Cost of College",
+            "author": { "@type": "Person", "name": "Ankit Himatsingka" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-09",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/education-inflation-india" }
+          })}</script>
       </Helmet>
 
       <Header />

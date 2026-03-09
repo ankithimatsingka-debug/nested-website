@@ -90,6 +90,17 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-planning-india" }
           })}</script>
         )}
+        {post.slug === "sip-for-child-education" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "SIP for Child Education: How Much Should You Invest Every Month?",
+            "description": "Learn how much SIP you need to invest for your child's education, how to calculate the goal amount, and the best investment strategy for long-term planning.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

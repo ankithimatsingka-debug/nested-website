@@ -12,6 +12,169 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sip-for-child-education-india",
+    title: "SIP for Child Education: How Much Should You Invest for Your Child's Future?",
+    excerpt: "Learn how much SIP you should invest for your child's education in India. Calculate future education costs and build a goal-based investment plan using the Nested App.",
+    coverImage: "/blog/sip-for-child-education-india.png",
+    content: `
+      <img src="/blog/sip-for-child-education-india.png" alt="SIP for child education investment plan India" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">Planning for your child's education is one of the biggest financial responsibilities parents face. With education costs rising rapidly, many parents are turning to <strong>Systematic Investment Plans (SIPs) in mutual funds</strong> to build a long-term corpus.</p>
+
+      <p class="mb-4">However, one of the most common questions parents ask is:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"How much SIP should I invest for my child's education?"</blockquote>
+
+      <p class="mb-4">The answer depends on several factors including the child's current age, the expected cost of education, and the investment horizon.</p>
+      <p class="mb-6">This guide explains how SIP planning works for child education and how parents can create a structured investment strategy.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Quick Answer</h3>
+        <p class="mb-3">The monthly SIP required for a child's education depends on:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-1">
+          <li>Current cost of education</li>
+          <li>Expected education inflation</li>
+          <li>Investment time horizon</li>
+          <li>Expected investment returns</li>
+        </ul>
+        <p class="mb-2"><strong>Example:</strong></p>
+        <p class="mb-1">Current cost of college education: ₹20 lakh | Education inflation: 8% | Time horizon: 15 years</p>
+        <p class="mb-3"><strong>Future cost: ₹20 lakh → ~₹63 lakh</strong></p>
+        <p class="mb-2">To reach this goal, parents may need to invest roughly <strong>₹12,000–₹15,000 per month through SIPs</strong>, assuming long-term equity returns of 11–12%.</p>
+        <p>Goal-based investment platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> can automatically calculate the required SIP and manage the portfolio over time.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why SIPs Are Ideal for Child Education Planning</h2>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">1. Disciplined Investing</h3>
+      <p class="mb-4">SIPs allow parents to invest a fixed amount every month, building wealth gradually without needing large lump sums.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">2. Power of Compounding</h3>
+      <p class="mb-4">Starting early allows investments to grow exponentially over time.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">15-Year Investment</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Value at 12% Return</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹10,000</td><td class="border border-border px-4 py-3">₹18 lakh invested</td><td class="border border-border px-4 py-3">~₹50 lakh</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">₹15,000</td><td class="border border-border px-4 py-3">₹27 lakh invested</td><td class="border border-border px-4 py-3">~₹75 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">This demonstrates how <strong>consistent SIP investing can build a substantial corpus</strong> for education.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">3. Rupee Cost Averaging</h3>
+      <p class="mb-4">SIPs invest regularly regardless of market conditions. This means investors automatically buy more units when markets fall and fewer units when markets rise. Over time, this reduces the risk of poor market timing.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How to Calculate SIP for Child Education</h2>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Step 1: Estimate the Future Cost of Education</h3>
+      <p class="mb-4">Education inflation in India typically ranges between <strong>7% and 10% annually</strong>.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Parameter</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3 font-medium">Current cost of engineering degree</td><td class="border border-border px-4 py-3">₹20 lakh</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3 font-medium">Inflation rate</td><td class="border border-border px-4 py-3">8%</td></tr>
+            <tr><td class="border border-border px-4 py-3 font-medium">Time horizon</td><td class="border border-border px-4 py-3">15 years</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3 font-medium">Future cost</td><td class="border border-border px-4 py-3"><strong>~₹63 lakh</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Step 2: Determine Investment Horizon</h3>
+      <p class="mb-4">The investment horizon equals: Child's target education age – current age.</p>
+      <p class="mb-4">Example: Child's age: 5 years | College start age: 18 → Investment horizon: <strong>13 years</strong></p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Step 3: Estimate Expected Returns</h3>
+      <p class="mb-4">Long-term diversified equity mutual fund portfolios historically deliver returns around <strong>10–12% annually</strong>.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Step 4: Calculate Monthly SIP</h3>
+      <p class="mb-4">Using the example above: Goal amount: ₹63 lakh | Investment horizon: 15 years | Expected return: 12%</p>
+      <p class="mb-6"><strong>Required SIP: ~₹12,500 per month</strong></p>
+
+      <p class="mb-6">Use the <a href="/educationcalculator" class="text-primary hover:underline font-medium">Nested Education Calculator</a> to calculate the exact SIP for your child's goal.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why SIP Planning Should Be Goal-Based</h2>
+      <p class="mb-4">Many parents simply start a SIP without linking it to a financial goal. This often results in:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Insufficient investment amounts</li>
+        <li>Poorly diversified portfolios</li>
+        <li>Lack of portfolio adjustments over time</li>
+      </ul>
+      <p class="mb-4">Goal-based investing solves this problem by linking investments directly to the target amount. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Estimate the future cost of education</li>
+        <li>Calculate the required monthly SIP</li>
+        <li>Create diversified mutual fund portfolios</li>
+        <li>Automatically rebalance investments as the goal approaches</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Example Child Education Investment Plan</h2>
+      <p class="mb-4">Consider this scenario: Child age: 4 years | Goal: Undergraduate education | Time horizon: 14 years</p>
+      <p class="mb-4">Estimated future education cost: <strong>₹60–70 lakh</strong></p>
+      <p class="mb-4">A possible investment strategy could involve:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Equity-heavy mutual fund portfolio initially</li>
+        <li>Gradual allocation to debt funds in later years</li>
+        <li>Periodic portfolio rebalancing</li>
+      </ul>
+      <p class="mb-4">Goal-based platforms automate these adjustments.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Starting Too Late</h3>
+      <p class="mb-4">Waiting even five years can dramatically increase the required SIP.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Underestimating Education Inflation</h3>
+      <p class="mb-4">Education costs often rise faster than general inflation.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Investing in a Single Fund</h3>
+      <p class="mb-4">A diversified portfolio of funds is generally more stable for long-term goals. Read more about <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">the best mutual fund strategy for children</a>.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Ignoring Portfolio Rebalancing</h3>
+      <p class="mb-6">As the goal approaches, reducing risk becomes critical.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Expert Insight</h2>
+      <p class="mb-4">Many parents focus on finding the <strong>best mutual fund</strong> for their child. However, long-term goals like education are better addressed through <strong>portfolio-level planning rather than individual fund selection</strong>.</p>
+      <p class="mb-6">Goal-based investing systems such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate planning, asset allocation, and portfolio rebalancing to help parents stay on track.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Reading</h2>
+      <p class="mb-4">Parents planning investments for children may also find these guides helpful:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">Best Mutual Fund for Children in India</a></li>
+        <li><a href="/blog/understanding-mutual-fund-taxation-2026" class="text-primary hover:underline font-medium">Understanding Mutual Fund Taxation in 2026</a></li>
+        <li><a href="/blog/why-fixed-deposits-might-not-be-best-for-growth" class="text-primary hover:underline font-medium">Why Fixed Deposits Might Not Be the Best for Growth</a></li>
+        <li><a href="/fund-selection" class="text-primary hover:underline font-medium">How Nested Selects Funds</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Frequently Asked Questions</h2>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">What is the ideal SIP for child education?</h3>
+      <p class="mb-4">The ideal SIP depends on the future education cost, investment horizon, and expected returns. Use a <a href="/educationcalculator" class="text-primary hover:underline font-medium">goal-planning calculator</a> to determine the exact amount.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">When should parents start investing for child education?</h3>
+      <p class="mb-4">The earlier parents start investing, the lower the monthly SIP required. Starting when the child is born gives the maximum benefit of compounding.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Are mutual funds safe for child education goals?</h3>
+      <p class="mb-4">Mutual funds can be suitable for long-term goals if investments are diversified and the risk is reduced as the goal approaches. Learn more about <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">building a child investment portfolio</a>.</p>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-09",
+    category: "Child Education",
+    readTime: "8 min read"
+  },
+  {
     slug: "best-mutual-fund-for-children-india",
     title: "Best Mutual Fund for Children in India (2026 Guide) | Child Education Investment Plan",
     excerpt: "Discover the best mutual fund strategy for children in India. Learn how to plan for child education, calculate future costs, and build a goal-based portfolio using the Nested App.",

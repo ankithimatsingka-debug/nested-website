@@ -57,6 +57,17 @@ export default function BlogPost() {
             })}</script>
           </>
         )}
+        {post.slug === "sip-for-child-education-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "SIP for Child Education: How Much Should You Invest?",
+            "author": { "@type": "Person", "name": "Ankit Himatsingka" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-09",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education-india" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

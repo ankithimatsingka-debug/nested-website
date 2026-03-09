@@ -33,8 +33,7 @@ const PageLoader = () => (
 const App = () => (
   <ThemeProvider attribute="class" defaultTheme="light">
     <TooltipProvider>
- <BrowserRouter>
-        <Suspense fallback={<PageLoader />}>
+ <Browser        <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/landing" element={<Landing />} />
@@ -57,8 +56,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
-  Browser</HashRouter>
-    </TooltipProvider>
+  Browser<</Browser    </TooltipProvider>
   </ThemeProvider>
 );
 

@@ -112,6 +112,17 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-education-india" }
           })}</script>
         )}
+        {post.slug === "best-investment-plan-for-child-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Investment Plan for Child in India",
+            "description": "Complete guide to building the best investment plan for your child including education planning, SIP calculations, and portfolio strategy.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-investment-plan-for-child-india" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

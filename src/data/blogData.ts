@@ -12,6 +12,194 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "best-investment-plan-for-child-india",
+    title: "Best Investment Plan for Child in India (2026 Guide)",
+    excerpt: "Discover the best investment plan for your child in India. Learn how to build a long-term portfolio, calculate education goals, and invest smartly for your child's future.",
+    coverImage: "/blog/best-investment-plan-for-child-india.png",
+    content: `
+      <img src="/blog/best-investment-plan-for-child-india.png" alt="Best investment plan for child in India" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">Every parent wants financial security for their child's future. Whether it is funding higher education, supporting career ambitions, or providing financial stability, planning early makes a huge difference.</p>
+
+      <p class="mb-4">However, many parents begin their search with the wrong question:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"What is the best investment for my child?"</blockquote>
+
+      <p class="mb-4">The reality is that <strong>no single investment product can meet a child's long-term financial needs</strong>. A child's goals are often <strong>15–20 years away</strong>, and during that time markets, risks, and financial priorities evolve.</p>
+
+      <p class="mb-4">The best investment plan therefore combines:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Clear financial goals</li>
+        <li>Long-term investing discipline</li>
+        <li>Diversified investments</li>
+        <li>Periodic portfolio adjustments</li>
+      </ul>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Quick Expert Summary</h3>
+        <p class="mb-3">A strong investment plan for children typically involves:</p>
+        <ol class="list-decimal pl-6 mb-4 space-y-1">
+          <li>Estimating the <strong>future cost of goals</strong></li>
+          <li>Calculating the <strong>required monthly investment</strong></li>
+          <li>Investing in a <strong>diversified portfolio of mutual funds</strong></li>
+          <li>Rebalancing investments as the goal approaches</li>
+        </ol>
+        <p>Goal-based platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify this process by calculating the required investment amount and automatically managing the portfolio.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Planning Early Is Critical</h2>
+      <p class="mb-4">Time is the biggest advantage parents have. Long investment horizons allow <strong>compounding to work effectively</strong>, turning small investments into significant wealth.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Monthly Investment</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Investment Period</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Total Investment</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Potential Value (12%)</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹5,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹10.8 lakh</td><td class="border border-border px-4 py-3">₹38 lakh</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">₹10,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹21.6 lakh</td><td class="border border-border px-4 py-3">₹76 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹15,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹32.4 lakh</td><td class="border border-border px-4 py-3">₹1.14 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">The earlier parents start, the <strong>lower the monthly investment required</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Key Goals Parents Should Plan For</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Higher Education</h3>
+      <p class="mb-4">Often the <strong>largest financial requirement</strong> for families.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Overseas Education</h3>
+      <p class="mb-4">Studying abroad can cost <strong>₹60 lakh to ₹1.5 crore</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Career Support</h3>
+      <p class="mb-4">Some parents also plan funds for entrepreneurship or career transitions.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Financial Independence</h3>
+      <p class="mb-4">Investments can provide a strong financial foundation for adulthood.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 1: Estimate the Future Cost of Goals</h2>
+      <p class="mb-4">Education inflation in India is estimated at <strong>8–10% annually</strong>.</p>
+      <p class="mb-4">Example:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Current education cost: ₹25 lakh</li>
+        <li>Time horizon: 18 years</li>
+        <li>Education inflation: 8%</li>
+        <li>Estimated future cost: <strong>₹1 crore</strong></li>
+      </ul>
+      <p class="mb-4">This becomes the <strong>target amount</strong> for the investment plan.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 2: Determine the Monthly Investment Required</h2>
+      <p class="mb-4">Once the goal amount is known, parents can calculate the required investment.</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Goal amount: ₹1 crore</li>
+        <li>Time horizon: 18 years</li>
+        <li>Expected return: 12%</li>
+        <li>Required monthly investment: <strong>~₹14,000</strong></li>
+      </ul>
+      <p class="mb-4">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this calculation and help determine the exact investment needed.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Build a Diversified Portfolio</h2>
+      <p class="mb-4">Instead of relying on a single mutual fund, a diversified portfolio helps balance <strong>growth and risk</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Large Cap Funds</h3>
+      <p class="mb-4">Provide stability and consistent growth.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Flexi Cap Funds</h3>
+      <p class="mb-4">Offer flexibility across different market segments.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Mid Cap Funds</h3>
+      <p class="mb-4">Provide higher growth potential over long time horizons.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Debt Funds</h3>
+      <p class="mb-4">Used closer to the goal to protect accumulated wealth.</p>
+      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across multiple funds.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Rebalance the Portfolio Over Time</h2>
+      <p class="mb-4">As the child approaches college age, the investment strategy should gradually shift toward lower risk.</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Early years → <strong>Equity heavy portfolio</strong></li>
+        <li>Middle years → <strong>Balanced allocation</strong></li>
+        <li>Final years → <strong>Debt-focused portfolio</strong></li>
+      </ul>
+      <p class="mb-4">Automated systems like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> handle this process automatically.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Investment Options for Children</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Investment Option</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Characteristics</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Mutual Funds</td><td class="border border-border px-4 py-3">Diversified and suitable for long-term growth</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Fixed Deposits</td><td class="border border-border px-4 py-3">Stable but lower returns</td></tr>
+            <tr><td class="border border-border px-4 py-3">PPF</td><td class="border border-border px-4 py-3">Tax benefits and long-term savings</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Sukanya Samriddhi Yojana</td><td class="border border-border px-4 py-3">Government scheme for girl child</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">Among these, <strong>mutual funds are commonly used for long-term wealth creation</strong> due to their growth potential.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Waiting Too Long to Start</h3>
+      <p class="mb-4">Delaying investments increases the required monthly savings.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Choosing Investments Based Only on Returns</h3>
+      <p class="mb-4">Past performance does not guarantee future results.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Ignoring Inflation</h3>
+      <p class="mb-4">Future costs are often much higher than expected.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Not Reviewing the Portfolio</h3>
+      <p class="mb-4">Investments should be periodically reviewed and adjusted.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Invest for Your Child's Future</h2>
+      <p class="mb-4">Managing goal calculations, fund selection, and portfolio adjustments manually can be complex.</p>
+      <p class="mb-4">Goal-based investing platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Estimate the future cost of goals</li>
+        <li>Calculate the required monthly investment</li>
+        <li>Allocate investments across mutual funds</li>
+        <li>Rebalance the portfolio automatically</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Guides</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">Best Mutual Fund for Children</a></li>
+        <li><a href="/blog/sip-for-child-education" class="text-primary hover:underline font-medium">SIP for Child Education Planning</a></li>
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline font-medium">Child Education Planning in India</a></li>
+        <li><a href="/blog/how-much-save-for-child-education-india" class="text-primary hover:underline font-medium">How Much Should Parents Save for Child Education</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">FAQs</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What is the best investment plan for a child in India?</h3>
+      <p class="mb-4">A diversified portfolio of mutual funds aligned with specific financial goals is commonly used for long-term child investment planning.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">How much should parents invest for their child's future?</h3>
+      <p class="mb-4">The amount depends on the target goal and investment horizon. Many parents invest <strong>₹8,000–₹15,000 per month</strong> for long-term education goals.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">When should parents start investing for children?</h3>
+      <p class="mb-4">Ideally as early as possible, preferably when the child is born, to maximize the benefits of compounding.</p>
+
+      <div class="mt-12 p-6 bg-primary/5 border border-primary/20 rounded-lg text-center">
+        <h3 class="font-heading text-xl font-semibold mb-2">Start Planning Your Child's Future Today</h3>
+        <p class="text-muted-foreground mb-4">Use the Nested education calculator to estimate costs and plan your investments.</p>
+        <a href="/educationcalculator" class="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">Calculate Your Child's Education Goal</a>
+      </div>
+    `,
+    author: "Nested",
+    publishedAt: "2026-03-09",
+    category: "Investment Planning",
+    readTime: "9 min read"
+  },
+  {
     slug: "how-much-save-for-child-education-india",
     title: "How Much Should Parents Save for Child Education in India?",
     excerpt: "Discover how much parents should save for child education in India. Learn future education costs, required monthly investments, and the smartest investment strategy.",

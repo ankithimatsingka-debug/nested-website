@@ -12,6 +12,145 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "education-inflation-india",
+    title: "Education Inflation in India: What Parents Must Know About the Future Cost of College",
+    excerpt: "Discover how education inflation affects the future cost of college in India. Learn how much parents need to save and how goal-based investing with the Nested App can help.",
+    coverImage: "/blog/education-inflation-india.png",
+    content: `
+      <img src="/blog/education-inflation-india.png" alt="education inflation future cost of college India" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">For most parents, funding their child's education is the largest financial goal after retirement planning. However, one critical factor often gets underestimated: <strong>education inflation.</strong></p>
+
+      <p class="mb-4">While general inflation in India averages around 5–6%, education costs have historically increased much faster — often <strong>7–10% per year</strong>.</p>
+      <p class="mb-4">This means the cost of higher education could <strong>triple or even quadruple over the next 15–20 years</strong>.</p>
+      <p class="mb-6">Understanding education inflation is essential for building a realistic investment plan for your child.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Quick Answer</h3>
+        <p class="mb-3">Education inflation in India is estimated at <strong>7–10% annually</strong>, significantly higher than general inflation.</p>
+        <p class="mb-1">Current cost of engineering degree: ₹20 lakh | Education inflation: 8% | Time horizon: 15 years</p>
+        <p class="mb-3"><strong>Future cost: ₹20 lakh → ~₹63 lakh</strong></p>
+        <p>Parents must calculate the <strong>future value of education costs</strong> and invest accordingly. Goal-planning platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate future costs and determine the required monthly investment.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What Is Education Inflation?</h2>
+      <p class="mb-4">Education inflation refers to the <strong>annual increase in the cost of education</strong>. This includes expenses such as:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Tuition fees</li>
+        <li>Accommodation</li>
+        <li>Study materials</li>
+        <li>International program fees</li>
+        <li>Living expenses for students</li>
+      </ul>
+      <p class="mb-4">Over time, these costs rise faster than most other categories of spending.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Education Costs Rise Faster Than Inflation</h2>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">1. Increasing Demand for Quality Education</h3>
+      <p class="mb-4">As more families aspire for high-quality education, demand for top colleges and universities continues to rise, pushing fees upward.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">2. Globalization of Education</h3>
+      <p class="mb-4">Many students pursue education abroad, where costs are significantly higher. Exchange rates and international tuition fees also influence overall education expenses.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">3. Expansion of Professional Courses</h3>
+      <p class="mb-4">Fields such as medicine, engineering, data science, and business management often require expensive programs and specialized infrastructure.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">4. Rising Institutional Costs</h3>
+      <p class="mb-6">Universities must invest in research facilities, technology infrastructure, global faculty, and modern campuses. These costs are ultimately passed on to students.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Example: Future Cost of Education</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Current Cost</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Education Inflation</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Time Horizon</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Future Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹20 lakh</td><td class="border border-border px-4 py-3">8%</td><td class="border border-border px-4 py-3">15 years</td><td class="border border-border px-4 py-3"><strong>~₹63 lakh</strong></td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">₹20 lakh</td><td class="border border-border px-4 py-3">8%</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3"><strong>~₹80 lakh</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-6">This demonstrates how quickly education costs escalate over time. Parents planning for their child's future must account for these increases.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How Much Should Parents Save for Child Education?</h2>
+      <p class="mb-4">The amount parents should save depends on several variables: current cost of education, expected inflation, child's current age, and investment horizon.</p>
+      <p class="mb-4">Example: Child age: 4 years | Goal: undergraduate education at age 18</p>
+      <p class="mb-4">Estimated future cost: <strong>₹70–80 lakh</strong></p>
+      <p class="mb-6">To reach this goal, parents must create a <strong>long-term investment strategy</strong> rather than relying on savings alone. Learn how to <a href="/blog/sip-for-child-education-india" class="text-primary hover:underline font-medium">calculate the right SIP for child education</a>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Traditional Savings Are Not Enough</h2>
+      <p class="mb-4">Many parents still rely on traditional savings options like fixed deposits. However, these instruments typically generate returns of <strong>5–7% annually</strong>, which may not keep pace with education inflation.</p>
+      <p class="mb-4">This creates a <strong>shortfall in the education corpus</strong>. To bridge this gap, long-term investments often include diversified mutual fund portfolios. Read more about <a href="/blog/why-fixed-deposits-might-not-be-best-for-growth" class="text-primary hover:underline font-medium">why FDs might not be the best for growth</a>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Role of Goal-Based Investing</h2>
+      <p class="mb-4">Goal-based investing focuses on achieving a specific financial target rather than selecting individual investment products. This approach involves:</p>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li>Estimating the future cost of education</li>
+        <li>Determining the required monthly investment</li>
+        <li>Building a diversified investment portfolio</li>
+        <li>Adjusting risk as the goal approaches</li>
+      </ol>
+      <p class="mb-6">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate these steps, helping parents plan investments aligned with their child's future goals. Try the <a href="/educationcalculator" class="text-primary hover:underline font-medium">Education Calculator</a> to estimate your child's future education cost.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Example Investment Strategy for Education Planning</h2>
+      <p class="mb-4">Consider the following scenario: Child's age: 5 years | Goal: engineering degree | Current cost: ₹20 lakh</p>
+      <p class="mb-4">Estimated future cost: <strong>~₹65 lakh</strong></p>
+      <p class="mb-4">A possible strategy could include:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Equity-heavy investments early in the journey</li>
+        <li>Diversification across multiple mutual funds</li>
+        <li>Gradual shift toward debt investments as the goal approaches</li>
+      </ul>
+      <p class="mb-4">Learn about <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">building the best mutual fund portfolio for children</a>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Ignoring Education Inflation</h3>
+      <p class="mb-4">Planning based on current education costs often leads to severe underestimation.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Starting Too Late</h3>
+      <p class="mb-4">Delaying investments significantly increases the required monthly savings.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Investing Without a Goal</h3>
+      <p class="mb-4">Random investments without a defined target rarely produce sufficient funds for major financial goals.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">Not Adjusting Portfolio Risk</h3>
+      <p class="mb-6">As the goal approaches, portfolios should gradually shift toward more stable investments.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Expert Insight</h2>
+      <p class="mb-4">Many parents focus on selecting the <strong>best mutual fund</strong> for their child's future. However, the more important step is calculating the <strong>future cost of education</strong> and aligning investments accordingly.</p>
+      <p class="mb-6">Goal-based investing tools like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the target amount and automatically adjust their investment strategy over time.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Guides for Parents</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">Best Mutual Fund for Children in India</a></li>
+        <li><a href="/blog/sip-for-child-education-india" class="text-primary hover:underline font-medium">SIP for Child Education: How Much Should You Invest?</a></li>
+        <li><a href="/blog/understanding-mutual-fund-taxation-2026" class="text-primary hover:underline font-medium">Understanding Mutual Fund Taxation in 2026</a></li>
+        <li><a href="/fund-selection" class="text-primary hover:underline font-medium">How Nested Selects Funds</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Frequently Asked Questions</h2>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">What is the education inflation rate in India?</h3>
+      <p class="mb-4">Education inflation in India is typically estimated at <strong>7–10% annually</strong>, which is higher than general inflation.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">How much will college cost in 15 years?</h3>
+      <p class="mb-4">A course costing ₹20 lakh today may cost <strong>₹60–70 lakh in 15 years</strong>, depending on the inflation rate.</p>
+
+      <h3 class="text-xl font-heading font-medium mt-6 mb-3">How should parents prepare for education inflation?</h3>
+      <p class="mb-4">Parents should estimate the future cost of education and create a long-term investment plan aligned with that target. Use the <a href="/educationcalculator" class="text-primary hover:underline font-medium">Nested Education Calculator</a> to get started.</p>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-09",
+    category: "Child Education",
+    readTime: "8 min read"
+  },
+  {
     slug: "sip-for-child-education-india",
     title: "SIP for Child Education: How Much Should You Invest for Your Child's Future?",
     excerpt: "Learn how much SIP you should invest for your child's education in India. Calculate future education costs and build a goal-based investment plan using the Nested App.",

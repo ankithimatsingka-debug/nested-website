@@ -37,7 +37,7 @@ export default function Blog() {
 
           {/* Blog Grid */}
           <section aria-label="Blog posts" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
+            {sortedPosts.map((post) => (
               <BlogCard key={post.slug} post={post} />
             ))}
           </section>

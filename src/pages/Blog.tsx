@@ -5,6 +5,10 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { blogPosts } from "@/data/blogData";
 
 export default function Blog() {
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+
   return (
     <>
       <Helmet>
@@ -33,7 +37,7 @@ export default function Blog() {
 
           {/* Blog Grid */}
           <section aria-label="Blog posts" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
+            {sortedPosts.map((post) => (
               <BlogCard key={post.slug} post={post} />
             ))}
           </section>

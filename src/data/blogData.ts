@@ -1498,7 +1498,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-01-02",
     category: "Investment Strategy",
     readTime: "5 min read"
-  }
+  },
   {
     slug: "mutual-funds-vs-ppf-child-education",
     title: "Mutual Funds vs PPF for Child Education: Which Is Better?",

@@ -5,6 +5,10 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { blogPosts } from "@/data/blogData";
 
 export default function Blog() {
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+
   return (
     <>
       <Helmet>

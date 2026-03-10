@@ -1914,7 +1914,247 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-03-10",
     category: "Education Planning",
     readTime: "7 min read"
-  }
+  },
+  {
+    slug: "build-1-crore-child-education",
+    title: "How to Build ₹1 Crore for Your Child's Education",
+    excerpt: "Learn how to build ₹1 crore for your child's education using SIP, compounding and goal-based investing. Step-by-step plan with monthly investment examples.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">Higher education costs in India are rising rapidly. Many professional degrees today cost <strong>₹20–30 lakh</strong>, and international education can cost far more.</p>
+
+      <p class="mb-4">Because education inflation is typically <strong>8–10% per year</strong>, many parents now aim to build a corpus of <strong>₹1 crore or more</strong> for their child's future.</p>
+
+      <p class="mb-4">The good news: With disciplined investing and enough time, building a ₹1 crore education fund is achievable.</p>
+
+      <p class="mb-6">This guide explains <strong>exactly how parents can reach that goal</strong>.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Quick Expert Summary</h3>
+        <p class="mb-3">To build ₹1 crore for child education:</p>
+        <ol class="list-decimal pl-6 mb-4 space-y-1">
+          <li>Start investing early</li>
+          <li>Use SIP in diversified mutual funds</li>
+          <li>Increase investments gradually</li>
+          <li>Rebalance portfolio closer to the goal</li>
+        </ol>
+        <p>Goal-planning platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the required SIP and manage investments automatically.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why ₹1 Crore Is Becoming the New Education Target</h2>
+
+      <p class="mb-4">Education costs have been rising faster than general inflation.</p>
+
+      <p class="mb-4">Examples of estimated costs today:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Degree</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Current Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Engineering</td><td class="border border-border px-4 py-3">₹10–20 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">MBA</td><td class="border border-border px-4 py-3">₹20–40 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">Medical</td><td class="border border-border px-4 py-3">₹50 lakh+</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Overseas education</td><td class="border border-border px-4 py-3">₹60 lakh – ₹1.5 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Over the next 15–18 years, these costs can increase dramatically due to inflation.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Power of Compounding</h2>
+
+      <p class="mb-4">The earlier investments begin, the easier it becomes to reach large financial goals.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly Investment</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Investment Period</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Expected Return</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Final Corpus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹8,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">12%</td><td class="border border-border px-4 py-3">~₹50 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">₹12,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">12%</td><td class="border border-border px-4 py-3">~₹75 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹16,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">12%</td><td class="border border-border px-4 py-3">~₹1 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">This illustrates how <strong>time significantly reduces the required monthly investment</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How Much SIP Is Needed to Build ₹1 Crore?</h2>
+
+      <p class="mb-4">The required SIP depends on the time horizon.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Investment Period</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP Needed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">10 years</td><td class="border border-border px-4 py-3">₹45,000</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">12 years</td><td class="border border-border px-4 py-3">₹30,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">15 years</td><td class="border border-border px-4 py-3">₹18,000</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹14,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">These calculations assume <strong>12% annual return</strong>, which is often used as a long-term equity return assumption.</p>
+
+      <p class="mb-6">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically calculate the required SIP based on the goal and time horizon.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step-by-Step Plan to Build ₹1 Crore</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 1: Start Investing Early</h3>
+      <p class="mb-4">The earlier the investment begins, the more compounding works in your favor.</p>
+      <p class="mb-6">Even a delay of <strong>5 years can significantly increase the required monthly investment</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 2: Use SIP for Disciplined Investing</h3>
+      <p class="mb-4">Systematic Investment Plans (SIP) help investors build wealth gradually through regular investments.</p>
+      <p class="mb-2">Advantages include:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Disciplined investing</li>
+        <li>Rupee-cost averaging</li>
+        <li>Compounding over long periods</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 3: Build a Diversified Portfolio</h3>
+      <p class="mb-4">Instead of relying on a single investment, a diversified portfolio reduces risk.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Asset Type</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Allocation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Large Cap Funds</td><td class="border border-border px-4 py-3">40%</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Flexi Cap Funds</td><td class="border border-border px-4 py-3">30%</td></tr>
+            <tr><td class="border border-border px-4 py-3">Mid Cap Funds</td><td class="border border-border px-4 py-3">20%</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Debt / Hybrid Funds</td><td class="border border-border px-4 py-3">10%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across multiple funds.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 4: Increase SIP Over Time</h3>
+      <p class="mb-4">As income grows, increasing the SIP amount can accelerate wealth creation.</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Start with ₹10,000 per month</li>
+        <li>Increase by 10% annually</li>
+      </ul>
+      <p class="mb-6">This strategy can significantly increase the final corpus.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 5: Reduce Risk Closer to the Goal</h3>
+      <p class="mb-4">When the child approaches college age, protecting accumulated wealth becomes important.</p>
+      <p class="mb-2">Typical transition:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Early years → Equity heavy portfolio</li>
+        <li>Later years → Increase debt allocation</li>
+      </ul>
+      <p class="mb-6">Rebalancing helps protect the corpus from market volatility.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Example: Investment Journey to ₹1 Crore</h2>
+
+      <p class="mb-4">Consider a parent investing ₹14,000 per month for 18 years.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Year</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Total Invested</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Portfolio Value (12%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">5</td><td class="border border-border px-4 py-3">₹8.4 lakh</td><td class="border border-border px-4 py-3">₹10.5 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">10</td><td class="border border-border px-4 py-3">₹16.8 lakh</td><td class="border border-border px-4 py-3">₹32 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">15</td><td class="border border-border px-4 py-3">₹25.2 lakh</td><td class="border border-border px-4 py-3">₹68 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">18</td><td class="border border-border px-4 py-3">₹30.2 lakh</td><td class="border border-border px-4 py-3">~₹1 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">The final corpus is largely driven by <strong>compounding in later years</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Starting Too Late</h3>
+      <p class="mb-6">Time is the most powerful factor in wealth creation.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Investing Only in Low-Return Instruments</h3>
+      <p class="mb-6">Conservative products may not keep pace with education inflation.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Not Increasing SIP</h3>
+      <p class="mb-6">Gradually increasing investments improves long-term outcomes.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Ignoring Goal-Based Planning</h3>
+      <p class="mb-6">Investments should be aligned with specific financial goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Build an Education Fund</h2>
+
+      <p class="mb-4">Managing investments manually can become complicated over long time horizons.</p>
+
+      <p class="mb-4">Goal-based investing platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Calculate the required education corpus</li>
+        <li>Determine the monthly SIP</li>
+        <li>Allocate investments across mutual funds</li>
+        <li>Rebalance portfolios automatically</li>
+      </ul>
+
+      <p class="mb-6">This structured approach improves the chances of achieving long-term financial goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Guides</h2>
+
+      <p class="mb-4">You may also find these articles useful:</p>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/best-investment-plan-for-child-india" class="text-primary hover:underline">Best Investment Plan for Child in India</a></li>
+        <li><a href="/blog/sip-for-child-education" class="text-primary hover:underline">SIP for Child Education Planning</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby</a></li>
+        <li><a href="/blog/mutual-funds-vs-ppf-child-education" class="text-primary hover:underline">Mutual Funds vs PPF for Child Education</a></li>
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">FAQs</h2>
+
+      <div class="space-y-6">
+        <div class="bg-muted/30 rounded-lg p-6">
+          <h3 class="font-heading font-semibold mb-2">Is ₹1 crore enough for child education?</h3>
+          <p class="text-muted-foreground">Depending on the course and location, ₹1 crore can cover many higher education programs, though overseas education may require a larger corpus.</p>
+        </div>
+        <div class="bg-muted/30 rounded-lg p-6">
+          <h3 class="font-heading font-semibold mb-2">How early should parents start investing?</h3>
+          <p class="text-muted-foreground">Starting as early as possible — ideally when the child is born — provides the longest time horizon for compounding.</p>
+        </div>
+        <div class="bg-muted/30 rounded-lg p-6">
+          <h3 class="font-heading font-semibold mb-2">Are SIPs suitable for building an education corpus?</h3>
+          <p class="text-muted-foreground">SIPs are widely used for long-term goals because they allow disciplined investing and benefit from compounding.</p>
+        </div>
+      </div>
+    `,
+    author: "Nested",
+    publishedAt: "2026-03-10",
+    category: "Education Planning",
+    readTime: "8 min read"
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

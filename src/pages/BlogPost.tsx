@@ -123,6 +123,18 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-investment-plan-for-child-india" }
           })}</script>
         )}
+        {post.slug === "mutual-funds-vs-ppf-child-education" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Mutual Funds vs PPF for Child Education",
+            "description": "Compare mutual funds and PPF for child education planning including returns, risks, and tax benefits.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-10",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/mutual-funds-vs-ppf-child-education" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

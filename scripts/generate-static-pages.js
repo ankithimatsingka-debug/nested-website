@@ -23,6 +23,7 @@ const routes = [
   '/blog/best-investment-plan-for-child-india',
   '/blog/mutual-funds-vs-ppf-child-education',
   '/blog/investment-plan-for-newborn-baby-india',
+  '/blog/build-1-crore-child-education',
   '/blog/sdl-debt-funds-explained',
   '/blog/understanding-money-market-funds',
   '/blog/why-fixed-deposits-might-not-be-best-for-growth',

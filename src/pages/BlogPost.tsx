@@ -147,6 +147,18 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/investment-plan-for-newborn-baby-india" }
           })}</script>
         )}
+        {post.slug === "build-1-crore-child-education" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How to Build ₹1 Crore for Your Child's Education",
+            "description": "Step-by-step guide to building ₹1 crore for your child's education using SIP, compounding and goal-based investing.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-10",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/build-1-crore-child-education" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

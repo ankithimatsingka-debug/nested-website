@@ -9,7 +9,7 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post }: BlogCardProps) {
-  const formattedDate = new Date(post.publishedAt).toLocaleDateString("en-IN", {
+  const formattedDate = new Date(post.publishedAt + "T00:00:00").toLocaleDateString("en-IN", {
     year: "numeric",
     month: "long",
     day: "numeric"

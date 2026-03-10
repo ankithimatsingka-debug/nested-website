@@ -135,6 +135,18 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/mutual-funds-vs-ppf-child-education" }
           })}</script>
         )}
+        {post.slug === "investment-plan-for-newborn-baby-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Investment Plan for Newborn Baby in India",
+            "description": "Learn how to build a smart investment plan for a newborn baby including SIP, PPF and long-term education planning strategies.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-10",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/investment-plan-for-newborn-baby-india" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

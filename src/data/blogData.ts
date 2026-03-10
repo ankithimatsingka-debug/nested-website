@@ -1702,6 +1702,218 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-03-10",
     category: "Education Planning",
     readTime: "8 min read"
+  },
+  {
+    slug: "investment-plan-for-newborn-baby-india",
+    title: "Investment Plan for Newborn Baby in India (2026 Guide)",
+    excerpt: "Discover the best investment plan for a newborn baby in India. Learn how much to invest monthly, best options like SIP, PPF and Sukanya Samriddhi, and build a strong financial future.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">The birth of a child brings joy — but it also brings long-term financial responsibilities.</p>
+
+      <p class="mb-4">From education and career support to financial independence, parents often need to plan for goals that may be <strong>15–20 years away</strong>.</p>
+
+      <p class="mb-4">Starting investments when the child is a newborn provides a powerful advantage:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg"><strong>Time.</strong></blockquote>
+
+      <p class="mb-6">Even small monthly investments can grow significantly over long horizons due to compounding.</p>
+
+      <p class="mb-6">This guide explains how parents can create a practical investment plan for their newborn baby.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Quick Expert Summary</h3>
+        <p class="mb-3">A strong investment strategy for a newborn baby typically involves:</p>
+        <ol class="list-decimal pl-6 mb-4 space-y-1">
+          <li>Estimating future financial goals</li>
+          <li>Starting a systematic monthly investment</li>
+          <li>Building a diversified portfolio</li>
+          <li>Increasing investments as income grows</li>
+        </ol>
+        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the future cost of goals and determine the required monthly investment.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Starting Early Matters</h2>
+
+      <p class="mb-4">The biggest advantage of planning at birth is the <strong>long investment horizon</strong>.</p>
+
+      <p class="mb-4">Longer horizons allow compounding to significantly increase wealth.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly Investment</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Investment Period</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Total Investment</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Potential Value (12%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹5,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹10.8 lakh</td><td class="border border-border px-4 py-3">₹38 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">₹10,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹21.6 lakh</td><td class="border border-border px-4 py-3">₹76 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹15,000</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹32.4 lakh</td><td class="border border-border px-4 py-3">₹1.14 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">The same goal becomes much harder if investments start later.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Key Financial Goals for a Newborn</h2>
+
+      <p class="mb-4">Parents usually invest for several long-term objectives.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Higher Education</h3>
+      <p class="mb-4">One of the most significant financial goals for families.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Overseas Education</h3>
+      <p class="mb-4">Costs for studying abroad can exceed ₹1 crore in many cases.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Career Support</h3>
+      <p class="mb-4">Some parents build financial reserves for entrepreneurship or career transitions.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Financial Security</h3>
+      <p class="mb-6">Long-term investments can provide a strong financial foundation for adulthood.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 1: Estimate Future Education Costs</h2>
+
+      <p class="mb-4">Education costs rise faster than normal inflation.</p>
+
+      <p class="mb-4">Education inflation in India is often estimated at <strong>8–10% annually</strong>.</p>
+
+      <div class="bg-muted/50 rounded-lg p-6 my-6">
+        <p class="mb-2"><strong>Example:</strong></p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Current education cost: ₹25 lakh</li>
+          <li>Time horizon: 18 years</li>
+          <li>Inflation: 8%</li>
+          <li>Future cost: <strong>~₹1 crore</strong></li>
+        </ul>
+      </div>
+
+      <p class="mb-6">This amount becomes the target investment goal.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 2: Calculate the Monthly Investment Required</h2>
+
+      <p class="mb-4">Once the future cost is estimated, parents can determine how much they need to invest each month.</p>
+
+      <div class="bg-muted/50 rounded-lg p-6 my-6">
+        <p class="mb-2"><strong>Example:</strong></p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Target goal: ₹1 crore</li>
+          <li>Investment horizon: 18 years</li>
+          <li>Expected return: 12%</li>
+          <li>Required monthly SIP: <strong>~₹14,000</strong></li>
+        </ul>
+      </div>
+
+      <p class="mb-6">Platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically calculate this amount and help parents stay on track.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Best Investment Options for a Newborn Baby</h2>
+
+      <p class="mb-4">A diversified approach usually works best.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Mutual Funds (SIP)</h3>
+      <p class="mb-4">Mutual funds are widely used for long-term wealth creation.</p>
+      <p class="mb-4">Benefits include:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Diversification</li>
+        <li>Professional management</li>
+        <li>Potential for higher returns</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Public Provident Fund (PPF)</h3>
+      <p class="mb-4">PPF offers government-backed safety and tax benefits. However, returns are typically lower than equity investments.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Sukanya Samriddhi Yojana</h3>
+      <p class="mb-4">This scheme is specifically designed for the girl child and provides tax benefits and attractive interest rates.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Fixed Deposits</h3>
+      <p class="mb-6">FDs provide stability but generally deliver lower returns over long periods.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Example Portfolio for Newborn Planning</h2>
+
+      <p class="mb-4">Many parents combine different investments.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Investment Type</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Allocation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Equity Mutual Funds</td><td class="border border-border px-4 py-3">60–70%</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Hybrid / Balanced Funds</td><td class="border border-border px-4 py-3">10–20%</td></tr>
+            <tr><td class="border border-border px-4 py-3">PPF / Debt</td><td class="border border-border px-4 py-3">10–20%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">As the child approaches college age, the portfolio can gradually shift toward safer assets. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this rebalancing process.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Waiting Too Long to Start</h3>
+      <p class="mb-4">The earlier investments begin, the easier it becomes to reach financial goals.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Investing Only in Safe Options</h3>
+      <p class="mb-4">While safety is important, excessive conservatism may not keep pace with education inflation.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Not Increasing Investments</h3>
+      <p class="mb-4">As income grows, increasing SIP amounts helps accelerate wealth creation.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Ignoring Portfolio Reviews</h3>
+      <p class="mb-6">Investments should be reviewed periodically to ensure they remain aligned with financial goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Invest for a Newborn</h2>
+
+      <p class="mb-4">Managing investments manually across multiple products can be complicated.</p>
+
+      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify the process by helping parents:</p>
+
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Estimate future education costs</li>
+        <li>Calculate the required SIP amount</li>
+        <li>Allocate investments across mutual funds</li>
+        <li>Rebalance portfolios automatically</li>
+      </ul>
+
+      <p class="mb-6">This structured approach improves the chances of meeting long-term financial goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Guides</h2>
+
+      <p class="mb-4">Parents planning their child's future may also find these articles useful:</p>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline">Best Mutual Fund for Children in India</a></li>
+        <li><a href="/blog/sip-for-child-education" class="text-primary hover:underline">SIP for Child Education Planning</a></li>
+        <li><a href="/blog/mutual-funds-vs-ppf-child-education" class="text-primary hover:underline">Mutual Funds vs PPF for Child Education</a></li>
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/best-investment-plan-for-child-india" class="text-primary hover:underline">Best Investment Plan for Child in India</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">FAQs</h2>
+
+      <div class="space-y-6">
+        <div class="bg-muted/50 rounded-lg p-6">
+          <h3 class="font-heading font-semibold mb-2">When should parents start investing for a newborn?</h3>
+          <p>Ideally immediately after birth, as longer time horizons allow compounding to generate larger returns.</p>
+        </div>
+        <div class="bg-muted/50 rounded-lg p-6">
+          <h3 class="font-heading font-semibold mb-2">How much should parents invest monthly for a newborn?</h3>
+          <p>The amount depends on financial goals, but many parents invest <strong>₹8,000–₹15,000 per month</strong> for long-term education planning.</p>
+        </div>
+        <div class="bg-muted/50 rounded-lg p-6">
+          <h3 class="font-heading font-semibold mb-2">What is the safest investment for a newborn?</h3>
+          <p>Government schemes like PPF and Sukanya Samriddhi provide safety, but combining them with growth investments may help meet long-term goals.</p>
+        </div>
+      </div>
+    `,
+    author: "Nested",
+    publishedAt: "2026-03-10",
+    category: "Education Planning",
+    readTime: "7 min read"
   }
 ];
 

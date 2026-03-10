@@ -1,23 +1,46 @@
 
 
-# Issue: Blog Page HMR Reload Failure
+## Education Calculator - 5-Step Journey Flow
 
-The "Mutual Funds vs PPF" blog post **is correctly added** to `blogData.ts` (line 1503) and the `Blog.tsx` page logic is correct. The console error is:
+### Overview
+A redesigned emotional journey for parents with dedicated pages for fee visualization and Nested's value proposition.
 
-```
-[hmr] Failed to reload /src/pages/Blog.tsx
-```
+### Flow
+Step 1 (Reality Moment) > Step 2 (College Selection) > Step 3 (Fee Chart + Nested Story) > Step 4 (Child Name) > Step 5 (Email) > Reveal
 
-This is a **hot module replacement failure** -- the page didn't refresh after the last code edit. It is not a data or code logic issue.
+### Step Details
 
-## Fix
+**Step 1 — The Reality Moment**
+- Headline: "Your child's education will cost more than you think."
+- Stats: 3-4X increase in last decade, 10%+ annual growth, 65/100 parents feel burdened
+- Reassurance line about small consistent savings
+- CTA: "See how fees have grown"
 
-No code changes are needed. The blog post data and page component are both correct. The user just needs to **refresh the preview page** to see the latest blog post appear.
+**Step 2 — College Selection**
+- Quick-pick tiles for 8 common college categories (IIT, IIM, Private Engineering, etc.)
+- Search bar for custom colleges
+- Clicking a tile/search result immediately advances to Step 3
 
-If the issue persists after refresh, there may be a template literal syntax issue in the blog content. I checked the file end (line 1705-1706) and it closes properly. However, let me verify there are no unescaped backticks in the content that could break the template literal.
+**Step 3 — Fee Visualization + Nested Story**
+- Full 25-year fee trend chart (10 years historical, 15 years projected)
+- Shows: 10 years ago, today, and projected in 15 years
+- Key insight card: "Fees have grown X% in the last 10 years"
+- Nested story section explaining:
+  - Most parents don't plan or use FDs that underperform
+  - Nested analyzes 2,000+ mutual funds
+  - Age-appropriate, goal-based, auto-rebalanced portfolios
+- CTA: "Build a plan for this goal"
 
-## Action
+**Step 4 — Personalization**
+- Collects child's name
+- Shows customized plan prompt after name entered
+- CTA: "Yes, create my plan"
 
-1. **No code changes required** -- ask user to refresh the preview
-2. If still broken after refresh, scan the mutual-funds-vs-ppf content for unescaped backticks or `${` sequences that could break template literals
+**Step 5 — Email Gate**
+- Collects email address
+- CTA: "Show [child]'s plan"
 
+**Reveal Page**
+- Displays SIP amount, total investment, target corpus
+- Chart comparing Nested vs FD growth
+- Delta amount highlighting Nested's advantage

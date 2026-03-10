@@ -1705,8 +1705,8 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 
-export const getBlogPost = (slug: string): BlogPost | undefined => 
-  blogPosts.find(post => post.slug === slug);
+export const getBlogPost = (slug: string): BlogPost | undefined =>
+  blogPosts.find((post) => post.slug === slug);
 
 export const getRecentPosts = (count: number = 3): BlogPost[] => 
   [...blogPosts]

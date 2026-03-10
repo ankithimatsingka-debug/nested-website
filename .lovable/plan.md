@@ -1,46 +1,30 @@
 
 
-## Education Calculator - 5-Step Journey Flow
+# Fix: Blog post date display timezone issue
 
-### Overview
-A redesigned emotional journey for parents with dedicated pages for fee visualization and Nested's value proposition.
+The blog post **"How to Build ₹1 Crore for Your Child's Education"** IS present in the data and IS rendering on the `/blog` page (confirmed via screenshot). However, all posts with `publishedAt: "2026-03-10"` display as **"9 March 2026"** due to a timezone parsing bug.
 
-### Flow
-Step 1 (Reality Moment) > Step 2 (College Selection) > Step 3 (Fee Chart + Nested Story) > Step 4 (Child Name) > Step 5 (Email) > Reveal
+## Root Cause
 
-### Step Details
+`new Date("2026-03-10")` is parsed as **midnight UTC**. In timezones west of UTC (like the preview server or some user browsers), this rolls back to March 9. The `toLocaleDateString("en-IN")` then shows the wrong date.
 
-**Step 1 — The Reality Moment**
-- Headline: "Your child's education will cost more than you think."
-- Stats: 3-4X increase in last decade, 10%+ annual growth, 65/100 parents feel burdened
-- Reassurance line about small consistent savings
-- CTA: "See how fees have grown"
+## Fix
 
-**Step 2 — College Selection**
-- Quick-pick tiles for 8 common college categories (IIT, IIM, Private Engineering, etc.)
-- Search bar for custom colleges
-- Clicking a tile/search result immediately advances to Step 3
+In both `BlogCard.tsx` and `BlogPost.tsx`, append `T00:00:00` to force local timezone parsing:
 
-**Step 3 — Fee Visualization + Nested Story**
-- Full 25-year fee trend chart (10 years historical, 15 years projected)
-- Shows: 10 years ago, today, and projected in 15 years
-- Key insight card: "Fees have grown X% in the last 10 years"
-- Nested story section explaining:
-  - Most parents don't plan or use FDs that underperform
-  - Nested analyzes 2,000+ mutual funds
-  - Age-appropriate, goal-based, auto-rebalanced portfolios
-- CTA: "Build a plan for this goal"
+```ts
+// Before
+new Date(post.publishedAt)
 
-**Step 4 — Personalization**
-- Collects child's name
-- Shows customized plan prompt after name entered
-- CTA: "Yes, create my plan"
+// After  
+new Date(post.publishedAt + "T00:00:00")
+```
 
-**Step 5 — Email Gate**
-- Collects email address
-- CTA: "Show [child]'s plan"
+This ensures "2026-03-10" always displays as "10 March 2026" regardless of timezone.
 
-**Reveal Page**
-- Displays SIP amount, total investment, target corpus
-- Chart comparing Nested vs FD growth
-- Delta amount highlighting Nested's advantage
+### Files to change
+1. `src/components/blog/BlogCard.tsx` — line 12
+2. `src/pages/BlogPost.tsx` — line 21
+
+If the user confirms the post truly isn't visible (not just a date issue), the problem may be a stale preview cache — a hard refresh should resolve it.
+

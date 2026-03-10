@@ -1,56 +1,46 @@
 
 
-# Problem: Google Returns 404 for `/blog`
+## Education Calculator - 5-Step Journey Flow
 
-## Root Cause
+### Overview
+A redesigned emotional journey for parents with dedicated pages for fee visualization and Nested's value proposition.
 
-The site is hosted on **GitHub Pages** as a single-page application (SPA). When Googlebot requests `https://nested.money/blog`, GitHub Pages has no `blog/index.html` file, so it serves `404.html`. The `404.html` uses a JavaScript redirect trick (sessionStorage + `history.replaceState`) to load the SPA. But **Googlebot does not reliably execute this multi-step JS redirect**, so it sees the 404 status code and reports "Page fetch error: Not found (404)."
+### Flow
+Step 1 (Reality Moment) > Step 2 (College Selection) > Step 3 (Fee Chart + Nested Story) > Step 4 (Child Name) > Step 5 (Email) > Reveal
 
-This affects **all routes** except `/` — every blog post, `/features`, `/fund-selection`, etc. are all vulnerable to the same issue.
+### Step Details
 
-## Solution: Pre-render static HTML for each route
+**Step 1 — The Reality Moment**
+- Headline: "Your child's education will cost more than you think."
+- Stats: 3-4X increase in last decade, 10%+ annual growth, 65/100 parents feel burdened
+- Reassurance line about small consistent savings
+- CTA: "See how fees have grown"
 
-The fix is to generate actual HTML files for each route during the build step, so GitHub Pages serves a 200 status instead of a 404. This is called **pre-rendering**.
+**Step 2 — College Selection**
+- Quick-pick tiles for 8 common college categories (IIT, IIM, Private Engineering, etc.)
+- Search bar for custom colleges
+- Clicking a tile/search result immediately advances to Step 3
 
-### Implementation
+**Step 3 — Fee Visualization + Nested Story**
+- Full 25-year fee trend chart (10 years historical, 15 years projected)
+- Shows: 10 years ago, today, and projected in 15 years
+- Key insight card: "Fees have grown X% in the last 10 years"
+- Nested story section explaining:
+  - Most parents don't plan or use FDs that underperform
+  - Nested analyzes 2,000+ mutual funds
+  - Age-appropriate, goal-based, auto-rebalanced portfolios
+- CTA: "Build a plan for this goal"
 
-1. **Install `vite-plugin-prerender`** (or the equivalent `vite-ssg` / `prerender-spa-plugin`) as a dev dependency.
+**Step 4 — Personalization**
+- Collects child's name
+- Shows customized plan prompt after name entered
+- CTA: "Yes, create my plan"
 
-2. **Update `vite.config.ts`** to pre-render key routes during build:
-   - `/`
-   - `/blog`
-   - `/blog/best-mutual-fund-for-children-india`
-   - `/blog/sip-for-child-education-india`
-   - `/blog/education-inflation-india`
-   - `/blog/child-education-planning-india`
-   - `/blog/sip-for-child-education`
-   - `/blog/how-much-save-for-child-education-india`
-   - `/blog/best-investment-plan-for-child-india`
-   - `/blog/mutual-funds-vs-ppf-child-education`
-   - `/blog/investment-plan-for-newborn-baby-india`
-   - `/features`
-   - `/fund-selection`
-   - `/educationcalculator`
-   - `/superfd`
-   - `/taxation`
+**Step 5 — Email Gate**
+- Collects email address
+- CTA: "Show [child]'s plan"
 
-   This generates e.g. `dist/blog/index.html`, `dist/blog/best-mutual-fund-for-children-india/index.html`, etc.
-
-3. **Keep `404.html`** as a fallback for truly unknown routes.
-
-4. **Update the GitHub Actions workflow** if needed — the build step already runs `npm run build`, so pre-rendered files will be included in `dist/` automatically.
-
-### Alternative: Edge function approach
-
-If pre-rendering proves problematic with the current SPA architecture (dynamic imports, client-side state), an alternative is to create a **backend function** that serves pre-rendered HTML for bot user agents. However, since the site is on GitHub Pages (static hosting), this isn't feasible without moving to a different host or adding a CDN/proxy layer.
-
-### Recommended approach
-
-Pre-rendering is the simplest and most reliable fix for GitHub Pages + SPA + SEO. It requires:
-
-- 1 new dev dependency (`vite-plugin-prerender` or similar)
-- Updates to `vite.config.ts` to configure pre-render routes
-- A helper to export the route list (can pull slugs from `blogData.ts`)
-
-No changes to components, routing, or content are needed.
-
+**Reveal Page**
+- Displays SIP amount, total investment, target corpus
+- Chart comparing Nested vs FD growth
+- Delta amount highlighting Nested's advantage

@@ -1914,17 +1914,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2026-03-10",
     category: "Education Planning",
     readTime: "7 min read"
-  }
-];
-
-export const getBlogPost = (slug: string): BlogPost | undefined =>
-  blogPosts.find((post) => post.slug === slug);
-
-export const getRecentPosts = (count: number = 3): BlogPost[] => 
-  [...blogPosts]
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, count);
-
+  },
   {
     slug: "build-1-crore-child-education",
     title: "How to Build ₹1 Crore for Your Child's Education",
@@ -2167,10 +2157,10 @@ export const getRecentPosts = (count: number = 3): BlogPost[] =>
   },
 ];
 
-export const getBlogPost = (slug: string): BlogPost | undefined => 
-  blogPosts.find(post => post.slug === slug);
+export const getBlogPost = (slug: string): BlogPost | undefined =>
+  blogPosts.find((post) => post.slug === slug);
 
-export const getLatestPosts = (count: number = 3): BlogPost[] => 
+export const getRecentPosts = (count: number = 3): BlogPost[] => 
   [...blogPosts]
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, count);

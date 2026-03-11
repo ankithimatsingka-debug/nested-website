@@ -159,6 +159,18 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/build-1-crore-child-education" }
           })}</script>
         )}
+        {post.slug === "best-sip-plans-child-education-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best SIP Plans for Child Education in India",
+            "description": "Learn how SIP investing can help parents build a strong education fund for their child with disciplined long-term investing.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-11",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-sip-plans-child-education-india" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

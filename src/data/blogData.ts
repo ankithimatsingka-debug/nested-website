@@ -1041,7 +1041,7 @@ export const blogPosts: BlogPost[] = [
         <li>Gradual reduction in risk as the goal approaches</li>
         <li>Periodic portfolio rebalancing</li>
       </ul>
-      <p class="mb-4">Platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this process by calculating the future cost of goals, recommending the required monthly SIP, and adjusting the portfolio over time.</p>
+      <p class="mb-4">Platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this process by calculating the future cost of goals, recommending the required monthly SIP, and adjusting the portfolio over time.</p>
 
       <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
         <h3 class="text-lg font-heading font-semibold mb-3">🔑 Key Insight</h3>

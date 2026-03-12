@@ -656,7 +656,7 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Rebalance the Portfolio as the Goal Approaches</h2>
       <p class="mb-4">One of the biggest risks parents face is <strong>market volatility near the goal date</strong>. If your child is about to start college and markets fall, your education fund could be impacted.</p>
       <p class="mb-4">That's why a good strategy gradually shifts: <strong>Equity → Hybrid → Debt</strong></p>
-      <p class="mb-6">This protects the accumulated corpus. Goal-based investing systems such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> rebalance portfolios automatically to keep the goal on track.</p>
+      <p class="mb-6">This protects the accumulated corpus. Goal-based investing systems such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> rebalance portfolios automatically to keep the goal on track.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
 

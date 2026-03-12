@@ -231,7 +231,7 @@ export default function BlogPost() {
               { "@type": "Question", "name": "How early should parents start planning?", "acceptedAnswer": { "@type": "Answer", "text": "Starting when the child is born provides the longest investment horizon, reducing the required monthly investment significantly." } }
             ]
           })}</script>
-        )
+        )}
       </Helmet>
 
       <Header />

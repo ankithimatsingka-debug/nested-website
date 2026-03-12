@@ -984,7 +984,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Expert Insight</h2>
       <p class="mb-4">Many parents focus on finding the <strong>best mutual fund</strong> for their child. However, long-term goals like education are better addressed through <strong>portfolio-level planning rather than individual fund selection</strong>.</p>
-      <p class="mb-6">Goal-based investing systems such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate planning, asset allocation, and portfolio rebalancing to help parents stay on track.</p>
+      <p class="mb-6">Goal-based investing systems such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate planning, asset allocation, and portfolio rebalancing to help parents stay on track.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Reading</h2>
       <p class="mb-4">Parents planning investments for children may also find these guides helpful:</p>

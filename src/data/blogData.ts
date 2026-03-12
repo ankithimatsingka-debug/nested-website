@@ -586,7 +586,7 @@ export const blogPosts: BlogPost[] = [
           <li>Invest in a <strong>diversified mutual fund portfolio</strong></li>
           <li><strong>Rebalance the portfolio over time</strong> as the goal approaches</li>
         </ul>
-        <p>Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this process by calculating the goal amount, recommending the required SIP, and dynamically managing the portfolio.</p>
+        <p>Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this process by calculating the goal amount, recommending the required SIP, and dynamically managing the portfolio.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Education Planning Should Start Early</h2>

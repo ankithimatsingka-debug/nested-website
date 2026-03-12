@@ -27,6 +27,7 @@ const routes = [
   '/blog/best-sip-plans-child-education-india',
   '/blog/how-to-plan-child-education-india',
   '/blog/rising-cost-of-education-in-india',
+  '/blog/child-education-cost-india',
   '/blog/sdl-debt-funds-explained',
   '/blog/understanding-money-market-funds',
   '/blog/why-fixed-deposits-might-not-be-best-for-growth',

@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
         <li>Expected return: 12%</li>
         <li>Required monthly investment: <strong>~₹14,000</strong></li>
       </ul>
-      <p class="mb-4">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this calculation and help determine the exact investment needed.</p>
+      <p class="mb-4">Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this calculation and help determine the exact investment needed.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Build a Diversified Portfolio</h2>
       <p class="mb-4">Instead of relying on a single mutual fund, a diversified portfolio helps balance <strong>growth and risk</strong>.</p>

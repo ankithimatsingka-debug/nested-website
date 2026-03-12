@@ -44,6 +44,7 @@ const routes = [
   '/account-data-deletion-policy',
   '/kyc-modification',
   '/nested-dreamers',
+  '/nested-dreamers/dashboard',
 ];
 
 if (!existsSync(SOURCE)) {

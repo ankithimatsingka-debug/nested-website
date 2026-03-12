@@ -1,38 +1,46 @@
 
 
-# Fix Google Indexing Issues
+## Education Calculator - 5-Step Journey Flow
 
-## Root Cause Analysis
+### Overview
+A redesigned emotional journey for parents with dedicated pages for fee visualization and Nested's value proposition.
 
-There are **three issues** causing the indexing errors:
+### Flow
+Step 1 (Reality Moment) > Step 2 (College Selection) > Step 3 (Fee Chart + Nested Story) > Step 4 (Child Name) > Step 5 (Email) > Reveal
 
-### 1. Hardcoded canonical URL (CRITICAL)
-`index.html` line 20 has `<link rel="canonical" href="https://nested.money/" />`. The static page generation script copies this exact file to every route. So when Googlebot fetches `/blog`, `/features`, etc., it sees a canonical pointing to `/` -- telling Google "this page is a duplicate of the homepage, don't index it." This explains **"Discovered - currently not indexed"** and **"Crawled - currently not indexed"**.
+### Step Details
 
-**Fix:** Remove the hardcoded canonical from `index.html`. React Helmet already sets the correct per-page canonical client-side.
+**Step 1 — The Reality Moment**
+- Headline: "Your child's education will cost more than you think."
+- Stats: 3-4X increase in last decade, 10%+ annual growth, 65/100 parents feel burdened
+- Reassurance line about small consistent savings
+- CTA: "See how fees have grown"
 
-### 2. Hardcoded title and meta description
-Same problem: every pre-rendered page has `<title>Nested - Funding dreams...</title>` and the homepage meta description. Before JS executes, Google may read these wrong values.
+**Step 2 — College Selection**
+- Quick-pick tiles for 8 common college categories (IIT, IIM, Private Engineering, etc.)
+- Search bar for custom colleges
+- Clicking a tile/search result immediately advances to Step 3
 
-**Fix:** Set generic fallback title/description in `index.html` or remove the specific ones and let React Helmet handle them.
+**Step 3 — Fee Visualization + Nested Story**
+- Full 25-year fee trend chart (10 years historical, 15 years projected)
+- Shows: 10 years ago, today, and projected in 15 years
+- Key insight card: "Fees have grown X% in the last 10 years"
+- Nested story section explaining:
+  - Most parents don't plan or use FDs that underperform
+  - Nested analyzes 2,000+ mutual funds
+  - Age-appropriate, goal-based, auto-rebalanced portfolios
+- CTA: "Build a plan for this goal"
 
-### 3. 404.html redirect still active
-For any route NOT in the static pages list, the `404.html` fires a JS redirect. Google sees 404 status + redirect = "Page with redirect" and "Redirect error" issues.
+**Step 4 — Personalization**
+- Collects child's name
+- Shows customized plan prompt after name entered
+- CTA: "Yes, create my plan"
 
-**Fix:** Already mostly addressed by the static pages script. Ensure all routes from `App.tsx` are in the script.
+**Step 5 — Email Gate**
+- Collects email address
+- CTA: "Show [child]'s plan"
 
-## Changes
-
-### 1. `index.html`
-- Remove `<link rel="canonical" href="https://nested.money/" />`
-- Keep the title and description as generic fallbacks (they get overridden by React Helmet)
-
-### 2. Ensure all pages set canonical via React Helmet
-- Check `Index.tsx`, `Features.tsx`, `Blog.tsx`, `Landing.tsx`, and other pages set `<link rel="canonical">` via Helmet
-- Add canonical tags to any pages missing them
-
-### 3. `scripts/generate-static-pages.js`
-- Add `/nested-dreamers/dashboard` (present in App.tsx but missing from the script)
-
-This is a small, targeted set of changes. The canonical removal is the highest-impact fix.
-
+**Reveal Page**
+- Displays SIP amount, total investment, target corpus
+- Chart comparing Nested vs FD growth
+- Delta amount highlighting Nested's advantage

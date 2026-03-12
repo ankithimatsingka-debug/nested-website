@@ -468,7 +468,7 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 2: Calculate the Required Monthly SIP</h2>
       <p class="mb-4">Example: Goal amount: ₹60 lakh | Investment horizon: 15 years | Expected return: 12%</p>
       <p class="mb-4"><strong>Required monthly SIP: ₹8,500–₹9,000</strong></p>
-      <p class="mb-6">These calculations can be done manually, but platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically determine the required SIP based on your goal and timeline.</p>
+      <p class="mb-6">These calculations can be done manually, but platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically determine the required SIP based on your goal and timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Choose the Right Mutual Fund Portfolio</h2>
       <p class="mb-4">Many parents search for the <strong>best mutual fund for child education</strong>. But focusing on a single fund can create unnecessary risk. A better approach is to build a <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">diversified portfolio</a> including:</p>

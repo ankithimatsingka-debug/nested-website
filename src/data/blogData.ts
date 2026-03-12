@@ -712,7 +712,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "education-inflation-india",
     title: "Education Inflation in India: What Parents Must Know About the Future Cost of College",
-    excerpt: "Discover how education inflation affects the future cost of college in India. Learn how much parents need to save and how goal-based investing with the Nested App can help.",
+    excerpt: "Discover how education inflation affects the future cost of college in India. Learn how much parents need to save and how goal-based investing with Nested Money can help.",
     coverImage: "/blog/education-inflation-india.png",
     content: `
       <img src="/blog/education-inflation-india.png" alt="education inflation future cost of college India" class="w-full rounded-lg mb-8" />

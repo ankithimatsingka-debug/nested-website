@@ -2012,7 +2012,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-4">These calculations assume <strong>12% annual return</strong>, which is often used as a long-term equity return assumption.</p>
 
-      <p class="mb-6">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically calculate the required SIP based on the goal and time horizon.</p>
+      <p class="mb-6">Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically calculate the required SIP based on the goal and time horizon.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step-by-Step Plan to Build ₹1 Crore</h2>
 

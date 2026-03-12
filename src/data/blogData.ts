@@ -2577,6 +2577,211 @@ export const blogPosts: BlogPost[] = [
     category: "Education Planning",
     readTime: "10 min read"
   },
+  {
+    slug: "rising-cost-of-education-in-india",
+    title: "Rising Cost of Education in India: What Parents Must Know (2026)",
+    excerpt: "Understand how education costs are rising in India, what college will cost in 10-15 years, and how parents can plan ahead with smart investing strategies.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">Education in India is getting more expensive every year. For parents with young children, the cost of a college degree 10–15 years from now could be <strong>3 to 5 times</strong> what it is today.</p>
+
+      <p class="mb-4">This isn't speculation — it's the result of <strong>education inflation</strong>, which has consistently outpaced general inflation in India for over a decade.</p>
+
+      <p class="mb-4">In this guide, we break down the numbers, explain why costs are rising, and show parents how to plan ahead so they're not caught off guard.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Quick Summary</h3>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Education inflation in India runs at <strong>8–10% per year</strong></li>
+          <li>A ₹20 lakh course today could cost <strong>₹63 lakh+ in 15 years</strong></li>
+          <li>Traditional savings like FDs often <strong>fail to keep up</strong> with education inflation</li>
+          <li>Goal-based investing through platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> can help parents stay ahead</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How Fast Are Education Costs Rising?</h2>
+
+      <p class="mb-4">While general inflation in India hovers around 5–6%, education costs have been growing at <strong>8–10% annually</strong>. This means education expenses roughly <strong>double every 7–8 years</strong>.</p>
+
+      <p class="mb-4">Here's what this looks like in practice:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-heading">Course</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Cost in 2015</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Cost in 2025</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Projected 2035</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Projected 2040</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">IIT B.Tech</td><td class="border border-border px-4 py-3">₹2 lakh</td><td class="border border-border px-4 py-3">₹12 lakh</td><td class="border border-border px-4 py-3">₹31 lakh</td><td class="border border-border px-4 py-3">₹50 lakh</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Private Engineering</td><td class="border border-border px-4 py-3">₹4 lakh</td><td class="border border-border px-4 py-3">₹15 lakh</td><td class="border border-border px-4 py-3">₹39 lakh</td><td class="border border-border px-4 py-3">₹63 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">IIM MBA</td><td class="border border-border px-4 py-3">₹18 lakh</td><td class="border border-border px-4 py-3">₹35 lakh</td><td class="border border-border px-4 py-3">₹69 lakh</td><td class="border border-border px-4 py-3">₹1 crore</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">MBBS (Private)</td><td class="border border-border px-4 py-3">₹40 lakh</td><td class="border border-border px-4 py-3">₹1 crore</td><td class="border border-border px-4 py-3">₹2.6 crore</td><td class="border border-border px-4 py-3">₹4.2 crore</td></tr>
+            <tr><td class="border border-border px-4 py-3">USA STEM Degree</td><td class="border border-border px-4 py-3">₹1.5 crore</td><td class="border border-border px-4 py-3">₹3 crore</td><td class="border border-border px-4 py-3">₹5.9 crore</td><td class="border border-border px-4 py-3">₹8.3 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4 text-muted-foreground text-sm">*Projections based on historical growth rates. Actual costs may vary.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why Are Education Costs Rising So Fast?</h2>
+
+      <p class="mb-4">Several factors contribute to the rapid rise in education costs in India:</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">1. Infrastructure and Facilities</h3>
+      <p class="mb-4">Modern colleges invest heavily in labs, hostels, sports facilities, and technology infrastructure. These capital costs are passed on to students through fees.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">2. Faculty Costs</h3>
+      <p class="mb-4">Attracting and retaining quality faculty requires competitive compensation, especially in specialised fields like AI, data science, and medicine.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">3. Global Competition</h3>
+      <p class="mb-4">Indian institutions increasingly benchmark themselves against global universities, adopting international standards that come with higher operational costs.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">4. Regulatory Changes</h3>
+      <p class="mb-4">Changes in accreditation requirements and compliance standards often lead to additional expenses for institutions.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">5. Demand-Supply Gap</h3>
+      <p class="mb-4">The number of students seeking quality education far outstrips the supply of seats, allowing institutions to charge premium fees.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">The Impact on Middle-Class Families</h2>
+
+      <p class="mb-4">For most middle-class Indian families, education is the <strong>single largest financial commitment</strong> after housing. Consider this:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-heading">Scenario</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Current Cost</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Cost in 15 Years (8% inflation)</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Cost in 18 Years (8% inflation)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Engineering + MBA</td><td class="border border-border px-4 py-3">₹35 lakh</td><td class="border border-border px-4 py-3">₹1.1 crore</td><td class="border border-border px-4 py-3">₹1.4 crore</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">MBBS</td><td class="border border-border px-4 py-3">₹50 lakh</td><td class="border border-border px-4 py-3">₹1.6 crore</td><td class="border border-border px-4 py-3">₹2 crore</td></tr>
+            <tr><td class="border border-border px-4 py-3">Overseas Masters</td><td class="border border-border px-4 py-3">₹60 lakh</td><td class="border border-border px-4 py-3">₹1.9 crore</td><td class="border border-border px-4 py-3">₹2.4 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">Without proper planning, families often resort to <strong>education loans</strong>, which add interest costs on top of the already inflated fees.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why Traditional Savings Fall Short</h2>
+
+      <p class="mb-4">Many parents rely on Fixed Deposits or recurring deposits to save for education. While these are safe, they typically offer <strong>6–7% returns</strong> — well below the 8–10% education inflation rate.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-heading">Investment</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Typical Return</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Beats Education Inflation?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Fixed Deposit</td><td class="border border-border px-4 py-3">6–7%</td><td class="border border-border px-4 py-3">❌ No</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">PPF</td><td class="border border-border px-4 py-3">7.1%</td><td class="border border-border px-4 py-3">⚠️ Barely</td></tr>
+            <tr><td class="border border-border px-4 py-3">Equity Mutual Funds</td><td class="border border-border px-4 py-3">12–14%</td><td class="border border-border px-4 py-3">✅ Yes</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Hybrid Funds</td><td class="border border-border px-4 py-3">9–11%</td><td class="border border-border px-4 py-3">✅ Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">This is why financial planners increasingly recommend <strong>goal-based mutual fund investing</strong> for long-term education goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How Parents Can Plan Ahead</h2>
+
+      <p class="mb-4">Planning for rising education costs doesn't have to be overwhelming. Here's a structured approach:</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 1: Estimate the Future Cost</h3>
+      <p class="mb-4">Use an education cost calculator to project what your child's chosen course will cost by the time they're ready for college. Factor in 8–10% annual inflation.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 2: Calculate the Required Monthly Investment</h3>
+      <p class="mb-4">Once you know the target amount, work backwards to find how much you need to invest monthly via SIP to reach that goal.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-heading">Target Amount</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Timeline</th>
+              <th class="border border-border px-4 py-3 text-left font-heading">Monthly SIP (at 12%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹50 lakh</td><td class="border border-border px-4 py-3">15 years</td><td class="border border-border px-4 py-3">₹10,000</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">₹1 crore</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹14,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹2 crore</td><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹28,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 3: Start Early and Stay Consistent</h3>
+      <p class="mb-4">The earlier you start, the more compounding works in your favour. Even a 2–3 year delay can increase the required monthly investment by 30–40%.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 4: Review and Rebalance</h3>
+      <p class="mb-4">As your child grows closer to college age, gradually shift from equity-heavy to more conservative investments to protect the corpus.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Try Our Education Cost Calculator</h2>
+
+      <p class="mb-4">Use the interactive calculator below to see exactly how much your child's education could cost and how much you need to invest today.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Nested Money</a> Helps Parents Stay Ahead</h2>
+
+      <p class="mb-4"><a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> is a goal-based investment platform built specifically for parents planning their child's education. Here's how it helps:</p>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Education Cost Estimation:</strong> Calculates the future cost of education based on real data and inflation rates</li>
+        <li><strong>Smart Portfolio Allocation:</strong> Analyses 2,000+ mutual funds to build diversified, age-appropriate portfolios</li>
+        <li><strong>Automatic Rebalancing:</strong> Adjusts the investment mix as the education goal approaches</li>
+        <li><strong>Goal Tracking:</strong> Visual progress tracking so parents always know where they stand</li>
+        <li><strong>Expert-Backed Strategy:</strong> Investment strategies designed by financial professionals</li>
+      </ul>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8 text-center">
+        <h3 class="text-lg font-heading font-semibold mb-3">Start Planning Today</h3>
+        <p class="mb-4">Don't let rising education costs catch you off guard. Start building your child's education fund with <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a>.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">Download Nested Money</a>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India: Complete Guide</a></li>
+        <li><a href="/blog/sip-for-child-education-india" class="text-primary hover:underline">SIP for Child Education: How Much Should You Invest?</a></li>
+        <li><a href="/blog/education-inflation-india" class="text-primary hover:underline">Education Inflation in India: Future Cost of College</a></li>
+        <li><a href="/blog/build-1-crore-child-education" class="text-primary hover:underline">How to Build ₹1 Crore for Your Child's Education</a></li>
+        <li><a href="/blog/best-investment-plan-for-child-india" class="text-primary hover:underline">Best Investment Plan for Child in India</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby in India</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">FAQs</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">How much has education cost increased in India?</h3>
+      <p class="mb-4">Education costs in India have been growing at 8–10% annually, significantly faster than general inflation. Many courses have seen fees double or triple in the last decade.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What will IIT cost in 2040?</h3>
+      <p class="mb-4">Based on current growth trends, IIT B.Tech fees could reach approximately ₹50 lakh by 2040, up from around ₹12 lakh today.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Is FD enough to save for education?</h3>
+      <p class="mb-4">Fixed Deposits typically return 6–7%, which is below the education inflation rate of 8–10%. This means FD savings may lose purchasing power over time for education goals.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">How can I plan for my child's education expenses?</h3>
+      <p class="mb-4">Start by estimating the future cost using an education calculator, then set up a monthly SIP in diversified mutual funds. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this entire process.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What is the best way to invest for rising education costs?</h3>
+      <p class="mb-4">A diversified portfolio of equity and hybrid mutual funds, started early and reviewed periodically, is widely considered the most effective approach for beating education inflation.</p>
+    `,
+    author: "Nested",
+    publishedAt: "2026-03-12",
+    category: "Education Planning",
+    readTime: "10 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

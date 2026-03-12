@@ -258,6 +258,11 @@ export default function BlogPost() {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
+          {/* Embedded Education Calculator for specific blog post */}
+          {post.slug === "rising-cost-of-education-in-india" && (
+            <EducationCalculator />
+          )}
+
           {/* CTA */}
           <div className="mt-12 p-6 bg-muted/50 rounded-lg text-center">
             <h3 className="font-heading text-xl font-semibold mb-2">

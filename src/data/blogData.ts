@@ -2452,7 +2452,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">Goal calculators in platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this calculation.</p>
+      <p class="mb-6">Goal calculators in platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this calculation.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Choose the Right Investment Strategy</h2>
       <p class="mb-4">Parents often use a mix of different investment options.</p>

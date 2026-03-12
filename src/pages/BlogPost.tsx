@@ -238,10 +238,13 @@ export default function BlogPost() {
               Start Your Investment Journey
             </h3>
             <p className="text-muted-foreground mb-4">
-              Download the Nested app and start building your child's education corpus today.
+              Download the Nested Money app and start building your child's education corpus today.
             </p>
-            <Button size="lg">
-              Download App
+            <Button size="lg" asChild>
+              <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                Download App
+              </a>
+            </Button>
             </Button>
           </div>
         </article>

@@ -50,6 +50,7 @@ const routes = [
   '/nested-dreamers',
   '/nested-dreamers/dashboard',
   '/blog/child-pursuing-music-ai-era',
+  '/blog/50000-invested-child-college',
 ];
 
 if (!existsSync(SOURCE)) {

@@ -280,6 +280,30 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "50000-invested-child-college" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "What ₹50,000 Invested Today Can Mean for Your Child's College Tomorrow",
+            "description": "How ₹50,000 invested today can grow over 15 years across FD, Sukanya Samriddhi, ULIPs, and advisory-led mutual funds.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-12",
+            "keywords": "education investment India, FD vs mutual fund, education planning India, compounding, Sukanya Samriddhi",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/50000-invested-child-college" }
+          })}</script>
+        )}
+        {post.slug === "50000-invested-child-college" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "How much will ₹50,000 grow in 15 years?", "acceptedAnswer": { "@type": "Answer", "text": "At 12-15% annual returns through advisory-led mutual funds, ₹50,000 can grow to ₹2.28-3.00 lakh in 15 years. In an FD at 6%, it would grow to only ₹1.19 lakh." } },
+              { "@type": "Question", "name": "Is FD enough to save for child education?", "acceptedAnswer": { "@type": "Answer", "text": "FDs typically return 6% pre-tax, which after taxation reduces to ~4.5%. This is well below education inflation of 8-10%, making FDs insufficient as the sole education savings tool." } },
+              { "@type": "Question", "name": "When should parents start investing for child education?", "acceptedAnswer": { "@type": "Answer", "text": "The earlier the better. Starting when the child is born gives 15-18 years of compounding, significantly reducing the monthly investment needed." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

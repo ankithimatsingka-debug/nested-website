@@ -3142,6 +3142,122 @@ export const blogPosts: BlogPost[] = [
     readTime: "7 min read",
   },
   {
+    slug: "50000-invested-child-college",
+    title: "What ₹50,000 Invested Today Can Mean for Your Child's College Tomorrow",
+    excerpt: "How middle-class parents can turn small beginnings into big outcomes through compounding, smart advisory, and timely planning. Compare FD, Sukanya Samriddhi, ULIPs, and mutual funds.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">How middle-class parents can turn small beginnings into big outcomes through compounding, smart advisory, and timely planning.</p>
+
+      <p class="mb-4"><strong>Ravi and Priya Sharma</strong> from Nagpur earn about ₹1.2 lakh a month. Between rent, groceries, and school fees, savings often take a back seat. Their 4-year-old son, Aarav, dreams of becoming a scientist, but college seems like a faraway thought.</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"We always thought college is 15 years away. But when we saw how fast school fees were rising, it hit us — education inflation is real," says Priya.</blockquote>
+
+      <p class="mb-6">In the last decade, <strong>education costs in India have gone up 3–4x</strong>. A degree that cost ₹5 lakh in 2014 now easily costs ₹15–20 lakh. The only thing that can catch up to that pace is <strong>compounding</strong> — when your money earns returns, and those returns start earning more.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">The ₹50,000 Thought Experiment for 15 Years</h2>
+
+      <p class="mb-4">Let's see what happens if Ravi and Priya invest ₹50,000 today for Aarav's education, leaving it untouched for 15 years:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="border-b border-border">
+              <th class="text-left py-3 px-4 font-semibold">Instrument</th>
+              <th class="text-left py-3 px-4 font-semibold">Avg Return (p.a.)</th>
+              <th class="text-left py-3 px-4 font-semibold">Value After 15 Years</th>
+              <th class="text-left py-3 px-4 font-semibold">Key Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-border/50">
+              <td class="py-3 px-4"><strong>Fixed Deposit (FD)</strong></td>
+              <td class="py-3 px-4">6%</td>
+              <td class="py-3 px-4">₹1,19,000</td>
+              <td class="py-3 px-4">Safe but weak growth. High tax outgo reduces real returns to ~4.5%.</td>
+            </tr>
+            <tr class="border-b border-border/50">
+              <td class="py-3 px-4"><strong>Sukanya Samriddhi Yojana</strong></td>
+              <td class="py-3 px-4">8%</td>
+              <td class="py-3 px-4">₹1,58,000</td>
+              <td class="py-3 px-4">Tax-free and secure but 21-year lock-in. Only for daughters.</td>
+            </tr>
+            <tr class="border-b border-border/50">
+              <td class="py-3 px-4"><strong>ULIP Plan</strong></td>
+              <td class="py-3 px-4">7.5%</td>
+              <td class="py-3 px-4">₹1,49,000</td>
+              <td class="py-3 px-4">Combines insurance and investment, but high costs and limited control.</td>
+            </tr>
+            <tr class="border-b border-border/50">
+              <td class="py-3 px-4"><strong>Advisory-led Mutual Funds</strong></td>
+              <td class="py-3 px-4">12–15%</td>
+              <td class="py-3 px-4">₹2,28,000 – ₹3,00,000</td>
+              <td class="py-3 px-4">Goal-based allocation with active advisory. Funds scrutinized for composition and market cycles.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">The difference may look small on paper, but it's huge in impact. At 15% returns, that ₹50,000 could fund an entire semester of college later. <strong>Time is the multiplier, not just money.</strong></p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why Compounding Works Best with Time</h2>
+
+      <p class="mb-4">Compounding works quietly and brilliantly when given long timelines. Every extra year adds exponential value. That's why even modest investments, if started early, can beat large but late contributions.</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"The best time to plant a tree was 15 years ago. The second-best time is today." A truth every parent planning for education should remember.</blockquote>
+
+      <p class="mb-6">FDs fail to leverage compounding because of annual interest payouts and taxation. Mutual funds, on the other hand, let returns stay invested, creating a self-snowballing effect that matches rising education costs.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How Nested Makes Education Planning Smarter</h2>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Advisory-driven allocation:</strong> We don't just pick mutual funds — we analyze them to understand their forward rate of change and composition for current market cycles.</li>
+        <li><strong>Timely nudges:</strong> Markets shift, and so should your allocation. Nested nudges you at the right time to rebalance or top up.</li>
+        <li><strong>Dedicated kids account:</strong> Start a focused education account under your child's name. It keeps goals visible and savings disciplined.</li>
+        <li><strong>Persona-based investing:</strong> Whether you're conservative or mild-risk, your plan is tuned for your comfort and target alpha.</li>
+      </ul>
+
+      <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-400 p-4 my-6">
+        <p class="text-sm">Planning isn't just about chasing returns — it's about control, clarity, and consistency. Nested helps you achieve all three with an education-first focus.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Stories from Real Households</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Family from Gurgaon</h3>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-4 italic">Started with a ₹50,000 lump sum and a ₹5,000 monthly SIP. After staying disciplined, they could already see their fund compounding in just a few years. In 10–15 years, their child's education fund could easily cross ₹10–12 lakh.</blockquote>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Couple from Vijayawada</h3>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-4 italic">Began with ₹1 lakh as a one-time investment and added ₹8,000 monthly. The power of consistency is visible — even in the early years. Over 15 years, their plan could grow into ₹20–25 lakh.</blockquote>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Start Early, Sleep Easy</h2>
+
+      <p class="mb-4">For most middle-class parents earning ₹1–2 lakh a month, education is both a dream and a duty. The difference between stress and confidence often lies in <strong>when they start</strong>, not how much.</p>
+
+      <p class="mb-6">₹50,000 won't fund college today, but in 15 years, with compounding and the right plan, it can cover a major chunk. The earlier you begin, the easier the climb.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <p class="mb-3"><strong>At Nested</strong>, we help parents plan early and wisely — combining advisory-led mutual fund strategies with personalized education goals. You can even start a dedicated kids account today to track your progress and stay consistent.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">Start Your Child's Plan</a>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby</a></li>
+        <li><a href="/blog/best-sip-plans-child-education-india" class="text-primary hover:underline">Best SIP Plans for Child Education</a></li>
+        <li><a href="/blog/mutual-funds-vs-ppf-child-education" class="text-primary hover:underline">Mutual Funds vs PPF for Child Education</a></li>
+        <li><a href="/blog/build-1-crore-child-education" class="text-primary hover:underline">How to Build ₹1 Crore for Child Education</a></li>
+      </ul>
+
+      <p class="text-sm text-muted-foreground mt-8">Disclaimer: Returns shown are indicative and for educational purposes only. Actual outcomes vary based on market conditions and product selection.</p>
+    `,
+    author: "Nested Team",
+    publishedAt: "2026-03-12",
+    category: "Education Planning",
+    readTime: "6 min read",
+  },
+  {
     slug: "child-pursuing-music-ai-era",
     title: "If Your 9-Year-Old Wants to Pursue Music in the Age of AI",
     excerpt: "AI is changing jobs, but creativity still shines. Learn how to nurture your child's music dream with balance, patience, and planning.",

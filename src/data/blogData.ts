@@ -728,7 +728,7 @@ export const blogPosts: BlogPost[] = [
         <p class="mb-3">Education inflation in India is estimated at <strong>7–10% annually</strong>, significantly higher than general inflation.</p>
         <p class="mb-1">Current cost of engineering degree: ₹20 lakh | Education inflation: 8% | Time horizon: 15 years</p>
         <p class="mb-3"><strong>Future cost: ₹20 lakh → ~₹63 lakh</strong></p>
-        <p>Parents must calculate the <strong>future value of education costs</strong> and invest accordingly. Goal-planning platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate future costs and determine the required monthly investment.</p>
+        <p>Parents must calculate the <strong>future value of education costs</strong> and invest accordingly. Goal-planning platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate future costs and determine the required monthly investment.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What Is Education Inflation?</h2>

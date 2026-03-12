@@ -245,7 +245,6 @@ export default function BlogPost() {
                 Download App
               </a>
             </Button>
-            </Button>
           </div>
         </article>
 

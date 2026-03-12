@@ -44,7 +44,7 @@ export const blogPosts: BlogPost[] = [
           <li>Investing in a <strong>diversified portfolio of mutual funds</strong></li>
           <li>Rebalancing investments as the goal approaches</li>
         </ol>
-        <p>Goal-based platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify this process by calculating the required investment amount and automatically managing the portfolio.</p>
+        <p>Goal-based platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> simplify this process by calculating the required investment amount and automatically managing the portfolio.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Planning Early Is Critical</h2>
@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
         <li>Expected return: 12%</li>
         <li>Required monthly investment: <strong>~₹14,000</strong></li>
       </ul>
-      <p class="mb-4">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this calculation and help determine the exact investment needed.</p>
+      <p class="mb-4">Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this calculation and help determine the exact investment needed.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Build a Diversified Portfolio</h2>
       <p class="mb-4">Instead of relying on a single mutual fund, a diversified portfolio helps balance <strong>growth and risk</strong>.</p>
@@ -117,7 +117,7 @@ export const blogPosts: BlogPost[] = [
 
       <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Debt Funds</h3>
       <p class="mb-4">Used closer to the goal to protect accumulated wealth.</p>
-      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across multiple funds.</p>
+      <p class="mb-4">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across multiple funds.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Rebalance the Portfolio Over Time</h2>
       <p class="mb-4">As the child approaches college age, the investment strategy should gradually shift toward lower risk.</p>
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
         <li>Middle years → <strong>Balanced allocation</strong></li>
         <li>Final years → <strong>Debt-focused portfolio</strong></li>
       </ul>
-      <p class="mb-4">Automated systems like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> handle this process automatically.</p>
+      <p class="mb-4">Automated systems like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> handle this process automatically.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Investment Options for Children</h2>
       <div class="overflow-x-auto my-6">
@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Invest for Your Child's Future</h2>
       <p class="mb-4">Managing goal calculations, fund selection, and portfolio adjustments manually can be complex.</p>
-      <p class="mb-4">Goal-based investing platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based investing platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of goals</li>
         <li>Calculate the required monthly investment</li>
@@ -229,7 +229,7 @@ export const blogPosts: BlogPost[] = [
           <li>Invest in a <strong>diversified mutual fund portfolio</strong></li>
           <li>Adjust the portfolio risk as the goal approaches</li>
         </ol>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate future costs, calculate the required investment amount, and manage portfolios automatically.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate future costs, calculate the required investment amount, and manage portfolios automatically.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How Education Costs Are Rising in India</h2>
@@ -282,7 +282,7 @@ export const blogPosts: BlogPost[] = [
         <li>Expected return: 12%</li>
         <li>Required monthly investment: <strong>₹10,000–₹11,000</strong></li>
       </ul>
-      <p class="mb-4">Instead of calculating manually, parents can use tools provided by platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a>, which automatically determine the required SIP based on the goal and timeline.</p>
+      <p class="mb-4">Instead of calculating manually, parents can use tools provided by platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a>, which automatically determine the required SIP based on the goal and timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Invest in the Right Mutual Fund Portfolio</h2>
       <p class="mb-4">Many parents search online for the <strong>best mutual fund for child education</strong>. However, relying on a single fund is rarely the best approach for long-term goals.</p>
@@ -300,7 +300,7 @@ export const blogPosts: BlogPost[] = [
       <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Debt Funds</h3>
       <p class="mb-4">Used closer to the goal to protect accumulated wealth.</p>
 
-      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across suitable funds based on the goal timeline.</p>
+      <p class="mb-4">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across suitable funds based on the goal timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Adjust the Portfolio as the Goal Approaches</h2>
       <p class="mb-4">As the child approaches college age, investment risk should gradually decrease.</p>
@@ -310,7 +310,7 @@ export const blogPosts: BlogPost[] = [
         <li>Middle years → <strong>Balanced allocation</strong></li>
         <li>Final years → <strong>Debt-heavy allocation</strong></li>
       </ul>
-      <p class="mb-4">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> rebalance portfolios automatically to maintain the appropriate asset allocation.</p>
+      <p class="mb-4">Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> rebalance portfolios automatically to maintain the appropriate asset allocation.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">When Should Parents Start Saving?</h2>
       <p class="mb-4">The earlier parents start investing, the easier it becomes to reach the goal.</p>
@@ -342,7 +342,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan for Your Child's Education</h2>
       <p class="mb-4">Planning for child education involves multiple steps: estimating costs, calculating investments, selecting funds, and managing portfolios over time.</p>
-      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify this process by helping parents:</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> simplify this process by helping parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly investment</li>
@@ -413,7 +413,7 @@ export const blogPosts: BlogPost[] = [
           <li>Investing through a <strong>diversified mutual fund portfolio</strong></li>
           <li><strong>Rebalancing investments as the goal approaches</strong></li>
         </ul>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents calculate the required SIP, allocate funds automatically, and rebalance the portfolio over time.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents calculate the required SIP, allocate funds automatically, and rebalance the portfolio over time.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why SIP Is Ideal for Child Education Planning</h2>
@@ -468,7 +468,7 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 2: Calculate the Required Monthly SIP</h2>
       <p class="mb-4">Example: Goal amount: ₹60 lakh | Investment horizon: 15 years | Expected return: 12%</p>
       <p class="mb-4"><strong>Required monthly SIP: ₹8,500–₹9,000</strong></p>
-      <p class="mb-6">These calculations can be done manually, but platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically determine the required SIP based on your goal and timeline.</p>
+      <p class="mb-6">These calculations can be done manually, but platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically determine the required SIP based on your goal and timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Choose the Right Mutual Fund Portfolio</h2>
       <p class="mb-4">Many parents search for the <strong>best mutual fund for child education</strong>. But focusing on a single fund can create unnecessary risk. A better approach is to build a <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">diversified portfolio</a> including:</p>
@@ -483,7 +483,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Offer higher growth potential over long time horizons.</p>
 
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">Debt Funds (Closer to the Goal)</h3>
-      <p class="mb-6">Help protect accumulated gains as the education date approaches. Goal-based platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across these funds based on the child's age and goal timeline.</p>
+      <p class="mb-6">Help protect accumulated gains as the education date approaches. Goal-based platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across these funds based on the child's age and goal timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Increase SIP Over Time</h2>
       <p class="mb-4">As income increases, parents should <strong>step up their SIP contributions</strong>. A simple strategy is increasing SIP by <strong>10% every year</strong>.</p>
@@ -512,7 +512,7 @@ export const blogPosts: BlogPost[] = [
         <li>Middle years → <strong>Balanced allocation</strong></li>
         <li>Final years → <strong>Higher debt allocation</strong></li>
       </ul>
-      <p class="mb-6">This helps protect the accumulated corpus from market volatility. Goal-based investing tools such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this rebalancing process.</p>
+      <p class="mb-6">This helps protect the accumulated corpus from market volatility. Goal-based investing tools such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this rebalancing process.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make With SIP</h2>
 
@@ -526,7 +526,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-6">Investments should be aligned with the <strong>child's goal timeline</strong>, not based on short-term performance.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Invest for Child Education</h2>
-      <p class="mb-4">Instead of manually calculating SIP amounts and selecting funds, parents can use <strong>goal-based investing platforms</strong>. <a href="/" class="text-primary hover:underline font-medium">Nested App</a> helps parents:</p>
+      <p class="mb-4">Instead of manually calculating SIP amounts and selecting funds, parents can use <strong>goal-based investing platforms</strong>. <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> helps parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate future education costs</li>
         <li>Calculate the required SIP automatically</li>
@@ -586,7 +586,7 @@ export const blogPosts: BlogPost[] = [
           <li>Invest in a <strong>diversified mutual fund portfolio</strong></li>
           <li><strong>Rebalance the portfolio over time</strong> as the goal approaches</li>
         </ul>
-        <p>Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this process by calculating the goal amount, recommending the required SIP, and dynamically managing the portfolio.</p>
+        <p>Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this process by calculating the goal amount, recommending the required SIP, and dynamically managing the portfolio.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Education Planning Should Start Early</h2>
@@ -633,7 +633,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Once the future cost is estimated, the next step is calculating how much you need to invest every month.</p>
       <p class="mb-4">Example: Goal: ₹65 lakh | Time horizon: 15 years | Expected return: 12%</p>
       <p class="mb-4"><strong>Required monthly SIP: ~₹9,000</strong></p>
-      <p class="mb-6">This is where most parents struggle because calculations can become complicated. Goal-based investing platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify this by automatically calculating the required investment. Learn more about <a href="/blog/sip-for-child-education-india" class="text-primary hover:underline font-medium">SIP planning for child education</a>.</p>
+      <p class="mb-6">This is where most parents struggle because calculations can become complicated. Goal-based investing platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> simplify this by automatically calculating the required investment. Learn more about <a href="/blog/sip-for-child-education-india" class="text-primary hover:underline font-medium">SIP planning for child education</a>.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Build the Right Mutual Fund Portfolio</h2>
       <p class="mb-4">Many parents search for <strong>"Best mutual fund for child education."</strong> But the truth is <strong>no single fund can work for the entire 15–18 year journey</strong>.</p>
@@ -651,12 +651,12 @@ export const blogPosts: BlogPost[] = [
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">Debt Funds (Later Years)</h3>
       <p class="mb-4">Reduce risk as the education goal approaches.</p>
 
-      <p class="mb-6">Managing this portfolio manually can be complex. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across funds based on the goal timeline. Read more about <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">the best mutual fund strategy for children</a>.</p>
+      <p class="mb-6">Managing this portfolio manually can be complex. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across funds based on the goal timeline. Read more about <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">the best mutual fund strategy for children</a>.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Rebalance the Portfolio as the Goal Approaches</h2>
       <p class="mb-4">One of the biggest risks parents face is <strong>market volatility near the goal date</strong>. If your child is about to start college and markets fall, your education fund could be impacted.</p>
       <p class="mb-4">That's why a good strategy gradually shifts: <strong>Equity → Hybrid → Debt</strong></p>
-      <p class="mb-6">This protects the accumulated corpus. Goal-based investing systems such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> rebalance portfolios automatically to keep the goal on track.</p>
+      <p class="mb-6">This protects the accumulated corpus. Goal-based investing systems such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> rebalance portfolios automatically to keep the goal on track.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
 
@@ -673,7 +673,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-6"><a href="/blog/education-inflation-india" class="text-primary hover:underline font-medium">Education costs grow faster than general inflation</a>.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan for Your Child's Education</h2>
-      <p class="mb-4">Instead of manually picking funds and calculating investments, parents can use goal-based platforms. <a href="/" class="text-primary hover:underline font-medium">Nested App</a> helps parents:</p>
+      <p class="mb-4">Instead of manually picking funds and calculating investments, parents can use goal-based platforms. <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> helps parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly SIP</li>
@@ -712,7 +712,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "education-inflation-india",
     title: "Education Inflation in India: What Parents Must Know About the Future Cost of College",
-    excerpt: "Discover how education inflation affects the future cost of college in India. Learn how much parents need to save and how goal-based investing with the Nested App can help.",
+    excerpt: "Discover how education inflation affects the future cost of college in India. Learn how much parents need to save and how goal-based investing with Nested Money can help.",
     coverImage: "/blog/education-inflation-india.png",
     content: `
       <img src="/blog/education-inflation-india.png" alt="education inflation future cost of college India" class="w-full rounded-lg mb-8" />
@@ -728,7 +728,7 @@ export const blogPosts: BlogPost[] = [
         <p class="mb-3">Education inflation in India is estimated at <strong>7–10% annually</strong>, significantly higher than general inflation.</p>
         <p class="mb-1">Current cost of engineering degree: ₹20 lakh | Education inflation: 8% | Time horizon: 15 years</p>
         <p class="mb-3"><strong>Future cost: ₹20 lakh → ~₹63 lakh</strong></p>
-        <p>Parents must calculate the <strong>future value of education costs</strong> and invest accordingly. Goal-planning platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate future costs and determine the required monthly investment.</p>
+        <p>Parents must calculate the <strong>future value of education costs</strong> and invest accordingly. Goal-planning platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate future costs and determine the required monthly investment.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What Is Education Inflation?</h2>
@@ -793,7 +793,7 @@ export const blogPosts: BlogPost[] = [
         <li>Building a diversified investment portfolio</li>
         <li>Adjusting risk as the goal approaches</li>
       </ol>
-      <p class="mb-6">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate these steps, helping parents plan investments aligned with their child's future goals. Try the <a href="/educationcalculator" class="text-primary hover:underline font-medium">Education Calculator</a> to estimate your child's future education cost.</p>
+      <p class="mb-6">Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate these steps, helping parents plan investments aligned with their child's future goals. Try the <a href="/educationcalculator" class="text-primary hover:underline font-medium">Education Calculator</a> to estimate your child's future education cost.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Example Investment Strategy for Education Planning</h2>
       <p class="mb-4">Consider the following scenario: Child's age: 5 years | Goal: engineering degree | Current cost: ₹20 lakh</p>
@@ -822,7 +822,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Expert Insight</h2>
       <p class="mb-4">Many parents focus on selecting the <strong>best mutual fund</strong> for their child's future. However, the more important step is calculating the <strong>future cost of education</strong> and aligning investments accordingly.</p>
-      <p class="mb-6">Goal-based investing tools like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the target amount and automatically adjust their investment strategy over time.</p>
+      <p class="mb-6">Goal-based investing tools like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate the target amount and automatically adjust their investment strategy over time.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Guides for Parents</h2>
       <ul class="list-disc pl-6 mb-6 space-y-2">
@@ -851,7 +851,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "sip-for-child-education-india",
     title: "SIP for Child Education: How Much Should You Invest for Your Child's Future?",
-    excerpt: "Learn how much SIP you should invest for your child's education in India. Calculate future education costs and build a goal-based investment plan using the Nested App.",
+    excerpt: "Learn how much SIP you should invest for your child's education in India. Calculate future education costs and build a goal-based investment plan using Nested Money.",
     coverImage: "/blog/sip-for-child-education-india.png",
     content: `
       <img src="/blog/sip-for-child-education-india.png" alt="SIP for child education investment plan India" class="w-full rounded-lg mb-8" />
@@ -878,7 +878,7 @@ export const blogPosts: BlogPost[] = [
         <p class="mb-1">Current cost of college education: ₹20 lakh | Education inflation: 8% | Time horizon: 15 years</p>
         <p class="mb-3"><strong>Future cost: ₹20 lakh → ~₹63 lakh</strong></p>
         <p class="mb-2">To reach this goal, parents may need to invest roughly <strong>₹12,000–₹15,000 per month through SIPs</strong>, assuming long-term equity returns of 11–12%.</p>
-        <p>Goal-based investment platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> can automatically calculate the required SIP and manage the portfolio over time.</p>
+        <p>Goal-based investment platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> can automatically calculate the required SIP and manage the portfolio over time.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why SIPs Are Ideal for Child Education Planning</h2>
@@ -949,7 +949,7 @@ export const blogPosts: BlogPost[] = [
         <li>Poorly diversified portfolios</li>
         <li>Lack of portfolio adjustments over time</li>
       </ul>
-      <p class="mb-4">Goal-based investing solves this problem by linking investments directly to the target amount. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based investing solves this problem by linking investments directly to the target amount. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly SIP</li>
@@ -984,7 +984,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Expert Insight</h2>
       <p class="mb-4">Many parents focus on finding the <strong>best mutual fund</strong> for their child. However, long-term goals like education are better addressed through <strong>portfolio-level planning rather than individual fund selection</strong>.</p>
-      <p class="mb-6">Goal-based investing systems such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate planning, asset allocation, and portfolio rebalancing to help parents stay on track.</p>
+      <p class="mb-6">Goal-based investing systems such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate planning, asset allocation, and portfolio rebalancing to help parents stay on track.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Reading</h2>
       <p class="mb-4">Parents planning investments for children may also find these guides helpful:</p>
@@ -1014,7 +1014,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "best-mutual-fund-for-children-india",
     title: "Best Mutual Fund for Children in India (2026 Guide) | Child Education Investment Plan",
-    excerpt: "Discover the best mutual fund strategy for children in India. Learn how to plan for child education, calculate future costs, and build a goal-based portfolio using the Nested App.",
+    excerpt: "Discover the best mutual fund strategy for children in India. Learn how to plan for child education, calculate future costs, and build a goal-based portfolio using Nested Money.",
     coverImage: "/blog/best-mutual-fund-for-children-india.png",
     content: `
       <img src="/blog/best-mutual-fund-for-children-india.png" alt="best mutual fund strategy for children education investment plan" class="w-full rounded-lg mb-8" />
@@ -1028,7 +1028,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4"><strong>There is no single mutual fund that can optimally serve a child's financial goal for 15–20 years.</strong></p>
       <p class="mb-4">Children's goals — especially education — span multiple market cycles. Risk needs to change over time, and portfolios must adapt as the goal approaches.</p>
       <p class="mb-4">Because of this, the most effective strategy is <strong>goal-based investing</strong>, where a diversified portfolio evolves over time instead of relying on a single fund.</p>
-      <p class="mb-4">Modern investment platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> are designed specifically for this purpose. They help parents estimate future costs, calculate required investments, and automatically manage diversified mutual fund portfolios.</p>
+      <p class="mb-4">Modern investment platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> are designed specifically for this purpose. They help parents estimate future costs, calculate required investments, and automatically manage diversified mutual fund portfolios.</p>
       <p class="mb-6">This guide explains how to choose the right investment strategy for your child's future.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Quick Answer: What Is the Best Mutual Fund for Children?</h2>
@@ -1041,7 +1041,7 @@ export const blogPosts: BlogPost[] = [
         <li>Gradual reduction in risk as the goal approaches</li>
         <li>Periodic portfolio rebalancing</li>
       </ul>
-      <p class="mb-4">Platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this process by calculating the future cost of goals, recommending the required monthly SIP, and adjusting the portfolio over time.</p>
+      <p class="mb-4">Platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this process by calculating the future cost of goals, recommending the required monthly SIP, and adjusting the portfolio over time.</p>
 
       <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
         <h3 class="text-lg font-heading font-semibold mb-3">🔑 Key Insight</h3>
@@ -1124,8 +1124,8 @@ export const blogPosts: BlogPost[] = [
       </ol>
       <p class="mb-4">Investment platforms now automate these steps.</p>
 
-      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How the Nested App Helps Parents Invest for Children</h2>
-      <p class="mb-4">The <a href="/" class="text-primary hover:underline font-medium">Nested App</a> is designed specifically around goal-driven portfolio management.</p>
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How Nested Money Helps Parents Invest for Children</h2>
+      <p class="mb-4">The <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> platform is designed specifically around goal-driven portfolio management.</p>
 
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">1. Future Cost Calculation</h3>
       <p class="mb-4">Users enter their child's current age, goal type, and target timeline. The platform calculates the inflation-adjusted future cost.</p>
@@ -1164,7 +1164,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Final Thoughts</h2>
       <p class="mb-4">Parents often spend time searching for the best mutual fund for children. But the real objective is not identifying the perfect fund — it is ensuring that the required money is available when the child needs it most.</p>
-      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-4 space-y-2">
         <li>Estimate the future cost of their child's goals</li>
         <li>Determine the correct investment amount</li>
@@ -1527,7 +1527,7 @@ export const blogPosts: BlogPost[] = [
           <li><strong>PPF</strong> offers capital safety and tax benefits but lower returns.</li>
         </ul>
         <p class="mb-3">Many financial planners recommend using <strong>both instruments in combination</strong>.</p>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents allocate investments across different assets depending on the time horizon and financial goal.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents allocate investments across different assets depending on the time horizon and financial goal.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Understanding Public Provident Fund (PPF)</h2>
@@ -1636,7 +1636,7 @@ export const blogPosts: BlogPost[] = [
         <li>Reduce equity exposure</li>
       </ul>
 
-      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this asset allocation and adjust portfolios as the goal approaches.</p>
+      <p class="mb-4">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this asset allocation and adjust portfolios as the goal approaches.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
 
@@ -1669,7 +1669,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Many parents combine both options for a balanced investment plan.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan Child Education Investments</h2>
-      <p class="mb-4">Managing multiple investments and calculating future education costs can be complex. Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Managing multiple investments and calculating future education costs can be complex. Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly investment</li>
@@ -1729,7 +1729,7 @@ export const blogPosts: BlogPost[] = [
           <li>Building a diversified portfolio</li>
           <li>Increasing investments as income grows</li>
         </ol>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the future cost of goals and determine the required monthly investment.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate the future cost of goals and determine the required monthly investment.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Starting Early Matters</h2>
@@ -1806,7 +1806,7 @@ export const blogPosts: BlogPost[] = [
         </ul>
       </div>
 
-      <p class="mb-6">Platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically calculate this amount and help parents stay on track.</p>
+      <p class="mb-6">Platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically calculate this amount and help parents stay on track.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Best Investment Options for a Newborn Baby</h2>
 
@@ -1850,7 +1850,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">As the child approaches college age, the portfolio can gradually shift toward safer assets. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this rebalancing process.</p>
+      <p class="mb-6">As the child approaches college age, the portfolio can gradually shift toward safer assets. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this rebalancing process.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
 
@@ -1870,7 +1870,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-4">Managing investments manually across multiple products can be complicated.</p>
 
-      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify the process by helping parents:</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> simplify the process by helping parents:</p>
 
       <ul class="list-disc pl-6 mb-6 space-y-1">
         <li>Estimate future education costs</li>
@@ -1937,7 +1937,7 @@ export const blogPosts: BlogPost[] = [
           <li>Increase investments gradually</li>
           <li>Rebalance portfolio closer to the goal</li>
         </ol>
-        <p>Goal-planning platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the required SIP and manage investments automatically.</p>
+        <p>Goal-planning platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate the required SIP and manage investments automatically.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why ₹1 Crore Is Becoming the New Education Target</h2>
@@ -2012,7 +2012,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-4">These calculations assume <strong>12% annual return</strong>, which is often used as a long-term equity return assumption.</p>
 
-      <p class="mb-6">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically calculate the required SIP based on the goal and time horizon.</p>
+      <p class="mb-6">Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically calculate the required SIP based on the goal and time horizon.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step-by-Step Plan to Build ₹1 Crore</h2>
 
@@ -2049,7 +2049,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across multiple funds.</p>
+      <p class="mb-6">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across multiple funds.</p>
 
       <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 4: Increase SIP Over Time</h3>
       <p class="mb-4">As income grows, increasing the SIP amount can accelerate wealth creation.</p>
@@ -2110,7 +2110,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-4">Managing investments manually can become complicated over long time horizons.</p>
 
-      <p class="mb-4">Goal-based investing platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based investing platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
 
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Calculate the required education corpus</li>
@@ -2177,7 +2177,7 @@ export const blogPosts: BlogPost[] = [
           <li>Flexibility to increase investments</li>
           <li>Diversification through mutual funds</li>
         </ul>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the required SIP and manage the portfolio automatically.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate the required SIP and manage the portfolio automatically.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why SIP Is Popular for Child Education Planning</h2>
@@ -2215,7 +2215,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">These estimates assume <strong>12% annual returns</strong>. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically calculate the required SIP based on the target goal.</p>
+      <p class="mb-6">These estimates assume <strong>12% annual returns</strong>. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically calculate the required SIP based on the target goal.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Types of Mutual Funds Used for Education SIPs</h2>
 
@@ -2254,7 +2254,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically create diversified portfolios and rebalance them over time.</p>
+      <p class="mb-6">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically create diversified portfolios and rebalance them over time.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">When Should Parents Start SIPs?</h2>
 
@@ -2295,7 +2295,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Early years</strong> → Equity-focused portfolio</li>
         <li><strong>Later years</strong> → Gradually increase debt allocation</li>
       </ul>
-      <p class="mb-6">Automated rebalancing tools like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> handle this adjustment automatically.</p>
+      <p class="mb-6">Automated rebalancing tools like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> handle this adjustment automatically.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes in SIP Planning</h2>
 
@@ -2314,7 +2314,7 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan SIP Investments</h2>
 
       <p class="mb-4">Managing SIP portfolios manually can be complex over long periods.</p>
-      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate future education costs</li>
         <li>Calculate required SIP amounts</li>
@@ -2374,7 +2374,7 @@ export const blogPosts: BlogPost[] = [
           <li>Building a diversified investment portfolio</li>
           <li>Periodically reviewing and rebalancing investments</li>
         </ul>
-        <p>Goal-planning tools like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate education costs and manage investments aligned with specific goals.</p>
+        <p>Goal-planning tools like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate education costs and manage investments aligned with specific goals.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Child Education Planning Is Important</h2>
@@ -2452,7 +2452,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">Goal calculators in platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this calculation.</p>
+      <p class="mb-6">Goal calculators in platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this calculation.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Choose the Right Investment Strategy</h2>
       <p class="mb-4">Parents often use a mix of different investment options.</p>
@@ -2486,7 +2486,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">Platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across different assets and rebalance portfolios.</p>
+      <p class="mb-6">Platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across different assets and rebalance portfolios.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 6: Review and Adjust Investments</h2>
       <p class="mb-4">Financial planning should be reviewed periodically. Key review triggers include:</p>
@@ -2536,7 +2536,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan for Your Child's Education</h2>
       <p class="mb-4">Managing investments across multiple instruments can be complex.</p>
-      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate education costs</li>
         <li>Calculate required monthly investments</li>

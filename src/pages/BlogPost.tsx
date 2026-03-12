@@ -37,26 +37,26 @@ export default function BlogPost() {
         <meta property="article:author" content={post.author} />
         <link rel="canonical" href={`https://nested.money/blog/${post.slug}`} />
         {post.slug === "best-mutual-fund-for-children-india" && (
-          <>
-            <script type="application/ld+json">{JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Best Mutual Fund for Children in India (2026 Guide)",
-              "description": "Learn the best investment strategy for children, including goal-based investing, future education cost planning, and diversified mutual fund portfolios.",
-              "author": { "@type": "Person", "name": "Ankit Himatsingka" },
-              "publisher": { "@type": "Organization", "name": "Nested" },
-              "datePublished": "2026-03-09",
-              "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-mutual-fund-for-children-india" }
-            })}</script>
-            <script type="application/ld+json">{JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                { "@type": "Question", "name": "What is the best mutual fund for child education in India?", "acceptedAnswer": { "@type": "Answer", "text": "There is no single best mutual fund for children. A diversified portfolio aligned with the goal timeline works better." } },
-                { "@type": "Question", "name": "How much should parents invest for their child's future?", "acceptedAnswer": { "@type": "Answer", "text": "The required investment depends on the child's age, timeline, expected inflation, and the future cost of education." } }
-              ]
-            })}</script>
-          </>
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Mutual Fund for Children in India (2026 Guide)",
+            "description": "Learn the best investment strategy for children, including goal-based investing, future education cost planning, and diversified mutual fund portfolios.",
+            "author": { "@type": "Person", "name": "Ankit Himatsingka" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-09",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-mutual-fund-for-children-india" }
+          })}</script>
+        )}
+        {post.slug === "best-mutual-fund-for-children-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What is the best mutual fund for child education in India?", "acceptedAnswer": { "@type": "Answer", "text": "There is no single best mutual fund for children. A diversified portfolio aligned with the goal timeline works better." } },
+              { "@type": "Question", "name": "How much should parents invest for their child's future?", "acceptedAnswer": { "@type": "Answer", "text": "The required investment depends on the child's age, timeline, expected inflation, and the future cost of education." } }
+            ]
+          })}</script>
         )}
         {post.slug === "sip-for-child-education-india" && (
           <script type="application/ld+json">{JSON.stringify({
@@ -185,29 +185,29 @@ export default function BlogPost() {
           })}</script>
         )}
         {post.slug === "rising-cost-of-education-in-india" && (
-          <>
-            <script type="application/ld+json">{JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Rising Cost of Education in India: What Parents Must Know (2026)",
-              "description": "Understand how education costs are rising in India, what college will cost in 10-15 years, and how parents can plan ahead with smart investing strategies.",
-              "author": { "@type": "Organization", "name": "Nested" },
-              "publisher": { "@type": "Organization", "name": "Nested" },
-              "datePublished": "2026-03-12",
-              "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/rising-cost-of-education-in-india" }
-            })}</script>
-            <script type="application/ld+json">{JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                { "@type": "Question", "name": "How much has education cost increased in India?", "acceptedAnswer": { "@type": "Answer", "text": "Education costs in India have been growing at 8–10% annually, significantly faster than general inflation." } },
-                { "@type": "Question", "name": "What will IIT cost in 2040?", "acceptedAnswer": { "@type": "Answer", "text": "Based on current growth trends, IIT B.Tech fees could reach approximately ₹50 lakh by 2040." } },
-                { "@type": "Question", "name": "Is FD enough to save for education?", "acceptedAnswer": { "@type": "Answer", "text": "Fixed Deposits typically return 6–7%, which is below the education inflation rate of 8–10%." } },
-                { "@type": "Question", "name": "How can I plan for my child's education expenses?", "acceptedAnswer": { "@type": "Answer", "text": "Start by estimating the future cost using an education calculator, then set up a monthly SIP in diversified mutual funds." } },
-                { "@type": "Question", "name": "What is the best way to invest for rising education costs?", "acceptedAnswer": { "@type": "Answer", "text": "A diversified portfolio of equity and hybrid mutual funds, started early and reviewed periodically, is widely considered the most effective approach." } }
-              ]
-            })}</script>
-          </>
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Rising Cost of Education in India: What Parents Must Know (2026)",
+            "description": "Understand how education costs are rising in India, what college will cost in 10-15 years, and how parents can plan ahead with smart investing strategies.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-12",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/rising-cost-of-education-in-india" }
+          })}</script>
+        )}
+        {post.slug === "rising-cost-of-education-in-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "How much has education cost increased in India?", "acceptedAnswer": { "@type": "Answer", "text": "Education costs in India have been growing at 8–10% annually, significantly faster than general inflation." } },
+              { "@type": "Question", "name": "What will IIT cost in 2040?", "acceptedAnswer": { "@type": "Answer", "text": "Based on current growth trends, IIT B.Tech fees could reach approximately ₹50 lakh by 2040." } },
+              { "@type": "Question", "name": "Is FD enough to save for education?", "acceptedAnswer": { "@type": "Answer", "text": "Fixed Deposits typically return 6–7%, which is below the education inflation rate of 8–10%." } },
+              { "@type": "Question", "name": "How can I plan for my child's education expenses?", "acceptedAnswer": { "@type": "Answer", "text": "Start by estimating the future cost using an education calculator, then set up a monthly SIP in diversified mutual funds." } },
+              { "@type": "Question", "name": "What is the best way to invest for rising education costs?", "acceptedAnswer": { "@type": "Answer", "text": "A diversified portfolio of equity and hybrid mutual funds, started early and reviewed periodically, is widely considered the most effective approach." } }
+            ]
+          })}</script>
         )}
       </Helmet>
 

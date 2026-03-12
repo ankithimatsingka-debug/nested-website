@@ -1124,8 +1124,8 @@ export const blogPosts: BlogPost[] = [
       </ol>
       <p class="mb-4">Investment platforms now automate these steps.</p>
 
-      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How the Nested App Helps Parents Invest for Children</h2>
-      <p class="mb-4">The <a href="/" class="text-primary hover:underline font-medium">Nested App</a> is designed specifically around goal-driven portfolio management.</p>
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How Nested Money Helps Parents Invest for Children</h2>
+      <p class="mb-4">The <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> platform is designed specifically around goal-driven portfolio management.</p>
 
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">1. Future Cost Calculation</h3>
       <p class="mb-4">Users enter their child's current age, goal type, and target timeline. The platform calculates the inflation-adjusted future cost.</p>

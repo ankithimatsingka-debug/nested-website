@@ -300,7 +300,7 @@ export const blogPosts: BlogPost[] = [
       <h3 class="text-xl font-heading font-semibold mt-6 mb-2">Debt Funds</h3>
       <p class="mb-4">Used closer to the goal to protect accumulated wealth.</p>
 
-      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across suitable funds based on the goal timeline.</p>
+      <p class="mb-4">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across suitable funds based on the goal timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Adjust the Portfolio as the Goal Approaches</h2>
       <p class="mb-4">As the child approaches college age, investment risk should gradually decrease.</p>

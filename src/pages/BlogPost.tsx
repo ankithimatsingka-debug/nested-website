@@ -6,6 +6,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { getBlogPost, getRelatedPosts } from "@/data/blogData";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { EducationCalculator } from "@/components/EducationCalculator";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();

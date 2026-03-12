@@ -256,6 +256,30 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "child-pursuing-music-ai-era" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "If Your 9-Year-Old Wants to Pursue Music in the Age of AI",
+            "description": "AI is changing jobs, but creativity still shines. Learn how to nurture your child's music dream with balance, patience, and planning.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-12",
+            "keywords": "music parenting India, AI and creativity, music career children, creative parenting India, music schools India",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-pursuing-music-ai-era" }
+          })}</script>
+        )}
+        {post.slug === "child-pursuing-music-ai-era" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Should I let my child pursue music as a career?", "acceptedAnswer": { "@type": "Answer", "text": "If your child shows genuine, consistent interest in music, nurturing that passion with structure and balance can be very rewarding. Creative careers are increasingly valuable in the AI era." } },
+              { "@type": "Question", "name": "Will AI replace musicians?", "acceptedAnswer": { "@type": "Answer", "text": "AI can generate sounds, but it cannot replicate human emotion, storytelling, and creative expression — the core of music." } },
+              { "@type": "Question", "name": "What are the best music schools in India?", "acceptedAnswer": { "@type": "Answer", "text": "Top institutions include KM Music Conservatory and Swarnabhoomi Academy. For international options, Berklee College of Music and Juilliard are world-renowned." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

@@ -1870,7 +1870,7 @@ export const blogPosts: BlogPost[] = [
 
       <p class="mb-4">Managing investments manually across multiple products can be complicated.</p>
 
-      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify the process by helping parents:</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> simplify the process by helping parents:</p>
 
       <ul class="list-disc pl-6 mb-6 space-y-1">
         <li>Estimate future education costs</li>

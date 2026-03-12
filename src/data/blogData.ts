@@ -793,7 +793,7 @@ export const blogPosts: BlogPost[] = [
         <li>Building a diversified investment portfolio</li>
         <li>Adjusting risk as the goal approaches</li>
       </ol>
-      <p class="mb-6">Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate these steps, helping parents plan investments aligned with their child's future goals. Try the <a href="/educationcalculator" class="text-primary hover:underline font-medium">Education Calculator</a> to estimate your child's future education cost.</p>
+      <p class="mb-6">Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate these steps, helping parents plan investments aligned with their child's future goals. Try the <a href="/educationcalculator" class="text-primary hover:underline font-medium">Education Calculator</a> to estimate your child's future education cost.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Example Investment Strategy for Education Planning</h2>
       <p class="mb-4">Consider the following scenario: Child's age: 5 years | Goal: engineering degree | Current cost: ₹20 lakh</p>

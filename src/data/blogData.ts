@@ -1636,7 +1636,7 @@ export const blogPosts: BlogPost[] = [
         <li>Reduce equity exposure</li>
       </ul>
 
-      <p class="mb-4">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this asset allocation and adjust portfolios as the goal approaches.</p>
+      <p class="mb-4">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this asset allocation and adjust portfolios as the goal approaches.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
 

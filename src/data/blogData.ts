@@ -1729,7 +1729,7 @@ export const blogPosts: BlogPost[] = [
           <li>Building a diversified portfolio</li>
           <li>Increasing investments as income grows</li>
         </ol>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the future cost of goals and determine the required monthly investment.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate the future cost of goals and determine the required monthly investment.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Starting Early Matters</h2>

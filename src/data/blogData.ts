@@ -2177,7 +2177,7 @@ export const blogPosts: BlogPost[] = [
           <li>Flexibility to increase investments</li>
           <li>Diversification through mutual funds</li>
         </ul>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the required SIP and manage the portfolio automatically.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate the required SIP and manage the portfolio automatically.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why SIP Is Popular for Child Education Planning</h2>

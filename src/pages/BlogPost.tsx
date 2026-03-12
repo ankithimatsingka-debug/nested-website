@@ -209,6 +209,29 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "child-education-cost-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Report",
+            "headline": "Child Education Cost in India (2026 Data Report)",
+            "description": "Data-driven report on the cost of child education in India including school, college and overseas education expenses.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-12",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-cost-india" }
+          })}</script>
+        )}
+        {post.slug === "child-education-cost-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What is the average cost of higher education in India?", "acceptedAnswer": { "@type": "Answer", "text": "Higher education costs typically range from ₹10 lakh to ₹50 lakh, depending on the course and institution." } },
+              { "@type": "Question", "name": "How much should parents save for child education?", "acceptedAnswer": { "@type": "Answer", "text": "Many parents aim to build ₹50 lakh to ₹1 crore or more, depending on the education goal." } },
+              { "@type": "Question", "name": "How early should parents start planning?", "acceptedAnswer": { "@type": "Answer", "text": "Starting when the child is born provides the longest investment horizon, reducing the required monthly investment significantly." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

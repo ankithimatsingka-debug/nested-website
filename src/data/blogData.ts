@@ -2782,6 +2782,254 @@ export const blogPosts: BlogPost[] = [
     category: "Education Planning",
     readTime: "10 min read",
   },
+  {
+    slug: "child-education-cost-india",
+    title: "Child Education Cost in India (2026 Data Report)",
+    excerpt: "Discover the cost of child education in India in 2026. Complete data on school fees, college costs, overseas education, and future cost projections.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">Education costs in India have been rising steadily over the past decade. For parents planning their child's future, understanding these costs is essential to building an effective investment strategy.</p>
+
+      <p class="mb-4">Today, higher education expenses can range from <strong>₹10 lakh to over ₹1 crore</strong>, depending on the course and location.</p>
+
+      <p class="mb-6">This report summarizes the <strong>estimated costs of education in India and abroad</strong>, along with projections of future costs.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Key Insights</h3>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Education inflation in India is estimated at <strong>8–10% annually</strong></li>
+          <li>Professional degrees can cost <strong>₹20–50 lakh or more</strong></li>
+          <li>Overseas education may exceed <strong>₹1 crore</strong></li>
+          <li>Parents typically need to build <strong>₹50 lakh to ₹1 crore education funds</strong></li>
+        </ul>
+        <p class="mt-4">Goal-based investing platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate these future costs and plan investments accordingly.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Cost of School Education in India</h2>
+
+      <p class="mb-4">Private school education costs vary widely depending on the city and institution.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">School Type</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Annual Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Budget private schools</td><td class="border border-border px-4 py-3">₹50,000 – ₹1 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Mid-tier private schools</td><td class="border border-border px-4 py-3">₹1 lakh – ₹3 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">Premium international schools</td><td class="border border-border px-4 py-3">₹5 lakh – ₹12 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Over a 12-year schooling period, the total cost may range between <strong>₹10 lakh and ₹60 lakh</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Cost of Undergraduate Education in India</h2>
+
+      <p class="mb-4">College costs vary depending on the course and institution.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Course</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Estimated Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Engineering</td><td class="border border-border px-4 py-3">₹10 lakh – ₹20 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Business / BBA</td><td class="border border-border px-4 py-3">₹5 lakh – ₹15 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">Medical (private)</td><td class="border border-border px-4 py-3">₹50 lakh – ₹1 crore</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Design / Architecture</td><td class="border border-border px-4 py-3">₹10 lakh – ₹25 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Professional degrees in private institutions often involve significantly higher expenses.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Cost of MBA Programs in India</h2>
+
+      <p class="mb-4">MBA programs are among the most popular postgraduate degrees.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Institution Type</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Total Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Top private business schools</td><td class="border border-border px-4 py-3">₹20 lakh – ₹40 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">International campuses in India</td><td class="border border-border px-4 py-3">₹40 lakh – ₹60 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Many parents plan education funds specifically for these postgraduate degrees.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Cost of Overseas Education</h2>
+
+      <p class="mb-4">Studying abroad can significantly increase education expenses.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Country</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Estimated Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">United States</td><td class="border border-border px-4 py-3">₹80 lakh – ₹1.5 crore</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">United Kingdom</td><td class="border border-border px-4 py-3">₹70 lakh – ₹1.2 crore</td></tr>
+            <tr><td class="border border-border px-4 py-3">Canada</td><td class="border border-border px-4 py-3">₹60 lakh – ₹1 crore</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Australia</td><td class="border border-border px-4 py-3">₹60 lakh – ₹1 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">These estimates include tuition and basic living expenses.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Education Inflation in India</h2>
+
+      <p class="mb-4">Education inflation has historically been higher than general inflation.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Category</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Estimated Inflation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">General inflation</td><td class="border border-border px-4 py-3">5–6%</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Education inflation</td><td class="border border-border px-4 py-3">8–10%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">This means education costs may <strong>double roughly every 8–9 years</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Example: Future Cost of Education</h2>
+
+      <p class="mb-4">If a course costs ₹25 lakh today, its future cost may look like this:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Years</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Future Cost (8% inflation)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">10 years</td><td class="border border-border px-4 py-3">₹54 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">15 years</td><td class="border border-border px-4 py-3">₹79 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">~₹1 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">This is why many financial planners recommend building <strong>large long-term education funds</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How Parents Can Prepare for Rising Costs</h2>
+
+      <p class="mb-4">Education planning typically involves three steps.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">1. Estimate the Future Goal</h3>
+      <p class="mb-4">Calculate the future cost of the desired course using an <a href="/educationcalculator" class="text-primary hover:underline font-medium">education cost calculator</a>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">2. Determine Monthly Investment</h3>
+      <p class="mb-4">Calculate the SIP needed to reach the target amount.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">3. Invest in a Diversified Portfolio</h3>
+      <p class="mb-4">Many parents use mutual funds for long-term goals due to their growth potential.</p>
+
+      <p class="mb-6">Platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested App</a> simplify this process by estimating costs and automatically managing investment portfolios.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Example Education Planning Strategy</h2>
+
+      <p class="mb-4">Consider a parent planning for a newborn child.</p>
+      <p class="mb-4"><strong>Goal:</strong> ₹1 crore education fund<br/><strong>Time horizon:</strong> 18 years</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Estimated Corpus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹10,000</td><td class="border border-border px-4 py-3">₹75 lakh</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">₹14,000</td><td class="border border-border px-4 py-3">₹1 crore</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹20,000</td><td class="border border-border px-4 py-3">₹1.4 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">The required SIP depends on the time horizon and expected returns.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why Early Planning Matters</h2>
+
+      <p class="mb-4">Starting investments early significantly reduces the monthly amount needed.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Start Age</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP Needed for ₹1 Crore</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Newborn</td><td class="border border-border px-4 py-3">₹14,000</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Age 5</td><td class="border border-border px-4 py-3">₹24,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">Age 10</td><td class="border border-border px-4 py-3">₹56,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Time is the most powerful factor in wealth creation.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+
+      <p class="mb-4">Parents planning their child's education may find these resources helpful:</p>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby</a></li>
+        <li><a href="/blog/best-sip-plans-child-education-india" class="text-primary hover:underline">Best SIP Plans for Child Education</a></li>
+        <li><a href="/blog/mutual-funds-vs-ppf-child-education" class="text-primary hover:underline">Mutual Funds vs PPF for Child Education</a></li>
+        <li><a href="/blog/build-1-crore-child-education" class="text-primary hover:underline">How to Build ₹1 Crore for Child Education</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">FAQs</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-muted/30 rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">What is the average cost of higher education in India?</h3>
+          <p>Higher education costs typically range from <strong>₹10 lakh to ₹50 lakh</strong>, depending on the course and institution.</p>
+        </div>
+        <div class="bg-muted/30 rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">How much should parents save for child education?</h3>
+          <p>Many parents aim to build <strong>₹50 lakh to ₹1 crore or more</strong>, depending on the education goal.</p>
+        </div>
+        <div class="bg-muted/30 rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">How early should parents start planning?</h3>
+          <p>Starting when the child is born provides the longest investment horizon, reducing the required monthly investment significantly.</p>
+        </div>
+      </div>
+    `,
+    author: "Nested",
+    publishedAt: "2026-03-12",
+    category: "Education Planning",
+    readTime: "8 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

@@ -342,7 +342,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan for Your Child's Education</h2>
       <p class="mb-4">Planning for child education involves multiple steps: estimating costs, calculating investments, selecting funds, and managing portfolios over time.</p>
-      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify this process by helping parents:</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> simplify this process by helping parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly investment</li>

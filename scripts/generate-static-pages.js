@@ -49,6 +49,7 @@ const routes = [
   '/kyc-modification',
   '/nested-dreamers',
   '/nested-dreamers/dashboard',
+  '/blog/child-pursuing-music-ai-era',
 ];
 
 if (!existsSync(SOURCE)) {

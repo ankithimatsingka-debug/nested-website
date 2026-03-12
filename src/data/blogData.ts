@@ -633,7 +633,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Once the future cost is estimated, the next step is calculating how much you need to invest every month.</p>
       <p class="mb-4">Example: Goal: ₹65 lakh | Time horizon: 15 years | Expected return: 12%</p>
       <p class="mb-4"><strong>Required monthly SIP: ~₹9,000</strong></p>
-      <p class="mb-6">This is where most parents struggle because calculations can become complicated. Goal-based investing platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> simplify this by automatically calculating the required investment. Learn more about <a href="/blog/sip-for-child-education-india" class="text-primary hover:underline font-medium">SIP planning for child education</a>.</p>
+      <p class="mb-6">This is where most parents struggle because calculations can become complicated. Goal-based investing platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> simplify this by automatically calculating the required investment. Learn more about <a href="/blog/sip-for-child-education-india" class="text-primary hover:underline font-medium">SIP planning for child education</a>.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Build the Right Mutual Fund Portfolio</h2>
       <p class="mb-4">Many parents search for <strong>"Best mutual fund for child education."</strong> But the truth is <strong>no single fund can work for the entire 15–18 year journey</strong>.</p>

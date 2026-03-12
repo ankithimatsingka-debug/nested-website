@@ -1806,7 +1806,7 @@ export const blogPosts: BlogPost[] = [
         </ul>
       </div>
 
-      <p class="mb-6">Platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically calculate this amount and help parents stay on track.</p>
+      <p class="mb-6">Platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically calculate this amount and help parents stay on track.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Best Investment Options for a Newborn Baby</h2>
 

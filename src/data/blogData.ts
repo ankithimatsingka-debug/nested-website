@@ -949,7 +949,7 @@ export const blogPosts: BlogPost[] = [
         <li>Poorly diversified portfolios</li>
         <li>Lack of portfolio adjustments over time</li>
       </ul>
-      <p class="mb-4">Goal-based investing solves this problem by linking investments directly to the target amount. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based investing solves this problem by linking investments directly to the target amount. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly SIP</li>

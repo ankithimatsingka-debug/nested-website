@@ -1,44 +1,46 @@
 
 
-# Add Blog: Rising Education Cost in India (with Embedded Calculator)
+## Education Calculator - 5-Step Journey Flow
 
-## Overview
+### Overview
+A redesigned emotional journey for parents with dedicated pages for fee visualization and Nested's value proposition.
 
-New blog post about rising education costs in India, with the **EducationCalculator** component embedded directly in the blog page. Since blog content uses `dangerouslySetInnerHTML` (can't render React components), the calculator will be rendered as a separate React component **after** the HTML content, triggered by slug detection in `BlogPost.tsx`.
+### Flow
+Step 1 (Reality Moment) > Step 2 (College Selection) > Step 3 (Fee Chart + Nested Story) > Step 4 (Child Name) > Step 5 (Email) > Reveal
 
-## Slug & SEO
+### Step Details
 
-- **Slug:** `rising-cost-of-education-in-india`
-- **Meta Title:** Rising Cost of Education in India: What Parents Must Know (2026)
-- **Meta Description:** Understand how education costs are rising in India, what college will cost in 10-15 years, and how parents can plan ahead with smart investing strategies.
-- **Date:** 2026-03-12
+**Step 1 — The Reality Moment**
+- Headline: "Your child's education will cost more than you think."
+- Stats: 3-4X increase in last decade, 10%+ annual growth, 65/100 parents feel burdened
+- Reassurance line about small consistent savings
+- CTA: "See how fees have grown"
 
-## Changes
+**Step 2 — College Selection**
+- Quick-pick tiles for 8 common college categories (IIT, IIM, Private Engineering, etc.)
+- Search bar for custom colleges
+- Clicking a tile/search result immediately advances to Step 3
 
-### 1. `src/data/blogData.ts`
-Add new blog entry with HTML content covering:
-- Education inflation stats (8-10% annually)
-- Current vs future cost tables (IIT, IIM, MBBS, overseas)
-- Why costs are rising (infrastructure, faculty, global competition)
-- Impact on middle-class families
-- How to plan (SIP, goal-based investing)
-- Internal links to related articles
-- FAQ section
-- CTA to try the education calculator (`/educationcalculator`)
-- All "Nested Money" references linked to Play Store
+**Step 3 — Fee Visualization + Nested Story**
+- Full 25-year fee trend chart (10 years historical, 15 years projected)
+- Shows: 10 years ago, today, and projected in 15 years
+- Key insight card: "Fees have grown X% in the last 10 years"
+- Nested story section explaining:
+  - Most parents don't plan or use FDs that underperform
+  - Nested analyzes 2,000+ mutual funds
+  - Age-appropriate, goal-based, auto-rebalanced portfolios
+- CTA: "Build a plan for this goal"
 
-### 2. `src/pages/BlogPost.tsx`
-- Import `EducationCalculator` component
-- After the `dangerouslySetInnerHTML` div, conditionally render `<EducationCalculator />` when `post.slug === "rising-cost-of-education-in-india"`
-- Add JSON-LD Article + FAQPage schema for this slug
+**Step 4 — Personalization**
+- Collects child's name
+- Shows customized plan prompt after name entered
+- CTA: "Yes, create my plan"
 
-### 3. `public/sitemap.xml`
-Add `https://nested.money/blog/rising-cost-of-education-in-india`
+**Step 5 — Email Gate**
+- Collects email address
+- CTA: "Show [child]'s plan"
 
-### 4. `scripts/generate-static-pages.js`
-Add `/blog/rising-cost-of-education-in-india` to routes array
-
-## Calculator Integration
-
-The blog HTML content will include a heading like "Try Our Education Cost Calculator" followed by a brief intro paragraph. Immediately after the `dangerouslySetInnerHTML` block, `BlogPost.tsx` will render the actual `<EducationCalculator />` React component for this specific slug. This gives readers an interactive tool inline with the article.
-
+**Reveal Page**
+- Displays SIP amount, total investment, target corpus
+- Chart comparing Nested vs FD growth
+- Delta amount highlighting Nested's advantage

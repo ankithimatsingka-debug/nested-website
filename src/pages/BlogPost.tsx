@@ -6,6 +6,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { getBlogPost, getRelatedPosts } from "@/data/blogData";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { EducationCalculator } from "@/components/EducationCalculator";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -183,6 +184,31 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-to-plan-child-education-india" }
           })}</script>
         )}
+        {post.slug === "rising-cost-of-education-in-india" && (
+          <>
+            <script type="application/ld+json">{JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Rising Cost of Education in India: What Parents Must Know (2026)",
+              "description": "Understand how education costs are rising in India, what college will cost in 10-15 years, and how parents can plan ahead with smart investing strategies.",
+              "author": { "@type": "Organization", "name": "Nested" },
+              "publisher": { "@type": "Organization", "name": "Nested" },
+              "datePublished": "2026-03-12",
+              "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/rising-cost-of-education-in-india" }
+            })}</script>
+            <script type="application/ld+json">{JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                { "@type": "Question", "name": "How much has education cost increased in India?", "acceptedAnswer": { "@type": "Answer", "text": "Education costs in India have been growing at 8–10% annually, significantly faster than general inflation." } },
+                { "@type": "Question", "name": "What will IIT cost in 2040?", "acceptedAnswer": { "@type": "Answer", "text": "Based on current growth trends, IIT B.Tech fees could reach approximately ₹50 lakh by 2040." } },
+                { "@type": "Question", "name": "Is FD enough to save for education?", "acceptedAnswer": { "@type": "Answer", "text": "Fixed Deposits typically return 6–7%, which is below the education inflation rate of 8–10%." } },
+                { "@type": "Question", "name": "How can I plan for my child's education expenses?", "acceptedAnswer": { "@type": "Answer", "text": "Start by estimating the future cost using an education calculator, then set up a monthly SIP in diversified mutual funds." } },
+                { "@type": "Question", "name": "What is the best way to invest for rising education costs?", "acceptedAnswer": { "@type": "Answer", "text": "A diversified portfolio of equity and hybrid mutual funds, started early and reviewed periodically, is widely considered the most effective approach." } }
+              ]
+            })}</script>
+          </>
+        )}
       </Helmet>
 
       <Header />
@@ -231,6 +257,11 @@ export default function BlogPost() {
               prose-li:marker:text-primary"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* Embedded Education Calculator for specific blog post */}
+          {post.slug === "rising-cost-of-education-in-india" && (
+            <EducationCalculator />
+          )}
 
           {/* CTA */}
           <div className="mt-12 p-6 bg-muted/50 rounded-lg text-center">

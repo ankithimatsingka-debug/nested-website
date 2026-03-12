@@ -1527,7 +1527,7 @@ export const blogPosts: BlogPost[] = [
           <li><strong>PPF</strong> offers capital safety and tax benefits but lower returns.</li>
         </ul>
         <p class="mb-3">Many financial planners recommend using <strong>both instruments in combination</strong>.</p>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents allocate investments across different assets depending on the time horizon and financial goal.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents allocate investments across different assets depending on the time horizon and financial goal.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Understanding Public Provident Fund (PPF)</h2>

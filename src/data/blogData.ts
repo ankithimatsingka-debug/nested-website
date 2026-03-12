@@ -1014,7 +1014,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "best-mutual-fund-for-children-india",
     title: "Best Mutual Fund for Children in India (2026 Guide) | Child Education Investment Plan",
-    excerpt: "Discover the best mutual fund strategy for children in India. Learn how to plan for child education, calculate future costs, and build a goal-based portfolio using the Nested App.",
+    excerpt: "Discover the best mutual fund strategy for children in India. Learn how to plan for child education, calculate future costs, and build a goal-based portfolio using Nested Money.",
     coverImage: "/blog/best-mutual-fund-for-children-india.png",
     content: `
       <img src="/blog/best-mutual-fund-for-children-india.png" alt="best mutual fund strategy for children education investment plan" class="w-full rounded-lg mb-8" />

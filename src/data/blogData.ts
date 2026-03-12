@@ -526,7 +526,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-6">Investments should be aligned with the <strong>child's goal timeline</strong>, not based on short-term performance.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Invest for Child Education</h2>
-      <p class="mb-4">Instead of manually calculating SIP amounts and selecting funds, parents can use <strong>goal-based investing platforms</strong>. <a href="/" class="text-primary hover:underline font-medium">Nested App</a> helps parents:</p>
+      <p class="mb-4">Instead of manually calculating SIP amounts and selecting funds, parents can use <strong>goal-based investing platforms</strong>. <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> helps parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate future education costs</li>
         <li>Calculate the required SIP automatically</li>

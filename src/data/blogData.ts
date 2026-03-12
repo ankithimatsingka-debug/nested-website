@@ -1164,7 +1164,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Final Thoughts</h2>
       <p class="mb-4">Parents often spend time searching for the best mutual fund for children. But the real objective is not identifying the perfect fund — it is ensuring that the required money is available when the child needs it most.</p>
-      <p class="mb-4">Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-4 space-y-2">
         <li>Estimate the future cost of their child's goals</li>
         <li>Determine the correct investment amount</li>

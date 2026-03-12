@@ -247,20 +247,40 @@ export default function BlogPost() {
             </div>
           </header>
 
-          {/* Article Content */}
-          <div 
-            className="prose prose-lg dark:prose-invert max-w-none font-body
-              prose-headings:font-heading prose-headings:font-semibold
-              prose-a:text-primary prose-a:no-underline hover:prose-a:underline
-              prose-strong:font-semibold
-              prose-ul:list-disc prose-ol:list-decimal
-              prose-li:marker:text-primary"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-
-          {/* Embedded Education Calculator for specific blog post */}
-          {post.slug === "rising-cost-of-education-in-india" && (
-            <EducationCalculator />
+          {/* Article Content - split around calculator for specific posts */}
+          {post.slug === "rising-cost-of-education-in-india" ? (() => {
+            const marker = `<h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Try Our Education Cost Calculator</h2>`;
+            const idx = post.content.indexOf(marker);
+            if (idx === -1) {
+              return (
+                <>
+                  <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: post.content }} />
+                  <EducationCalculator />
+                </>
+              );
+            }
+            const nextH2 = post.content.indexOf('<h2', idx + marker.length);
+            const beforeCalc = post.content.slice(0, idx);
+            const betweenSection = nextH2 !== -1 ? post.content.slice(idx, nextH2) : post.content.slice(idx);
+            const afterCalc = nextH2 !== -1 ? post.content.slice(nextH2) : '';
+            return (
+              <>
+                <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: beforeCalc }} />
+                <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: betweenSection }} />
+                <EducationCalculator />
+                <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: afterCalc }} />
+              </>
+            );
+          })() : (
+            <div 
+              className="prose prose-lg dark:prose-invert max-w-none font-body
+                prose-headings:font-heading prose-headings:font-semibold
+                prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+                prose-strong:font-semibold
+                prose-ul:list-disc prose-ol:list-decimal
+                prose-li:marker:text-primary"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
           )}
 
           {/* CTA */}

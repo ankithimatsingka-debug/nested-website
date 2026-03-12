@@ -851,7 +851,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "sip-for-child-education-india",
     title: "SIP for Child Education: How Much Should You Invest for Your Child's Future?",
-    excerpt: "Learn how much SIP you should invest for your child's education in India. Calculate future education costs and build a goal-based investment plan using the Nested App.",
+    excerpt: "Learn how much SIP you should invest for your child's education in India. Calculate future education costs and build a goal-based investment plan using Nested Money.",
     coverImage: "/blog/sip-for-child-education-india.png",
     content: `
       <img src="/blog/sip-for-child-education-india.png" alt="SIP for child education investment plan India" class="w-full rounded-lg mb-8" />

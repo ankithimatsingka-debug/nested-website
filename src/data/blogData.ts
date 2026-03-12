@@ -651,7 +651,7 @@ export const blogPosts: BlogPost[] = [
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">Debt Funds (Later Years)</h3>
       <p class="mb-4">Reduce risk as the education goal approaches.</p>
 
-      <p class="mb-6">Managing this portfolio manually can be complex. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across funds based on the goal timeline. Read more about <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">the best mutual fund strategy for children</a>.</p>
+      <p class="mb-6">Managing this portfolio manually can be complex. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across funds based on the goal timeline. Read more about <a href="/blog/best-mutual-fund-for-children-india" class="text-primary hover:underline font-medium">the best mutual fund strategy for children</a>.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Rebalance the Portfolio as the Goal Approaches</h2>
       <p class="mb-4">One of the biggest risks parents face is <strong>market volatility near the goal date</strong>. If your child is about to start college and markets fall, your education fund could be impacted.</p>

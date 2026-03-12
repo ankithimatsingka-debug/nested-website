@@ -505,6 +505,7 @@ Sincerely,
       <Helmet>
         <title>{t.metaTitle}</title>
         <meta name="description" content={t.metaDescription} />
+        <link rel="canonical" href="https://nested.money/kyc-modification" />
       </Helmet>
       
       <div className="min-h-screen bg-background">

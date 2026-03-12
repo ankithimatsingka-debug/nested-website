@@ -36,6 +36,11 @@ const EducationCalculatorLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Education Cost Calculator - Nested | Plan Your Child's Future</title>
+        <meta name="description" content="Calculate the future cost of your child's education and find out how much you need to invest monthly. Free education planning calculator by Nested." />
+        <link rel="canonical" href="https://nested.money/educationcalculator" />
+      </Helmet>
       <Header />
       <main id="main-content" role="main">
         <HeroEducationCalculator />

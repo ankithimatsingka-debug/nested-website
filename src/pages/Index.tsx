@@ -32,6 +32,11 @@ const SectionLoader = ({ height = "400px" }: { height?: string }) => (
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Nested - Funding dreams, one goal at a time</title>
+        <meta name="description" content="Mutual fund investing app designed for parents. Goal-based planning, automatic rebalancing, and personalized asset allocation for your child's future." />
+        <link rel="canonical" href="https://nested.money/" />
+      </Helmet>
       <Header />
       <main id="main-content" role="main">
         <Hero />

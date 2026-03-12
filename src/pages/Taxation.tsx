@@ -80,6 +80,7 @@ const Taxation = () => {
       <Helmet>
         <title>Mutual Fund Taxation Guide | Check Fund Tax Rules</title>
         <meta name="description" content="Search and compare taxation rules for 750+ mutual funds. Find out if your fund is equity-oriented or debt-oriented and understand the applicable tax rates." />
+        <link rel="canonical" href="https://nested.money/taxation" />
       </Helmet>
       
       <Header />

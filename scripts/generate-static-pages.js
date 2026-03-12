@@ -51,6 +51,7 @@ const routes = [
   '/nested-dreamers/dashboard',
   '/blog/child-pursuing-music-ai-era',
   '/blog/50000-invested-child-college',
+  '/blog/future-ready-skills-courses-child-india',
 ];
 
 if (!existsSync(SOURCE)) {

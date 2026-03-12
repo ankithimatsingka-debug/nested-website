@@ -304,6 +304,30 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "future-ready-skills-courses-child-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Future-Ready Skills: How Specialized Courses Can Shape Your Child's Tomorrow",
+            "description": "Middle-class Indian parents can guide their children toward high-ROI future-ready courses like AI, robotics, biotech, and space tech.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-12",
+            "keywords": "future skills India, AI courses India, robotics education, biotech programs, space technology education",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-ready-skills-courses-child-india" }
+          })}</script>
+        )}
+        {post.slug === "future-ready-skills-courses-child-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What are future-ready courses for children in India?", "acceptedAnswer": { "@type": "Answer", "text": "Future-ready courses include AI & Machine Learning, Robotics, Biotechnology, and Space Technology offered at institutions like IIT Hyderabad, IIIT Delhi, and IISc Bangalore." } },
+              { "@type": "Question", "name": "How can parents prepare children for new-age careers?", "acceptedAnswer": { "@type": "Answer", "text": "Parents can encourage workshops, hobby labs, and online courses during school years, track interests, and save gradually for specialized education over 10-15 years." } },
+              { "@type": "Question", "name": "Are specialized degrees worth the investment?", "acceptedAnswer": { "@type": "Answer", "text": "Degrees in AI, robotics, biotech, and space tech often lead to higher-paying jobs and global opportunities compared to traditional courses, offering strong ROI." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

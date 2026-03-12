@@ -3324,6 +3324,87 @@ export const blogPosts: BlogPost[] = [
     category: "Parenting",
     readTime: "5 min read",
   },
+  {
+    slug: "future-ready-skills-courses-child-india",
+    title: "Future-Ready Skills: How Specialized Courses Can Shape Your Child's Tomorrow",
+    excerpt: "Middle-class Indian parents can guide their children toward high-ROI future-ready courses like AI, robotics, biotech, and space tech while planning practical exposure over 10–15 years.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">Guiding children toward high-ROI courses in AI, robotics, biotech, and space technology while supporting practical exposure over 10–15 years.</p>
+
+      <p class="mb-6">Meet Meera and Sameer in Jaipur. Their 13-year-old daughter, Aanya, dreams of building driverless cars one day. While marksheets and traditional ITI or IT engineering were historically "safe," the couple realized that the world is changing rapidly — and specialized skills can give their child an edge in both learning and career opportunities.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why New-Age Courses Matter</h2>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Higher ROI:</strong> Degrees in AI, robotics, biotech, or space technology often lead to better-paying jobs and entrepreneurial opportunities compared to traditional courses.</li>
+        <li><strong>Hands-on learning:</strong> Students engage in real-world projects like autonomous robots, biotech prototypes, or satellite models.</li>
+        <li><strong>Global relevance:</strong> Skills in these fields open doors internationally for internships, competitions, and research.</li>
+        <li><strong>Future-proofing:</strong> Fields like driverless cars, AI healthcare, and space tech didn't exist a decade ago — learning them now prepares kids for tomorrow's economy.</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Case Studies — Indian Kids Making It Happen</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Rishabh from Pune</h3>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-4 italic">Rishabh, 15, joined a weekend robotics lab and built an automated watering system for urban gardens. His parents encouraged practical exposure alongside his schoolwork. The hands-on project gave him confidence and sparked interest in engineering.</blockquote>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Ananya in Bengaluru</h3>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-4 italic">Ananya, 14, enrolled in an online AI course. She created a chatbot to help local NGOs manage volunteers. Her parents supported her learning with small workshops, making her confident about future STEM careers.</blockquote>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Aanya Exploring Space Tech</h3>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-4 italic">Aanya participated in a space technology workshop and built a miniature satellite model. The experience helped her identify her passion for aerospace, showing her parents the importance of early practical exposure.</blockquote>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Top Indian Colleges for Future-Ready Courses</h2>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>AI &amp; Robotics:</strong> IIT Hyderabad (B.Tech AI), IIIT Delhi (AI &amp; ML), Amrita University (Robotics &amp; AI)</li>
+        <li><strong>Biotechnology:</strong> IISc Bangalore, IIT Madras, University of Hyderabad</li>
+        <li><strong>Space &amp; Aeronautical Technology:</strong> IISc Bangalore, Indian Institute of Aeronautical Sciences, Anna University</li>
+        <li><strong>Computer Science:</strong> IIT Bombay, IIT Delhi, IIT Madras</li>
+      </ul>
+
+      <div class="bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-400 p-4 my-6">
+        <p class="text-sm">Attending practical workshops or labs before college can help children identify interests and strengthen their application for these specialized programs.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How Parents Can Support</h2>
+
+      <ol class="list-decimal pl-6 mb-6 space-y-2">
+        <li><strong>Plan exposure early:</strong> Encourage workshops, hobby labs, and online courses in AI, robotics, biotech, or space tech during school years.</li>
+        <li><strong>Track interests:</strong> Observe which fields excite the child and provide guidance rather than pushing traditional tracks.</li>
+        <li><strong>Budget for learning:</strong> Save gradually for specialized courses and experiences over 10–15 years.</li>
+        <li><strong>Balance marksheets and skills:</strong> Celebrate grades but equally value projects, competitions, and practical learning.</li>
+        <li><strong>Guide, don't dictate:</strong> Children learn best when parents are supportive mentors rather than controllers.</li>
+      </ol>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Shaping Tomorrow's Achievers</h2>
+
+      <p class="mb-4">Marksheets reflect what a child learned yesterday; skills show what they can achieve tomorrow. Supporting practical exposure, workshops, and specialized courses ensures children develop confidence, creativity, and global relevance.</p>
+
+      <p class="mb-6">Small but consistent parental guidance over 10–15 years can dramatically enhance both aspirations and outcomes.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <p class="mb-3"><strong>At Nested</strong>, we help parents plan early, guiding children toward future-ready skills while saving for specialized education. Start building your child's roadmap today.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">Create Your Child's Plan</a>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/child-education-cost-india" class="text-primary hover:underline">Child Education Cost in India</a></li>
+        <li><a href="/blog/best-sip-plans-child-education-india" class="text-primary hover:underline">Best SIP Plans for Child Education</a></li>
+        <li><a href="/blog/child-pursuing-music-ai-era" class="text-primary hover:underline">If Your Child Wants to Pursue Music in the Age of AI</a></li>
+      </ul>
+
+      <p class="text-sm text-muted-foreground mt-8">Disclaimer: This article provides general guidance. Education and career outcomes depend on the child, courses, and individual circumstances.</p>
+    `,
+    author: "Nested Team",
+    publishedAt: "2026-03-12",
+    category: "Parenting",
+    readTime: "6 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

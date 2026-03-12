@@ -229,7 +229,7 @@ export const blogPosts: BlogPost[] = [
           <li>Invest in a <strong>diversified mutual fund portfolio</strong></li>
           <li>Adjust the portfolio risk as the goal approaches</li>
         </ol>
-        <p>Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate future costs, calculate the required investment amount, and manage portfolios automatically.</p>
+        <p>Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate future costs, calculate the required investment amount, and manage portfolios automatically.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">How Education Costs Are Rising in India</h2>

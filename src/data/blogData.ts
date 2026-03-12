@@ -1850,7 +1850,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">As the child approaches college age, the portfolio can gradually shift toward safer assets. Platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this rebalancing process.</p>
+      <p class="mb-6">As the child approaches college age, the portfolio can gradually shift toward safer assets. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this rebalancing process.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make</h2>
 

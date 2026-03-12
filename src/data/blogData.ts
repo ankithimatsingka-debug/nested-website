@@ -483,7 +483,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Offer higher growth potential over long time horizons.</p>
 
       <h3 class="text-xl font-heading font-medium mt-6 mb-3">Debt Funds (Closer to the Goal)</h3>
-      <p class="mb-6">Help protect accumulated gains as the education date approaches. Goal-based platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across these funds based on the child's age and goal timeline.</p>
+      <p class="mb-6">Help protect accumulated gains as the education date approaches. Goal-based platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across these funds based on the child's age and goal timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 4: Increase SIP Over Time</h2>
       <p class="mb-4">As income increases, parents should <strong>step up their SIP contributions</strong>. A simple strategy is increasing SIP by <strong>10% every year</strong>.</p>

@@ -37,26 +37,26 @@ export default function BlogPost() {
         <meta property="article:author" content={post.author} />
         <link rel="canonical" href={`https://nested.money/blog/${post.slug}`} />
         {post.slug === "best-mutual-fund-for-children-india" && (
-          <>
-            <script type="application/ld+json">{JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Best Mutual Fund for Children in India (2026 Guide)",
-              "description": "Learn the best investment strategy for children, including goal-based investing, future education cost planning, and diversified mutual fund portfolios.",
-              "author": { "@type": "Person", "name": "Ankit Himatsingka" },
-              "publisher": { "@type": "Organization", "name": "Nested" },
-              "datePublished": "2026-03-09",
-              "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-mutual-fund-for-children-india" }
-            })}</script>
-            <script type="application/ld+json">{JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                { "@type": "Question", "name": "What is the best mutual fund for child education in India?", "acceptedAnswer": { "@type": "Answer", "text": "There is no single best mutual fund for children. A diversified portfolio aligned with the goal timeline works better." } },
-                { "@type": "Question", "name": "How much should parents invest for their child's future?", "acceptedAnswer": { "@type": "Answer", "text": "The required investment depends on the child's age, timeline, expected inflation, and the future cost of education." } }
-              ]
-            })}</script>
-          </>
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Mutual Fund for Children in India (2026 Guide)",
+            "description": "Learn the best investment strategy for children, including goal-based investing, future education cost planning, and diversified mutual fund portfolios.",
+            "author": { "@type": "Person", "name": "Ankit Himatsingka" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-09",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-mutual-fund-for-children-india" }
+          })}</script>
+        )}
+        {post.slug === "best-mutual-fund-for-children-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What is the best mutual fund for child education in India?", "acceptedAnswer": { "@type": "Answer", "text": "There is no single best mutual fund for children. A diversified portfolio aligned with the goal timeline works better." } },
+              { "@type": "Question", "name": "How much should parents invest for their child's future?", "acceptedAnswer": { "@type": "Answer", "text": "The required investment depends on the child's age, timeline, expected inflation, and the future cost of education." } }
+            ]
+          })}</script>
         )}
         {post.slug === "sip-for-child-education-india" && (
           <script type="application/ld+json">{JSON.stringify({

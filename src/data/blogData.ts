@@ -1,3 +1,13 @@
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.nexted.app';
+
+const processText = (text: string): string =>
+  text
+    .replaceAll(
+      '<a href="/" class="text-primary hover:underline font-medium">Nested App</a>',
+      `<a href="${PLAY_STORE_URL}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a>`
+    )
+    .replaceAll('Nested App', 'Nested Money');
+
 export interface BlogPost {
   slug: string;
   title: string;

@@ -2374,7 +2374,7 @@ export const blogPosts: BlogPost[] = [
           <li>Building a diversified investment portfolio</li>
           <li>Periodically reviewing and rebalancing investments</li>
         </ul>
-        <p>Goal-planning tools like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate education costs and manage investments aligned with specific goals.</p>
+        <p>Goal-planning tools like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate education costs and manage investments aligned with specific goals.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Child Education Planning Is Important</h2>

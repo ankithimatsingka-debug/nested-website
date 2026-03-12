@@ -282,7 +282,7 @@ export const blogPosts: BlogPost[] = [
         <li>Expected return: 12%</li>
         <li>Required monthly investment: <strong>₹10,000–₹11,000</strong></li>
       </ul>
-      <p class="mb-4">Instead of calculating manually, parents can use tools provided by platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a>, which automatically determine the required SIP based on the goal and timeline.</p>
+      <p class="mb-4">Instead of calculating manually, parents can use tools provided by platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a>, which automatically determine the required SIP based on the goal and timeline.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Step 3: Invest in the Right Mutual Fund Portfolio</h2>
       <p class="mb-4">Many parents search online for the <strong>best mutual fund for child education</strong>. However, relying on a single fund is rarely the best approach for long-term goals.</p>

@@ -822,7 +822,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Expert Insight</h2>
       <p class="mb-4">Many parents focus on selecting the <strong>best mutual fund</strong> for their child's future. However, the more important step is calculating the <strong>future cost of education</strong> and aligning investments accordingly.</p>
-      <p class="mb-6">Goal-based investing tools like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate the target amount and automatically adjust their investment strategy over time.</p>
+      <p class="mb-6">Goal-based investing tools like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate the target amount and automatically adjust their investment strategy over time.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Guides for Parents</h2>
       <ul class="list-disc pl-6 mb-6 space-y-2">

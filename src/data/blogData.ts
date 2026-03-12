@@ -1,3 +1,12 @@
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.nexted.app';
+
+const processText = (text: string): string =>
+  text
+    .split('<a href="/" class="text-primary hover:underline font-medium">Nested App</a>')
+    .join(`<a href="${PLAY_STORE_URL}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a>`)
+    .split('Nested App')
+    .join('Nested Money');
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -2579,15 +2588,25 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
-export const getBlogPost = (slug: string): BlogPost | undefined =>
-  blogPosts.find((post) => post.slug === slug);
+const processPost = (post: BlogPost): BlogPost => ({
+  ...post,
+  content: processText(post.content),
+  excerpt: processText(post.excerpt),
+});
+
+export const getBlogPost = (slug: string): BlogPost | undefined => {
+  const post = blogPosts.find((p) => p.slug === slug);
+  return post ? processPost(post) : undefined;
+};
 
 export const getRecentPosts = (count: number = 3): BlogPost[] => 
   [...blogPosts]
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, count);
+    .slice(0, count)
+    .map(processPost);
 
 export const getRelatedPosts = (currentSlug: string, count: number = 2): BlogPost[] => 
   blogPosts
     .filter(post => post.slug !== currentSlug)
-    .slice(0, count);
+    .slice(0, count)
+    .map(processPost);

@@ -3030,6 +3030,117 @@ export const blogPosts: BlogPost[] = [
     category: "Education Planning",
     readTime: "8 min read",
   },
+  {
+    slug: "sip-calculator-child-education",
+    title: "SIP Calculator for Child Education (How Much Should You Invest?)",
+    excerpt: "Use this SIP calculator to estimate how much you need to invest monthly to fund your child's education. Plan your education corpus with goal-based investing.",
+    content: `
+      <p class="text-lg text-muted-foreground mb-6">Planning your child's education requires estimating future costs and determining the monthly investment needed to reach that goal.</p>
+
+      <p class="mb-4">This calculator helps parents estimate the SIP required to build an education fund.</p>
+
+      <p class="mb-6">Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested App</a> automate this process by calculating the required investment and managing the portfolio.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Try the SIP Calculator</h2>
+
+      <p class="mb-4">Use the interactive calculator below to estimate how much you need to invest every month based on your child's age, target education cost, and expected returns.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Example SIP Requirements</h2>
+
+      <p class="mb-4">The table below shows the approximate monthly SIP needed to build different education corpus amounts, assuming 12% annual returns.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Target Corpus</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Years</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹50 lakh</td><td class="border border-border px-4 py-3">15</td><td class="border border-border px-4 py-3">₹9,000</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">₹1 crore</td><td class="border border-border px-4 py-3">18</td><td class="border border-border px-4 py-3">₹14,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹1.5 crore</td><td class="border border-border px-4 py-3">18</td><td class="border border-border px-4 py-3">₹21,000</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">₹2 crore</td><td class="border border-border px-4 py-3">18</td><td class="border border-border px-4 py-3">₹28,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How the SIP Calculator Works</h2>
+
+      <p class="mb-4">The calculator uses three key inputs to determine the monthly investment:</p>
+
+      <ol class="list-decimal pl-6 mb-6 space-y-2">
+        <li><strong>Future education cost</strong> — Calculated by applying education inflation to the current cost over the investment horizon.</li>
+        <li><strong>Investment period</strong> — The number of years between now and when the child starts higher education.</li>
+        <li><strong>Monthly SIP</strong> — Derived using the future value of annuity formula based on expected portfolio returns.</li>
+      </ol>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">💡 Why Education Inflation Matters</h3>
+        <p class="mb-3">Education inflation in India runs at <strong>8–10% annually</strong>, roughly double the general inflation rate. A course costing ₹25 lakh today could cost over <strong>₹1 crore in 18 years</strong>.</p>
+        <p>This is why starting early and investing in growth-oriented instruments is critical for meeting education goals.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why Starting Early Reduces the Burden</h2>
+
+      <p class="mb-4">The power of compounding means that starting even a few years earlier can dramatically reduce the monthly investment needed.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border rounded-lg">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Start When Child Is</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Years to Invest</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP for ₹1 Crore</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Newborn</td><td class="border border-border px-4 py-3">18</td><td class="border border-border px-4 py-3">₹14,000</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Age 3</td><td class="border border-border px-4 py-3">15</td><td class="border border-border px-4 py-3">₹20,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">Age 5</td><td class="border border-border px-4 py-3">13</td><td class="border border-border px-4 py-3">₹27,000</td></tr>
+            <tr class="bg-muted/30"><td class="border border-border px-4 py-3">Age 10</td><td class="border border-border px-4 py-3">8</td><td class="border border-border px-4 py-3">₹56,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">The earlier you begin, the less you need to invest each month — and the more time compounding has to work in your favour.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+
+      <p class="mb-4">Parents planning their child's education may find these resources helpful:</p>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby</a></li>
+        <li><a href="/blog/best-sip-plans-child-education-india" class="text-primary hover:underline">Best SIP Plans for Child Education</a></li>
+        <li><a href="/blog/mutual-funds-vs-ppf-child-education" class="text-primary hover:underline">Mutual Funds vs PPF for Child Education</a></li>
+        <li><a href="/blog/build-1-crore-child-education" class="text-primary hover:underline">How to Build ₹1 Crore for Child Education</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">FAQs</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="bg-muted/30 rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">How much SIP is needed for child education?</h3>
+          <p>To build ₹1 crore for education in 18 years, the required SIP is approximately <strong>₹14,000 per month</strong> assuming 12% returns.</p>
+        </div>
+        <div class="bg-muted/30 rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">What return rate should I assume for education planning?</h3>
+          <p>Diversified equity mutual fund portfolios have historically delivered <strong>10–12% annualised returns</strong> over 15+ year periods in India.</p>
+        </div>
+        <div class="bg-muted/30 rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">Can I adjust my SIP over time?</h3>
+          <p>Yes. Many parents start with a lower SIP and increase it annually by 5–10% as their income grows. This is called a <strong>step-up SIP</strong>.</p>
+        </div>
+      </div>
+    `,
+    author: "Nested",
+    publishedAt: "2026-03-12",
+    category: "Education Planning",
+    readTime: "7 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

@@ -1669,7 +1669,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4">Many parents combine both options for a balanced investment plan.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan Child Education Investments</h2>
-      <p class="mb-4">Managing multiple investments and calculating future education costs can be complex. Goal-based investing platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> help parents:</p>
+      <p class="mb-4">Managing multiple investments and calculating future education costs can be complex. Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly investment</li>

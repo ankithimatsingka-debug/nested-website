@@ -7,6 +7,7 @@ import { getBlogPost, getRelatedPosts } from "@/data/blogData";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EducationCalculator } from "@/components/EducationCalculator";
+import { SIPCalculator } from "@/components/blog/SIPCalculator";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -232,6 +233,29 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "sip-calculator-child-education" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "SIP Calculator for Child Education (How Much Should You Invest?)",
+            "description": "Use this SIP calculator to estimate how much you need to invest monthly to fund your child's education.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-12",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-calculator-child-education" }
+          })}</script>
+        )}
+        {post.slug === "sip-calculator-child-education" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "How much SIP is needed for child education?", "acceptedAnswer": { "@type": "Answer", "text": "To build ₹1 crore for education in 18 years, the required SIP is approximately ₹14,000 per month assuming 12% returns." } },
+              { "@type": "Question", "name": "What return rate should I assume for education planning?", "acceptedAnswer": { "@type": "Answer", "text": "Diversified equity mutual fund portfolios have historically delivered 10–12% annualised returns over 15+ year periods in India." } },
+              { "@type": "Question", "name": "Can I adjust my SIP over time?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Many parents start with a lower SIP and increase it annually by 5–10% as their income grows. This is called a step-up SIP." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />
@@ -270,7 +294,6 @@ export default function BlogPost() {
             </div>
           </header>
 
-          {/* Article Content - split around calculator for specific posts */}
           {post.slug === "rising-cost-of-education-in-india" ? (() => {
             const marker = `<h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Try Our Education Cost Calculator</h2>`;
             const idx = post.content.indexOf(marker);
@@ -291,6 +314,29 @@ export default function BlogPost() {
                 <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: beforeCalc }} />
                 <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: betweenSection }} />
                 <EducationCalculator />
+                <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: afterCalc }} />
+              </>
+            );
+          })() : post.slug === "sip-calculator-child-education" ? (() => {
+            const marker = `<h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Try the SIP Calculator</h2>`;
+            const idx = post.content.indexOf(marker);
+            if (idx === -1) {
+              return (
+                <>
+                  <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: post.content }} />
+                  <SIPCalculator />
+                </>
+              );
+            }
+            const nextH2 = post.content.indexOf('<h2', idx + marker.length);
+            const beforeCalc = post.content.slice(0, idx);
+            const betweenSection = nextH2 !== -1 ? post.content.slice(idx, nextH2) : post.content.slice(idx);
+            const afterCalc = nextH2 !== -1 ? post.content.slice(nextH2) : '';
+            return (
+              <>
+                <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: beforeCalc }} />
+                <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: betweenSection }} />
+                <SIPCalculator />
                 <div className="prose prose-lg dark:prose-invert max-w-none font-body prose-headings:font-heading prose-headings:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:font-semibold prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-primary" dangerouslySetInnerHTML={{ __html: afterCalc }} />
               </>
             );

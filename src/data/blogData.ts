@@ -1028,7 +1028,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-4"><strong>There is no single mutual fund that can optimally serve a child's financial goal for 15–20 years.</strong></p>
       <p class="mb-4">Children's goals — especially education — span multiple market cycles. Risk needs to change over time, and portfolios must adapt as the goal approaches.</p>
       <p class="mb-4">Because of this, the most effective strategy is <strong>goal-based investing</strong>, where a diversified portfolio evolves over time instead of relying on a single fund.</p>
-      <p class="mb-4">Modern investment platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> are designed specifically for this purpose. They help parents estimate future costs, calculate required investments, and automatically manage diversified mutual fund portfolios.</p>
+      <p class="mb-4">Modern investment platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> are designed specifically for this purpose. They help parents estimate future costs, calculate required investments, and automatically manage diversified mutual fund portfolios.</p>
       <p class="mb-6">This guide explains how to choose the right investment strategy for your child's future.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Quick Answer: What Is the Best Mutual Fund for Children?</h2>

@@ -878,7 +878,7 @@ export const blogPosts: BlogPost[] = [
         <p class="mb-1">Current cost of college education: ₹20 lakh | Education inflation: 8% | Time horizon: 15 years</p>
         <p class="mb-3"><strong>Future cost: ₹20 lakh → ~₹63 lakh</strong></p>
         <p class="mb-2">To reach this goal, parents may need to invest roughly <strong>₹12,000–₹15,000 per month through SIPs</strong>, assuming long-term equity returns of 11–12%.</p>
-        <p>Goal-based investment platforms like <a href="/" class="text-primary hover:underline font-medium">Nested App</a> can automatically calculate the required SIP and manage the portfolio over time.</p>
+        <p>Goal-based investment platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> can automatically calculate the required SIP and manage the portfolio over time.</p>
       </div>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why SIPs Are Ideal for Child Education Planning</h2>

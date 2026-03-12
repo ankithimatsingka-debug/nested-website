@@ -171,6 +171,18 @@ export default function BlogPost() {
             "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-sip-plans-child-education-india" }
           })}</script>
         )}
+        {post.slug === "how-to-plan-child-education-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Child Education Planning in India: Complete Guide for Parents",
+            "description": "Complete guide for parents on planning investments for their child's education including SIP strategies and goal planning.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-12",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-to-plan-child-education-india" }
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

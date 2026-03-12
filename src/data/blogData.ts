@@ -673,7 +673,7 @@ export const blogPosts: BlogPost[] = [
       <p class="mb-6"><a href="/blog/education-inflation-india" class="text-primary hover:underline font-medium">Education costs grow faster than general inflation</a>.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Smarter Way to Plan for Your Child's Education</h2>
-      <p class="mb-4">Instead of manually picking funds and calculating investments, parents can use goal-based platforms. <a href="/" class="text-primary hover:underline font-medium">Nested App</a> helps parents:</p>
+      <p class="mb-4">Instead of manually picking funds and calculating investments, parents can use goal-based platforms. <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> helps parents:</p>
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Estimate the future cost of education</li>
         <li>Calculate the required monthly SIP</li>

@@ -2049,7 +2049,7 @@ export const blogPosts: BlogPost[] = [
         </table>
       </div>
 
-      <p class="mb-6">Goal-based platforms such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automatically allocate investments across multiple funds.</p>
+      <p class="mb-6">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automatically allocate investments across multiple funds.</p>
 
       <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 4: Increase SIP Over Time</h3>
       <p class="mb-4">As income grows, increasing the SIP amount can accelerate wealth creation.</p>

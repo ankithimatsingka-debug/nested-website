@@ -512,7 +512,7 @@ export const blogPosts: BlogPost[] = [
         <li>Middle years → <strong>Balanced allocation</strong></li>
         <li>Final years → <strong>Higher debt allocation</strong></li>
       </ul>
-      <p class="mb-6">This helps protect the accumulated corpus from market volatility. Goal-based investing tools such as <a href="/" class="text-primary hover:underline font-medium">Nested App</a> automate this rebalancing process.</p>
+      <p class="mb-6">This helps protect the accumulated corpus from market volatility. Goal-based investing tools such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> automate this rebalancing process.</p>
 
       <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Common Mistakes Parents Make With SIP</h2>
 

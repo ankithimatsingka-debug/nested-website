@@ -121,6 +121,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nested.money/blog/teach-kids-about-money</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nested.money/taxation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

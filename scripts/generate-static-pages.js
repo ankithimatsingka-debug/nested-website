@@ -52,6 +52,7 @@ const routes = [
   '/blog/child-pursuing-music-ai-era',
   '/blog/50000-invested-child-college',
   '/blog/future-ready-skills-courses-child-india',
+  '/blog/teach-kids-about-money',
 ];
 
 if (!existsSync(SOURCE)) {

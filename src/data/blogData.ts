@@ -3405,6 +3405,184 @@ export const blogPosts: BlogPost[] = [
     category: "Parenting",
     readTime: "6 min read",
   },
+  {
+    slug: "teach-kids-about-money",
+    title: "How to Teach Kids About Money (Age-Wise Guide for Parents)",
+    excerpt: "Learn how to teach kids about money at every age. Practical strategies for parents to build financial habits and prepare children for the future.",
+    coverImage: "/blog/teach-kids-about-money.png",
+    content: `
+      <img src="/blog/teach-kids-about-money.png" alt="Teaching kids about money - age-wise guide for Indian parents" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">Financial literacy is one of the most valuable life skills a child can develop. Yet most schools do not teach children how money works.</p>
+
+      <p class="mb-4">Parents therefore play a crucial role in shaping how children understand <strong>earning, saving, investing, and spending</strong>.</p>
+
+      <p class="mb-6">Teaching kids about money early helps them develop responsible financial habits that last into adulthood.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why Financial Education for Kids Matters</h2>
+
+      <p class="mb-4">Children who learn about money early are more likely to:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Save regularly</li>
+        <li>Avoid unnecessary debt</li>
+        <li>Understand long-term investing</li>
+        <li>Make informed financial decisions</li>
+      </ul>
+
+      <p class="mb-6">Financial habits often form during childhood and adolescence, making early guidance essential.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Age-Wise Guide to Teaching Kids About Money</h2>
+
+      <p class="mb-6">Children learn differently at different ages. The approach should evolve as they grow.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Ages 3–5: Understanding Basic Concepts</h3>
+
+      <p class="mb-4">At this stage, children begin to recognize money and basic exchange. Parents can teach:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>The difference between <strong>needs and wants</strong></li>
+        <li>That money is used to buy things</li>
+        <li>Simple saving habits</li>
+      </ul>
+
+      <p class="mb-2"><strong>Practical ideas:</strong></p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Use a <strong>transparent piggy bank</strong> so children can see savings grow.</li>
+        <li>Let them pay for small items at stores.</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Ages 6–10: Learning to Save and Spend</h3>
+
+      <p class="mb-4">Children in this age group can start understanding budgeting and delayed gratification. Parents can introduce:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Weekly pocket money</li>
+        <li>Saving for specific goals</li>
+        <li>Simple budgeting</li>
+      </ul>
+
+      <p class="mb-4">A useful method is the <strong>three-jar system</strong>:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Jar</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Purpose</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3"><strong>Save</strong></td><td class="border border-border px-4 py-3">Long-term goals</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3"><strong>Spend</strong></td><td class="border border-border px-4 py-3">Small purchases</td></tr>
+            <tr><td class="border border-border px-4 py-3"><strong>Share</strong></td><td class="border border-border px-4 py-3">Charity or helping others</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">This teaches children to allocate money consciously.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Ages 11–15: Introducing Investing Concepts</h3>
+
+      <p class="mb-4">Pre-teens and teenagers can begin learning about investing and long-term wealth building. Parents can explain:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>How businesses work</li>
+        <li>How stocks represent ownership</li>
+        <li>Why long-term investing matters</li>
+      </ul>
+
+      <p class="mb-6">At this stage, children can observe how investments grow over time through tools and platforms. Goal-based investing platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> allow parents to plan long-term financial goals for children, including education funds.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Ages 16–18: Real Financial Skills</h3>
+
+      <p class="mb-4">Teenagers should start learning real financial responsibilities. Important lessons include:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Budgeting for monthly expenses</li>
+        <li>Understanding bank accounts</li>
+        <li>Basics of investing</li>
+      </ul>
+
+      <p class="mb-6">Parents can also discuss topics such as taxes, inflation, and long-term planning. These skills prepare teenagers for financial independence.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Common Mistakes Parents Make</h2>
+
+      <p class="mb-4">Many parents unintentionally limit their children's financial learning. Common mistakes include:</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Avoiding Money Conversations</h3>
+      <p class="mb-4">Some families treat money as a taboo subject. Children benefit from open discussions about financial decisions.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Giving Unlimited Money</h3>
+      <p class="mb-4">Providing money without boundaries prevents children from learning budgeting.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Not Teaching Delayed Gratification</h3>
+      <p class="mb-6">Children who learn to wait for rewards develop stronger financial discipline.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Simple Activities to Teach Kids About Money</h2>
+
+      <p class="mb-4">Parents can incorporate financial lessons into everyday life:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Activity</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Lesson</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Grocery shopping</td><td class="border border-border px-4 py-3">Comparing prices</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Saving for a toy</td><td class="border border-border px-4 py-3">Goal-based saving</td></tr>
+            <tr><td class="border border-border px-4 py-3">Tracking pocket money</td><td class="border border-border px-4 py-3">Budgeting</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Watching investments grow</td><td class="border border-border px-4 py-3">Long-term planning</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">These activities make financial education practical and engaging.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Building Long-Term Financial Security for Children</h2>
+
+      <p class="mb-4">Teaching children about money is only one part of financial preparation. Parents also need to plan for large future expenses, particularly education.</p>
+
+      <p class="mb-4">Because education costs can rise significantly over time, many parents invest regularly to build a long-term corpus.</p>
+
+      <p class="mb-6">Tools like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents estimate future education costs and create investment plans aligned with those goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Key Takeaways</h2>
+
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Financial education should begin in early childhood</li>
+        <li>Teaching should evolve with age</li>
+        <li>Practical experiences are more effective than theory</li>
+        <li>Long-term financial planning supports children's future opportunities</li>
+      </ul>
+
+      <p class="mb-6">By combining financial education with disciplined investing, parents can prepare their children for both <strong>financial independence and future opportunities</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">FAQs</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">At what age should children start learning about money?</h3>
+      <p class="mb-4">Children can start learning basic money concepts as early as <strong>3–5 years old</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Should kids receive pocket money?</h3>
+      <p class="mb-4">Yes. Pocket money helps children learn <strong>budgeting and decision-making</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">How can parents plan financially for their child's future?</h3>
+      <p class="mb-6">Parents often invest regularly to build education funds and other long-term financial goals. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help parents plan and invest for their child's education.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <p class="mb-3"><strong>At Nested</strong>, we believe that every child deserves a financially secure future. Whether you're teaching your 5-year-old about saving or planning for your teenager's college, we help you invest wisely.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="inline-block bg-primary text-primary-foreground px-5 py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity">Start Your Child's Plan</a>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby in India</a></li>
+        <li><a href="/blog/sip-calculator-child-education" class="text-primary hover:underline">SIP Calculator for Child Education</a></li>
+        <li><a href="/blog/best-investment-plan-for-child-india" class="text-primary hover:underline">Best Investment Plan for Child in India</a></li>
+      </ul>
+
+      <p class="text-sm text-muted-foreground mt-8">Disclaimer: This article provides general guidance. Financial decisions should be made based on individual circumstances.</p>
+    `,
+    author: "Nested Team",
+    publishedAt: "2026-03-13",
+    category: "Financial Literacy",
+    readTime: "7 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

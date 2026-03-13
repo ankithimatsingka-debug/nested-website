@@ -328,6 +328,31 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "teach-kids-about-money" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How to Teach Kids About Money (Age-Wise Guide for Parents)",
+            "description": "Learn how to teach kids about money at every age. Practical strategies for parents to build financial habits and prepare children for the future.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-13",
+            "image": "https://nested.money/blog/teach-kids-about-money.png",
+            "keywords": "teach kids money, financial literacy children, pocket money India, kids savings, parenting finance India",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/teach-kids-about-money" }
+          })}</script>
+        )}
+        {post.slug === "teach-kids-about-money" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "At what age should children start learning about money?", "acceptedAnswer": { "@type": "Answer", "text": "Children can start learning basic money concepts as early as 3–5 years old through activities like using a piggy bank and identifying needs vs wants." } },
+              { "@type": "Question", "name": "Should kids receive pocket money?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pocket money helps children learn budgeting and decision-making. A three-jar system (Save, Spend, Share) can teach allocation skills." } },
+              { "@type": "Question", "name": "How can parents plan financially for their child's future?", "acceptedAnswer": { "@type": "Answer", "text": "Parents often invest regularly through SIPs in mutual funds to build education funds. Goal-based platforms like Nested help estimate future costs and create investment plans." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

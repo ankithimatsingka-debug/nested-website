@@ -30,9 +30,9 @@ export function BlogCard({ post }: BlogCardProps) {
       <Card className="h-full transition-all duration-300 hover:shadow-lg hover:border-primary/30 group-focus-visible:ring-2 group-focus-visible:ring-ring group-focus-visible:ring-offset-2">
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between mb-2">
-            <Badge variant="secondary" className="text-xs">
+            <span className={`inline-flex items-center rounded-full border-0 px-2.5 py-0.5 text-xs font-semibold ${categoryColors[post.category] || "bg-muted text-muted-foreground"}`}>
               {post.category}
-            </Badge>
+            </span>
           </div>
           <h3 className="font-heading text-xl font-semibold leading-tight group-hover:text-primary transition-colors line-clamp-2">
             {post.title}

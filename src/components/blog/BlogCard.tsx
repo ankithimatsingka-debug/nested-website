@@ -4,6 +4,16 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
 
+const categoryColors: Record<string, string> = {
+  "Financial Literacy": "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300",
+  "Education Planning": "bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-300",
+  "Parenting": "bg-violet-100 text-violet-800 dark:bg-violet-900/40 dark:text-violet-300",
+  "Investment Planning": "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300",
+  "Child Education": "bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-300",
+  "Investment Strategy": "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-300",
+  "Tax Planning": "bg-teal-100 text-teal-800 dark:bg-teal-900/40 dark:text-teal-300",
+};
+
 interface BlogCardProps {
   post: BlogPost;
 }

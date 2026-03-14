@@ -3583,6 +3583,156 @@ export const blogPosts: BlogPost[] = [
     category: "Financial Literacy",
     readTime: "7 min read",
   },
+  {
+    slug: "growth-mindset-in-children",
+    title: "Growth Mindset in Children: How Parents Can Build It",
+    excerpt: "Learn how parents can build a growth mindset in children. Practical strategies to help kids develop resilience, confidence, and lifelong learning habits.",
+    content: `
+      <p>One of the most powerful traits children can develop is a <strong>growth mindset</strong> — the belief that abilities and intelligence can improve through effort, practice, and learning.</p>
+      <p>Children who develop this mindset tend to be more resilient, motivated, and open to challenges.</p>
+      <p>The concept was popularized by psychologist <strong>Carol Dweck</strong>, whose research showed that children who believe their abilities can grow perform better academically and handle setbacks more effectively.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Fixed Mindset vs Growth Mindset</h2>
+      <p class="mb-4">Children typically develop one of two beliefs about ability.</p>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-heading font-semibold">Mindset</th>
+              <th class="border border-border px-4 py-3 text-left font-heading font-semibold">Belief</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Fixed Mindset</td><td class="border border-border px-4 py-3">Intelligence and talent are fixed traits</td></tr>
+            <tr><td class="border border-border px-4 py-3">Growth Mindset</td><td class="border border-border px-4 py-3">Skills can improve with effort and learning</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-2">Children with a growth mindset are more likely to:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Embrace challenges</li>
+        <li>Persist through difficulties</li>
+        <li>Learn from criticism</li>
+        <li>Celebrate effort instead of just results</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Why Growth Mindset Matters for Children</h2>
+      <p>Modern careers increasingly reward <strong>adaptability and learning ability</strong> rather than static knowledge.</p>
+      <p class="mb-2">A child who believes they can improve through effort is more likely to:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Explore new interests</li>
+        <li>Take academic risks</li>
+        <li>Develop resilience after failure</li>
+        <li>Build confidence over time</li>
+      </ul>
+      <p>These qualities are essential for success in both education and life.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How Parents Can Build a Growth Mindset</h2>
+      <p>Parents play the most important role in shaping a child's attitude toward learning. Here are practical strategies.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Praise Effort, Not Just Talent</h3>
+      <p>When children succeed, avoid praising only their intelligence.</p>
+      <p>Instead of saying: <em>"You are so smart"</em></p>
+      <p>Say: <strong>"You worked really hard on this"</strong></p>
+      <p>This reinforces the idea that success comes from effort and persistence.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Encourage Curiosity</h3>
+      <p>Children naturally ask questions. Encouraging curiosity helps them become lifelong learners.</p>
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Explore books together</li>
+        <li>Encourage questions</li>
+        <li>Support experimentation</li>
+      </ul>
+      <p>Curiosity fuels learning and creativity.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Normalize Mistakes</h3>
+      <p>Children often fear failure because they associate mistakes with embarrassment or punishment.</p>
+      <p>Instead, parents can frame mistakes as <strong>part of the learning process</strong>.</p>
+      <p>A useful approach is asking: <strong>"What did we learn from this?"</strong></p>
+      <p>This helps children view challenges as opportunities to improve.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-8 mb-3">Teach Long-Term Thinking</h3>
+      <p>A growth mindset is closely linked with <strong>long-term thinking</strong>.</p>
+      <p class="mb-2">Children who understand that progress takes time are more likely to persist. Parents can reinforce this by discussing:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Skill development</li>
+        <li>Practice and improvement</li>
+        <li>Long-term goals</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Activities That Encourage a Growth Mindset</h2>
+      <p class="mb-4">Practical activities make these lessons easier to understand.</p>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-muted/50">
+              <th class="border border-border px-4 py-3 text-left font-heading font-semibold">Activity</th>
+              <th class="border border-border px-4 py-3 text-left font-heading font-semibold">Lesson</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Learning a musical instrument</td><td class="border border-border px-4 py-3">Progress comes through practice</td></tr>
+            <tr><td class="border border-border px-4 py-3">Playing strategy games</td><td class="border border-border px-4 py-3">Problem solving improves with effort</td></tr>
+            <tr><td class="border border-border px-4 py-3">Trying new sports</td><td class="border border-border px-4 py-3">Skills develop over time</td></tr>
+            <tr><td class="border border-border px-4 py-3">Reading challenging books</td><td class="border border-border px-4 py-3">Knowledge expands gradually</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>These experiences teach children that improvement happens through persistence.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Growth Mindset and Academic Success</h2>
+      <p class="mb-2">Research shows that children with a growth mindset tend to:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Perform better academically</li>
+        <li>Show greater resilience</li>
+        <li>Stay motivated during difficult tasks</li>
+      </ul>
+      <p>This mindset helps children focus on <strong>learning rather than just outcomes</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">The Role of Parents in Long-Term Development</h2>
+      <p>Developing a growth mindset is part of a broader goal: preparing children for the future.</p>
+      <p class="mb-2">Parents support this by providing:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-1">
+        <li>Emotional encouragement</li>
+        <li>Learning opportunities</li>
+        <li>Long-term planning</li>
+      </ul>
+      <p>Financial preparation is also important. Many parents plan ahead for education and skill development opportunities.</p>
+      <p>Tools such as <strong>Nested Money</strong> help families prepare financially for long-term goals like education, ensuring children have access to opportunities that support their growth.</p>
+      <p class="mt-4"><a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" class="text-primary hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Start your child's education plan on Nested →</a></p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Key Takeaways</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Growth mindset teaches children that abilities improve with effort</li>
+        <li>Parents influence mindset through language and behaviour</li>
+        <li>Mistakes should be treated as learning opportunities</li>
+        <li>Long-term thinking encourages resilience and persistence</li>
+      </ul>
+      <p>Children who develop this mindset become more confident learners and better problem solvers.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">FAQs</h2>
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">What is a growth mindset in children?</h3>
+      <p class="mb-4">A growth mindset is the belief that intelligence and abilities can improve through effort and learning.</p>
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">At what age can children develop a growth mindset?</h3>
+      <p class="mb-4">Children can start developing this mindset during early childhood through supportive parenting and encouragement.</p>
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">Why is growth mindset important for education?</h3>
+      <p class="mb-4">It helps children persist through challenges and focus on learning rather than just grades.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/teach-kids-about-money" class="text-primary hover:underline">How to Teach Kids About Money</a></li>
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby in India</a></li>
+        <li><a href="/blog/future-ready-skills-courses-child-india" class="text-primary hover:underline">Future-Ready Skills for Children</a></li>
+      </ul>
+
+      <p class="text-sm text-muted-foreground mt-8">Disclaimer: This article provides general guidance. Education and career outcomes depend on the child, courses, and individual circumstances.</p>
+    `,
+    author: "Nested Team",
+    publishedAt: "2026-03-14",
+    category: "Parenting",
+    readTime: "7 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

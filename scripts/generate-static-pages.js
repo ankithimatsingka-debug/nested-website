@@ -53,6 +53,7 @@ const routes = [
   '/blog/50000-invested-child-college',
   '/blog/future-ready-skills-courses-child-india',
   '/blog/teach-kids-about-money',
+  '/blog/growth-mindset-in-children',
 ];
 
 if (!existsSync(SOURCE)) {

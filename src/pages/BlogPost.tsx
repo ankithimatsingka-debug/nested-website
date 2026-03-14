@@ -353,6 +353,31 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "growth-mindset-in-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Growth Mindset in Children: How Parents Can Build It",
+            "description": "Guide for parents on building a growth mindset in children to support learning and resilience.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-14",
+            "image": "https://nested.money/blog/growth-mindset-in-children.png",
+            "keywords": "growth mindset children, Carol Dweck, parenting resilience, learning mindset kids, education parenting India",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/growth-mindset-in-children" }
+          })}</script>
+        )}
+        {post.slug === "growth-mindset-in-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What is a growth mindset in children?", "acceptedAnswer": { "@type": "Answer", "text": "A growth mindset is the belief that intelligence and abilities can improve through effort and learning." } },
+              { "@type": "Question", "name": "At what age can children develop a growth mindset?", "acceptedAnswer": { "@type": "Answer", "text": "Children can start developing this mindset during early childhood through supportive parenting and encouragement." } },
+              { "@type": "Question", "name": "Why is growth mindset important for education?", "acceptedAnswer": { "@type": "Answer", "text": "It helps children persist through challenges and focus on learning rather than just grades." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

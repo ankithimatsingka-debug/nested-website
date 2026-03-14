@@ -54,6 +54,7 @@ const routes = [
   '/blog/future-ready-skills-courses-child-india',
   '/blog/teach-kids-about-money',
   '/blog/growth-mindset-in-children',
+  '/blog/future-skills-for-children',
 ];
 
 if (!existsSync(SOURCE)) {

@@ -378,6 +378,31 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "future-skills-for-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Future Skills Children Will Need by 2040 (A Parent's Guide)",
+            "description": "Discover the most important skills children will need by 2040, including creativity, problem solving, and financial literacy.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-14",
+            "image": "https://nested.money/blog/future-skills-for-children.png",
+            "keywords": "future skills children, 2040 skills, critical thinking kids, creativity children, digital literacy, emotional intelligence kids, parenting guide India",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-skills-for-children" }
+          })}</script>
+        )}
+        {post.slug === "future-skills-for-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "What are future skills for children?", "acceptedAnswer": { "@type": "Answer", "text": "Future skills include abilities such as critical thinking, creativity, digital literacy, and emotional intelligence." } },
+              { "@type": "Question", "name": "Why are future skills important?", "acceptedAnswer": { "@type": "Answer", "text": "Rapid technological change means many careers will require adaptability and continuous learning." } },
+              { "@type": "Question", "name": "How can parents help children develop these skills?", "acceptedAnswer": { "@type": "Answer", "text": "Parents can encourage curiosity, creativity, problem solving, and practical life experiences." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

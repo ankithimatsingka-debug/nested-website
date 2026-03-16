@@ -12,7 +12,7 @@ const Features = () => {
       <Helmet>
         <title>Features - Nested | Smart Mutual Fund Investing for Parents</title>
         <meta name="description" content="Explore Nested's features: goal-based investing, automatic rebalancing, personalized asset allocation, and more for your child's education." />
-        <link rel="canonical" href="https://nested.money/features" />
+        <link rel="canonical" href="https://nested.money/features/" />
       </Helmet>
       <Header />
       <main className="pt-16">

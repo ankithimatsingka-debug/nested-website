@@ -9,7 +9,7 @@ const TermsOfUse = () => {
       <Helmet>
         <title>Terms & Conditions - Nested</title>
         <meta name="description" content="Terms and conditions for using Nested mutual fund investment platform. Read about eligibility, services, payment terms, and legal compliance." />
-        <link rel="canonical" href="https://nested.money/terms-and-conditions" />
+        <link rel="canonical" href="https://nested.money/terms-and-conditions/" />
       </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">

@@ -18,7 +18,7 @@ export default function Blog() {
           content="Expert insights on mutual fund investing, tax planning, and building wealth for your child's education. Read our latest articles and guides." 
         />
         <meta name="keywords" content="mutual funds, investing, tax planning, child education, SIP, financial planning" />
-        <link rel="canonical" href="https://nested.money/blog" />
+        <link rel="canonical" href="https://nested.money/blog/" />
       </Helmet>
 
       <Header />

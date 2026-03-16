@@ -9,7 +9,7 @@ const AccountDataDeletionPolicy = () => {
       <Helmet>
         <title>Account & Data Deletion Policy - Nested</title>
         <meta name="description" content="Account and data deletion policy for Nested. Learn how to request account deletion and what data is retained for regulatory compliance." />
-        <link rel="canonical" href="https://nested.money/account-data-deletion-policy" />
+        <link rel="canonical" href="https://nested.money/account-data-deletion-policy/" />
       </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">

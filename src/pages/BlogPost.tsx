@@ -100,7 +100,7 @@ export default function BlogPost() {
             "description": "Learn how much SIP you need to invest for your child's education, how to calculate the goal amount, and the best investment strategy for long-term planning.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education/" }
           })}</script>
         )}
         {post.slug === "how-much-save-for-child-education-india" && (

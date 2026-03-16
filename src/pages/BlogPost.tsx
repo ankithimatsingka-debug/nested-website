@@ -219,7 +219,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-cost-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-cost-india/" }
           })}</script>
         )}
         {post.slug === "child-education-cost-india" && (

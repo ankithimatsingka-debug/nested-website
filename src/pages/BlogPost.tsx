@@ -122,7 +122,7 @@ export default function BlogPost() {
             "description": "Complete guide to building the best investment plan for your child including education planning, SIP calculations, and portfolio strategy.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-investment-plan-for-child-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-investment-plan-for-child-india/" }
           })}</script>
         )}
         {post.slug === "mutual-funds-vs-ppf-child-education" && (

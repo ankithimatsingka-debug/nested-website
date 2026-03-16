@@ -78,7 +78,7 @@ export default function BlogPost() {
             "author": { "@type": "Person", "name": "Ankit Himatsingka" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-09",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/education-inflation-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/education-inflation-india/" }
           })}</script>
         )}
         {post.slug === "child-education-planning-india" && (

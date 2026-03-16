@@ -57,6 +57,7 @@ const routes = [
   '/blog/future-skills-for-children',
   '/blog/leadership-skills-in-children',
   '/blog/how-much-save-for-child-future',
+  '/blog/build-good-habits-in-children',
 ];
 
 if (!existsSync(SOURCE)) {

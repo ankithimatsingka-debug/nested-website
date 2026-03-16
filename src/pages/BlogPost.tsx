@@ -453,6 +453,31 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "build-good-habits-in-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How to Build Good Habits in Children (Parent's Guide)",
+            "description": "Learn how parents can help children develop good habits such as discipline, responsibility, and healthy routines.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-16",
+            "image": "https://nested.money/blog/build-good-habits-in-children.png",
+            "keywords": "build good habits children, child discipline, healthy routines kids, parenting habits guide, responsibility children",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/build-good-habits-in-children/" }
+          })}</script>
+        )}
+        {post.slug === "build-good-habits-in-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "At what age can children start building habits?", "acceptedAnswer": { "@type": "Answer", "text": "Children can start developing simple habits as early as 3–5 years old through routines and repetition." } },
+              { "@type": "Question", "name": "How long does it take for children to develop a habit?", "acceptedAnswer": { "@type": "Answer", "text": "Habit formation varies, but consistent practice over several weeks helps reinforce behavior." } },
+              { "@type": "Question", "name": "What are the most important habits for children?", "acceptedAnswer": { "@type": "Answer", "text": "Reading, responsibility, saving money, and healthy routines are among the most valuable habits." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

@@ -266,7 +266,7 @@ export default function BlogPost() {
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
             "keywords": "music parenting India, AI and creativity, music career children, creative parenting India, music schools India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-pursuing-music-ai-era" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-pursuing-music-ai-era/" }
           })}</script>
         )}
         {post.slug === "child-pursuing-music-ai-era" && (

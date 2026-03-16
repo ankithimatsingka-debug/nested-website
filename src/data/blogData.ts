@@ -4357,6 +4357,184 @@ export const blogPosts: BlogPost[] = [
     category: "Parenting",
     readTime: "7 min read",
   },
+  {
+    slug: "cost-of-raising-child-india",
+    title: "Cost of Raising a Child in India (2026 Data & Financial Planning Guide)",
+    excerpt: "Discover the real cost of raising a child in India from birth to age 21. Includes education costs, inflation projections, and practical financial planning insights.",
+    coverImage: "/blog/cost-of-raising-child-india.png",
+    content: `
+      <img src="/blog/cost-of-raising-child-india.png" alt="Cost of raising a child in India" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">Many parents underestimate how expensive raising a child can be.</p>
+
+      <p class="mb-4">Most families focus only on immediate expenses like school fees or childcare. But when you look at the full picture — education, healthcare, activities, and lifestyle — the numbers become much larger.</p>
+
+      <p class="mb-4">In my experience advising families on long-term financial planning, a common mistake parents make is assuming that education alone will define their child's financial needs. In reality, education is just one part of a much bigger financial journey.</p>
+
+      <p class="mb-4">When all expenses are considered, the cost of raising a child in India from birth to age 21 can easily reach <strong>₹70 lakh to ₹1.5 crore or more</strong>, depending on lifestyle and education choices.</p>
+
+      <p class="mb-4">Understanding these costs early allows parents to plan investments more effectively.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Major Expenses While Raising a Child</h2>
+      <p class="mb-4">A child's financial journey involves several phases of expenses.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-3 text-left font-semibold">Age Stage</th><th class="border border-border px-4 py-3 text-left font-semibold">Major Expenses</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">0–5 years</td><td class="border border-border px-4 py-3">Childcare, healthcare, preschool</td></tr>
+            <tr><td class="border border-border px-4 py-3">6–12 years</td><td class="border border-border px-4 py-3">School fees, activities, tuition</td></tr>
+            <tr><td class="border border-border px-4 py-3">13–18 years</td><td class="border border-border px-4 py-3">Coaching, technology, hobbies</td></tr>
+            <tr><td class="border border-border px-4 py-3">18–21 years</td><td class="border border-border px-4 py-3">College education</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">Among these, higher education and coaching costs tend to be the largest financial commitments.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">School Education Costs</h2>
+      <p class="mb-4">Private schooling in India varies widely depending on city and institution.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-3 text-left font-semibold">School Type</th><th class="border border-border px-4 py-3 text-left font-semibold">Annual Fees</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Budget private school</td><td class="border border-border px-4 py-3">₹50,000 – ₹1 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">Mid-tier school</td><td class="border border-border px-4 py-3">₹1 lakh – ₹3 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">Premium schools</td><td class="border border-border px-4 py-3">₹4 lakh – ₹10 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">Over 12 years of schooling, total costs can range from ₹10 lakh to ₹50 lakh.</p>
+      <p class="mb-4">And this does not include coaching classes or extracurricular activities.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Cost of Higher Education</h2>
+      <p class="mb-4">Higher education costs vary significantly based on the course and institution.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-3 text-left font-semibold">Course</th><th class="border border-border px-4 py-3 text-left font-semibold">Estimated Cost</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Engineering</td><td class="border border-border px-4 py-3">₹10 lakh – ₹25 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">Medical (private colleges)</td><td class="border border-border px-4 py-3">₹50 lakh – ₹1 crore</td></tr>
+            <tr><td class="border border-border px-4 py-3">MBA</td><td class="border border-border px-4 py-3">₹20 lakh – ₹40 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">Overseas education</td><td class="border border-border px-4 py-3">₹80 lakh – ₹1.5 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">For many families, this is the single largest financial goal related to children.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">The Hidden Cost: Education Inflation</h2>
+      <p class="mb-4">One mistake parents frequently make is underestimating education inflation.</p>
+      <p class="mb-4">General inflation in India typically ranges around 5–6%, but education costs often rise faster.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-3 text-left font-semibold">Category</th><th class="border border-border px-4 py-3 text-left font-semibold">Average Inflation</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">General inflation</td><td class="border border-border px-4 py-3">5–6%</td></tr>
+            <tr><td class="border border-border px-4 py-3">Education inflation</td><td class="border border-border px-4 py-3">8–10%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">At 9% inflation, a course costing ₹25 lakh today could cost:</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-3 text-left font-semibold">Years</th><th class="border border-border px-4 py-3 text-left font-semibold">Future Cost</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">10 years</td><td class="border border-border px-4 py-3">₹59 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">15 years</td><td class="border border-border px-4 py-3">₹90 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">~₹1.15 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">This is why long-term planning becomes essential.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Example: Planning for a Newborn Child</h2>
+      <p class="mb-4">Let's assume parents want to build a ₹1 crore education fund over 18 years.</p>
+      <p class="mb-4">If investments generate approximately 12% annual returns, the required monthly investment may look like this:</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-3 text-left font-semibold">Monthly Investment</th><th class="border border-border px-4 py-3 text-left font-semibold">Final Corpus</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹10,000</td><td class="border border-border px-4 py-3">₹75 lakh</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹14,000</td><td class="border border-border px-4 py-3">₹1 crore</td></tr>
+            <tr><td class="border border-border px-4 py-3">₹20,000</td><td class="border border-border px-4 py-3">₹1.4 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">The earlier parents start investing, the easier it becomes to reach the target.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">A Mistake Many Parents Make</h2>
+      <p class="mb-4">A pattern I often observe while advising families is that parents delay investing because the goal feels distant.</p>
+      <p class="mb-4">For example: child age is 2 years and the education goal is 18 years away. Since the goal feels far away, many parents postpone investing for 5–7 years.</p>
+      <p class="mb-4">But that delay dramatically increases the required monthly investment.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-3 text-left font-semibold">Start Age</th><th class="border border-border px-4 py-3 text-left font-semibold">Monthly Investment for ₹1 Cr</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">At birth</td><td class="border border-border px-4 py-3">₹14,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">Age 5</td><td class="border border-border px-4 py-3">₹24,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">Age 10</td><td class="border border-border px-4 py-3">₹56,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">The difference illustrates the power of starting early and allowing compounding to work over time.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">How Parents Can Plan for These Costs</h2>
+      <p class="mb-4">A simple framework helps families manage long-term financial planning.</p>
+
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">1. Estimate Future Costs</h3>
+      <p class="mb-4">Start by estimating the future cost of education and major milestones.</p>
+
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">2. Calculate the Required Investment</h3>
+      <p class="mb-4">Based on time horizon and expected returns, determine the monthly investment needed.</p>
+
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">3. Invest Consistently</h3>
+      <p class="mb-4">Long-term investing works best when contributions remain consistent over many years.</p>
+
+      <p class="mb-4">Goal-based platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested App</a> help parents estimate future education costs and automatically allocate investments toward those goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Beyond Money: Investing in Opportunities</h2>
+      <p class="mb-4">Financial planning for children is not only about paying for education.</p>
+      <p class="mb-4">It also enables opportunities such as:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>International learning experiences</li>
+        <li>Specialized training programs</li>
+        <li>Entrepreneurship experiments</li>
+        <li>Career exploration</li>
+      </ul>
+      <p class="mb-4">Having financial flexibility allows parents to support their child's ambitions without financial stress.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Key Takeaways</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Raising a child in India can cost ₹70 lakh to ₹1.5 crore or more</li>
+        <li>Education is typically the largest expense</li>
+        <li>Education inflation is higher than general inflation</li>
+        <li>Starting investments early dramatically reduces the monthly burden</li>
+      </ul>
+      <p class="mb-4">Financial planning early in a child's life gives families more flexibility and peace of mind.</p>
+
+      <p class="mt-4"><a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" class="text-primary hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Start planning your child's future on Nested →</a></p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">FAQs</h2>
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">How much does it cost to raise a child in India?</h3>
+      <p class="mb-4">Depending on lifestyle and education choices, the cost may range from ₹70 lakh to over ₹1.5 crore.</p>
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">What is the biggest expense for parents?</h3>
+      <p class="mb-4">Higher education typically represents the largest financial cost.</p>
+      <h3 class="text-lg font-heading font-semibold mt-6 mb-2">When should parents start saving?</h3>
+      <p class="mb-4">Ideally, parents begin investing as soon as the child is born to maximize the benefits of long-term compounding.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Guides</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/how-much-save-for-child-future" class="text-primary hover:underline">How Much Should Parents Save for Their Child's Future?</a></li>
+        <li><a href="/blog/child-education-planning-india" class="text-primary hover:underline">Child Education Planning in India</a></li>
+        <li><a href="/blog/education-inflation-india" class="text-primary hover:underline">Education Inflation in India</a></li>
+        <li><a href="/blog/investment-plan-for-newborn-baby-india" class="text-primary hover:underline">Investment Plan for Newborn Baby in India</a></li>
+      </ul>
+
+      <p class="text-sm text-muted-foreground mt-8">Disclaimer: This article provides general guidance based on publicly available data. Actual costs may vary. Investment returns are subject to market risks. Please consult a financial advisor before making investment decisions.</p>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-16",
+    category: "Education Planning",
+    readTime: "8 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

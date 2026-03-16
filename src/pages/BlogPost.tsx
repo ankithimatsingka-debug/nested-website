@@ -146,7 +146,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-10",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/investment-plan-for-newborn-baby-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/investment-plan-for-newborn-baby-india/" }
           })}</script>
         )}
         {post.slug === "build-1-crore-child-education" && (

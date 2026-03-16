@@ -364,7 +364,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-14",
             "image": "https://nested.money/blog/growth-mindset-in-children.png",
             "keywords": "growth mindset children, Carol Dweck, parenting resilience, learning mindset kids, education parenting India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/growth-mindset-in-children" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/growth-mindset-in-children/" }
           })}</script>
         )}
         {post.slug === "growth-mindset-in-children" && (

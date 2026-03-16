@@ -414,7 +414,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-16",
             "image": "https://nested.money/blog/leadership-skills-in-children.png",
             "keywords": "leadership skills children, child leadership potential, parenting guide, confidence kids, empathy children, decision making kids",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/leadership-skills-in-children" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/leadership-skills-in-children/" }
           })}</script>
         )}
         {post.slug === "leadership-skills-in-children" && (

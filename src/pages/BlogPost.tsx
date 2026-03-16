@@ -428,6 +428,31 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "how-much-save-for-child-future" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How Much Should Parents Save for Their Child's Future?",
+            "description": "Guide for parents on estimating the amount needed to prepare financially for their child's future including education costs.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-16",
+            "image": "https://nested.money/blog/how-much-save-for-child-future.png",
+            "keywords": "save for child future, child education cost India, how much save child education, education planning parents, SIP child education",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-future" }
+          })}</script>
+        )}
+        {post.slug === "how-much-save-for-child-future" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "How much money should parents save for child education?", "acceptedAnswer": { "@type": "Answer", "text": "Many parents aim to build an education fund between ₹50 lakh and ₹1 crore or more, depending on their goals." } },
+              { "@type": "Question", "name": "When should parents start saving?", "acceptedAnswer": { "@type": "Answer", "text": "Ideally, parents begin investing as early as possible, often soon after the child is born." } },
+              { "@type": "Question", "name": "What is the best way to invest for a child's future?", "acceptedAnswer": { "@type": "Answer", "text": "Long-term diversified investments are often used to build education funds and other financial goals." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

@@ -478,6 +478,31 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "cost-of-raising-child-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Cost of Raising a Child in India (2026 Data & Financial Planning Guide)",
+            "description": "Detailed financial breakdown of the cost of raising a child in India including education, schooling and future projections.",
+            "author": { "@type": "Person", "name": "Ankit Himatsingka" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-16",
+            "image": "https://nested.money/blog/cost-of-raising-child-india.png",
+            "keywords": "cost of raising child India, child education cost, education inflation India, parenting expenses India, financial planning children",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/cost-of-raising-child-india/" }
+          })}</script>
+        )}
+        {post.slug === "cost-of-raising-child-india" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "How much does it cost to raise a child in India?", "acceptedAnswer": { "@type": "Answer", "text": "Depending on lifestyle and education choices, the cost may range from ₹70 lakh to over ₹1.5 crore." } },
+              { "@type": "Question", "name": "What is the biggest expense for parents?", "acceptedAnswer": { "@type": "Answer", "text": "Higher education typically represents the largest financial cost." } },
+              { "@type": "Question", "name": "When should parents start saving?", "acceptedAnswer": { "@type": "Answer", "text": "Ideally, parents begin investing as soon as the child is born to maximize the benefits of long-term compounding." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

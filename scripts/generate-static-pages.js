@@ -58,6 +58,7 @@ const routes = [
   '/blog/leadership-skills-in-children',
   '/blog/how-much-save-for-child-future',
   '/blog/build-good-habits-in-children',
+  '/blog/cost-of-raising-child-india',
 ];
 
 if (!existsSync(SOURCE)) {

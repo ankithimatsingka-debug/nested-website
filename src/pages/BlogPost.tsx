@@ -439,7 +439,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-16",
             "image": "https://nested.money/blog/how-much-save-for-child-future.png",
             "keywords": "save for child future, child education cost India, how much save child education, education planning parents, SIP child education",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-future" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-future/" }
           })}</script>
         )}
         {post.slug === "how-much-save-for-child-future" && (

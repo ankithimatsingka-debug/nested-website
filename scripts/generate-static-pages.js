@@ -55,6 +55,7 @@ const routes = [
   '/blog/teach-kids-about-money',
   '/blog/growth-mindset-in-children',
   '/blog/future-skills-for-children',
+  '/blog/leadership-skills-in-children',
 ];
 
 if (!existsSync(SOURCE)) {

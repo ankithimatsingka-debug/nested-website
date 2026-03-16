@@ -403,6 +403,31 @@ export default function BlogPost() {
             ]
           })}</script>
         )}
+        {post.slug === "leadership-skills-in-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Signs Your Child Has Leadership Potential (And How to Develop It)",
+            "description": "Discover the early signs of leadership potential in children and how parents can nurture confidence, responsibility, and decision-making skills.",
+            "author": { "@type": "Organization", "name": "Nested" },
+            "publisher": { "@type": "Organization", "name": "Nested" },
+            "datePublished": "2026-03-16",
+            "image": "https://nested.money/blog/leadership-skills-in-children.png",
+            "keywords": "leadership skills children, child leadership potential, parenting guide, confidence kids, empathy children, decision making kids",
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/leadership-skills-in-children" }
+          })}</script>
+        )}
+        {post.slug === "leadership-skills-in-children" && (
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "At what age do leadership traits appear in children?", "acceptedAnswer": { "@type": "Answer", "text": "Leadership qualities such as responsibility and initiative can appear as early as primary school years." } },
+              { "@type": "Question", "name": "Can leadership skills be taught?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. While some children naturally show leadership tendencies, these skills can be developed through guidance and experience." } },
+              { "@type": "Question", "name": "What activities build leadership skills in children?", "acceptedAnswer": { "@type": "Answer", "text": "Team sports, group projects, community activities, and decision-making opportunities help children develop leadership abilities." } }
+            ]
+          })}</script>
+        )}
       </Helmet>
 
       <Header />

@@ -290,7 +290,7 @@ export default function BlogPost() {
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
             "keywords": "education investment India, FD vs mutual fund, education planning India, compounding, Sukanya Samriddhi",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/50000-invested-child-college" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/50000-invested-child-college/" }
           })}</script>
         )}
         {post.slug === "50000-invested-child-college" && (

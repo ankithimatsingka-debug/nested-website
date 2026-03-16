@@ -170,7 +170,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-11",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-sip-plans-child-education-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-sip-plans-child-education-india/" }
           })}</script>
         )}
         {post.slug === "how-to-plan-child-education-india" && (

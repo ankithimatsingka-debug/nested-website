@@ -314,7 +314,7 @@ export default function BlogPost() {
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
             "keywords": "future skills India, AI courses India, robotics education, biotech programs, space technology education",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-ready-skills-courses-child-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-ready-skills-courses-child-india/" }
           })}</script>
         )}
         {post.slug === "future-ready-skills-courses-child-india" && (

@@ -36,7 +36,7 @@ export default function BlogPost() {
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.publishedAt} />
         <meta property="article:author" content={post.author} />
-        <link rel="canonical" href={`https://nested.money/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://nested.money/blog/${post.slug}/`} />
         {post.slug === "best-mutual-fund-for-children-india" && (
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org",
@@ -46,7 +46,7 @@ export default function BlogPost() {
             "author": { "@type": "Person", "name": "Ankit Himatsingka" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-09",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-mutual-fund-for-children-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-mutual-fund-for-children-india/" }
           })}</script>
         )}
         {post.slug === "best-mutual-fund-for-children-india" && (
@@ -67,7 +67,7 @@ export default function BlogPost() {
             "author": { "@type": "Person", "name": "Ankit Himatsingka" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-09",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education-india/" }
           })}</script>
         )}
         {post.slug === "education-inflation-india" && (
@@ -78,7 +78,7 @@ export default function BlogPost() {
             "author": { "@type": "Person", "name": "Ankit Himatsingka" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-09",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/education-inflation-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/education-inflation-india/" }
           })}</script>
         )}
         {post.slug === "child-education-planning-india" && (
@@ -89,7 +89,7 @@ export default function BlogPost() {
             "description": "A complete guide to child education planning in India including future education cost calculations, required SIP, and mutual fund strategy.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-planning-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-planning-india/" }
           })}</script>
         )}
         {post.slug === "sip-for-child-education" && (
@@ -100,7 +100,7 @@ export default function BlogPost() {
             "description": "Learn how much SIP you need to invest for your child's education, how to calculate the goal amount, and the best investment strategy for long-term planning.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-for-child-education/" }
           })}</script>
         )}
         {post.slug === "how-much-save-for-child-education-india" && (
@@ -111,7 +111,7 @@ export default function BlogPost() {
             "description": "Learn how much parents should save for child education in India including future cost estimates, SIP calculations, and investment strategies.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-education-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-education-india/" }
           })}</script>
         )}
         {post.slug === "best-investment-plan-for-child-india" && (
@@ -122,7 +122,7 @@ export default function BlogPost() {
             "description": "Complete guide to building the best investment plan for your child including education planning, SIP calculations, and portfolio strategy.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-investment-plan-for-child-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-investment-plan-for-child-india/" }
           })}</script>
         )}
         {post.slug === "mutual-funds-vs-ppf-child-education" && (
@@ -134,7 +134,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-10",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/mutual-funds-vs-ppf-child-education" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/mutual-funds-vs-ppf-child-education/" }
           })}</script>
         )}
         {post.slug === "investment-plan-for-newborn-baby-india" && (
@@ -146,7 +146,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-10",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/investment-plan-for-newborn-baby-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/investment-plan-for-newborn-baby-india/" }
           })}</script>
         )}
         {post.slug === "build-1-crore-child-education" && (
@@ -158,7 +158,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-10",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/build-1-crore-child-education" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/build-1-crore-child-education/" }
           })}</script>
         )}
         {post.slug === "best-sip-plans-child-education-india" && (
@@ -170,7 +170,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-11",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-sip-plans-child-education-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/best-sip-plans-child-education-india/" }
           })}</script>
         )}
         {post.slug === "how-to-plan-child-education-india" && (
@@ -182,7 +182,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-to-plan-child-education-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-to-plan-child-education-india/" }
           })}</script>
         )}
         {post.slug === "rising-cost-of-education-in-india" && (
@@ -194,7 +194,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/rising-cost-of-education-in-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/rising-cost-of-education-in-india/" }
           })}</script>
         )}
         {post.slug === "rising-cost-of-education-in-india" && (
@@ -219,7 +219,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-cost-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-cost-india/" }
           })}</script>
         )}
         {post.slug === "child-education-cost-india" && (
@@ -242,7 +242,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-calculator-child-education" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/sip-calculator-child-education/" }
           })}</script>
         )}
         {post.slug === "sip-calculator-child-education" && (
@@ -266,7 +266,7 @@ export default function BlogPost() {
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
             "keywords": "music parenting India, AI and creativity, music career children, creative parenting India, music schools India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-pursuing-music-ai-era" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-pursuing-music-ai-era/" }
           })}</script>
         )}
         {post.slug === "child-pursuing-music-ai-era" && (
@@ -290,7 +290,7 @@ export default function BlogPost() {
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
             "keywords": "education investment India, FD vs mutual fund, education planning India, compounding, Sukanya Samriddhi",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/50000-invested-child-college" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/50000-invested-child-college/" }
           })}</script>
         )}
         {post.slug === "50000-invested-child-college" && (
@@ -314,7 +314,7 @@ export default function BlogPost() {
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-12",
             "keywords": "future skills India, AI courses India, robotics education, biotech programs, space technology education",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-ready-skills-courses-child-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-ready-skills-courses-child-india/" }
           })}</script>
         )}
         {post.slug === "future-ready-skills-courses-child-india" && (
@@ -339,7 +339,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-13",
             "image": "https://nested.money/blog/teach-kids-about-money.png",
             "keywords": "teach kids money, financial literacy children, pocket money India, kids savings, parenting finance India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/teach-kids-about-money" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/teach-kids-about-money/" }
           })}</script>
         )}
         {post.slug === "teach-kids-about-money" && (
@@ -364,7 +364,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-14",
             "image": "https://nested.money/blog/growth-mindset-in-children.png",
             "keywords": "growth mindset children, Carol Dweck, parenting resilience, learning mindset kids, education parenting India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/growth-mindset-in-children" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/growth-mindset-in-children/" }
           })}</script>
         )}
         {post.slug === "growth-mindset-in-children" && (
@@ -389,7 +389,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-14",
             "image": "https://nested.money/blog/future-skills-for-children.png",
             "keywords": "future skills children, 2040 skills, critical thinking kids, creativity children, digital literacy, emotional intelligence kids, parenting guide India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-skills-for-children" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-skills-for-children/" }
           })}</script>
         )}
         {post.slug === "future-skills-for-children" && (
@@ -414,7 +414,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-16",
             "image": "https://nested.money/blog/leadership-skills-in-children.png",
             "keywords": "leadership skills children, child leadership potential, parenting guide, confidence kids, empathy children, decision making kids",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/leadership-skills-in-children" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/leadership-skills-in-children/" }
           })}</script>
         )}
         {post.slug === "leadership-skills-in-children" && (
@@ -439,7 +439,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-16",
             "image": "https://nested.money/blog/how-much-save-for-child-future.png",
             "keywords": "save for child future, child education cost India, how much save child education, education planning parents, SIP child education",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-future" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-future/" }
           })}</script>
         )}
         {post.slug === "how-much-save-for-child-future" && (

@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy - Nested</title>
         <meta name="description" content="Privacy policy for Nested. Learn how we collect, use, and protect your personal information when using our mutual fund investment platform." />
-        <link rel="canonical" href="https://nested.money/privacy-policy" />
+        <link rel="canonical" href="https://nested.money/privacy-policy/" />
       </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">

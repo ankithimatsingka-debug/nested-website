@@ -9,7 +9,7 @@ const CancellationRefundPolicy = () => {
       <Helmet>
         <title>Cancellation & Refund Policy - Nested</title>
         <meta name="description" content="Cancellation and refund policy for Nested mutual fund services. Learn about SIP cancellations, transaction cancellations, and refund processes." />
-        <link rel="canonical" href="https://nested.money/cancellation-refund-policy" />
+        <link rel="canonical" href="https://nested.money/cancellation-refund-policy/" />
       </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">

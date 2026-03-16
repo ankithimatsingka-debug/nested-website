@@ -9,7 +9,7 @@ const InformationSecurityPolicy = () => {
       <Helmet>
         <title>Information Security Policy - Nested</title>
         <meta name="description" content="Information security policy for Nested. Learn how we protect your data with encryption, access controls, and security best practices." />
-        <link rel="canonical" href="https://nested.money/information-security-policy" />
+        <link rel="canonical" href="https://nested.money/information-security-policy/" />
       </Helmet>
       <Header />
       <main className="container mx-auto px-4 py-16">

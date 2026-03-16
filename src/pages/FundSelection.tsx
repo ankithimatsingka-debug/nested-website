@@ -12,7 +12,7 @@ const FundSelection = () => {
       <Helmet>
         <title>Fund Selection Methodology - Nested</title>
         <meta name="description" content="Learn how Nested selects mutual funds. Our methodology balances returns, risk, and consistency for long-term wealth creation." />
-        <link rel="canonical" href="https://nested.money/fund-selection" />
+        <link rel="canonical" href="https://nested.money/fund-selection/" />
       </Helmet>
       <Header />
       

@@ -36,7 +36,7 @@ export default function BlogPost() {
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.publishedAt} />
         <meta property="article:author" content={post.author} />
-        <link rel="canonical" href={`https://nested.money/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://nested.money/blog/${post.slug}/`} />
         {post.slug === "best-mutual-fund-for-children-india" && (
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org",

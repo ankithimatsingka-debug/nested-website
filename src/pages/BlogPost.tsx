@@ -339,7 +339,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-13",
             "image": "https://nested.money/blog/teach-kids-about-money.png",
             "keywords": "teach kids money, financial literacy children, pocket money India, kids savings, parenting finance India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/teach-kids-about-money" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/teach-kids-about-money/" }
           })}</script>
         )}
         {post.slug === "teach-kids-about-money" && (

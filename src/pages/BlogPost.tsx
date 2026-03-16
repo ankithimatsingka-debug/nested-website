@@ -389,7 +389,7 @@ export default function BlogPost() {
             "datePublished": "2026-03-14",
             "image": "https://nested.money/blog/future-skills-for-children.png",
             "keywords": "future skills children, 2040 skills, critical thinking kids, creativity children, digital literacy, emotional intelligence kids, parenting guide India",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-skills-for-children" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/future-skills-for-children/" }
           })}</script>
         )}
         {post.slug === "future-skills-for-children" && (

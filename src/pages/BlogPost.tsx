@@ -158,7 +158,7 @@ export default function BlogPost() {
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
             "datePublished": "2026-03-10",
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/build-1-crore-child-education" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/build-1-crore-child-education/" }
           })}</script>
         )}
         {post.slug === "best-sip-plans-child-education-india" && (

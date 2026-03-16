@@ -111,7 +111,7 @@ export default function BlogPost() {
             "description": "Learn how much parents should save for child education in India including future cost estimates, SIP calculations, and investment strategies.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-education-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/how-much-save-for-child-education-india/" }
           })}</script>
         )}
         {post.slug === "best-investment-plan-for-child-india" && (

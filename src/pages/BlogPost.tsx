@@ -89,7 +89,7 @@ export default function BlogPost() {
             "description": "A complete guide to child education planning in India including future education cost calculations, required SIP, and mutual fund strategy.",
             "author": { "@type": "Organization", "name": "Nested" },
             "publisher": { "@type": "Organization", "name": "Nested" },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-planning-india" }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/child-education-planning-india/" }
           })}</script>
         )}
         {post.slug === "sip-for-child-education" && (

@@ -4535,8 +4535,6 @@ export const blogPosts: BlogPost[] = [
     category: "Education Planning",
     readTime: "8 min read",
   },
-];
-
   {
     slug: "mistakes-child-education-planning",
     title: "7 Financial Mistakes Parents Make While Planning Child Education",

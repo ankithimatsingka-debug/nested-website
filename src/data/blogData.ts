@@ -4535,6 +4535,185 @@ export const blogPosts: BlogPost[] = [
     category: "Education Planning",
     readTime: "8 min read",
   },
+  {
+    slug: "mistakes-child-education-planning",
+    title: "7 Financial Mistakes Parents Make While Planning Child Education",
+    excerpt: "Avoid these common financial mistakes parents make while planning for child education. Learn how to invest smarter and build a strong education fund.",
+    coverImage: "/blog/mistakes-child-education-planning.png",
+    content: `
+      <img src="/blog/mistakes-child-education-planning.png" alt="Financial mistakes in child education planning" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">Planning for a child's education is one of the most important financial goals for any parent.</p>
+
+      <p class="mb-4">Yet, in my experience working with families over the years, most parents don't fail because of lack of intent — they fail because of <strong>flawed assumptions</strong>.</p>
+
+      <p class="mb-4">These mistakes often go unnoticed for years and only become visible when the goal is close and the numbers don't add up.</p>
+
+      <p class="mb-6">Below are the most common financial mistakes parents make — and how to avoid them.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistake 1: Underestimating Education Inflation</h2>
+      <p class="mb-4">This is by far the most critical mistake.</p>
+      <p class="mb-4">Most parents assume inflation of 5–6%, similar to general inflation. But <strong>education costs typically rise at 8–10% annually</strong>.</p>
+      <p class="mb-4">Let's look at the impact:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Current Cost</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Years</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Future Cost (9%)</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹25 lakh</td><td class="border border-border px-4 py-3">15</td><td class="border border-border px-4 py-3">₹90 lakh</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">₹25 lakh</td><td class="border border-border px-4 py-3">18</td><td class="border border-border px-4 py-3">₹1.15 crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">That's a <strong>4–5x increase</strong>, not 2–3x as many assume. This single miscalculation can completely derail a financial plan.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistake 2: Starting Too Late</h2>
+      <p class="mb-4">Many parents delay investing because the goal feels far away.</p>
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"We'll start serious investing when the child turns 8–10."</blockquote>
+      <p class="mb-4">This is financially damaging.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Start Age</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP for ₹1 Cr</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">At birth</td><td class="border border-border px-4 py-3">₹14,000</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Age 5</td><td class="border border-border px-4 py-3">₹24,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">Age 10</td><td class="border border-border px-4 py-3">₹56,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Delaying by just 5–10 years can <strong>double or triple</strong> the required investment.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistake 3: Relying Only on Traditional Savings Products</h2>
+      <p class="mb-4">A large number of families depend heavily on:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Fixed deposits</li>
+        <li>Recurring deposits</li>
+        <li>Traditional insurance plans</li>
+      </ul>
+      <p class="mb-4">While these are safe, they often <strong>fail to beat inflation</strong> over long periods.</p>
+      <p class="mb-6">The corpus grows, but not fast enough to match rising education costs. This creates a <strong>false sense of security</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistake 4: Choosing Products Instead of Planning Goals</h2>
+      <p class="mb-4">Many parents ask:</p>
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"Which is the best plan for child education?"</blockquote>
+      <p class="mb-4">This is the wrong question. The right question is:</p>
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">"How much money will I need, and how do I get there?"</blockquote>
+      <p class="mb-4">In my experience, families who focus on products (PPF, insurance, etc.) without a clear goal often end up with <strong>fragmented and inefficient portfolios</strong>.</p>
+      <p class="mb-6">Goal-based approaches — like those used by <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> — start with the outcome and then allocate investments accordingly.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistake 5: Not Increasing Investments Over Time</h2>
+      <p class="mb-4">Many parents start a SIP and then forget about it. But income typically increases over time — <strong>investments should too</strong>.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Year</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Year 1</td><td class="border border-border px-4 py-3">₹10,000</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Year 5</td><td class="border border-border px-4 py-3">₹15,000</td></tr>
+            <tr><td class="border border-border px-4 py-3">Year 10</td><td class="border border-border px-4 py-3">₹25,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Even a <strong>10% annual increase</strong> in SIP can significantly improve the final corpus. Ignoring this leads to underfunded goals.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistake 6: Ignoring Asset Allocation</h2>
+      <p class="mb-4">Some parents either stay too conservative (mostly debt) or take excessive risk (only equity). Both approaches are flawed.</p>
+      <p class="mb-4">A proper strategy should <strong>evolve over time</strong>:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Stage</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Allocation Approach</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Early years</td><td class="border border-border px-4 py-3">Growth-focused (more equity)</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Mid phase</td><td class="border border-border px-4 py-3">Balanced</td></tr>
+            <tr><td class="border border-border px-4 py-3">Final years</td><td class="border border-border px-4 py-3">Capital protection</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Without rebalancing, portfolios may either underperform or become too risky near the goal.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistake 7: Not Linking Investments to Specific Goals</h2>
+      <p class="mb-4">One of the most common issues: parents invest regularly, but <strong>without linking investments to a clear goal</strong>.</p>
+      <p class="mb-4">As a result, multiple investments exist but no clarity on whether the goal will be achieved. This creates uncertainty.</p>
+      <p class="mb-4">Goal-based platforms such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> solve this by:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Mapping investments to specific goals</li>
+        <li>Tracking progress</li>
+        <li>Rebalancing portfolios automatically</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Simple Framework That Works</h2>
+      <p class="mb-4">After seeing what doesn't work, here's what does.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 1: Define the Goal</h3>
+      <p class="mb-4">Estimate the future cost of education.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 2: Calculate Required Investment</h3>
+      <p class="mb-4">Determine the SIP needed based on time horizon and returns.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 3: Invest and Review Regularly</h3>
+      <p class="mb-6">Stay consistent and adjust investments as income grows.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Key Takeaways</h3>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Education inflation is often underestimated</li>
+          <li>Starting early has the biggest impact</li>
+          <li>Traditional savings alone may not be sufficient</li>
+          <li>Goal-based planning is more effective than product-based investing</li>
+          <li>Regular review and adjustment are essential</li>
+        </ul>
+      </div>
+
+      <p class="mb-6">Avoiding these mistakes can significantly improve the chances of successfully funding your child's education.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">Start Planning Today</h3>
+        <p class="mb-4">Use <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> to set clear education goals, calculate the investment needed, and track your progress — all in one place.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Frequently Asked Questions</h2>
+
+      <div class="space-y-6 mb-8">
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">What is the biggest mistake parents make in education planning?</h3>
+          <p class="text-muted-foreground">Underestimating education inflation is one of the most common and costly mistakes.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">When should parents start investing for education?</h3>
+          <p class="text-muted-foreground">Ideally, investments should begin as early as possible, preferably when the child is born.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">Is insurance a good option for child education planning?</h3>
+          <p class="text-muted-foreground">Insurance products provide safety but may not generate sufficient returns to meet long-term education costs.</p>
+        </div>
+      </div>
+
+      <p class="text-sm text-muted-foreground mt-8"><strong>Disclaimer:</strong> This article is for informational purposes only and does not constitute financial advice. Investment decisions should be made based on individual financial situations and goals. Mutual fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.</p>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-17",
+    category: "Education Planning",
+    readTime: "8 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

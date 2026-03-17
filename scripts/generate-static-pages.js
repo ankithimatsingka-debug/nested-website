@@ -59,6 +59,7 @@ const routes = [
   '/blog/how-much-save-for-child-future',
   '/blog/build-good-habits-in-children',
   '/blog/cost-of-raising-child-india',
+  '/blog/mistakes-child-education-planning',
 ];
 
 if (!existsSync(SOURCE)) {

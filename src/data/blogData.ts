@@ -4714,6 +4714,7 @@ export const blogPosts: BlogPost[] = [
     category: "Education Planning",
     readTime: "8 min read",
   },
+];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>
   blogPosts.find((post) => post.slug === slug);

@@ -4714,6 +4714,186 @@ export const blogPosts: BlogPost[] = [
     category: "Education Planning",
     readTime: "8 min read",
   },
+  {
+    slug: "5000-per-month-child-education-plan",
+    title: "How ₹5,000 Per Month Can Fund Your Child's Education (Complete Plan)",
+    excerpt: "Can ₹5,000/month fund your child's education? See real calculations, returns, and a step-by-step plan to build a ₹1 crore corpus.",
+    coverImage: "/blog/5000-per-month-child-education-plan.png",
+    content: `
+      <img src="/blog/5000-per-month-child-education-plan.png" alt="How ₹5,000 per month can fund your child's education" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">Most parents assume that funding a child's education requires a very large monthly investment.</p>
+
+      <p class="mb-4">That's not entirely true.</p>
+
+      <p class="mb-4">What matters far more than the amount is <strong>when you start</strong> and <strong>how consistently you invest</strong>.</p>
+
+      <p class="mb-4">In fact, a relatively modest SIP like ₹5,000 per month can grow into a meaningful corpus — if done correctly and early.</p>
+
+      <p class="mb-6">But there's a catch: for most families, ₹5,000 alone is not enough to fully fund education. It needs to be part of a <strong>structured, evolving investment plan</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Power of Starting Early</h2>
+      <p class="mb-4">Let's assume:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Child's age: Newborn</li>
+        <li>Investment horizon: 18 years</li>
+        <li>Expected return: 12% annually</li>
+      </ul>
+      <p class="mb-4">Here's what ₹5,000/month can grow into:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Years</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Final Corpus</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">₹5,000</td><td class="border border-border px-4 py-3">18</td><td class="border border-border px-4 py-3">~₹38–40 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">At first glance, this may seem insufficient.</p>
+      <p class="mb-6">But this is where most parents misunderstand planning. The goal is not to rely on a fixed SIP forever — the goal is to <strong>build progressively</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why ₹5,000 Alone Is Not Enough</h2>
+      <p class="mb-4">Today, a good college education may cost ₹20–25 lakh.</p>
+      <p class="mb-4">With education inflation at ~9%, that same education could cost:</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Years</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Future Cost</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">15 years</td><td class="border border-border px-4 py-3">₹90 lakh</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">18 years</td><td class="border border-border px-4 py-3">₹1+ crore</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">This creates a gap:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Corpus from ₹5,000 SIP → ~₹40 lakh</li>
+        <li>Required corpus → ₹1 crore</li>
+        <li><strong>Shortfall → ₹60 lakh</strong></li>
+      </ul>
+      <p class="mb-6">This gap is where intelligent planning makes the difference.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Smarter Strategy: Step-Up Investing</h2>
+      <p class="mb-4">Instead of sticking to ₹5,000 forever, <strong>increase your SIP gradually</strong>.</p>
+      <p class="mb-4">Let's assume: Starting SIP: ₹5,000, Annual increase: 10%</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Year</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Monthly SIP</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">Year 1</td><td class="border border-border px-4 py-3">₹5,000</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Year 5</td><td class="border border-border px-4 py-3">₹7,300</td></tr>
+            <tr><td class="border border-border px-4 py-3">Year 10</td><td class="border border-border px-4 py-3">₹11,800</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">Year 15</td><td class="border border-border px-4 py-3">₹19,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">This simple strategy can potentially build:</p>
+      <p class="mb-4"><strong>→ ₹90 lakh to ₹1.1 crore corpus</strong></p>
+      <p class="mb-6">That's the difference between <em>passive investing</em> vs <em>intentional planning</em>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Real Insight from Advisory Experience</h2>
+      <p class="mb-4">One pattern I've repeatedly seen while advising families:</p>
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">Parents are comfortable starting small — but they resist increasing investments later.</blockquote>
+      <p class="mb-4">This is a mistake. Income typically rises over time, but investments often stay stagnant.</p>
+      <p class="mb-6">The solution is simple: <strong>Link investment growth to income growth.</strong></p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Role of Asset Allocation</h2>
+      <p class="mb-4">Returns don't come automatically — they depend on how money is invested.</p>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-3 text-left font-semibold">Phase</th>
+            <th class="border border-border px-4 py-3 text-left font-semibold">Strategy</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3">0–10 years</td><td class="border border-border px-4 py-3">Growth-focused (equity-heavy)</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3">10–15 years</td><td class="border border-border px-4 py-3">Balanced</td></tr>
+            <tr><td class="border border-border px-4 py-3">15–18 years</td><td class="border border-border px-4 py-3">Conservative (capital protection)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mb-6">Without this shift, two risks emerge: too little growth early, or too much risk near the goal.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Hidden Risk: No Goal Tracking</h2>
+      <p class="mb-4">Another major issue: most parents invest in multiple funds but don't track whether they are actually on track.</p>
+      <p class="mb-4">Goal-based platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> solve this by:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Estimating future education costs</li>
+        <li>Calculating required SIP</li>
+        <li>Automatically allocating investments</li>
+        <li>Rebalancing portfolios over time</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What Should You Actually Do?</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 1: Start with ₹5,000 — Immediately</h3>
+      <p class="mb-4">Don't wait for the "perfect" amount.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 2: Increase SIP Every Year</h3>
+      <p class="mb-4">Even a 10% increase makes a huge difference.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 3: Align Investments to Goals</h3>
+      <p class="mb-4">Avoid random investing. Link everything to a clear outcome.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 4: Review Progress Periodically</h3>
+      <p class="mb-6">Ensure you are on track as costs and income evolve.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Key Takeaways</h3>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>₹5,000/month alone is not enough for full education funding</li>
+          <li>Starting early is more powerful than investing large amounts later</li>
+          <li>Increasing SIP over time is critical</li>
+          <li>Education inflation significantly impacts future costs</li>
+          <li>Goal-based investing improves outcomes</li>
+        </ul>
+      </div>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">Start Your Plan Today</h3>
+        <p class="mb-4">Use <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> to calculate how much you need, set a goal, and start investing — all in one place.</p>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Frequently Asked Questions</h2>
+
+      <div class="space-y-6 mb-8">
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">Is ₹5,000 SIP enough for child education?</h3>
+          <p class="text-muted-foreground">It can build a strong base corpus, but typically needs to be increased over time to fully fund education.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">What returns should I assume?</h3>
+          <p class="text-muted-foreground">Long-term equity-oriented portfolios may generate ~10–12% returns, but actual outcomes vary.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">What is the best strategy for parents?</h3>
+          <p class="text-muted-foreground">Start early, increase investments gradually, and follow a goal-based investment approach.</p>
+        </div>
+      </div>
+
+      <p class="text-sm text-muted-foreground mt-8"><strong>Disclaimer:</strong> This article is for informational purposes only and does not constitute financial advice. Investment decisions should be made based on individual financial situations and goals. Mutual fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.</p>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-17",
+    category: "Investment Planning",
+    readTime: "7 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

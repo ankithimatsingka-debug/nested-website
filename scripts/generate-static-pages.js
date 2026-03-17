@@ -60,6 +60,7 @@ const routes = [
   '/blog/build-good-habits-in-children',
   '/blog/cost-of-raising-child-india',
   '/blog/mistakes-child-education-planning',
+  '/blog/5000-per-month-child-education-plan',
 ];
 
 if (!existsSync(SOURCE)) {

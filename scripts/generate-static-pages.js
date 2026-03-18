@@ -62,6 +62,7 @@ const routes = [
   '/blog/mistakes-child-education-planning',
   '/blog/5000-per-month-child-education-plan',
   '/blog/best-investment-options-child-education-india',
+  '/blog/sukanya-samriddhi-vs-mutual-funds-child-education',
 ];
 
 if (!existsSync(SOURCE)) {

@@ -61,6 +61,7 @@ const routes = [
   '/blog/cost-of-raising-child-india',
   '/blog/mistakes-child-education-planning',
   '/blog/5000-per-month-child-education-plan',
+  '/blog/best-investment-options-child-education-india',
 ];
 
 if (!existsSync(SOURCE)) {

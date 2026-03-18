@@ -8,6 +8,7 @@ import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EducationCalculator } from "@/components/EducationCalculator";
 import { SIPCalculator } from "@/components/blog/SIPCalculator";
+import { AuthorBio } from "@/components/blog/AuthorBio";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();

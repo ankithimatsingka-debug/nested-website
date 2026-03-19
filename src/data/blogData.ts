@@ -5605,6 +5605,264 @@ export const blogPosts: BlogPost[] = [
     category: "Parenting",
     readTime: "7 min read",
   },
+  {
+    slug: "save-for-child-or-retirement-first-india",
+    title: "Should You Save for Your Child or Retirement First? The Hard Truth for Indian Parents",
+    excerpt: "Most Indian parents prioritise their child's future over retirement—but this can backfire. Here's a brutally honest, numbers-driven answer on what to prioritise and why.",
+    coverImage: "/blog/save-for-child-or-retirement-first-india.png",
+    content: `
+      <img src="/blog/save-for-child-or-retirement-first-india.png" alt="Save for child education or retirement first - comparison for Indian parents" class="w-full rounded-lg mb-8" />
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Should You Save for Your Child or Your Retirement First? A Brutally Honest Answer",
+        "description": "A practical and honest guide for Indian parents on whether to prioritise child education or retirement, with real numbers and insights.",
+        "author": { "@type": "Person", "name": "Ankit Himatsingka" },
+        "publisher": { "@type": "Organization", "name": "Nested" },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/save-for-child-or-retirement-first-india/" },
+        "datePublished": "2026-03-19",
+        "dateModified": "2026-03-19"
+      }
+      </script>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Uncomfortable Truth Most Parents Avoid</h2>
+
+      <p class="mb-4">In my experience advising families across income levels, I see the same pattern repeatedly:</p>
+
+      <p class="mb-4"><strong>Parents are willing to compromise their own retirement—but not their child's education.</strong></p>
+
+      <p class="mb-4">It sounds noble. It's also financially dangerous.</p>
+
+      <p class="mb-4">Because here's the blunt reality:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">Your child can take a loan for education. You cannot take a loan for retirement.</blockquote>
+
+      <p class="mb-4">Yet, most Indian households are doing the exact opposite.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Emotional Trap: "My Child Comes First"</h2>
+
+      <p class="mb-4">Let's be clear—this is not a math problem. It's a behavioral one.</p>
+
+      <p class="mb-4">Parents often say:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>"We'll manage somehow later"</li>
+        <li>"Children are our biggest investment"</li>
+        <li>"Retirement can wait"</li>
+      </ul>
+
+      <p class="mb-4">This thinking creates a silent risk. You are effectively betting your old age on:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Your child's future income</li>
+        <li>Their willingness to support you</li>
+        <li>The absence of medical emergencies</li>
+      </ul>
+
+      <p class="mb-6"><strong>That's not planning. That's hope.</strong></p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Numbers Don't Lie</h2>
+
+      <p class="mb-4">Let's compare two real-world scenarios.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Scenario A: Prioritising Child Education First</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-2 text-left">Monthly Investment</th>
+            <th class="border border-border px-4 py-2 text-left">Years</th>
+            <th class="border border-border px-4 py-2 text-left">Return</th>
+            <th class="border border-border px-4 py-2 text-left">Corpus</th>
+          </tr></thead>
+          <tbody><tr>
+            <td class="border border-border px-4 py-2">₹25,000</td>
+            <td class="border border-border px-4 py-2">18</td>
+            <td class="border border-border px-4 py-2">12%</td>
+            <td class="border border-border px-4 py-2 font-semibold">~₹1.5 crore</td>
+          </tr></tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">Looks solid, right? Now assume:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Education cost (India/private college or abroad): <strong>₹1.5–2.5 crore</strong></li>
+      </ul>
+      <p class="mb-4">You barely meet the goal.</p>
+
+      <p class="mb-4"><strong>Meanwhile:</strong></p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Retirement savings = negligible</li>
+        <li>Age at retirement = 60</li>
+        <li>Required corpus = <strong>₹4–6 crore</strong></li>
+      </ul>
+      <p class="mb-6"><strong>Result: Financial stress + dependence</strong></p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Scenario B: Prioritising Retirement First</h3>
+
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted">
+            <th class="border border-border px-4 py-2 text-left">Monthly Investment</th>
+            <th class="border border-border px-4 py-2 text-left">Years</th>
+            <th class="border border-border px-4 py-2 text-left">Return</th>
+            <th class="border border-border px-4 py-2 text-left">Corpus</th>
+          </tr></thead>
+          <tbody><tr>
+            <td class="border border-border px-4 py-2">₹25,000</td>
+            <td class="border border-border px-4 py-2">30</td>
+            <td class="border border-border px-4 py-2">12%</td>
+            <td class="border border-border px-4 py-2 font-semibold">~₹8.8 crore</td>
+          </tr></tbody>
+        </table>
+      </div>
+
+      <p class="mb-4">Now:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Retirement is secured</li>
+        <li>You can still fund part of education</li>
+        <li>Your child can bridge the gap via loan/scholarship</li>
+      </ul>
+      <p class="mb-6"><strong>Result: Stability + flexibility</strong></p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why Retirement Should Come First (Even If It Feels Wrong)</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">1. Compounding Works Best with Time, Not Urgency</h3>
+      <p class="mb-4">Retirement has a longer runway (25–30 years). Education has a fixed deadline (15–18 years).</p>
+      <p class="mb-6"><strong>Delaying retirement investing destroys compounding.</strong></p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">2. Education Has Funding Alternatives</h3>
+      <p class="mb-4">Your child has options:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Education loans</li>
+        <li>Scholarships</li>
+        <li>Part-time work</li>
+        <li>Lower-cost institutions</li>
+      </ul>
+      <p class="mb-6">You don't.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">3. Healthcare Inflation Is Brutal</h3>
+      <p class="mb-4">At 60+, your biggest expense is not lifestyle—it's healthcare.</p>
+      <p class="mb-4"><strong>Medical inflation in India is ~10–12%.</strong></p>
+      <p class="mb-6">If you're underfunded, your child becomes your financial backup. That's the exact situation you were trying to avoid.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">4. Financial Independence > Financial Sacrifice</h3>
+      <p class="mb-4">Parents often equate sacrifice with love. But in reality:</p>
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">Being financially independent is the biggest gift you can give your child.</blockquote>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Balanced Strategy (What Actually Works)</h2>
+
+      <p class="mb-4">This is where most blogs get lazy. They say "balance both" without telling you how. Here's a practical framework:</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 1: Lock Retirement First (Non-Negotiable)</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Target: <strong>₹4–6 crore</strong> (urban India baseline)</li>
+        <li>Allocate: <strong>60–70%</strong> of surplus</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 2: Fund Education Partially, Not Fully</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Target: <strong>50–70%</strong> of expected cost</li>
+        <li>Allocate: <strong>30–40%</strong> of surplus</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 3: Build Flexibility into the Plan</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Increase contributions as income grows</li>
+        <li>Reallocate if needed after age 45–50</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 4: Use Goal-Based Investing Buckets</h3>
+      <p class="mb-4">In my experience, parents fail because they mix goals. Platforms like <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help separate:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Retirement corpus</li>
+        <li>Child education fund</li>
+      </ul>
+      <p class="mb-6">This reduces emotional decision-making and improves discipline.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistakes I See Parents Make (Again and Again)</h2>
+
+      <div class="bg-destructive/5 border border-destructive/20 rounded-lg p-6 my-6 space-y-4">
+        <div>
+          <p class="font-semibold mb-1">❌ Mistake 1: Overestimating Future Income Growth</p>
+          <p class="text-muted-foreground">"Salary will increase, we'll catch up later." Rarely happens as planned.</p>
+        </div>
+        <div>
+          <p class="font-semibold mb-1">❌ Mistake 2: Underestimating Education Inflation</p>
+          <p class="text-muted-foreground">Education inflation is ~8–10%. A ₹20 lakh course today = <strong>₹80 lakh–₹1 crore</strong> in 18 years.</p>
+        </div>
+        <div>
+          <p class="font-semibold mb-1">❌ Mistake 3: Zero Retirement Planning Till 40</p>
+          <p class="text-muted-foreground">This is the biggest wealth destroyer.</p>
+        </div>
+        <div>
+          <p class="font-semibold mb-1">❌ Mistake 4: Treating Insurance as Investment</p>
+          <p class="text-muted-foreground">Child plans + endowment policies = low returns (5–6%). They fail both goals.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Brutally Honest Conclusion</h2>
+
+      <p class="mb-4">If you remember only one thing, let it be this:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">A financially dependent parent is a burden. A financially independent parent is a blessing.</blockquote>
+
+      <p class="mb-4">Prioritising retirement is not selfish. It is the most responsible financial decision you can make for your family.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">🔑 Key Takeaways</h3>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Retirement should be prioritised over child education—always</li>
+          <li>Children have funding options; retirees do not</li>
+          <li>A ₹1–2 crore education goal should not compromise a ₹5 crore retirement</li>
+          <li>Allocate ~60–70% to retirement, rest to education</li>
+          <li>Avoid traditional child plans—they don't beat inflation</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Related Reading</h2>
+      <ul class="list-disc pl-6 mb-8 space-y-2">
+        <li><a href="/blog/how-much-save-for-child-education-india/" class="text-primary hover:underline">How Much Should You Save for Your Child's Education in India?</a></li>
+        <li><a href="/blog/sip-for-child-education-india/" class="text-primary hover:underline">Best SIP Strategy for Child Education</a></li>
+        <li><a href="/blog/best-investment-options-child-education-india/" class="text-primary hover:underline">Best Investment Options for Child Education in India</a></li>
+        <li><a href="/blog/mistakes-child-education-planning/" class="text-primary hover:underline">Common Mistakes in Child Education Planning</a></li>
+        <li><a href="/blog/sukanya-samriddhi-vs-mutual-funds-child-education/" class="text-primary hover:underline">Sukanya Samriddhi vs Mutual Funds for Child Education</a></li>
+      </ul>
+
+      <div class="bg-primary/10 border border-primary/30 rounded-lg p-6 my-8 text-center">
+        <h3 class="text-lg font-heading font-semibold mb-2">Start Planning Both Goals Today</h3>
+        <p class="text-muted-foreground mb-4">Use Nested Money to create separate investment buckets for retirement and child education—with automatic rebalancing.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-6 py-3 font-medium hover:bg-primary/90 transition-colors">Download Nested Money</a>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">FAQs</h2>
+
+      <div class="space-y-6 mb-8">
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">Is it wrong to prioritise my child's education?</h3>
+          <p class="text-muted-foreground">Not wrong—but dangerous if it comes at the cost of retirement security.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">Can I take a loan for retirement?</h3>
+          <p class="text-muted-foreground">No. That's precisely why retirement must come first.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">What if I can't invest enough for both?</h3>
+          <p class="text-muted-foreground">Prioritise retirement fully, and partially fund education. Let the child use loans if needed.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-heading font-semibold mb-2">At what age should I start retirement planning?</h3>
+          <p class="text-muted-foreground">Ideally before 30. After 40, the required monthly investment rises sharply.</p>
+        </div>
+      </div>
+
+      <p class="text-sm text-muted-foreground mt-8"><strong>Disclaimer:</strong> This article is for informational purposes only and does not constitute financial advice. Investment decisions should be made based on individual financial situations and goals. Mutual fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.</p>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-19",
+    category: "Financial Literacy",
+    readTime: "9 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

@@ -64,6 +64,7 @@ const routes = [
   '/blog/best-investment-options-child-education-india',
   '/blog/sukanya-samriddhi-vs-mutual-funds-child-education',
   '/blog/how-to-build-confidence-in-children',
+  '/blog/save-for-child-or-retirement-first-india',
 ];
 
 if (!existsSync(SOURCE)) {

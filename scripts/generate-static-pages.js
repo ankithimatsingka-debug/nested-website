@@ -65,6 +65,7 @@ const routes = [
   '/blog/sukanya-samriddhi-vs-mutual-funds-child-education',
   '/blog/how-to-build-confidence-in-children',
   '/blog/save-for-child-or-retirement-first-india',
+  '/blog/why-child-plans-fail-india',
 ];
 
 if (!existsSync(SOURCE)) {

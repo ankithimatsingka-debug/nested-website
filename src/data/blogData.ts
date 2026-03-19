@@ -5863,6 +5863,245 @@ export const blogPosts: BlogPost[] = [
     category: "Financial Literacy",
     readTime: "9 min read",
   },
+  {
+    slug: "why-child-plans-fail-india",
+    title: "Why Child Plans Fail in India (And What Actually Works Instead)",
+    excerpt: "Most child investment plans in India promise security but fail to beat inflation. Here's a data-backed breakdown of why they underperform—and what parents should do instead.",
+    coverImage: "/blog/why-child-plans-fail-india.png",
+    content: `
+      <img src="/blog/why-child-plans-fail-india.png" alt="Why child plans fail in India – child plan vs SIP mutual funds comparison" class="w-full rounded-lg mb-8" />
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why Child Plans Fail in India (And What Actually Works Instead)",
+        "description": "A data-backed breakdown of why traditional child plans underperform and what Indian parents should do instead to secure their child's future.",
+        "author": { "@type": "Person", "name": "Ankit Himatsingka" },
+        "publisher": { "@type": "Organization", "name": "Nested" },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nested.money/blog/why-child-plans-fail-india/" },
+        "datePublished": "2026-03-19",
+        "dateModified": "2026-03-19",
+        "image": "https://nested.money/blog/why-child-plans-fail-india.png"
+      }
+      </script>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Promise vs Reality Gap</h2>
+
+      <p class="mb-4">Walk into any bank or insurance office and ask about your child's future.</p>
+
+      <p class="mb-4">You'll hear:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>"Guaranteed returns"</li>
+        <li>"Safe for your child"</li>
+        <li>"Disciplined savings"</li>
+        <li>"Tax benefits"</li>
+      </ul>
+
+      <p class="mb-4">Sounds perfect.</p>
+
+      <p class="mb-4">But here's the uncomfortable truth from years of advising families:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">Most child plans are designed to make you feel safe—not to make you wealthy. And in today's world, feeling safe is not enough.</blockquote>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What Exactly Are "Child Plans"?</h2>
+
+      <p class="mb-4">Typically, these are:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Endowment plans</li>
+        <li>Money-back policies</li>
+        <li>ULIPs (disguised as child education plans)</li>
+      </ul>
+
+      <p class="mb-4">They combine <strong>insurance + investment</strong>. And that's exactly where the problem starts.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Core Problem: Low Returns Disguised as Safety</h2>
+
+      <p class="mb-4">Let's break this down with actual numbers.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Typical Child Plan Returns</h3>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-2 text-left">Product Type</th><th class="border border-border px-4 py-2 text-left">Expected Returns</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-2">Endowment Plans</td><td class="border border-border px-4 py-2">4% – 6%</td></tr>
+            <tr><td class="border border-border px-4 py-2">Money-back Plans</td><td class="border border-border px-4 py-2">4% – 5%</td></tr>
+            <tr><td class="border border-border px-4 py-2">ULIPs (after costs)</td><td class="border border-border px-4 py-2">6% – 8%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Compare That With:</h3>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-2 text-left">Asset Class</th><th class="border border-border px-4 py-2 text-left">Expected Returns</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-2">Equity Mutual Funds</td><td class="border border-border px-4 py-2"><strong>10% – 12%</strong></td></tr>
+            <tr><td class="border border-border px-4 py-2">Hybrid Funds</td><td class="border border-border px-4 py-2"><strong>8% – 10%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Brutal Math: Why They Fail</h2>
+
+      <p class="mb-4">Let's say you invest <strong>₹10,000/month for 18 years</strong>.</p>
+
+      <div class="bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-lg p-6 my-6">
+        <h3 class="text-lg font-heading font-semibold mb-2">Scenario 1: Child Plan (6% return)</h3>
+        <p class="text-2xl font-bold text-red-600 dark:text-red-400">Corpus ≈ ₹38–40 lakh</p>
+      </div>
+
+      <div class="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-lg p-6 my-6">
+        <h3 class="text-lg font-heading font-semibold mb-2">Scenario 2: Equity SIP (12% return)</h3>
+        <p class="text-2xl font-bold text-green-600 dark:text-green-400">Corpus ≈ ₹90 lakh – ₹1 crore</p>
+      </div>
+
+      <p class="mb-4">Now compare with actual need:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Private engineering/medical: <strong>₹50 lakh – ₹1 crore</strong></li>
+        <li>Foreign education: <strong>₹1.5 – ₹3 crore</strong></li>
+      </ul>
+
+      <p class="mb-4">👉 <strong>Child plan falls short by 50%–70%</strong>. That gap becomes an education loan—or compromised dreams.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Illusion of "Guarantee"</h2>
+
+      <p class="mb-4">Here's where most parents get misled. "Guaranteed returns" feels comforting. But what's not discussed:</p>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">Inflation is not guaranteed—it's relentless. Education inflation in India runs at ~8–10% annually.</blockquote>
+
+      <p class="mb-4">So if your money grows at 6% and costs grow at 10%: <strong>you are getting poorer in real terms</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Why These Plans Are Structurally Flawed</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">1. Insurance + Investment = Inefficiency</h3>
+      <p class="mb-4">In my experience, combining both always leads to compromise: low insurance cover and low returns. You're paying for complexity, not performance.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">2. High Hidden Costs</h3>
+      <p class="mb-4">Especially in ULIPs: allocation charges, fund management fees, mortality charges. Returns look decent on paper, not in your account.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">3. Long Lock-ins Kill Flexibility</h3>
+      <p class="mb-4">Typical lock-in: <strong>10–20 years</strong>. If your income changes, goals shift, or you need liquidity—you're stuck.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">4. Wrong Risk Strategy</h3>
+      <p class="mb-4">Child plans start conservative and stay conservative. But reality: <strong>long-term goals demand equity exposure early on</strong>.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">The Behavioral Trap: Why Parents Still Buy Them</h2>
+
+      <p class="mb-4">This is not a knowledge problem. It's psychology.</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Fear of loss:</strong> Parents don't want to "risk" their child's future</li>
+        <li><strong>Sales-driven advice:</strong> Most plans are sold, not bought</li>
+        <li><strong>False discipline:</strong> "Premium bharna padega toh saving ho jayegi" — but forced discipline ≠ smart investing</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">What Actually Works (Practical Strategy)</h2>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 1: Separate Insurance and Investment</h3>
+      <p class="mb-4">Buy <strong>term insurance</strong> (pure protection). Invest separately for growth.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 2: Use Equity for Long-Term Goals</h3>
+      <p class="mb-4">For a 15–18 year horizon: <strong>70–80% equity allocation</strong> is reasonable.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 3: Use SIP-Based Compounding</h3>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead><tr class="bg-muted"><th class="border border-border px-4 py-2 text-left">Monthly SIP</th><th class="border border-border px-4 py-2 text-left">Years</th><th class="border border-border px-4 py-2 text-left">Return</th><th class="border border-border px-4 py-2 text-left">Corpus</th></tr></thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-2">₹15,000</td><td class="border border-border px-4 py-2">18</td><td class="border border-border px-4 py-2">12%</td><td class="border border-border px-4 py-2"><strong>~₹75 lakh</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">Scale this based on your goal. Read more: <a href="/blog/sip-for-child-education-india/" class="text-primary hover:underline font-medium">Best SIP Strategy for Child Education</a></p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 4: Glide Path Strategy</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Age 0–10:</strong> Aggressive (equity-heavy)</li>
+        <li><strong>Age 10–15:</strong> Gradual shift to balanced</li>
+        <li><strong>Age 15+:</strong> Capital protection</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">Step 5: Goal-Based Investing Approach</h3>
+      <p class="mb-4">One major reason parents fail is mixing money. Separating your <a href="/blog/save-for-child-or-retirement-first-india/" class="text-primary hover:underline font-medium">child education fund and retirement fund</a> into distinct buckets dramatically improves outcomes.</p>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">💡 A Smarter Approach</h3>
+        <p class="mb-3">Instead of mixing insurance and investment, use a structured goal-based platform that separates your child's education fund from other goals and automatically manages your portfolio.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-medium hover:bg-primary/90 transition-colors">Download Nested Money →</a>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Mistakes I Repeatedly See</h2>
+
+      <div class="space-y-4 mb-6">
+        <div class="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-500 p-4 rounded-r-lg">
+          <p class="font-semibold">❌ Buying based on tax-saving urgency</p>
+          <p class="text-muted-foreground">March decisions = bad decisions</p>
+        </div>
+        <div class="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-500 p-4 rounded-r-lg">
+          <p class="font-semibold">❌ Underfunding the goal</p>
+          <p class="text-muted-foreground">₹5,000 SIP won't solve a ₹1 crore problem</p>
+        </div>
+        <div class="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-500 p-4 rounded-r-lg">
+          <p class="font-semibold">❌ Ignoring inflation entirely</p>
+          <p class="text-muted-foreground">Most parents still assume ₹20–30 lakh education cost. See: <a href="/blog/how-much-save-for-child-education-india/" class="text-primary hover:underline">How Much Should You Save for Your Child's Education?</a></p>
+        </div>
+        <div class="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-500 p-4 rounded-r-lg">
+          <p class="font-semibold">❌ Over-trusting "guaranteed" products</p>
+          <p class="text-muted-foreground">Safety without growth = silent failure</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">A Sharper Way to Think About This</h2>
+
+      <p class="mb-4">Instead of asking: <em>"Is this plan safe?"</em></p>
+      <p class="mb-4">Ask: <strong>"Will this plan realistically fund my child's future?"</strong></p>
+      <p class="mb-4">That one question changes everything.</p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">Key Takeaways</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Most child plans deliver <strong>4–6% returns</strong>—below education inflation</li>
+        <li>"Guaranteed" returns often guarantee <strong>underperformance</strong></li>
+        <li>Mixing insurance and investment leads to <strong>poor outcomes</strong></li>
+        <li>Equity-based SIPs significantly outperform over long periods</li>
+        <li>Separate goals, stay flexible, and focus on <strong>real returns—not promises</strong></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-8 mb-4">FAQs</h2>
+
+      <div class="space-y-6 mb-8">
+        <div class="border border-border rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">Are all child plans bad?</h3>
+          <p class="text-muted-foreground">Not "bad"—but inefficient for long-term wealth creation. They typically deliver 4–6% returns, which don't keep up with education inflation.</p>
+        </div>
+        <div class="border border-border rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">What about ULIPs?</h3>
+          <p class="text-muted-foreground">Better than traditional plans, but still cost-heavy and restrictive compared to mutual funds. High allocation charges and fund management fees erode returns.</p>
+        </div>
+        <div class="border border-border rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">Is equity safe for child education?</h3>
+          <p class="text-muted-foreground">Over 15–18 years, equity is not just safe—it's necessary. The long time horizon allows you to ride out market volatility and benefit from compounding.</p>
+        </div>
+        <div class="border border-border rounded-lg p-5">
+          <h3 class="font-heading font-semibold mb-2">Should I exit my existing child plan?</h3>
+          <p class="text-muted-foreground">Depends on tenure completed, surrender charges, and your alternative plan. But in many cases, continuing is worse than exiting early and reinvesting in mutual funds.</p>
+        </div>
+      </div>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <p class="mb-3">Also read:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><a href="/blog/save-for-child-or-retirement-first-india/" class="text-primary hover:underline font-medium">Should You Save for Your Child or Retirement First?</a></li>
+          <li><a href="/blog/how-much-save-for-child-education-india/" class="text-primary hover:underline font-medium">How Much Should You Save for Your Child's Education in India?</a></li>
+          <li><a href="/blog/sukanya-samriddhi-vs-mutual-funds-child-education/" class="text-primary hover:underline font-medium">Sukanya Samriddhi vs Mutual Funds for Child Education</a></li>
+          <li><a href="/blog/best-investment-options-child-education-india/" class="text-primary hover:underline font-medium">Best Investment Options for Child Education in India</a></li>
+        </ul>
+      </div>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-19",
+    category: "Investment Planning",
+    readTime: "10 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

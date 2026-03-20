@@ -67,6 +67,7 @@ const routes = [
   '/blog/save-for-child-or-retirement-first-india',
   '/blog/why-child-plans-fail-india',
   '/blog/how-rich-parents-raise-kids-differently',
+  '/blog/how-to-teach-kids-about-money-india',
 ];
 
 if (!existsSync(SOURCE)) {

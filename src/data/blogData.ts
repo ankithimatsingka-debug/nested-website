@@ -6408,6 +6408,261 @@ export const blogPosts: BlogPost[] = [
     category: "Parenting",
     readTime: "9 min read",
   },
+  {
+    slug: "how-to-teach-kids-about-money-india",
+    title: "How to Teach Kids About Money (Age 5–18 Guide for Indian Parents)",
+    excerpt: "A practical, age-wise guide to teaching kids about money—from pocket money to investing. Build financial intelligence early with real examples and proven strategies.",
+    coverImage: "/blog/how-to-teach-kids-about-money-india.png",
+    content: `
+      <img src="/blog/how-to-teach-kids-about-money-india.png" alt="How to teach kids about money – age-wise guide for Indian parents" class="w-full rounded-lg mb-8" />
+
+      <p class="text-lg text-muted-foreground mb-6">In my experience advising families, most parents don't "teach" money. They avoid discussing it, give random pocket money, and say "save more" without explaining how.</p>
+
+      <p class="mb-4">Result? By age 22:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>High earning potential</li>
+        <li>Zero financial discipline</li>
+        <li>Poor decision-making</li>
+      </ul>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">Financial literacy is not taught in schools. If you don't teach it at home, it doesn't get learned.</blockquote>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">The Right Way to Think About This</h2>
+
+      <p class="mb-4">Don't teach "money" as a subject. Teach 3 core ideas progressively:</p>
+      <ol class="list-decimal pl-6 mb-6 space-y-2">
+        <li><strong>Value</strong> — money is earned</li>
+        <li><strong>Trade-offs</strong> — you can't have everything</li>
+        <li><strong>Growth</strong> — money can multiply</li>
+      </ol>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Age 5–8: Build the Foundation (Value of Money)</h2>
+
+      <p class="mb-4">At this stage, kids don't understand numbers deeply—but they understand <strong>exchange</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to do:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Introduce physical money (coins/notes)</li>
+        <li>Give small, consistent pocket money (₹50–₹200/week)</li>
+        <li>Link money to simple tasks (not all chores—just some)</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to teach:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Money is earned—not unlimited</li>
+        <li>Spending reduces money</li>
+        <li>Saving allows future buying</li>
+      </ul>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">💡 Simple Exercise</h3>
+        <p>Give ₹100 and ask: Spend now on candy, OR save for a bigger toy later. Let them experience the consequence.</p>
+      </div>
+
+      <div class="flex items-start gap-3 p-4 bg-red-50 dark:bg-red-950/20 rounded-lg border border-red-200 dark:border-red-800 my-4">
+        <span class="text-red-500 font-bold">❌</span>
+        <div><strong>Common mistake:</strong> Giving money randomly or saying "don't worry about money" — this creates a false sense of abundance.</div>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Age 9–12: Introduce Decision-Making (Spend vs Save)</h2>
+
+      <p class="mb-4">Now kids can understand <strong>choices and trade-offs</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to do:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Increase pocket money (₹300–₹1,000/month)</li>
+        <li>Introduce 3 buckets: <strong>Spend, Save, Give</strong></li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to teach:</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Delayed gratification</li>
+        <li>Budgeting basics</li>
+        <li>Prioritisation</li>
+      </ul>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">💡 Real Example</h3>
+        <p>If your child wants a ₹3,000 gadget—don't buy it directly. Ask them to save over 3–4 months. This builds patience, ownership, and appreciation.</p>
+      </div>
+
+      <div class="flex items-start gap-3 p-4 bg-red-50 dark:bg-red-950/20 rounded-lg border border-red-200 dark:border-red-800 my-4">
+        <span class="text-red-500 font-bold">❌</span>
+        <div><strong>Common mistake:</strong> Rewarding everything with money or bailing out poor spending decisions. Bad decisions must have small consequences early.</div>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Age 13–15: Introduce Real-World Money Concepts</h2>
+
+      <p class="mb-4">This is where most parents drop the ball—they focus only on studies.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to do:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Open a bank account</li>
+        <li>Show them how interest works</li>
+        <li>Show them how digital payments work</li>
+        <li>Involve them in small financial decisions</li>
+      </ul>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to teach:</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Difference between saving vs investing</li>
+        <li>Inflation (simple terms)</li>
+        <li>Basic idea of risk and return</li>
+      </ul>
+
+      <div class="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg p-4 my-6">
+        <p class="font-semibold">Simple illustration:</p>
+        <p>"₹1,000 today won't buy the same in 5 years." That's enough to introduce inflation thinking.</p>
+      </div>
+
+      <div class="flex items-start gap-3 p-4 bg-red-50 dark:bg-red-950/20 rounded-lg border border-red-200 dark:border-red-800 my-4">
+        <span class="text-red-500 font-bold">❌</span>
+        <div><strong>Common mistake:</strong> Hiding financial realities or not explaining how money is actually managed. Kids grow up financially blind.</div>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Age 16–18: Introduce Investing and Independence</h2>
+
+      <p class="mb-4">Now you shift from <strong>concepts → application</strong>.</p>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to do:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Start a small SIP in their name</li>
+        <li>Show them monthly growth</li>
+        <li>Let them track progress</li>
+      </ul>
+
+      <div class="bg-primary/5 border border-primary/20 rounded-lg p-6 my-8">
+        <h3 class="text-lg font-heading font-semibold mb-3">📊 Example</h3>
+        <p>₹2,000/month for 5 years at 12% ≈ <strong>₹1.6 lakh</strong></p>
+        <p class="mt-2">More important than the number: 👉 They <em>see compounding in action</em>.</p>
+      </div>
+
+      <h3 class="text-xl font-heading font-semibold mt-6 mb-3">What to teach:</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Equity vs debt (basic idea)</li>
+        <li>Long-term thinking</li>
+        <li>Power of consistency</li>
+      </ul>
+
+      <p class="mb-4">Use a goal-based structure: "This is your college fund" / "This is how money grows over time."</p>
+
+      <p class="mb-6">Tools like a structured goal-based platform such as <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Nested Money</a> help visualize this clearly—far more effective than abstract teaching.</p>
+
+      <div class="flex items-start gap-3 p-4 bg-red-50 dark:bg-red-950/20 rounded-lg border border-red-200 dark:border-red-800 my-4">
+        <span class="text-red-500 font-bold">❌</span>
+        <div><strong>Common mistake:</strong> Waiting till 25 to teach investing or doing everything on behalf of the child. At 18, they should understand money basics and think independently.</div>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">The 5 Principles That Matter More Than Anything</h2>
+
+      <div class="overflow-x-auto my-6">
+        <table class="w-full border-collapse border border-border text-sm">
+          <thead>
+            <tr class="bg-muted">
+              <th class="border border-border px-4 py-3 text-left font-semibold">Principle</th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">What it means</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="border border-border px-4 py-3 font-medium">Consistency beats intensity</td><td class="border border-border px-4 py-3">Small lessons over years > one-time lectures</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3 font-medium">Experience beats advice</td><td class="border border-border px-4 py-3">Let them handle money—not just hear about it</td></tr>
+            <tr><td class="border border-border px-4 py-3 font-medium">Visibility builds awareness</td><td class="border border-border px-4 py-3">Show them real numbers, not theory</td></tr>
+            <tr class="bg-muted/50"><td class="border border-border px-4 py-3 font-medium">Mistakes are necessary</td><td class="border border-border px-4 py-3">Cheap mistakes early prevent expensive mistakes later</td></tr>
+            <tr><td class="border border-border px-4 py-3 font-medium">Your behavior matters most</td><td class="border border-border px-4 py-3">Kids copy what you do—not what you say</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">The Long-Term Payoff</h2>
+
+      <p class="mb-4">By age 22, a financially aware child:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Understands compounding</li>
+        <li>Avoids lifestyle inflation</li>
+        <li>Invests early</li>
+        <li>Makes independent decisions</li>
+      </ul>
+
+      <p class="mb-4">Compare that with most graduates:</p>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>First salary → spends everything</li>
+        <li>No investing habit</li>
+        <li>Dependent on advice</li>
+      </ul>
+
+      <blockquote class="border-l-4 border-primary pl-4 my-6 italic text-lg">That gap compounds massively over life.</blockquote>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">A Blunt but Important Truth</h2>
+
+      <p class="mb-4">Most parents spend lakhs on education and thousands on tuition—but <strong>zero effort on financial education</strong>.</p>
+
+      <p class="mb-6">That's a massive blind spot. Because in the real world: <strong>Money decisions shape life outcomes more than academic scores.</strong></p>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Related Reading</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><a href="/blog/how-rich-parents-raise-kids-differently/" class="text-primary hover:underline">How Rich Parents Raise Kids Differently</a></li>
+        <li><a href="/blog/why-child-plans-fail-india/" class="text-primary hover:underline">Why Child Plans Fail in India</a></li>
+        <li><a href="/blog/save-for-child-or-retirement-first-india/" class="text-primary hover:underline">Should You Save for Your Child or Retirement First?</a></li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">Key Takeaways</h2>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Start teaching money as early as age 5</li>
+        <li>Focus on value, trade-offs, and growth</li>
+        <li>Use age-wise progression—not random advice</li>
+        <li>Let children make small financial mistakes</li>
+        <li>Real-world exposure beats theoretical knowledge</li>
+      </ul>
+
+      <h2 class="text-2xl font-heading font-semibold mt-10 mb-4">FAQs</h2>
+
+      <div class="space-y-6 my-6">
+        <div>
+          <h3 class="font-heading font-semibold text-lg mb-2">When should I start giving pocket money?</h3>
+          <p class="text-muted-foreground">Around age 5–6 in small amounts.</p>
+        </div>
+        <div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Should I link money to chores?</h3>
+          <p class="text-muted-foreground">Partially. Not everything should be monetised.</p>
+        </div>
+        <div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Is it safe to introduce investing before 18?</h3>
+          <p class="text-muted-foreground">Yes—under supervision and with small amounts.</p>
+        </div>
+        <div>
+          <h3 class="font-heading font-semibold text-lg mb-2">How much should I give as pocket money?</h3>
+          <p class="text-muted-foreground">Depends on income, but consistency matters more than amount.</p>
+        </div>
+      </div>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to Teach Kids About Money (Age 5–18 Playbook for Indian Parents)",
+        "description": "A practical, age-wise guide for Indian parents to teach children about money, saving, and investing.",
+        "author": {
+          "@type": "Person",
+          "name": "Ankit Himatsingka"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nested"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://nested.money/blog/how-to-teach-kids-about-money-india/"
+        },
+        "datePublished": "2026-03-20",
+        "dateModified": "2026-03-20"
+      }
+      </script>
+    `,
+    author: "Ankit Himatsingka",
+    publishedAt: "2026-03-20",
+    category: "Financial Literacy",
+    readTime: "10 min read",
+  },
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined =>

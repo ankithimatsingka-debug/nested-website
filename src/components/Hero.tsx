@@ -3,16 +3,16 @@ import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import qrCode from "@/assets/qr-code.png";
-import appScreenHome from "@/assets/app-screen-home.webp";
-import appScreenSuperfd from "@/assets/app-screen-superfd.webp";
-import appScreenPortfolio from "@/assets/app-screen-portfolio.webp";
-import appScreenAccount from "@/assets/app-screen-account.webp";
+import appScreenHome from "@/assets/app-screen-home.png";
+import appScreenSuperfd from "@/assets/app-screen-superfd.png";
+import appScreenPortfolio from "@/assets/app-screen-portfolio.png";
+import appScreenAccount from "@/assets/app-screen-account.png";
 
 const appScreens = [
-  { src: appScreenHome, alt: "Nested app home screen with Super FD investment options" },
-  { src: appScreenSuperfd, alt: "Super FD products - Secure Money and Grow Money options" },
-  { src: appScreenPortfolio, alt: "Portfolio view showing investment progress and returns" },
-  { src: appScreenAccount, alt: "Account management with SIPs, bank accounts, and settings" },
+  { src: appScreenHome, alt: "Nested Money - Plan for any dream with goal-based portfolios" },
+  { src: appScreenSuperfd, alt: "Outpace inflation with automatic corpus adjustment" },
+  { src: appScreenPortfolio, alt: "Portfolio grows with your child through automated rebalancing" },
+  { src: appScreenAccount, alt: "Built for Indian parents - start small, dream big" },
 ];
 
 const rotatingTexts = [

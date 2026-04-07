@@ -9,10 +9,10 @@ import appScreenPortfolio from "@/assets/app-screen-portfolio.png";
 import appScreenAccount from "@/assets/app-screen-account.png";
 
 const appScreens = [
-  { src: appScreenHome, alt: "Nested app home screen with Super FD investment options" },
-  { src: appScreenSuperfd, alt: "Super FD products - Secure Money and Grow Money options" },
-  { src: appScreenPortfolio, alt: "Portfolio view showing investment progress and returns" },
-  { src: appScreenAccount, alt: "Account management with SIPs, bank accounts, and settings" },
+  { src: appScreenHome, alt: "Nested Money - Plan for any dream with goal-based portfolios" },
+  { src: appScreenSuperfd, alt: "Outpace inflation with automatic corpus adjustment" },
+  { src: appScreenPortfolio, alt: "Portfolio grows with your child through automated rebalancing" },
+  { src: appScreenAccount, alt: "Built for Indian parents - start small, dream big" },
 ];
 
 const rotatingTexts = [

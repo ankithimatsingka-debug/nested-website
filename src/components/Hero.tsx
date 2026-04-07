@@ -3,10 +3,10 @@ import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import qrCode from "@/assets/qr-code.png";
-import appScreenHome from "@/assets/app-screen-home.webp";
-import appScreenSuperfd from "@/assets/app-screen-superfd.webp";
-import appScreenPortfolio from "@/assets/app-screen-portfolio.webp";
-import appScreenAccount from "@/assets/app-screen-account.webp";
+import appScreenHome from "@/assets/app-screen-home.png";
+import appScreenSuperfd from "@/assets/app-screen-superfd.png";
+import appScreenPortfolio from "@/assets/app-screen-portfolio.png";
+import appScreenAccount from "@/assets/app-screen-account.png";
 
 const appScreens = [
   { src: appScreenHome, alt: "Nested app home screen with Super FD investment options" },

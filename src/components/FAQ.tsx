@@ -129,6 +129,10 @@ const faqData = {
     {
       question: "What type of support is provided?",
       answer: "You will be assigned an expert AMFI-qualified RM who will help you with all your mutual fund investment related queries."
+    },
+    {
+      question: "Is Nested Money the same as Nested Wealth?",
+      answer: "Yes! While our official name is Nested Money, our mission is to help families build long-term wealth. We are often referred to by both names."
     }
   ]
 };

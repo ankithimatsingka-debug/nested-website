@@ -603,6 +603,14 @@ export default function BlogPost() {
           {/* Author Bio */}
           <AuthorBio />
 
+          {/* Nested Wealth CTA line */}
+          <p className="mt-8 text-center text-lg font-medium text-primary italic">
+            Start your Nested Wealth building journey with the{" "}
+            <a href="https://play.google.com/store/apps/details?id=com.nexted.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary/80 transition-colors">
+              Nested Money app
+            </a>.
+          </p>
+
           {/* CTA */}
           <div className="mt-12 p-6 bg-muted/50 rounded-lg text-center">
             <h3 className="font-heading text-xl font-semibold mb-2">

@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Nested - Funding dreams, one goal at a time</title>
+        <title>Nested Money: Building Nested Wealth for Your Child's Future</title>
         <meta name="description" content="Mutual fund investing app designed for parents. Goal-based planning, automatic rebalancing, and personalized asset allocation for your child's future." />
         <link rel="canonical" href="https://nested.money/" />
       </Helmet>
